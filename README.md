@@ -1,6 +1,11 @@
 Bar Crawl RPG
 =============
 
+Here's the jist of what we're doing: We build maps in Tiled, then import them into Unity used Tiled2Unity, and finally we are building the game in Unity.
+This YouTube tutorial explains what we are doing in greater detail: https://youtu.be/NNpLsimyu3I?list=PL_4rJ_acBNMH3SExL3yIOzaqj5IP5CJLC
+
+More About The Tools
+--------------------
 Tiled (http://mapmaker.org) is used for building maps.
 - The tiles for building maps are stored in the tiles folder
 - If you need more tiles, look at http://opengameart.org/content/liberated-pixel-cup-0
@@ -25,6 +30,8 @@ Tiled2Unity (http://www.seanba.com/tiled2unity) converts the .tmx files generate
 
 Unity (http://unity3d.com) is used to actually build the game.
 
+Other Info
+----------
 Sprites:
 - Lots of sprites available: http://untamed.wild-refuge.net/rmxpresources.php?characters
 - Maybe a good resource for building sprites: http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator/
