@@ -24,3 +24,7 @@ Tiled2Unity (http://www.seanba.com/tiled2unity) converts the .tmx files generate
 - Vertex Scale = 0.01
 
 Unity (http://unity3d.com) is used to actually build the game.
+
+Sprites:
+- Lots of sprites available: http://untamed.wild-refuge.net/rmxpresources.php?characters
+- Maybe a good resource for building sprites: http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator/
