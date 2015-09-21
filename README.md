@@ -1,8 +1,8 @@
 Bar Crawl RPG
 =============
 
-Here's the jist of what we're doing: We build maps in Tiled, then import them into Unity used Tiled2Unity, and finally we are building the game in Unity.
-This YouTube tutorial explains what we are doing in greater detail: https://youtu.be/NNpLsimyu3I?list=PL_4rJ_acBNMH3SExL3yIOzaqj5IP5CJLC
+Here's the jist of what we're doing: We build maps in Tiled, then import them into Unity using Tiled2Unity, and finally we are build the game in Unity.
+This YouTube tutorial explains it in greater detail: https://youtu.be/NNpLsimyu3I?list=PL_4rJ_acBNMH3SExL3yIOzaqj5IP5CJLC
 
 More About The Tools
 --------------------
