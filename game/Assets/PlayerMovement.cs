@@ -15,9 +15,16 @@ public class PlayerMovement : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
+//	int count = 0;
+//	Vector2 movement_vector = new Vector2 (Random.Range (1, 4) - 2, Random.Range (1, 4) - 2);
 	void Update () {
 	
-		Vector2 movement_vector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+//		if (count++ > 50) {
+//			count = 0;
+//			movement_vector = new Vector2 (Random.Range (1, 4) - 2, Random.Range (1, 4) - 2);
+//		}
+
+		Vector2 movement_vector = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
 
 		if (movement_vector != Vector2.zero) {
 			anim.SetBool ("is_walking", true);
