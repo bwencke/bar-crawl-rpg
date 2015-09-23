@@ -7,6 +7,7 @@ public class CameraFollow : MonoBehaviour {
 	public float m_speed;
 	Camera myCam;
 
+
 	// Use this for initialization
 	void Start () {
 
@@ -17,7 +18,7 @@ public class CameraFollow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		myCam.orthographicSize = (Screen.height / 100f) / 2f;
+		//myCam.orthographicSize = (Screen.height / 100f) / 8f;
 
 		if(target) {
 
