@@ -15,7 +15,7 @@ public class Snippet : MonoBehaviour
 		return statements;
 	}
 
-	public Statement[] getOptions() {
+	public Option[] getOptions() {
 		return options;
 	}
 }
