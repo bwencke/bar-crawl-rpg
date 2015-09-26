@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="terrain" tilewidth="32" tileheight="32" tilecount="1024">
+  <image source="../Downloads/LPC_Terrain_0/terrain.png" width="1024" height="1024"/>
+  <terraintypes>
+   <terrain name="Path" tile="-1"/>
+   <terrain name="Ridge" tile="-1"/>
+   <terrain name="Water" tile="-1"/>
+   <terrain name="Farm" tile="-1"/>
+  </terraintypes>
+  <tile id="1" terrain="0,0,0,"/>
+  <tile id="2" terrain="0,0,,0"/>
+  <tile id="28" terrain="2,2,2,"/>
+  <tile id="29" terrain="2,2,,2"/>
+  <tile id="33" terrain="0,,0,0"/>
+  <tile id="34" terrain=",0,0,0"/>
+  <tile id="60" terrain="2,,2,2"/>
+  <tile id="61" terrain=",2,2,2"/>
+  <tile id="64" terrain=",,,0"/>
+  <tile id="65" terrain=",,0,0"/>
+  <tile id="66" terrain=",,0,"/>
+  <tile id="91" terrain=",,,2"/>
+  <tile id="92" terrain=",,2,2"/>
+  <tile id="93" terrain=",,2,"/>
+  <tile id="96" terrain=",0,,0"/>
+  <tile id="97" terrain="0,0,0,0"/>
+  <tile id="98" terrain="0,,0,"/>
+  <tile id="123" terrain=",2,,2"/>
+  <tile id="124" terrain="2,2,2,2"/>
+  <tile id="125" terrain="2,,2,"/>
+  <tile id="128" terrain=",0,,"/>
+  <tile id="129" terrain="0,0,,"/>
+  <tile id="130" terrain="0,,,"/>
+  <tile id="155" terrain=",2,,"/>
+  <tile id="156" terrain="2,2,,"/>
+  <tile id="157" terrain="2,,,"/>
+  <tile id="271" terrain=",,,3"/>
+  <tile id="272" terrain=",,3,3"/>
+  <tile id="273" terrain=",,3,"/>
+  <tile id="303" terrain=",3,,3"/>
+  <tile id="304" terrain="3,3,3,3"/>
+  <tile id="305" terrain="3,,3,"/>
+  <tile id="335" terrain=",3,,"/>
+  <tile id="336" terrain="3,3,,"/>
+  <tile id="337" terrain="3,,,"/>
+  <tile id="376" terrain=",,,1"/>
+  <tile id="377" terrain=",,1,1"/>
+  <tile id="378" terrain=",,1,"/>
+  <tile id="408" terrain=",1,,1"/>
+  <tile id="409" terrain="1,1,1,1"/>
+  <tile id="410" terrain="1,,1,"/>
+  <tile id="440" terrain=",1,,1"/>
+  <tile id="441" terrain="1,1,1,1"/>
+  <tile id="442" terrain="1,,1,"/>
+  <tile id="472" terrain=",1,,"/>
+  <tile id="473" terrain="1,1,,"/>
+  <tile id="474" terrain="1,,,"/>
+ </tileset>
+ <tileset firstgid="1025" name="collisions" tilewidth="32" tileheight="32" tilecount="1">
+  <image source="../Downloads/LPC/collisions.png" width="32" height="32"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object id="0" x="0.375" y="0.375" width="31.25" height="31.25"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="1026" name="bridges" tilewidth="32" tileheight="32" tilecount="42">
+  <image source="../Downloads/LPC/bridges.png" width="192" height="224"/>
+ </tileset>
+ <layer name="Grass" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJx9l91RLiEQRJdUtopA9EYCPBOEmvjFqm09HNEHSheYmZ6/Hr5ermusda9V1+rP38+9+Xzf+s699qyKO5GNzv7INZzfz96UvZy1smOgzoG7tMu9Cpuz/PSnw05W9iObFT8iGz8a7nbonzjLfi97nCIXDDdiZZlW9tgFk+9QdugO8fpuL3ueOmwEI30bZcdVy46RMszRhG3vOZ6z7FibZLm67LBWEtsBW/lm7FnnzGliQbysty4d9JlxZL3FdmwZA21XyDhXjFvOp/aYR2K1jP0cZcdfscf+SkyNhfmLfLC7PobOuO94xQfHgd/0hXFzL5PDaJf9aBypUdYIfSKvsc7Mh9TFO+wR5p+9Rpvx6+W6rte1/l3fuBnbEx7yuM/Jn/GrYe+Lp5e9vta49txHH2dHlZ4O3ewFzoPss96H7JLj2NPkZHKIc8EaYl149nz+/7bsva/1ce1xZN4pT34yd7DeWafOm/mIuW36nrLLPiTPmBdOHH/Lnnvilh77yP68te/Yc6bUgw5yKvvAd1kD1Mk8sgY4M4iXs9lvCvLmb7zNOUBeIf5TbufBPv3lW4Nx8VwndsZ/yoZxMK7kVHL5KXfmQ3IiZye5hjmJfsfjr/ePZ53fQ+QUc4P9GLJB3jG+Xvb6Id+x3ozRNdtlz3FMLKt0M/+eKaca72WPp3uRfExs5HDWLTGzllg/lDu9u078SH/pm9/u5He/RTx7/B7xPGYfu87c49F5H+QSc/Npk02/d5hb9og5h3b8G8M5Y8793v5tvpKb/gNdxRnh
+  </data>
+ </layer>
+ <layer name="Path" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlNEJgDAMREvdRCexTqJOol3cCgaOYKSoCf3IwX3V8rh4TQgul6sVjcUJPBlx5+IFvBowz6wD4/bh/8x8ppyJ7CT4DUvixOK9uBPO0bVMziIGOl/fbzdn3DXCzhAvP974LswaDXicafE2qEPI1M4qdUh7vlYdol3KZ6udkfYKn612h6Sdo/0/pZ3jcrna1wE0Ei1/
+  </data>
+ </layer>
+ <layer name="Ridge" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJyrYmRgqBrGeNYAmbOLingWCfgWFbESkZiagFg7qW3vKBgFo2AUjIJRMApGwSgYBSMRAAA1/FE9
+  </data>
+ </layer>
+ <layer name="Ridge Front" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzcENgCAQRNHdsg2VuFYiVqI0AwcKcJM5wX/JXOebra24WQh2eL6rcM6f+Pl3ibr3+KmJPaLuO36+xJqoCwAAAOyoAzZUIi0=
+  </data>
+ </layer>
+ <layer name="Ladder" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlV0SwVAMhWMh7KQ2gTfuJvBGN4E3tVa5M2rSaDmRXMaMzJy3Nl9z8lOif/xipJE/x5K1EkrAO3UAd8faC9XAO5dg7jjn9Ke8e4hwI5nTW06Ei/hrYX6Sq3uGPFsRNstDIWtFeia/0VOzNU80F51Pyc1eW+5HG9Jj9NvPrIY1Ifv9aPdUzrDVM8239sh7A+R8P/Nbz2/jYEqu7Hmix/+HZWeQ6Ot3Rd0eRt9zzdezJj31+mphl6ivL6y3L4Ln3Usvr3St+t+J7OWMNWctHFy9t4i3a9aGtX2TOVTrK28PrCPrFMQsPUc5+vz9Fjdqfq9KnmBC
+  </data>
+ </layer>
+ <layer name="Waterfall" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzcENABAQBdHNdobKUAnaQG3+UQV7mpfMeczwS26WVfHYb9WvqR78HfpNtYK/Wx11Y7cAAAAAPg+TTAZ8
+  </data>
+ </layer>
+ <layer name="Top Grass" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlN0NgCAMhMswOIm6h/DcDdU3nUtMaDyNMRrFn9gvuYCF0oOAbIiqIBfkg2yUj3FeaS3kyFyG/Cr2HfTlm6EG1pFcB+s5qGthnEHWzP14aMdYR0SF2a8yaCRfxHuaaksN9CN7kbEsrnOWpY+9/hVF+Sb1gbltMhff4MhZncn5O83TBja4y5veG+UK3vyWruIPe3yaFP+jAa75J+g=
+  </data>
+ </layer>
+ <layer name="Top Water" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYMANVBkZGGqAdC0Q1+FRR20As3cvne0dBaNgFIyCUTAKRsEoGAWjYBSMgpEEAJn/A3s=
+  </data>
+ </layer>
+ <layer name="Farm" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzcENABAQRNHZDlAJKkH/xdgC9iARicN/yVznSwAAAMBfkkk5WLG33er/LVinS/fC8P8ZbD3unthvlwmT
+  </data>
+ </layer>
+ <layer name="Rocks" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2D4AgemgXYBfhCHx332ZLpdYZD7mRgQTwU/DIdwGGqA3DQ7WEHCEPAPNfLKQAF85R+lQG4Ih8tIAPcZ8cvXjcbfsASDvU0GA/U43NkwRNxPDgAAqj4Fsg==
+  </data>
+ </layer>
+ <layer name="Bridges" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1TEKACEMRNEUrha6xer976pFFtIIEVLJfzDdJO2IAAB+TxLJmpLi+zt13TbN6/hz2t/51m3XDMef0z4A4G52B3PQJnrYHWxBm+hhd7BfsokT9i8C0Q==
+  </data>
+ </layer>
+ <layer name="Collisions" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzdltsOgDAIQ2fi/3+zrwuhUqBkxiY+OEcPuzHX+reuW/ec4qJcunnavvv7Ka5adkxqLjP2ag7oW8Tc1ylisMqssYLreWTnucrP7u1OnfiC7Llm+nfrpK0nmZjKOfZi2TjkkY3fPSry6m/EUOxL5B/dDxVvxLFtqC/rzeb2xpo87+y4J7nTTDSP3v3V/efwmF67bUMeFSaTh5qb8VBwmbWamuesIi7zvbIvFXcn8uzqAX3rBI4=
+  </data>
+ </layer>
+</map>
