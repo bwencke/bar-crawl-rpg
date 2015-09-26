@@ -10,8 +10,6 @@ public class PlayerMovement : TopLevelController {
 	
 	Vector2 direction = new Vector2(0, 1);
 
-	public Canvas c;
-
 	// Use this for initialization
 	void Start () {
 	
@@ -52,7 +50,6 @@ public class PlayerMovement : TopLevelController {
 		foreach (RaycastHit2D hit in hits) {
 			if (hit != null && hit.collider != null && hit.collider.gameObject.name != "Player") {
 				Debug.Log("You can't do anything with this object!");
-				c.enabled = !c.isActiveAndEnabled;
 
 				GameObject.FindGameObjectWithTag("Alert").GetComponent<AlertController>().ShowAlert("You can't do anything with this object!");
 			}

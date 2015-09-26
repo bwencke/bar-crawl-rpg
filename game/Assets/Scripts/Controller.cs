@@ -13,6 +13,13 @@ public class Controller : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		controlling = player;
+
+		#if UNITY_STANDALONE || UNITY_PLAYER
+
+			GameObject.FindGameObjectWithTag("MobileControls").GetComponent<Canvas>().enabled = false;
+
+		#endif
+
 	}
 
 	// Update is called once per frame
@@ -51,14 +58,16 @@ public class Controller : MonoBehaviour {
 	}
 
 	public void TriggerPrimaryAction() {
-		GameObject.FindGameObjectWithTag ("MenuButton").GetComponent<Image> ().enabled = !GameObject.FindGameObjectWithTag ("MenuButton").GetComponent<Image> ().enabled;
-
 		controlling.GetComponent<TopLevelController>().TriggerPrimaryAction();
 	}
 	
 	void DetectMenuButton() {
 		if (Input.GetKeyDown (KeyCode.Escape)) {
-			ToggleMenu ();
+			if(controlling == inventory) {
+				ToggleInventory();
+			} else {
+				ToggleMenu ();
+			}
 		}
 	}
 
@@ -74,6 +83,11 @@ public class Controller : MonoBehaviour {
 	}
 
 	public void ToggleInventory() {
+		if (inventory.GetComponent<Canvas> ().enabled) {
+			inventory.GetComponent<InventoryController> ().ClearInventory ();
+		} else {
+			inventory.GetComponent<InventoryController> ().LoadInventory ();
+		}
 		inventory.GetComponent<Canvas>().enabled = !inventory.GetComponent<Canvas>().enabled;
 		controlling = inventory.GetComponent<Canvas>().enabled ? inventory : player;
 	}
