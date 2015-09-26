@@ -16,10 +16,10 @@ public class MenuController : TopLevelController {
 
 	// Use this for initialization
 	void Start () {
-		Color.TryParseHexString("0C496CC8", out selectedColor);
-		Color.TryParseHexString ("055F946E", out unSelectedColor);
-		Color.TryParseHexString ("DCE7EEFF", out selectedTextColor);
-		Color.TryParseHexString ("DCE7EEA9", out unSelectedTextColor);
+		ColorUtility.TryParseHtmlString ("#0C496CC8", out selectedColor);
+		ColorUtility.TryParseHtmlString ("#055F946E", out unSelectedColor);
+		ColorUtility.TryParseHtmlString ("#DCE7EEFF", out selectedTextColor);
+		ColorUtility.TryParseHtmlString ("#DCE7EEA9", out unSelectedTextColor);
 
 		options = new GameObject[3]{
 			GameObject.FindGameObjectWithTag ("MenuItem0"),
