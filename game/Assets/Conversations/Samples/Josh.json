@@ -1,0 +1,76 @@
+[
+  {
+    "id": "C478220E-3AB1-4B2A-BACC-4B89FD41CF16",
+    "statements": [
+      [
+        "Josh",
+        "Oh, hello!"
+      ],
+      [
+        "Blake",
+        "Good evening! How are the kids?"
+      ],
+      [
+        "Josh",
+        "They're all dead. How are your kids?"
+      ]
+    ],
+    "options": [
+      [
+        "They're swell!",
+        ""
+      ],
+      [
+        "I don't have any kids.",
+        "0B3CB5BE-1781-4D60-A58A-4CF273EE2939"
+      ],
+      [
+        "My kids are all dead, too.",
+        "D98FB8B1-592C-4E9D-939E-8C9BA9BC7EFA"
+      ]
+    ]
+  },
+  {
+    "id": "0B3CB5BE-1781-4D60-A58A-4CF273EE2939",
+    "statements": [
+      [
+        "Josh",
+        "Right, I forgot about that."
+      ]
+    ],
+    "options": []
+  },
+  {
+    "id": "D98FB8B1-592C-4E9D-939E-8C9BA9BC7EFA",
+    "statements": [
+      [
+        "Josh",
+        "I'm sorry to hear about that. How did they die?"
+      ]
+    ],
+    "options": [
+      [
+        "I was lying, you moron. I don't have any kids.",
+        "0B3CB5BE-1781-4D60-A58A-4CF273EE2939"
+      ],
+      [
+        "They died of old age.",
+        "CA43D937-D831-4CA5-A67E-7E726D572C56"
+      ]
+    ]
+  },
+  {
+    "id": "CA43D937-D831-4CA5-A67E-7E726D572C56",
+    "statements": [
+      [
+        "Josh",
+        "May they rest in peace."
+      ],
+      [
+        "Blake",
+        "Ditto."
+      ]
+    ],
+    "options": []
+  }
+]
