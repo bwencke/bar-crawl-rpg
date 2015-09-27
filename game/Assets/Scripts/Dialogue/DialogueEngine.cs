@@ -3,7 +3,13 @@ using System.Collections;
 
 public class DialogueEngine : MonoBehaviour
 {
-	public static Snippet getSnippet(string name, string guid) {
+	private string level;
+
+	public DialogueEngine(string level) {
+		this.level = level;
+	}
+
+	public Snippet getSnippet(string name, string guid) {
 		return null;
 	}
 }
