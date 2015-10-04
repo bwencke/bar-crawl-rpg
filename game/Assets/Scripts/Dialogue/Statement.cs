@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Statement : MonoBehaviour
+public class Statement : ScriptableObject
 {
 	private string name;
 	private string text;

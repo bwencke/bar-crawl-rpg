@@ -39,6 +39,7 @@ public class InventoryController : TopLevelController {
 			img.sprite = item.GetComponent<SpriteRenderer>().sprite;
 			text.text = item.name;
 			itemImg.transform.SetParent(inventoryGrid.GetComponent<RectTransform>());
+			itemImg.transform.localScale = Vector3.one;
 			createdItemImages.Add(itemImg);
 		}
 
@@ -46,7 +47,7 @@ public class InventoryController : TopLevelController {
 		
 			// select first item
 			createdItemImages[selected].GetComponentInChildren<Text>().color = selectedTextColor;
-			createdItemImages[selected].GetComponent<RawImage>().color = selectedColor;
+			createdItemImages[selected].GetComponentInChildren<RawImage>().color = selectedColor;
 		
 		#endif
 	}
@@ -64,7 +65,7 @@ public class InventoryController : TopLevelController {
 
 				// change color of previous item
 				createdItemImages[selected].GetComponentInChildren<Text>().color = unSelectedTextColor;
-				createdItemImages[selected].GetComponent<RawImage>().color = unSelectedColor;
+				createdItemImages[selected].GetComponentInChildren<RawImage>().color = unSelectedColor;
 				
 				// change selected item
 				selected += (int) movement_vector.x;
@@ -74,7 +75,7 @@ public class InventoryController : TopLevelController {
 				
 				// change color of previous item
 				createdItemImages[selected].GetComponentInChildren<Text>().color = selectedTextColor;
-				createdItemImages[selected].GetComponent<RawImage>().color = selectedColor;
+				createdItemImages[selected].GetComponentInChildren<RawImage>().color = selectedColor;
 			}
 			prev = movement_vector;
 		}

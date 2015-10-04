@@ -49,9 +49,8 @@ public class PlayerMovement : TopLevelController {
 		RaycastHit2D[] hits = Physics2D.RaycastAll (transform.position, direction, .3f);
 		foreach (RaycastHit2D hit in hits) {
 			if (hit != null && hit.collider != null && hit.collider.gameObject.name != "Player") {
-				Debug.Log("You can't do anything with this object!");
-
-				GameObject.FindGameObjectWithTag("Alert").GetComponent<AlertController>().ShowAlert("You can't do anything with this object!");
+				//Debug.Log("You can't do anything with this object!");
+				hit.collider.gameObject.GetComponent<ColliderController>().TriggerPrimaryAction();
 			}
 		}
 	}

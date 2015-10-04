@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Snippet : MonoBehaviour
+public class Snippet : ScriptableObject
 {
 	private Statement[] statements;
 	private Option[] options;

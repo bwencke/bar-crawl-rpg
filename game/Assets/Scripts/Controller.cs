@@ -8,6 +8,7 @@ public class Controller : MonoBehaviour {
 	public GameObject menu;
 	public GameObject inventory;
 	public GameObject player;
+	public GameObject conversation;
 	GameObject controlling;
 
 	// Use this for initialization
@@ -90,5 +91,15 @@ public class Controller : MonoBehaviour {
 		}
 		inventory.GetComponent<Canvas>().enabled = !inventory.GetComponent<Canvas>().enabled;
 		controlling = inventory.GetComponent<Canvas>().enabled ? inventory : player;
+	}
+
+	public void StartConversation(string name, string id) {
+		controlling = conversation;
+		conversation.GetComponent<ConversationController> ().StartConversation (name, id);	
+	}
+
+	public void StopConversation() {
+		conversation.GetComponent<ConversationController> ().StopConversation ();	
+		controlling = player;
 	}
 }

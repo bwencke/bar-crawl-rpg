@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Option : MonoBehaviour
+public class Option : ScriptableObject
 {
 	private string[] conditions;
 	private string text;
