@@ -10,5 +10,7 @@ public class StatementsController : MonoBehaviour {
 		}
 		GameObject.FindGameObjectWithTag ("PersonName").GetComponent<Text> ().text = statement.getName () + ":";
 		GameObject.FindGameObjectWithTag ("Statement").GetComponent<Text> ().text = statement.getText ();
+		gameObject.GetComponent<Canvas> ().enabled = false;
+		gameObject.GetComponent<Canvas> ().enabled = true;
 	}
 }
