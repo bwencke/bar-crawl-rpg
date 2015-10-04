@@ -250,22 +250,12 @@
  </layer>
  <layer name="Dirt Path" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt2ltqwzAQBdDZ/x5b1PdjFVUCpsKklLRNdRXOgfk3XMt3EK4CAAAA4BLu+zz0eZz9IBw99Xnu8zL7QTiSRxZ5ZJFHFnnkOOxWdyWPFNvZkEeGLY+bPu+TnwXdkUYeWbY8WrkvSaDPs7z2uS15JNEhWcYOce8+39ghYy6rzurv06FD3uqzR1afVteVy8ozvlOt1s9kdeO+aEfJMGbSyhlJMO4orWQy2/671eo6On5l+0yclflO7fI6fr59x/t2zadT8nzVKX9xT8PPXOp+iN85dVbkMdd3d3bn5MXlnXPHCvAf/EOQRR5Z5JFFHlm2vdY//gAAAAAAAAAAAAAAAAAAAAAAAADr+wDb2FEe
+   eJzt2tFOwkAQBdD5/3/UVEEUv8I2sWFTigYFZhbOSeaNh4bb2Rk2RNTwOtbLWLvves99nIf3Focsnsb6zH2ch9b2hizytb3hnMo356E38rVnld7IZaeqxU5Vw9QXm7BTVbA8o5xTeZZZTH2xD73R2tywllnI4dguoWRx2v4C9RzH3/dPn5fFdX3EIRPvfg3zbwm7Ug3yqMMdVC3uy2txX16L2VGLPGqZ8xjG2uY+CmGeV9P+PpdHDWZILe0Mme7WzZFc7Qxpc+m1en+fphmydvfeaw1xX7n0XO07NUT/mfSu3RftKDW0mQyhRypod5QhZJJteW4NcR8zvmfLTPRKvrVd3ozPt5zxzq58Zko9p2bKJe5p+Jtr3Q/xP2u9Io9cv93ZnZMX13fOHSvALfgPQS3yqEUetcijlnmv9R9/AAAAAAAAAAAAAAAAAAAAAAAAgP59AQ7k0C8=
   </data>
  </layer>
  <layer name="Sidewalk" width="100" height="100" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt1zEKwzAQRUFdQKcMDgm279+mdhGwsBZ+nBnYTmzzQLCtAQAAAAAAAPyGZ2/t1a+/YQ49suiRRY8semTRI4seWfTIokcWPcY9et0sJ3u8B/fe2dprZzvRYx/cSR3/VRY9suiRRY8semTRI4seR5X34Kyb8Z9U34MzbkYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOC7DxUiWc8=
-  </data>
- </layer>
- <layer name="Pub" width="100" height="100">
-  <data encoding="base64" compression="zlib">
-   eJzt0TsKwkAUhtHJ/nelwcYEm2gndmJi4XMB3gUozBRDRM+Br5lq+G9KAAAAAAAAAAD/Z9+kNEZTRufo0Mz94992jH3v0SOjZ3Ryj6ouse+1oJt7VLWIfZcFte5R1Tr27Qrq3aMq9/guQ+y7fdPqw/vOPWaxsTsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkeQH5Kk7G
-  </data>
- </layer>
- <layer name="Pub Doors/Windows" width="100" height="100">
-  <data encoding="base64" compression="zlib">
-   eJzt0KENwDAMRNF4g+6/SnFJQEkWqgxNrJJUqvQe+eDYjQEAAAAAAAAAAAC8NaM2nUe/s8+K2nRFv/Ot2/cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADADz3ZpQjd
   </data>
  </layer>
  <layer name="Lava Pit" width="100" height="100" visible="0">
@@ -275,12 +265,22 @@
  </layer>
  <layer name="Road" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt2UlSFEEARuE6AF2AnkEmXbpWgQgm4QyCAxdwI/MFiGAGL2CEzHAEZfQKyHgGZla83hIsu4rM4n0Rb9vRmX/tMkkkSZIkSZIqb6CUJIM0RMM0ElFFMcFZJmmKpmmGZmmO5iOqKH5zlkVaomVaoVVao/WIKoo/nOUvbdE27dAu7dF+RBXFAWf5T4d0RMd0Qqd0FlFFcc5ZLuiSruiabuiW7iKqKKrSJClRStVUQ7X0gl7Sr1IcFcUr7ryO6qmBGqmJXtOb9Kn/3fPzjjt/Tx+omVqold66xZNwj7C4R1jcIyzuERb3CIt7hMU9wuIeYXGPsLhHONq483bqoE7qoo/UTT2R7ZHHm/D3jPvEnfdSH32mL/SVvlF/ZHvk8SY8nnE/uPMBGqQhGqYRGqWxyPbI4014K61shw+aommaoVmao3laoJ+R7ZHHm/BSmn3LtEKrtEbrtEGbke2Rx5vwY990JSv//jbt0C7t0T79i2yLsjzehLPeo9wRHdMJndJZhFuU5fEmfJlm3xVd0w3dRrqFJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmS4nMPQe9QGw==
+   eJzt2UlOVUEARuG7AN61W4O9Q8eCkggKrkHAZgMk9OAGTKSHDZAg3XssQem3IL1bUPqJp6bGIQW3rudLzvTlVf13VlkmSZIkSZIkKbauSpZ1Uw/1Uh/10wAN0lAilcUXzjJMIzRKYzROEzRJU4lUFrOc5SvN0Twt0CItUZVqiVQW3zjLd1qhVVqjddqgTdpKpLL4wVm2aYd2aY/26YAO6WcilcUvzvKbjuiYTuiUzuicLhKpLOryLKtQTjfoJt2i23SHZippVBZ3ufN7dJ8e0EN6RI/pSX7d/+7/84w7r6cGek4vqJGeusW1cI9icY9icY9icY9icY9icY9icY9icY/ieMmdN1EzvaLX1EKt9CaxPcLbWew6I/eWO2+jduqgd/SePtDHxPYIb2ex+xy5Hu68l/qonwZokIboU2J7hLez2K3kl9vOX43QKI3ROE3QJE3RdGJ7hLez2M3l8ZunBVqkJapSjZYT2yO8ncXuX9/0ZRZ+f5XWaJ02aJO2EtsiCG9nsYu9R2iX9mifDugwwS2Cq3jzOsrjd0wndEpniW4hSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZKk9PwBLsxOcQ==
+  </data>
+ </layer>
+ <layer name="Pub" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt0TsKwkAUhtHJ/nelwcYEm2gndmJi4XMB3gUozBRDRM+Br5lq+G9KAAAAAAAAAAD/Z9+kNEZTRufo0Mz94992jH3v0SOjZ3Ryj6ouse+1oJt7VLWIfZcFte5R1Tr27Qrq3aMq9/guQ+y7fdPqw/vOPWaxsTsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkeQH5Kk7G
   </data>
  </layer>
  <layer name="Bank" width="100" height="100">
   <data encoding="base64" compression="zlib">
    eJzt1LEKwjAYhdHgFt//jdRJncRJnWqn6jvYIEKVWh3kb8Fz4ELHkI80JQAAAAAAAOBXFjml5cBWeewT/pd1e9+bgW31CLX70GOvR6hDft+ktDjpEarJ9ybHnpUWtR6hSo+q3blntR7h9JiWbo9LZ3qMw/uYltces/lzj6se4ZrOf6r0eHxrAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHzjBrl2VOw=
+  </data>
+ </layer>
+ <layer name="Pub Doors/Windows" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt0KENwDAMRNF4g+6/SnFJQEkWqgxNrJJUqvQe+eDYjQEAAAAAAAAAAAC8NaM2nUe/s8+K2nRFv/Ot2/cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADADz3ZpQjd
   </data>
  </layer>
  <layer name="Bank Accessories" width="100" height="100">
