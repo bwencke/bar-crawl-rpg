@@ -1,9 +1,9 @@
 SNIPPET
 	1
-	SET
+	ASSIGNMENTS
 		ConditionOne=TRUE
 		ConditionTwo=FALSE
-	ENDSET
+	ENDASSIGNMENTS
 	STATEMENTS
 		Person One
 		Text
@@ -16,7 +16,7 @@ SNIPPET
 			ConditionTwo=TRUE
 		ENDCONDITIONS
 		Text
-		1
+		2
 	ENDOPTION
 	OPTION
 		CONDITIONS
@@ -24,7 +24,7 @@ SNIPPET
 			ConditionTwo=FALSE
 		ENDCONDITIONS
 		Text
-		1
+		3
 	ENDOPTION
 ENDSNIPPET
 
@@ -35,11 +35,13 @@ Running the parser: python dialogue.py
 - Each character has his or her own JSON file in the level directory
 
 - SNIPPET/ENDSNIPPET is mandatory
-- SET/ENDSET is optional
+- ASSIGNMENTS/ENDASSIGNMENTS is optional
 - STATEMENTS/ENDSTATEMENTS is optional
 - OPTION/ENDOPTION is optional
 - CONDITION/ENDCONDITIONS is optional
 
-- The parser ignores indentation and empty lines
+- The parser ignores empty lines between SNIPPETs
+- The parser ignores indentation
 - The STATEMENTS section must have an even number of lines
 - For an OPTION, the text can be JUMP and the ID can be END
+- If an OPTION's text is JUMP, it should be the only OPTION and it should not have CONDITIONS
