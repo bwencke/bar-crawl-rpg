@@ -35,9 +35,9 @@ ENDSNIPPET
 
 SNIPPET
 	3
-	SET
+	ASSIGNMENTS
 		KnowsCassidyDatesJosh=TRUE
-	ENDSET
+	ENDASSIGNMENTS
 	STATEMENTS
 		Cassidy
 		I have a date with Josh tonight.
