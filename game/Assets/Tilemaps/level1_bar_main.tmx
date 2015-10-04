@@ -271,14 +271,22 @@
  <tileset firstgid="4486" name="obj_misk_atlas" tilewidth="32" tileheight="32" tilecount="1024">
   <image source="../../../tiles/Atlas_0/obj_misk_atlas.png" width="1024" height="1024"/>
  </tileset>
+ <tileset firstgid="5510" name="clover" tilewidth="32" tileheight="32" tilecount="2">
+  <image source="../../../tiles/clover.png" trans="ffffff" width="32" height="64"/>
+ </tileset>
+ <layer name="Collisions" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA9OIoFk6OX3gCbvUcJ0Mj6yHE3JXqR9eMzlxaAXHPxuYsYNw9EuqA2AAAS2hrw
+  </data>
+ </layer>
  <layer name="Floor" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJzjZWJg4B3Fo3gUDxgGAEoXDTA=
+   eJzjZWJg4B0A/JRlFI/ioYXxpWVy0jRMDwDUZaxu
   </data>
  </layer>
  <layer name="Back Wall" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJz7zc3A8IcM/BeI2XjIx6NgFIwCCAAA2zwQeA==
+   eJybwc3AMINMvIgCPApGwSiAAAC1RhOx
   </data>
  </layer>
  <layer name="Bar" width="15" height="15">
@@ -293,17 +301,37 @@
  </layer>
  <layer name="Side Walls" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJxj5GEgDwD1MY7qHdU7jPQOFAAAjdYBRg==
+   eJxbz81AFlgH1Ld+VO+o3mGkd6AAALP9Etg=
   </data>
  </layer>
  <layer name="Front Walls" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUgMAfbtyYkDwbD24MAvjkAU1FD18=
+   eJxjYBgFo2AUgMAMbtyYkPwiPBgE8MkDAGVkEmE=
   </data>
  </layer>
  <layer name="Tables 'n' Chairs" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFIwFcAuJHLAwM1wfaIVgAyF3YwGB2MzUBAET9BgU=
+   eJxjYBgFtAAmogwMpqLk6S0B6islUy8ucAmIH7EwMFynrrFwoEGmezNEIe7KxKKfGDd7UDmcBgIAACLgCUA=
+  </data>
+ </layer>
+ <layer name="Special Chairs for a Special Table" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFuICmKASTCrSBejyhOItE/d5A9VpQnE2G3V6iEDwKhg4AAEPcBBQ=
+  </data>
+ </layer>
+ <layer name="Barstools" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFpIAYUfz0KBgFpAIACowBxQ==
+  </data>
+ </layer>
+ <layer name="Crack Machine" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAPuMPDwHCXhzy9T4D6npKpdxSMgsEOAAlNA7M=
+  </data>
+ </layer>
+ <layer name="Trash Can and Clover" width="15" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAdtImSpn4yFwPDFC4Iu51EvVOB+qZxkaZnFIyCoQQAUvsDsg==
   </data>
  </layer>
 </map>
