@@ -26,6 +26,11 @@
  </tileset>
  <tileset firstgid="197" name="collisions" tilewidth="32" tileheight="32" tilecount="1">
   <image source="../../../tiles/LPC/collisions.png" width="32" height="32"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object id="0" x="0.0989306" y="0.296792" width="31.5588" height="31.1631"/>
+   </objectgroup>
+  </tile>
  </tileset>
  <tileset firstgid="198" name="country" tilewidth="32" tileheight="32" tilecount="20">
   <image source="../../../tiles/LPC/country.png" width="160" height="128"/>
@@ -193,82 +198,79 @@
  <tileset firstgid="2563" name="Cars_final" tilewidth="32" tileheight="32" tilecount="132">
   <image source="../../../tiles/Skorpio's Pack/Cars_final.png" width="384" height="352"/>
  </tileset>
- <tileset firstgid="2695" name="Fire" tilewidth="32" tileheight="32" tilecount="12">
-  <image source="../../../tiles/Skorpio's Pack/Fire/Fire.png" width="192" height="64"/>
- </tileset>
- <tileset firstgid="2707" name="Trashcan" tilewidth="32" tileheight="32" tilecount="4">
+ <tileset firstgid="2695" name="Trashcan" tilewidth="32" tileheight="32" tilecount="4">
   <image source="../../../tiles/Skorpio's Pack/Fire/Trashcan.png" width="64" height="64"/>
  </tileset>
- <tileset firstgid="2711" name="Interior-Furniture" tilewidth="32" tileheight="32" tilecount="256">
+ <tileset firstgid="2699" name="Interior-Furniture" tilewidth="32" tileheight="32" tilecount="256">
   <image source="../../../tiles/Skorpio's Pack/Interior-Furniture.png" width="512" height="512"/>
  </tileset>
- <tileset firstgid="2967" name="Interior-Walls-Beige" tilewidth="32" tileheight="32" tilecount="100">
+ <tileset firstgid="2955" name="Interior-Walls-Beige" tilewidth="32" tileheight="32" tilecount="100">
   <image source="../../../tiles/Skorpio's Pack/Interior-Walls-Beige.png" width="320" height="320"/>
  </tileset>
- <tileset firstgid="3067" name="Interior-Walls-Blue" tilewidth="32" tileheight="32" tilecount="100">
+ <tileset firstgid="3055" name="Interior-Walls-Blue" tilewidth="32" tileheight="32" tilecount="100">
   <image source="../../../tiles/Skorpio's Pack/Interior-Walls-Blue.png" width="320" height="320"/>
  </tileset>
- <tileset firstgid="3167" name="Lamp_alternative" tilewidth="32" tileheight="32" tilecount="3">
+ <tileset firstgid="3155" name="Lamp_alternative" tilewidth="32" tileheight="32" tilecount="3">
   <image source="../../../tiles/Skorpio's Pack/Lamp_alternative.png" width="32" height="96"/>
  </tileset>
- <tileset firstgid="3170" name="Laserfence" tilewidth="32" tileheight="32" tilecount="64">
+ <tileset firstgid="3158" name="Laserfence" tilewidth="32" tileheight="32" tilecount="64">
   <image source="../../../tiles/Skorpio's Pack/Laserfence.png" width="256" height="256"/>
  </tileset>
- <tileset firstgid="3234" name="Lightning1_reduced" tilewidth="32" tileheight="32" tilecount="6">
+ <tileset firstgid="3222" name="Lightning1_reduced" tilewidth="32" tileheight="32" tilecount="6">
   <image source="../../../tiles/Skorpio's Pack/Lightning1_reduced.png" width="60" height="198"/>
  </tileset>
- <tileset firstgid="3240" name="Lightning1" tilewidth="32" tileheight="32" tilecount="6">
+ <tileset firstgid="3228" name="Lightning1" tilewidth="32" tileheight="32" tilecount="6">
   <image source="../../../tiles/Skorpio's Pack/Lightning1.png" width="60" height="198"/>
  </tileset>
- <tileset firstgid="3246" name="Lightning2_reduced" tilewidth="32" tileheight="32" tilecount="6">
+ <tileset firstgid="3234" name="Lightning2_reduced" tilewidth="32" tileheight="32" tilecount="6">
   <image source="../../../tiles/Skorpio's Pack/Lightning2_reduced.png" width="60" height="198"/>
  </tileset>
- <tileset firstgid="3252" name="Lightning2" tilewidth="32" tileheight="32" tilecount="6">
+ <tileset firstgid="3240" name="Lightning2" tilewidth="32" tileheight="32" tilecount="6">
   <image source="../../../tiles/Skorpio's Pack/Lightning2.png" width="60" height="198"/>
  </tileset>
- <tileset firstgid="3258" name="Logos" tilewidth="32" tileheight="32" tilecount="16">
+ <tileset firstgid="3246" name="Logos" tilewidth="32" tileheight="32" tilecount="16">
   <image source="../../../tiles/Skorpio's Pack/Logos.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="3274" name="Objects" tilewidth="32" tileheight="32" tilecount="64">
+ <tileset firstgid="3262" name="Objects" tilewidth="32" tileheight="32" tilecount="64">
   <image source="../../../tiles/Skorpio's Pack/Objects.png" width="256" height="256"/>
  </tileset>
- <tileset firstgid="3338" name="Pipes-RustyWalls" tilewidth="32" tileheight="32" tilecount="88">
+ <tileset firstgid="3326" name="Pipes-RustyWalls" tilewidth="32" tileheight="32" tilecount="88">
   <image source="../../../tiles/Skorpio's Pack/Pipes-RustyWalls.png" width="256" height="352"/>
  </tileset>
- <tileset firstgid="3426" name="Sidewalk_dark" tilewidth="32" tileheight="32" tilecount="16">
+ <tileset firstgid="3414" name="Sidewalk_dark" tilewidth="32" tileheight="32" tilecount="16">
   <image source="../../../tiles/Skorpio's Pack/Sidewalk_dark.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="3442" name="Street" tilewidth="32" tileheight="32" tilecount="475">
+ <tileset firstgid="3430" name="Street" tilewidth="32" tileheight="32" tilecount="475">
   <image source="../../../tiles/Skorpio's Pack/Street.png" width="800" height="608"/>
  </tileset>
- <tileset firstgid="3917" name="StreetCurve" tilewidth="32" tileheight="32" tilecount="256">
+ <tileset firstgid="3905" name="StreetCurve" tilewidth="32" tileheight="32" tilecount="256">
   <image source="../../../tiles/Skorpio's Pack/StreetCurve.png" width="512" height="512"/>
  </tileset>
- <tileset firstgid="4173" name="Tracks" tilewidth="32" tileheight="32" tilecount="16">
+ <tileset firstgid="4161" name="Tracks" tilewidth="32" tileheight="32" tilecount="16">
   <image source="../../../tiles/Skorpio's Pack/Tracks.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="4189" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
+ <tileset firstgid="4177" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
   <image source="../../../tiles/flowers_2.png" width="320" height="192"/>
  </tileset>
- <tileset firstgid="4249" name="pub sign" tilewidth="32" tileheight="32" tilecount="3">
+ <tileset firstgid="4237" name="pub sign" tilewidth="32" tileheight="32" tilecount="3">
   <image source="../../../tiles/pub sign.png" width="96" height="32"/>
  </tileset>
- <tileset firstgid="4252" name="AIN_Signs" tilewidth="32" tileheight="32" tilecount="96">
+ <tileset firstgid="4240" name="AIN_Signs" tilewidth="32" tileheight="32" tilecount="96">
   <image source="../../../tiles/AIN_Signs.png" width="384" height="256"/>
  </tileset>
- <tileset firstgid="4348" name="golden helmet" tilewidth="32" tileheight="32" tilecount="4">
+ <tileset firstgid="4336" name="golden helmet" tilewidth="32" tileheight="32" tilecount="4">
   <image source="../../../tiles/golden helmet.png" width="64" height="64"/>
  </tileset>
- <tileset firstgid="4352" name="housey" tilewidth="32" tileheight="32" tilecount="72">
+ <tileset firstgid="4340" name="housey" tilewidth="32" tileheight="32" tilecount="72">
   <image source="../../../tiles/housey.png" width="384" height="192"/>
  </tileset>
- <tileset firstgid="4424" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
+ <tileset firstgid="4412" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
   <image source="../../../tiles/flowers_2.png" width="320" height="192"/>
  </tileset>
- <tileset firstgid="4484" name="bench_v2" tilewidth="32" tileheight="32" tilecount="2">
+ <tileset firstgid="4472" name="bench_v2" tilewidth="32" tileheight="32" tilecount="2">
   <image source="../../../tiles/bench_v2.png" width="64" height="32"/>
  </tileset>
- <tileset firstgid="4486" name="obj_misk_atlas" tilewidth="32" tileheight="32" tilecount="1024">
+ <tileset firstgid="4474" name="obj_misk_atlas" tilewidth="32" tileheight="32" tilecount="1024">
   <image source="../../../tiles/Atlas_0/obj_misk_atlas.png" width="1024" height="1024"/>
  </tileset>
  <layer name="Grass" width="100" height="53">
@@ -283,7 +285,7 @@
  </layer>
  <layer name="Sidewalk" width="100" height="53" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzt1zEKwzAQRUFdQKcMMQmO79+6dmdhLXw7M7Cd2OaBYFsDAAAAAAAAuIelt/bp198whx5Z9MiiRxY9suiRRY8semTRI4se4169bt4ne3wH9z7Z2mvnd6LHNriTOv6rLHpk0SOLHln0yKJHFj2OKu/BWTfjP6m+B2fcjAAAAAAAcMUOQQdZzw==
+   eJzt10EKgzAQhtFcIOcrlRbr/S/h2p3BDPza92B2YTYfBKY1AAAAAAAAgHtYemuffv0Nc+iRRY8semTRI4seWfTIokcWPbLoMe7V6+Z9ssd3cO+Trb12fid6bIM7qeO/yqJHFj2y6JFFjyx6ZNHjqPIenHUz/pPqe3DGzQgAAAAAAFfsggRQhw==
   </data>
  </layer>
  <layer name="Lava Pit" width="100" height="53" visible="0">
@@ -293,7 +295,7 @@
  </layer>
  <layer name="Road" width="100" height="53">
   <data encoding="base64" compression="zlib">
-   eJzt2UkyQ0EAxvF3AHmmM5gtrY1VZmcwu4AqQwQXUGVOXEAVCRJHIAOuQIxXIMaNf2+Vpeb18/2rfttUur+3a89TSimllFJKKaWUUkrZbibiebOYwzyiWEAMi1hyRFha5SxrWMcGNrGFbcSRcERY2uMs+0gihQMc4ghpZBwRlk44yymyyCGPAs5wjgtHhKVLznKFIq5xg1vc4R4PjghLj5zlCSU84wWveMM7PhwRlsp8z4vARzkqUIkqVGM34oawVMOd16IO9WhAI5rQ7P/1v/t/tXLnbWhHBzrRhRZt8Sdpj2ClPYKV9ghW2iNYaY9gpT2ClfYIVtojOHVz5z3oRR/6MYBBDDm2h3k7s23asmHufASjGMM4JjCJKcf2MG9ntq1YNsedzyOKBcSwiCUsO7aHeTuzLev/rOIX69jAJrawjTgS2HFsD/N2ZlvSty+FAxziCGlkcOzYHubtzLbvvumfZH4/hzwKOMM5LhzbwmTezmyzvYdxjRvc4g73Dm5h+o03r5Jv3zNe8Io3R7dQSimllFJKKaWUUkoppZQKY59Svk5x
+   eJzt2UkyQ0EAxvFnXnl7s6W1scrsDGYXUEUG4gKqiPkCqowJRzBzBWK8AiHhCv69VZZpef18/6rfNpXu7+3a85RSSimllFJKKaWUUrabqfa8WUQQRQxxzGEeCUeEpSXOsowkVrCKNaxjA5uOCEs7nGUXe9jHAQ6RQhpHjghLJ5zlFGc4xwUucYVr3DgiLN1yljtkcI8HPOIJz3hxRFh65SxvyOIdH8ghj098OSI0+Z5XglKUoRwVqEQVtqvdEJZquPNa1KEeDWhEE5r9Yv+7/1crd96GdnSgE11o0RZFSXsEK+0RrLRHsNIewUp7BCvtEay0R7DSHsGpmzvvQS/60I8BDGLIsT3M25lt05YNc+cjGMUYxjGBSUw5tod5O7Nt0bIIdx5FDHHMYR4JLDi2h3k7s+3ML6zMD0msYBVrWMcGNrHl2B7m7cy2Pd++fRzgECmkcYRjx/Ywb2e2/fZNF5L5/XNc4BJXuMaNY1uYzNuZbbb3MO7xgEc84dnBLUx/8eaV9e17xwdyyDu6hVJKKaWUUkoppZRSSimlVBj7BmmnJ+k=
   </data>
  </layer>
  <layer name="Pond" width="100" height="53">
@@ -308,12 +310,12 @@
  </layer>
  <layer name="Park Terrain" width="100" height="53">
   <data encoding="base64" compression="zlib">
-   eJzt10sKwjAQANAsPIC5mJ+NqOBJ3Ek9pZcxIEJJWim1tEHfg9CWKVlMMkwSAgAAAAAAAAAAMLXLuvzexBC2aexi+X9XLJ+Dcd55bFJu7638HtP7KY1zLOPt2KFjvVjGpxpiOvuB+c1riO/dVq9n317XF5Yxdq/rH/O4ZnUh73WyLnXo6y/5OZl5OEvVzd1jWfm5V73UbegdEn7Vw10dAAAAAAD4c0/hgBig
+   eJzt10sKwjAQANAsPIC5kp+NqOBJ3NqtF/RKBkQoSSulljboexDaMiWLSYZJQgAAAAAAAAAAAKZ2WZffmxjCNo1dLP/viuVzMM47j7eU26aV32N6P6VxjmW8HTt0rBfL+FRDTGc/ML95DfG9++r17Nvr+sIyxu51/WMe16wu5L1O1qUOff0lPyczD2epurl7LCs/96qXug29Q8KverirAwAAAAAAf+4JwakWAA==
   </data>
  </layer>
  <layer name="Rocks, Bushes, and Flowers" width="100" height="53">
   <data encoding="base64" compression="zlib">
-   eJzt2ksKwjAQxvEcoJseSwWfCD5AXOo99Ma6N0sLtrTYJN9M/z/oro9MJqSTtCEAeT3qEJ71sGvmA8+Hhi15G4XS+J8JtcWSvcN+OzuM6Zv3+Dxbxtyt4rEWzuFGuG1jO8RYj/E4ZY75YqCPU78bFn/e/2agD1OhhrWHGtVnvQkAlllYl0xJqXVJm7tIOwBFzJ/5de1Tqc2f6vqO3xzvgSs5Y/wCP5SoQ6f8vc1z7FP6zoX0Sq8BXlUI76rMsxVRQzUx3wEAurD/AkDVjvlJGv945de2tiMXmsiLrtL7eGhiHw8AAAAAAACAqg/ReR2H
+   eJzt2ksKwjAQxvEcoJseSAWfCD5AXOo99MZ6C7O0YEuLTfLN9P+D7vrIZEI6SRsCkNejDuFZD7tmPvB8aNiSt1Eojf+ZUFss2Tvst7PDmL55j8+zZczdKh5r4RxuhNs2tkOM9RiPU+aYLwb6OPW7YfHn/W8G+jAValh7qFF91psAYJmFdcmUlFqXtLmLtANQxPyZX9c+ldr8qa7v+M3xHriSM8Yv8EOJOnTK39s8xz6l71xIr/Qa4FWF8K7KPFsRNVQT8x0AoAv7LwBU7ZifpPGPV35taztyoYm86Cq9j4cm9vEAAAAAAAAAqPoAMjYaPw==
   </data>
  </layer>
  <layer name="Tree Trunks" width="100" height="53">
@@ -348,12 +350,12 @@
  </layer>
  <layer name="Pub" width="100" height="53">
   <data encoding="base64" compression="zlib">
-   eJzt0zsKwkAUhtHJErJn3ZiKjYqN2omd+Ch8LsC7AIUMOgzEc+BrUg3/JSkBAAAAAAAAAPyfbZPSMTp16Bztmtov7rd97HuPHh16Rgf3KOoS+14zurlHUaPYd5zRxD2KmsW+84wW7lHUt/cYtCkN2zpv76NV7Lt+0/TD943/o4ql3QEAAAAAAAAAAPiRF0BtT/E=
+   eJzt0zsKwkAUhtHJErJb3Z6KjYqN2omd+Ch8LsC7AIUMOgzEc+BrUg3/JSkBAAAAAAAAAPyfbZPSMTp16Bztmtov7rd97HuPHh16Rgf3KOoS+14zurlHUaPYd5zRxD2KmsW+84wW7lHUt/cYtCkN2zpv76NV7Lt+0/TD943/o4ql3QEAAAAAAAAAAPiRF1tBT9k=
   </data>
  </layer>
  <layer name="Pub Doors/Windows" width="100" height="53">
   <data encoding="base64" compression="zlib">
-   eJzt0SsOgDAQBNCureLufC6DxiAwXAgqKxpQTQjvmRGzYpNJCQAAAAAAAAAAAHhrjzqLdWj3Y05pyn1++6Mz6iy2aPfzvcVij66OeL4BAAAAAAAAAAAAvucCvXcLVw==
+   eJzt0SsOgDAQBNCureLWfC7DKTAIDBeCyooGVBPCe2bErNhkUgIAAAAAAAAAAADe2qPOYh3a/ZhTmnKf3/7ojDqLLdr9fG+x2KOrI55vAAAAAAAAAAAAgO+5AMQRCxs=
   </data>
  </layer>
  <layer name="Bank" width="100" height="53">
@@ -363,17 +365,17 @@
  </layer>
  <layer name="Bank Accessories" width="100" height="53">
   <data encoding="base64" compression="zlib">
-   eJztzjERADAIBDAEwF3926kxPLD8kihIFQAAAAAAAADk9KQHAMDVf+kBAAAAAAAAAAAAAJCy8WIA7Q==
+   eJztzjENAAAIAzAMkODfCPbwwLOnVdAqAAAAAAAAAAjqdAAA+NpJDwAAAAAAAAAAAACAlANsRgDV
   </data>
  </layer>
  <layer name="River and Laundromat" width="100" height="53">
   <data encoding="base64" compression="zlib">
-   eJztmMtOwzAQRVMpK95d8QOseAhYsAIWrPiwVi1FgZLk+xCPL2Eq2eJyNW4jdeGU3iONkqaOY8/1jCcpCiGEEEII0SfeB0XxafYF9m32Mcg9si1lWBQ7ju0Ocw9sO9kzv+8HOzA7NDsyO5YeWTgxv5+bXYTjWTi/lB5ZuDK/3wS7DsdTs1vpkYU78/tDsHs4f5QeQgghhBBCCCGEEEIIIYQQQgghhBBCCLGxPJVFMTN7LnOPZLuJOkzNGrPJBukyK/+fLXSogha1WRuOE6dt3zSqwlhrmEMV5tDC75rm1obrFbT3rnOfFbXDZzTQTzxv4Rz/r5z/GriXn81zjPehRn3QpqbxoZ9QF/QD+g6PrFlsX1Nb7L+hdtFQIxwHr3u+D8fLOrOmrE8f8hqva1yf6IuG5ocapuIJ/YB6ou+wL44v9LMXVxwLXtzgc7w48fTPGTO45lNrt6VzjgOODVy3KX14ffMz+Rmr4oLbj8zmZuNEPxznXhzn0GZedrcxzWVZTvP0GXXoH/2UMtSZ10q06McpjMVbN3h/KvY5n+XOaZHXJX7kPSRqghq8rZiD1/+4/OsvjC3uH+MB142Xm3jf5LrA22cwJ3Kt1gd9IimdumiwTt9e/6s09fY7NNYP44hzWip2+qpTX2CNUB8vTjgPejWHtwdif/H6Jrzz5GZZ3vXqCM7BXg2O+qBeeM1752ETv6BOY9CA9yLOV1wHpGocrsOx9ozXhE9qH8KY4HdNzG1co3Pdz+/BsR/RHS9+UJuoy8hpx98ieD+qpcdapHLb4vhSptt539Uw54n14dyWqvFX1e5z6dE7fgCQXsBY
+   eJztmM1OwzAQhF3IjUt748SPgAMn4MCJx2vUUhQoSZ4P8fMMnAFXssUwWjeRenBK55NWSVPHsXe8602cE0IIIYQQQ+Jl5Nybt3ewD2+vo9wj200+x859GfY9zj2yHWXi3CjYnrd9b4W3g0nuge0mh97vJ95Ow/E4nJ9Jjyyce79fBrsIxyNvV9IjC9fe77fBbuD8TnoIIYQQQgghhBBCCCGEEEIIIYQQQgghxNZyXzi38PZQ5B7JbhN1mHtrvM22SJdF8f9spUMVtKi9teE4M9oOTaMqjLWGOVRhDi38rmlubbheQXvrOvdZUTt8RgP9xPMWzvH/yvivgXv52TzHeB9qNARtahof+gl1QT+g7/DImsX2NbXF/htqFw01wnHwuuf7cLysM2vK+gwhr/G6xvWJvmhofqhhKp7QD6gn+g774vhCP1txxbFgxQ0+x4oTS/+cMYNrPrV2WzrnOODYwHWb0ofXNz+Tn9EVF9x+6m3prUz0w3FuxXEObZZFfytpLutymqXPtEf/6KeUoc68VqJFP85hLNa6wftTsc/5LHdOizyt8SPvIVET1OC5Yw5W/2Xx118YW9w/xgOuGys38b7JdYG1z2BO5FptCPpEUjr10WCTvq3+uzS19js01g/jiHNaKnaGqtNQYI1QHytOOA9aNYe1B2J/8fo2vPPkZl3eteoIzsFWDY76oF54zXrnYRO/oE4laMB7EecrrgNSNQ7X4Vh7xmvCJrUPYUzwuybmNq7Rue7n9+DYj+iPFT+oTdRlarTjbxG8H9XSYyNSuW11fCzS7azvapjzxOZwbkvV+F21+1J6DI4fb7bFrQ==
   </data>
  </layer>
  <layer name="Laundromat Sign and Rowboat" width="100" height="53">
   <data encoding="base64" compression="zlib">
-   eJztzrsJgEAQRdHZAtQN3P4bsBJT6/BTggtGJoIgbOA5cBleNhEA8D/rGLHV9toxtv6GrkT0taGWS+tvAHhjTted8n3TxpKeNwAAAAAAAAAAAAAAAAAAAAB85QRe7wiT
+   eJztzrsJgEAQRdFZtQCD3f6tx9QK/BTigpGJIAgbeA5chpdNBAD8z5ojttpeO3Lrb0gloqv1taG0/gaAN+Z03Wm8b9pY0vMGAAAAAAAAAAAAAAAAAAAAgK+cBu4IJw==
   </data>
  </layer>
  <layer name="Tree Tops" width="100" height="53">
