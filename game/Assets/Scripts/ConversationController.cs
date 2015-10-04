@@ -3,6 +3,8 @@ using System.Collections;
 
 public class ConversationController : TopLevelController {
 
+	DialogueEngine dialogueEngine;
+
 	string name;
 	Snippet snippet;
 	public GameObject dialogue;
@@ -14,6 +16,7 @@ public class ConversationController : TopLevelController {
 	int statement;
 
 	void Start() {
+		dialogueEngine = new DialogueEngine ("1");
 		gameObject.GetComponent<Canvas> ().enabled = true;
 		dialogue.GetComponent<Canvas> ().enabled = true;
 		next.GetComponent<Canvas> ().enabled = true;
@@ -45,7 +48,7 @@ public class ConversationController : TopLevelController {
 	}
 
 	void LoadSnippet(string id) {
-		snippet = DialogueEngine.getSnippet (name, id);
+		snippet = dialogueEngine.getSnippet (name, id);
 	}
 
 	void DisplayStatements() {

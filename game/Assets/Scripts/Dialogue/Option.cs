@@ -3,17 +3,17 @@ using System.Collections;
 
 public class Option : ScriptableObject
 {
-	private string[] conditions;
+	private Condition[] conditions;
 	private string text;
 	private string guid;
 	
-	public Option(string[] conditions, string text, string guid) {
+	public Option(Condition[] conditions, string text, string guid) {
 		this.conditions = conditions;
 		this.text = text;
 		this.guid = guid;
 	}
 
-	public string[] getConditions() {
+	public Condition[] getConditions() {
 		return conditions;
 	}
 
@@ -25,4 +25,3 @@ public class Option : ScriptableObject
 		return guid;
 	}
 }
-

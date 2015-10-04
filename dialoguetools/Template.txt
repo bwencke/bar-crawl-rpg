@@ -1,0 +1,45 @@
+SNIPPET
+	1
+	SET
+		ConditionOne=TRUE
+		ConditionTwo=FALSE
+	ENDSET
+	STATEMENTS
+		Person One
+		Text
+		Person Two
+		Text
+	ENDSTATEMENTS
+	OPTION
+		CONDITIONS
+			ConditionOne=TRUE
+			ConditionTwo=TRUE
+		ENDCONDITIONS
+		Text
+		1
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			ConditionOne=TRUE
+			ConditionTwo=FALSE
+		ENDCONDITIONS
+		Text
+		1
+	ENDOPTION
+ENDSNIPPET
+
+
+Running the parser: python dialogue.py
+
+- Each level has its own subdirectory in Assets/Conversations
+- Each character has his or her own JSON file in the level directory
+
+- SNIPPET/ENDSNIPPET is mandatory
+- SET/ENDSET is optional
+- STATEMENTS/ENDSTATEMENTS is optional
+- OPTION/ENDOPTION is optional
+- CONDITION/ENDCONDITIONS is optional
+
+- The parser ignores indentation and empty lines
+- The STATEMENTS section must have an even number of lines
+- For an OPTION, the text can be JUMP and the ID can be END

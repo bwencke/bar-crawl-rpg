@@ -1,0 +1,53 @@
+SNIPPET
+	1
+	STATEMENTS
+		Cassidy
+		Hello, Blake!
+	ENDSTATEMENTS
+	OPTION
+		CONDITIONS
+			KnowsCassidyDatesJosh=TRUE
+		ENDCONDITIONS
+		How is Josh?
+		2
+	ENDOPTION
+	OPTION
+		What's new?
+		3
+	ENDOPTION
+	OPTION
+		Talk to you later!
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	STATEMENTS
+		Cassidy
+		He is fine.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		1
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	SET
+		KnowsCassidyDatesJosh=TRUE
+	ENDSET
+	STATEMENTS
+		Cassidy
+		I have a date with Josh tonight.
+		Blake
+		I didn't know you were dating Josh!
+		Cassidy
+		Well, now you do.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		1
+	ENDOPTION
+ENDSNIPPET
