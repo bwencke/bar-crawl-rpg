@@ -15,22 +15,39 @@ public class ConversationController : TopLevelController {
 
 	int statement;
 
+	GameObject controlling;
+
 	void Start() {
 		dialogueEngine = new DialogueEngine ("1");
-		gameObject.GetComponent<Canvas> ().enabled = true;
-		dialogue.GetComponent<Canvas> ().enabled = true;
-		next.GetComponent<Canvas> ().enabled = true;
-		options.GetComponent<Canvas> ().enabled = true;
-		dialogue.GetComponent<Canvas> ().enabled = false;
-		next.GetComponent<Canvas> ().enabled = false;
-		options.GetComponent<Canvas> ().enabled = false;
-		gameObject.GetComponent<Canvas> ().enabled = false;
 	}
 
 	public override void TriggerMovement(Vector2 movement_vector) {
 		if (movement_vector != prev) {
-			if(movement_vector.x > 0 || movement_vector.y < 0) {
-				Next ();
+			if (controlling == dialogue) {
+				if (movement_vector.x > 0 || movement_vector.y < 0) {
+					Next ();
+				}
+			} else {
+//				if (movement_vector.x > 0 || movement_vector.y < 0) {
+//					Next ();
+//				}
+				Debug.Log ("moving through options");
+				int y = (int)movement_vector.y;
+				if(y != 0) {
+//					// change color of previous item
+//					options[selected].GetComponentInChildren<Text>().color = unSelectedTextColor;
+//					options[selected].GetComponent<Image>().color = unSelectedColor;
+					
+//					// change selected item
+//					selected += -1*y;
+//					if(selected < 0 || selected > (options.Length - 1)) {
+//						selected -= -1*y;
+//					}
+					
+					// change color of selected item
+//					options[selected].GetComponentInChildren<Text>().color = selectedTextColor;
+//					options[selected].GetComponent<Image>().color = selectedColor;
+				}
 			}
 			prev = movement_vector;
 		}
@@ -39,8 +56,8 @@ public class ConversationController : TopLevelController {
 	public void StartConversation(string name, string id) {
 		statement = 0;
 		LoadSnippet (id);
-		DisplayStatements ();
 		gameObject.GetComponent<Canvas> ().enabled = true;
+		DisplayStatements ();
 	}
 
 	public void StopConversation() {
@@ -58,6 +75,7 @@ public class ConversationController : TopLevelController {
 		dialogue.GetComponent<Canvas> ().enabled = true;
 		next.GetComponent<Canvas> ().enabled = true;
 		options.GetComponent<Canvas> ().enabled = false;
+		controlling = dialogue;
 	}
 
 	void Next() {
@@ -78,6 +96,7 @@ public class ConversationController : TopLevelController {
 		dialogue.GetComponent<Canvas> ().enabled = false;
 		next.GetComponent<Canvas> ().enabled = false;
 		options.GetComponent<Canvas> ().enabled = true;
+		controlling = options;
 	}
 
 	public void ChooseOption(string id) {
