@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="32" tileheight="32" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="10" tilewidth="32" tileheight="32" nextobjectid="1">
  <tileset firstgid="1" name="barrel" tilewidth="32" tileheight="32" tilecount="8">
   <image source="../../../tiles/LPC/barrel.png" width="128" height="64"/>
  </tileset>
@@ -250,88 +250,68 @@
  <tileset firstgid="4189" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
   <image source="../../../tiles/flowers_2.png" width="320" height="192"/>
  </tileset>
- <tileset firstgid="4249" name="pub sign" tilewidth="32" tileheight="32" tilecount="3">
-  <image source="../../../tiles/pub sign.png" width="96" height="32"/>
- </tileset>
- <tileset firstgid="4252" name="AIN_Signs" tilewidth="32" tileheight="32" tilecount="96">
+ <tileset firstgid="4249" name="AIN_Signs" tilewidth="32" tileheight="32" tilecount="96">
   <image source="../../../tiles/AIN_Signs.png" width="384" height="256"/>
  </tileset>
- <tileset firstgid="4348" name="golden helmet" tilewidth="32" tileheight="32" tilecount="4">
-  <image source="../../../tiles/golden helmet.png" width="64" height="64"/>
- </tileset>
- <tileset firstgid="4352" name="housey" tilewidth="32" tileheight="32" tilecount="72">
+ <tileset firstgid="4345" name="housey" tilewidth="32" tileheight="32" tilecount="72">
   <image source="../../../tiles/housey.png" width="384" height="192"/>
  </tileset>
- <tileset firstgid="4424" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
+ <tileset firstgid="4417" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
   <image source="../../../tiles/flowers_2.png" width="320" height="192"/>
  </tileset>
- <tileset firstgid="4484" name="bench_v2" tilewidth="32" tileheight="32" tilecount="2">
-  <image source="../../../tiles/bench_v2.png" width="64" height="32"/>
- </tileset>
- <tileset firstgid="4486" name="obj_misk_atlas" tilewidth="32" tileheight="32" tilecount="1024">
+ <tileset firstgid="4477" name="obj_misk_atlas" tilewidth="32" tileheight="32" tilecount="1024">
   <image source="../../../tiles/Atlas_0/obj_misk_atlas.png" width="1024" height="1024"/>
  </tileset>
- <tileset firstgid="5510" name="clover" tilewidth="32" tileheight="32" tilecount="2">
-  <image source="../../../tiles/clover.png" trans="ffffff" width="32" height="64"/>
+ <tileset firstgid="5501" name="dark_floor_red" tilewidth="32" tileheight="32" tilecount="1">
+  <image source="../../../tiles/Joe's Custom/dark_floor_red.png" width="32" height="32"/>
  </tileset>
- <layer name="Collisions" width="15" height="15">
+ <tileset firstgid="5502" name="yellow_shirt" tilewidth="32" tileheight="32" tilecount="2">
+  <image source="../../../tiles/Joe's Custom/yellow_shirt.png" trans="ffffff" width="32" height="64"/>
+ </tileset>
+ <tileset firstgid="5504" name="washing_machine" tilewidth="32" tileheight="32" tilecount="2">
+  <image source="../../../tiles/Joe's Custom/washing_machine.png" trans="ffffff" width="32" height="64"/>
+ </tileset>
+ <tileset firstgid="5506" name="dryer" tilewidth="32" tileheight="32" tilecount="2">
+  <image source="../../../tiles/Joe's Custom/dryer.png" trans="ffffff" width="32" height="64"/>
+ </tileset>
+ <layer name="Collisions" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYKA9OIoFk6MPn3nk2kGM/ehi+Gh87ibFTnL9gEsfNcMFl73k6qPEzbTyDz0BAGrXI2c=
+   eJxjYCAfHKVQ7igOTEhuIAEhN+GTp0TvUAMAfN0a8A==
   </data>
  </layer>
- <layer name="Floor" width="15" height="15">
+ <layer name="Floor" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJzjZWJg4B0A/JRlFI/ioYXxpWVy0jRMDwDUZaxu
+   eJyrFWVgqB3Fo5jKGADnDlWN
   </data>
  </layer>
- <layer name="Back Wall" width="15" height="15">
+ <layer name="Back Wall" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJybwc3AMINMvIgCPApGwSiAAAC1RhOx
+   eJybIsjAMJUMPA2ItwDxVjLwNiAeBcMbAADyFhVV
   </data>
  </layer>
- <layer name="Bar" width="15" height="15">
+ <layer name="Side Walls" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYBh6oI1IjA20AHEPAdxKQ7ePglGADgDw4Qqm
+   eJwTF2IgC0wXZGAQH9U76PVOAeKpWPA0QYiaKVA2NrwFiLdiwdugerdA2dgwAGxzGns=
   </data>
  </layer>
- <layer name="Cabinets and Stuff Behind Bar" width="15" height="15">
+ <layer name="Front Wall" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJyLY2BgiAPiWCD2A2JvKB8dYwMvWDDxcyhGFsMGfrBg4u9o+AcOvaNgFAwnAAAF8RaT
+   eJxjYBgFo4D6AAACWAAB
   </data>
  </layer>
- <layer name="Side Walls" width="15" height="15">
+ <layer name="Washers and Dryers" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJxbz81AFlgH1Ld+VO+o3mGkd6AAALP9Etg=
+   eJxjYKAMNIhixyDQJIodw0CjKHYMAs2i2PEoGBoAAI/mDh0=
   </data>
  </layer>
- <layer name="Front Walls" width="15" height="15">
+ <layer name="Tables" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUgMAMbtyYkPwiPBgE8MkDAGVkEmE=
+   eJxjYBgFpIDpXAwMM5DwTC7i5bcD2TuQ8E40vYTkhxIAAAHjDek=
   </data>
  </layer>
- <layer name="Tables 'n' Chairs" width="15" height="15">
+ <layer name="Shirt" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFtAAmogwMpqLk6S0B6islUy8ucAmIH7EwMFynrrFwoEGmezNEIe7KxKKfGDd7UDmcBgIAACLgCUA=
-  </data>
- </layer>
- <layer name="Special Chairs for a Special Table" width="15" height="15">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFuICmKASTCrSBejyhOItE/d5A9VpQnE2G3V6iEDwKhg4AAEPcBBQ=
-  </data>
- </layer>
- <layer name="Barstools" width="15" height="15">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFpIAYUfz0KBgFpAIACowBxQ==
-  </data>
- </layer>
- <layer name="Crack Machine" width="15" height="15">
-  <data encoding="base64" compression="zlib">
-   eJxjYKAPuMPDwHCXhzy9T4D6npKpdxSMgsEOAAlNA7M=
-  </data>
- </layer>
- <layer name="Trash Can and Clover" width="15" height="15">
-  <data encoding="base64" compression="zlib">
-   eJxjYCAdtImSpn4yFwPDFC4Iu51EvVOB+qZxkaZnFIyCoQQAUvsDsg==
+   eJxjYBgF1AZ1ouTrradA72ACAAspASg=
   </data>
  </layer>
 </map>
