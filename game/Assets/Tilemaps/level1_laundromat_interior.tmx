@@ -276,7 +276,7 @@
  </tileset>
  <layer name="Collisions" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYCAfHKVQ7igOTEhuIAEhN+GTp0TvUAMAfN0a8A==
+   eJxjYCAfHKVQ7igOTIzcQAFcbiJGnhK9Qw0AAMAgG7U=
   </data>
  </layer>
  <layer name="Floor" width="15" height="10">
@@ -287,6 +287,11 @@
  <layer name="Back Wall" width="15" height="10">
   <data encoding="base64" compression="zlib">
    eJybIsjAMJUMPA2ItwDxVjLwNiAeBcMbAADyFhVV
+  </data>
+ </layer>
+ <layer name="Stolen Chair from Bank" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh6IJBloF0wCggBAI3IAFY=
   </data>
  </layer>
  <layer name="Side Walls" width="15" height="10">
