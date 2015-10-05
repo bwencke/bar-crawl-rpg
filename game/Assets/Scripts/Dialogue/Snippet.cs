@@ -7,7 +7,7 @@ public class Snippet : ScriptableObject
 	private Statement[] statements;
 	private Option[] options;
 
-	public Snippet(Condition[] conditions, Statement[] statements, Option[] options) {
+	public void init(Condition[] conditions, Statement[] statements, Option[] options) {
 		this.conditions = conditions;
 		this.statements = statements;
 		this.options = options;

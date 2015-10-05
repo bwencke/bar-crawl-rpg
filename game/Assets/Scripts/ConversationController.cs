@@ -18,7 +18,8 @@ public class ConversationController : TopLevelController {
 	GameObject controlling;
 
 	void Start() {
-		dialogueEngine = new DialogueEngine ("1");
+		dialogueEngine = ScriptableObject.CreateInstance<DialogueEngine>();
+		dialogueEngine.init("Samples");
 	}
 
 	public override void TriggerMovement(Vector2 movement_vector) {
@@ -55,6 +56,7 @@ public class ConversationController : TopLevelController {
 
 	public void StartConversation(string name, string id) {
 		statement = 0;
+		this.name = name;
 		LoadSnippet (id);
 		gameObject.GetComponent<Canvas> ().enabled = true;
 		DisplayStatements ();

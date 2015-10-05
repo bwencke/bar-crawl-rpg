@@ -6,7 +6,7 @@ public class Statement : ScriptableObject
 	private string name;
 	private string text;
 
-	public Statement(string name, string text) {
+	public void init(string name, string text) {
 		this.name = name;
 		this.text = text;
 	}
