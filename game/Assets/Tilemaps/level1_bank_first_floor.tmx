@@ -262,9 +262,12 @@
  <tileset firstgid="4477" name="obj_misk_atlas" tilewidth="32" tileheight="32" tilecount="1024">
   <image source="../../../tiles/Atlas_0/obj_misk_atlas.png" width="1024" height="1024"/>
  </tileset>
+ <tileset firstgid="5501" name="chain" tilewidth="32" tileheight="32" tilecount="2">
+  <image source="../../../tiles/Joe's Custom/chain.png" trans="ffffff" width="64" height="32"/>
+ </tileset>
  <layer name="Collisions" width="12" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYCANHEVj4+LjYuMyE5c8uvmUgqMMxLuHWLuxyQ119UMVAADpZxZS
+   eJxjYCANHEVjE+JjE8dmJi55bObh4hMDjjIQ7x58dhNyx2BRT65/hyoAADuoGWY=
   </data>
  </layer>
  <layer name="Floor" width="12" height="15">
@@ -284,7 +287,12 @@
  </layer>
  <layer name="Side Counters" width="12" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBjaQJIVgolV94MFggkBYtWNgsEFAPulBGk=
+   eJxjYBjaQJIVgolV94MFggkBYtUNdlArysBQJ0o9dYMdAADubwaz
+  </data>
+ </layer>
+ <layer name="Waiting Chairs" width="12" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAdxLBAMC5wEophIJ0FgnGBc1B8hUR33CRR/SgY/gAAMa0Gcg==
   </data>
  </layer>
  <layer name="Side Walls" width="12" height="15">
@@ -315,11 +323,6 @@
  <layer name="Lamps" width="12" height="15">
   <data encoding="base64" compression="zlib">
    eJxjYBgeIIeFPLmhCkaaf4kFAKZeAcE=
-  </data>
- </layer>
- <layer name="Waiting Chairs" width="12" height="15">
-  <data encoding="base64" compression="zlib">
-   eJxjYCAdxLBAMLHy6SwQjAsQkh8Fo4BYAADAkQMt
   </data>
  </layer>
 </map>
