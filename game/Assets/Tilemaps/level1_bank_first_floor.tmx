@@ -277,7 +277,7 @@
  </layer>
  <layer name="Carpet" width="12" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFe7kgeFQ9ddQPJAAAXDsK4w==
+   eJxjYBgFe7kgeFT90AcAU/QJVQ==
   </data>
  </layer>
  <layer name="Back Wall" width="12" height="15">
@@ -292,7 +292,7 @@
  </layer>
  <layer name="Waiting Chairs" width="12" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYCAdxLBAMC5wEophIJ0FgnGBc1B8hUR33CRR/SgY/gAAMa0Gcg==
+   eJxjYCAdxLBAMLHy6SwQjAsQkscFgsjQMwqGNwAAc1QDgw==
   </data>
  </layer>
  <layer name="Side Walls" width="12" height="15">
