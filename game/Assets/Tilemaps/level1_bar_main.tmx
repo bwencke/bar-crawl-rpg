@@ -276,7 +276,7 @@
  </tileset>
  <layer name="Collisions" width="15" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYKA9OIoFk6OX3gCbvUcJ0Mj6yHE3JXqR9eMzlxaAXHPxuYsYNw9EuqA2AAAS2hrw
+   eJxjYKA9OIoFk6MPn3nk2kGM/ehi+Gh87ibFTnL9gEsfNcMFl73k6qPEzbTyDz0BAGrXI2c=
   </data>
  </layer>
  <layer name="Floor" width="15" height="15">
