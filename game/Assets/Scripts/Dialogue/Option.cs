@@ -6,8 +6,8 @@ public class Option : ScriptableObject
 	private Condition[] conditions;
 	private string text;
 	private string guid;
-	
-	public Option(Condition[] conditions, string text, string guid) {
+
+	public void init(Condition[] conditions, string text, string guid) {
 		this.conditions = conditions;
 		this.text = text;
 		this.guid = guid;

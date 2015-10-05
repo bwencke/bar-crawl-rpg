@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Condition : MonoBehaviour
+public class Condition : ScriptableObject
 {
 	private string name;
 	private bool value;
 
-	public Condition(string name, bool value) {
+	public void init(string name, bool value) {
 		this.name = name;
 		this.value = value;
 	}
