@@ -11,6 +11,17 @@ public class DialogueEngine : ScriptableObject
 		this.level = level;
 	}
 
+	/*
+	 * Gets a conversation snippet.
+	 * 
+	 * Comments on the return value:
+	 * - Returns null if there is no snippet.
+	 * - snippet.assignments, snippet.statements, snippet.options, snippet.options[i].conditions all 
+	 *   have a length that could be 0.
+	 * - snippet.options[i].id might be "END", which means the conversation should exit.
+	 * - snippet.options[i].text might be "JUMP", which means that we should just jump directly to 
+	 *   snippet.options[i].id without displaying any options. 
+	 */
 	public Snippet getSnippet(string name, string guid)
 	{
 		// Read character file
