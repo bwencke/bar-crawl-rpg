@@ -50,7 +50,8 @@ public class StateController : MonoBehaviour {
 				"\"direction\":{" +
 					"\"x\":" + playerAnimator.GetFloat ("input_x") + ","+
 					"\"y\":" + playerAnimator.GetFloat ("input_y") +
-				"}" +
+				"}," +
+				"\"timestamp\":\"" + System.DateTime.Now + "\"" +
 			"}";
 
 //		GameObject player = GameObject.FindGameObjectWithTag ("Player");

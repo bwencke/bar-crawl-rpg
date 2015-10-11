@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.IO;
@@ -7,6 +7,7 @@ using SimpleJSON;
 public class MainMenuController : MonoBehaviour {
 
 	public Canvas loadingScreen;
+	public Canvas saveSlots;
 
 	public Button continueGame;
 	public Button newGame;
@@ -28,21 +29,40 @@ public class MainMenuController : MonoBehaviour {
 
 	void NewGame() {
 		Debug.Log ("new game");
+		for(int i = 1; i <= 3; i++) {
+			if(PlayerPrefs.HasKey("save_slot" + i)) {
+				continue;
+			}
+			loadingScreen.enabled = true;
+			PlayerPrefs.SetInt("save_slot", i);
+			PlayerPrefs.Save();
+			Application.LoadLevel ("Bar1");
+		}
+
+		// no open save slots, choose one to overwrite
+		//saveSlots.enabled = true;
 		loadingScreen.enabled = true;
+		PlayerPrefs.SetInt("save_slot", 1);
+		PlayerPrefs.DeleteKey ("save_slot1");
+		PlayerPrefs.Save();
 		Application.LoadLevel ("Bar1");
 	}
 
 	void LoadGame() {
 		Debug.Log ("load game");
-		loadingScreen.enabled = true;
-		LoadGameFromSlot (1);
+		saveSlots.enabled = true;
 	}
 
-	void LoadGameFromSlot(int save_slot) {
+	public void LoadGameFromSlot(int save_slot) {
+		loadingScreen.enabled = true;
+		PlayerPrefs.SetInt("save_slot", save_slot);
+		PlayerPrefs.Save();
+		if (!PlayerPrefs.HasKey ("save_slot" + save_slot)) {
+			Application.LoadLevel ("Bar1");
+			return;
+		}
 		string json = PlayerPrefs.GetString("save_slot"+save_slot);
 		JSONNode root = JSON.Parse(json);
-		PlayerPrefs.SetInt ("save_slot", save_slot);
-		PlayerPrefs.Save ();
 		Application.LoadLevel ("Bar"+root ["level"].AsInt);
 	}
 	
