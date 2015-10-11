@@ -9,6 +9,6 @@ public class Quit : MenuItemController {
 		googleAnalytics.LogEvent(new EventHitBuilder()
 		                         .SetEventCategory("Menu")
 		                         .SetEventAction("Quit"));
-		Application.Quit ();
+		Application.LoadLevel ("MainMenu");
 	}
 }

@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.IO;
+using SimpleJSON;
 
 public class MainMenuController : MonoBehaviour {
 
@@ -12,13 +14,16 @@ public class MainMenuController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		continueGame.GetComponent<Button>().onClick.AddListener(() => ContinueGame());
+		if (PlayerPrefs.HasKey ("save_slot")) {
+			continueGame.GetComponent<Button> ().onClick.AddListener (() => ContinueGame ());
+		}
 		newGame.GetComponent<Button>().onClick.AddListener(() => NewGame());
 		loadGame.GetComponent<Button>().onClick.AddListener(() => LoadGame());
 	}
 
 	void ContinueGame() {
 		Debug.Log ("continue");
+		LoadGameFromSlot (PlayerPrefs.GetInt ("save_slot"));
 	}
 
 	void NewGame() {
@@ -29,6 +34,16 @@ public class MainMenuController : MonoBehaviour {
 
 	void LoadGame() {
 		Debug.Log ("load game");
+		loadingScreen.enabled = true;
+		LoadGameFromSlot (1);
+	}
+
+	void LoadGameFromSlot(int save_slot) {
+		string json = PlayerPrefs.GetString("save_slot"+save_slot);
+		JSONNode root = JSON.Parse(json);
+		PlayerPrefs.SetInt ("save_slot", save_slot);
+		PlayerPrefs.Save ();
+		Application.LoadLevel ("Bar"+root ["level"].AsInt);
 	}
 	
 }
