@@ -17,8 +17,49 @@ public class DialogueEngine : ScriptableObject
 		TextAsset jsontext = (TextAsset) Resources.Load ("Conversations/" + level + "/" + name, typeof(TextAsset));
 
 		// Parse JSON
-		JSONNode root = JSON.Parse(jsontext.ToString());
-		Debug.Log (root["snippets"][0]["id"]);
+		JSONNode root = JSON.Parse (jsontext.ToString());
+
+		// Find snippet
+		int snippetno = 0;
+		while (true)
+		{
+			// If no snippet, return null
+			if (root["snippets"][snippetno]["id"] == null) {
+				Debug.Log ("Dialogue Engine: No snippet.");
+				return null;
+			}
+
+			// Check if snippet was found
+			if (string.Compare (root["snippets"][snippetno]["id"], guid) == 0) {
+				break;
+			}
+
+			snippetno++;
+		}
+
+		// Create assignments
+		int nassignments = 0;
+		while (true) {
+			if (root["snippets"][snippetno]["assignments"][nassignments] == null) {
+				break;
+			}
+			nassignments++;
+		}
+		Condition[] assignments = new Condition[nassignments];
+		for (int i = 0; i < nassignments; i++) {
+			assignments[i] = ScriptableObject.CreateInstance<Condition>();
+			if (string.Compare (root["snippets"][snippetno]["assignments"][i][1], "FALSE") == 0) {
+				assignments[i].init (root["snippets"][snippetno]["assignments"][i][0], false);
+			} else {
+				assignments[i].init (root["snippets"][snippetno]["assignments"][i][0], true);
+			}
+		}
+
+		// Create statements
+		int nstatements = 0;
+
+		// Create options
+		int noptions = 0;
 
 		// Stub
 		if (guid == "2") {

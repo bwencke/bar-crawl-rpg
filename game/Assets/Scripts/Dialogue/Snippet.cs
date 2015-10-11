@@ -3,18 +3,18 @@ using System.Collections;
 
 public class Snippet : ScriptableObject
 {
-	private Condition[] conditions;
+	private Condition[] assignments;
 	private Statement[] statements;
 	private Option[] options;
 
-	public void init(Condition[] conditions, Statement[] statements, Option[] options) {
-		this.conditions = conditions;
+	public void init(Condition[] assignments, Statement[] statements, Option[] options) {
+		this.assignments = assignments;
 		this.statements = statements;
 		this.options = options;
 	}
 
-	public Condition[] getConditions() {
-		return conditions;
+	public Condition[] getAssignments() {
+		return assignments;
 	}
 
 	public Statement[] getStatements() {
