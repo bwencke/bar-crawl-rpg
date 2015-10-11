@@ -57,11 +57,58 @@ public class DialogueEngine : ScriptableObject
 
 		// Create statements
 		int nstatements = 0;
+		while (true) {
+			if (root["snippets"][snippetno]["statements"][nstatements] == null) {
+				break;
+			}
+			nstatements++;
+		}
+		Statement[] statements = new Statement[nstatements];
+		for (int i = 0; i < nstatements; i++) {
+			statements[i] = ScriptableObject.CreateInstance<Statement>();
+			statements[i].init (root["snippets"][snippetno]["statements"][i][0], 
+			                    root["snippets"][snippetno]["statements"][i][1]);
+		}
 
 		// Create options
 		int noptions = 0;
+		while (true) {
+			if (root["snippets"][snippetno]["options"][noptions] == null) {
+				break;
+			}
+			noptions++;
+		}
+		Option[] options = new Option[noptions];
+		for (int i = 0; i < noptions; i++) {
+			options[i] = ScriptableObject.CreateInstance<Option>();
+			int nconditions = 0;
+			while (true) {
+				if (root["snippets"][snippetno]["options"][i]["conditions"][nconditions] == null) {
+					break;
+				}
+				nconditions++;
+			}
+			Condition[] conditions = new Condition[nconditions];
+			for (int j = 0; j < nconditions; j++) {
+				conditions[j] = ScriptableObject.CreateInstance<Condition>();
+				if (string.Compare (root["snippets"][snippetno]["options"][i]["conditions"][j][1], "FALSE") == 0) {
+					conditions[i].init (root["snippets"][snippetno]["options"][i]["conditions"][j][0], false);
+				} else {
+					conditions[i].init (root["snippets"][snippetno]["options"][i]["conditions"][j][0], true);
+				}
+			}
+			options[i].init (conditions,
+			                 root["snippets"][snippetno]["options"][i]["text"],
+			                 root["snippets"][snippetno]["options"][i]["id"]);
+		}
+
+		// Create snippet
+		Snippet snippet = ScriptableObject.CreateInstance<Snippet>();
+		snippet.init (assignments, statements, options);
+		return snippet;
 
 		// Stub
+		/*
 		if (guid == "2") {
 			Statement[] statements = new Statement[1];
 			for (int i = 0; i < statements.Length; i++) {
@@ -97,15 +144,6 @@ public class DialogueEngine : ScriptableObject
 			snippet.init (null, statements, options);
 			return snippet;
 		}
-
-		//Statement statement = new Statement ("Frank", "Hello!");
-		//Statement statement1 = new Statement("Frank", "How are you doing today?");
-		//Statement[] statements = new Statement[]{statement, statement1};
-		//Option option = new Option(null, "I'm great. How are you?", "1");
-		//Option option1 = new Option(null, "AWFUL. FUCK OFF.", "2");
-		//Option[] options = new Option[]{option, option1};
-		//Snippet s = new Snippet(null, statements, options);
-		//return s;
-		return null;
+		*/
 	}
 }
