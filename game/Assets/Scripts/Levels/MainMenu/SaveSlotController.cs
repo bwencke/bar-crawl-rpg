@@ -43,13 +43,13 @@ public class SaveSlotController : MonoBehaviour {
 				if(difference.Minutes < 1) {
 					statusText.text = "Just now";
 				} else {
-					statusText.text = difference.Minutes + " minute" + (difference.Minutes == 1 ? "" : "s") + "ago";
+					statusText.text = difference.Minutes + " minute" + (difference.Minutes == 1 ? "" : "s") + " ago";
 				}
 			} else {
-				statusText.text = difference.Hours + " hour" + (difference.Hours == 1 ? "" : "s") + "ago";
+				statusText.text = difference.Hours + " hour" + (difference.Hours == 1 ? "" : "s") + " ago";
 			}
 		} else {
-			statusText.text = difference.Days + " day" + (difference.Days == 1 ? "" : "s") + "ago";
+			statusText.text = difference.Days + " day" + (difference.Days == 1 ? "" : "s") + " ago";
 		}
 	}
 

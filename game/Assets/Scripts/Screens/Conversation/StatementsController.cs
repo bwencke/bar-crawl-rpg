@@ -4,6 +4,9 @@ using System.Collections;
 
 public class StatementsController : TopLevelController {
 
+	public GameObject npcImage;
+	public GameObject playerImage;
+
 	public ConversationController conversationController;
 
 	public void SetStatement(Statement statement) {
@@ -12,6 +15,13 @@ public class StatementsController : TopLevelController {
 		}
 		GameObject.FindGameObjectWithTag ("PersonName").GetComponent<Text> ().text = statement.getName () + ":";
 		GameObject.FindGameObjectWithTag ("Statement").GetComponent<Text> ().text = statement.getText ();
+		if (statement.getName () == "Blake") {
+			npcImage.GetComponent<Canvas> ().enabled = false;
+			playerImage.GetComponent<Canvas> ().enabled = true;
+		} else {
+			npcImage.GetComponent<Canvas> ().enabled = true;
+			playerImage.GetComponent<Canvas> ().enabled = false;
+		}
 		gameObject.GetComponent<Canvas> ().enabled = false;
 		gameObject.GetComponent<Canvas> ().enabled = true;
 	}

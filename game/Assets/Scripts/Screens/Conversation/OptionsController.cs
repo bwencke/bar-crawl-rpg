@@ -28,6 +28,7 @@ public class OptionsController : TopLevelController {
 			Destroy(child);
 		}
 		children.Clear ();
+		values.Clear ();
 		if (options == null) {
 			return;
 		}
