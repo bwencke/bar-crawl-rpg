@@ -22,6 +22,9 @@ ENDSNIPPET
 
 SNIPPET
 	2
+	ASSIGNMENTS
+		BraydenAskedForHelp=TRUE
+	ENDASSIGNMENTS
 	STATEMENTS
 		Brayden
 		I actually really need to talk to you.
