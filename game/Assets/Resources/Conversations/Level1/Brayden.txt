@@ -1,0 +1,235 @@
+SNIPPET
+	1
+	STATEMENTS
+		Brayden
+		Hey, man.
+	ENDSTATEMENTS
+	OPTION
+		CONDITIONS
+			BraydenAskedForHelp=FALSE
+		ENDCONDITIONS
+		JUMP
+		2
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			BraydenAskedForHelp=TRUE
+		ENDCONDITIONS
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	STATEMENTS
+		Brayden
+		I actually really need to talk to you.
+		Blake
+		What is it?
+		Brayden
+		I think I lost my ID?
+		Brayden
+		And the loser bouncer won't let me in without it.
+		Brayden
+		I think it fell out when I was washing my clothes at the laundromat.
+		Brayden
+		Would you go get it for me?
+	ENDSTATEMENTS
+	OPTION
+		Sure thing.
+		4
+	ENDOPTION
+	OPTION
+		Why don't you go get it?
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	OPTION
+		Are you excited for this bar crawl?
+		13
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			BraydenIDReturned=FALSE
+		ENDCONDITIONS
+		Which washer was it again?
+		14
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			BraydenIDReturned=FALSE
+		ENDCONDITIONS
+		Why don't you go get your own ID?
+		5
+	ENDOPTION
+	OPTION
+		Later.
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Brayden
+		Great. It's probably in the third washer from the left.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Brayden
+		I'm just, like, really busy right now.
+	ENDSTATEMENTS
+	OPTION
+		OK.
+		4
+	ENDOPTION
+	OPTION
+		Busy with what?
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Brayden
+		Just, like, life, man. I'm swamped right now.
+	ENDSTATEMENTS
+	OPTION
+		Fine.
+		4
+	ENDOPTION
+	OPTION
+		You don't look very busy.
+		7
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Brayden
+		I just have a lot going on, on, like, the inside.
+	ENDSTATEMENTS
+	OPTION
+		Alright, I'll do it.
+		4
+	ENDOPTION
+	OPTION
+		Name one thing you're busy with right now.
+		8
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Brayden
+		OK, a hot girl just walked by. I was maybe going to go talk to her.
+	ENDSTATEMENTS
+	OPTION
+		Well, I'll do anything for love.
+		4
+	ENDOPTION
+	OPTION
+		Maybe I want to go talk to her.
+		9
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	9
+	STATEMENTS
+		Brayden
+		She didn't really look like your type.
+	ENDSTATEMENTS
+	OPTION
+		Fine, I'll look for your ID.
+		4
+	ENDOPTION
+	OPTION
+		How would you know what my type is?
+		10
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	10
+	STATEMENTS
+		Brayden
+		She also kind of looked at me. I think we had a connection.
+	ENDSTATEMENTS
+	OPTION
+		Well, I wouldn't want to ruin your chances.
+		4
+	ENDOPTION
+	OPTION
+		I bet you could make a great connection in the laundromat.
+		11
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	11
+	STATEMENTS
+		Brayden
+		The laundromat's just not really my scene, you know?
+	ENDSTATEMENTS
+	OPTION
+		Ugh, OK, for fuck's sake.
+		4
+	ENDOPTION
+	OPTION
+		Not your scene? Weren't you just there?
+		12
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	12
+	STATEMENTS
+		Brayden
+		That was earlier. Now this is more my scene.
+		Blake
+		OK, if it will end this inane fucking conversation, I will go get your fucking ID. Happy now?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	13
+	STATEMENTS
+		Brayden
+		Sure, whatever.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	14
+	STATEMENTS
+		Brayden
+		Third from the left.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET

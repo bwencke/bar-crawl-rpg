@@ -1,0 +1,13 @@
+SNIPPET
+	1
+	STATEMENTS
+		Blake
+		Hello, little ones!
+		Children
+		STRANGER DANGER!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET

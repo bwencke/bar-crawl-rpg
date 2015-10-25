@@ -1,0 +1,112 @@
+SNIPPET
+	1
+	STATEMENTS
+		Blake
+		Hey, guys! Are you all set for this bar crawl?
+		Josh
+		I'm totally pumped, bro!
+		Cassidy
+		Me, too! We're totally going to make it through all ten bars.
+		Brayden
+		Yeah, whatever.
+		Blake
+		Cool! I'll meet you guys inside The Tipsy Leprechaun in a minute.
+		Josh
+		Better come quick, bro, or we're not going to get through every bar tonight.
+	ENDSTATEMENTS
+ENDSNIPPET
+
+SNIPPET
+	2
+	STATEMENTS
+		Josh
+		Hey bro! Have you gotten a beer yet?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	OPTION
+		Have you had a drink already?
+		4
+	ENDOPTION
+	OPTION
+		Looks like you and Cassidy got past that fight.
+		5
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			BraydenAskedForHelp=TRUE
+		ENDCONDITIONS
+		Did Brayden tell you he lost his ID?
+		6
+	ENDOPTION
+	OPTION
+		OK, I need to go do some stuff.
+		7
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Josh
+		I got one here, yeah.
+		Josh
+		But bro, I was pregaming pretty hard before this bro.
+		Blake
+		You weren't supposed to pregame! We have to get through ten drinks!
+		Josh
+		I can handle it bro.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Josh
+		Yeah, I told her there would be less bro time and more ho time.
+		Josh
+		Except not like that.
+		Josh
+		Thanks for letting me bring her, by the way.
+		Blake
+		No problem, she's cool.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Josh
+		Yeah, he said it's probably in the laundromat.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Josh
+		I'll be here.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
