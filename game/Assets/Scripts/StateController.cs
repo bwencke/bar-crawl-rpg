@@ -25,7 +25,6 @@ public class StateController : MonoBehaviour {
 			return;
 		}
 		string json = PlayerPrefs.GetString ("save_slot" + saveSlot);
-		Debug.Log (json);
 		JSONNode root = JSON.Parse(json);
 
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
