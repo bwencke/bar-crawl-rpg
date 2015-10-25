@@ -2,7 +2,7 @@ SNIPPET
 	1
 	STATEMENTS
 		Brayden
-		Hey man.
+		Hey, man.
 	ENDSTATEMENTS
 	OPTION
 		CONDITIONS
@@ -30,7 +30,7 @@ SNIPPET
 		Brayden
 		I think I lost my ID?
 		Brayden
-		And the loser bartender won't let me in without it.
+		And the loser bouncer won't let me in without it.
 		Brayden
 		I think it fell out when I was washing my clothes at the laundromat.
 		Brayden
@@ -60,6 +60,10 @@ SNIPPET
 		14
 	ENDOPTION
 	OPTION
+		Why don't you go get your ID?
+		5
+	ENDOPTION
+	OPTION
 		Later.
 		END
 	ENDOPTION
@@ -81,7 +85,7 @@ SNIPPET
 	5
 	STATEMENTS
 		Brayden
-		I'm just like, really busy right now.
+		I'm just, like, really busy right now.
 	ENDSTATEMENTS
 	OPTION
 		OK.
@@ -97,7 +101,7 @@ SNIPPET
 	6
 	STATEMENTS
 		Brayden
-		Just like, life, man. I'm swamped right now.
+		Just, like, life, man. I'm swamped right now.
 	ENDSTATEMENTS
 	OPTION
 		Fine.
@@ -113,7 +117,7 @@ SNIPPET
 	7
 	STATEMENTS
 		Brayden
-		I just have a lot going on, on like, the inside.
+		I just have a lot going on, on, like, the inside.
 	ENDSTATEMENTS
 	OPTION
 		Alright, I'll do it.
@@ -164,7 +168,7 @@ SNIPPET
 		She also kind of looked at me. I think we had a connection.
 	ENDSTATEMENTS
 	OPTION
-		Well I wouldn't want to ruin your chances.
+		Well, I wouldn't want to ruin your chances.
 		4
 	ENDOPTION
 	OPTION
@@ -195,9 +199,7 @@ SNIPPET
 		Brayden
 		That was earlier. Now this is more my scene.
 		Blake
-		OK, if it will end this inane fucking conversation,
-		Blake
-		I will go get your fucking ID. Happy now?
+		OK, if it will end this inane fucking conversation, I will go get your fucking ID. Happy now?
 	ENDSTATEMENTS
 	OPTION
 		JUMP

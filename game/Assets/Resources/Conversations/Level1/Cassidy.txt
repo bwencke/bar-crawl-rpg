@@ -2,7 +2,7 @@ SNIPPET
 	1
 	STATEMENTS
 		Cassidy
-		Hey Blake!
+		Hey, Blake!
 	ENDSTATEMENTS
 	OPTION
 		JUMP
@@ -33,36 +33,5 @@ SNIPPET
 	OPTION
 		JUMP
 		2
-	ENDOPTION
-ENDSNIPPET
-
-
-SNIPPET
-	1
-	ASSIGNMENTS
-		ConditionOne=TRUE
-		ConditionTwo=FALSE
-	ENDASSIGNMENTS
-	STATEMENTS
-		Person One
-		Text
-		Person Two
-		Text
-	ENDSTATEMENTS
-	OPTION
-		CONDITIONS
-			ConditionOne=TRUE
-			ConditionTwo=TRUE
-		ENDCONDITIONS
-		Text
-		2
-	ENDOPTION
-	OPTION
-		CONDITIONS
-			ConditionOne=TRUE
-			ConditionTwo=FALSE
-		ENDCONDITIONS
-		Text
-		3
 	ENDOPTION
 ENDSNIPPET
