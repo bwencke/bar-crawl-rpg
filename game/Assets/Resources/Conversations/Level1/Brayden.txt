@@ -60,7 +60,10 @@ SNIPPET
 		14
 	ENDOPTION
 	OPTION
-		Why don't you go get your ID?
+		CONDITIONS
+			BraydenIDReturned=FALSE
+		ENDCONDITIONS
+		Why don't you go get your own ID?
 		5
 	ENDOPTION
 	OPTION
