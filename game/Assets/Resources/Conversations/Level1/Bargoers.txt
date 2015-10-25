@@ -1,0 +1,71 @@
+SNIPPET
+	1
+	STATEMENTS
+		O'Flanagan
+		Top o' the mornin'! I'm O'Flanagan, and this is my companion, O'Brien.
+		O'Brien
+		What brings you to The Tipsy Leprechaun?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		I'm doing a bar crawl with my friends!
+		3
+	ENDOPTION
+	OPTION
+		I'm just here to watch the Notre Dame game.
+		4
+	ENDOPTION
+	OPTION
+		It was nice to meet you two ... companions!
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	STATEMENTS
+		O'Flanagan
+		Oh, to be a young lad again.
+		O'Brien
+		Those were the days!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		O'Flanagan
+		What though the odds be great or small, old Notre Dame will win over all!
+		O'Brien
+		While her loyal sons are marching onward to victory!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		O'Flanagan
+		Would you like some potatoes for the road?
+		Blake
+		No thanks, I'll pass.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
