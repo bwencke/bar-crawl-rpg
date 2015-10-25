@@ -51,7 +51,7 @@ SNIPPET
 	4
 	STATEMENTS
 		Cassidy
-		Sorry Blake, I only brought exactly enough money for me and Josh.
+		Sorry, Blake, I only brought exactly enough money for me and Josh.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
