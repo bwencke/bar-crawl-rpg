@@ -130,4 +130,8 @@ public class Controller : MonoBehaviour {
 		conversation.GetComponent<ConversationController> ().StopConversation ();	
 		controlling = player;
 	}
+
+	public void LoadCutscene(string id) {
+		GameObject.FindGameObjectWithTag (id + "Cutscene").GetComponent<CutsceneScript> ().Begin ();
+	}
 }
