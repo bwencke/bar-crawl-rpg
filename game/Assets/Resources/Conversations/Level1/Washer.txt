@@ -1,0 +1,13 @@
+SNIPPET
+	1
+	STATEMENTS
+		Blake
+		Here's Brayden's ID, just like he said.
+		Blake
+		I'd better take this washing machine too. You never know when it could be useful.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
