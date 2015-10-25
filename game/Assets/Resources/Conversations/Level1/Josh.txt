@@ -46,6 +46,13 @@ SNIPPET
 		6
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		Can I borrow some money?
+		8
+	ENDOPTION
+	OPTION
 		OK, I need to go do some stuff.
 		7
 	ENDOPTION
@@ -108,5 +115,19 @@ SNIPPET
 	OPTION
 		JUMP
 		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Josh
+		Sorry bro, I don't have any on me. Cassidy's holding it all.
+		Josh
+		She's like my personal banker bro.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		3
 	ENDOPTION
 ENDSNIPPET
