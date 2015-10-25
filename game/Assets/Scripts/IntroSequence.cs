@@ -13,9 +13,4 @@ public class IntroSequence : MonoBehaviour {
 		yield return new WaitForSeconds (1);
 		GameObject.FindGameObjectWithTag ("Title").GetComponent<Canvas> ().enabled = false;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

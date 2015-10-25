@@ -26,7 +26,7 @@ public class ConversationController : TopLevelController {
 
 	void Start() {
 		dialogueEngine = ScriptableObject.CreateInstance<DialogueEngine>();
-		dialogueEngine.init("Samples");
+		dialogueEngine.init("Level1");
 	}
 
 	public override void TriggerMovement(Vector2 movement_vector) {

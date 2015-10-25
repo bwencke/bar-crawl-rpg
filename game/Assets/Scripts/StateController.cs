@@ -22,6 +22,7 @@ public class StateController : MonoBehaviour {
 	
 	void LoadDataFromSlot() {
 		if (!PlayerPrefs.HasKey ("save_slot" + saveSlot)) {
+			GameObject.FindGameObjectWithTag("GameController").GetComponent<Controller>().LoadCutscene("Intro");
 			return;
 		}
 		string json = PlayerPrefs.GetString ("save_slot" + saveSlot);
