@@ -2,11 +2,11 @@ SNIPPET
 	1
 	STATEMENTS
 		Blake
-		Hey guys! Are you all set for this bar crawl?
+		Hey, guys! Are you all set for this bar crawl?
 		Josh
 		I'm totally pumped, bro!
 		Cassidy
-		Me too! We're totally going to make it through all 10 bars.
+		Me, too! We're totally going to make it through all ten bars.
 		Brayden
 		Yeah, whatever.
 		Blake
@@ -57,9 +57,9 @@ SNIPPET
 		Josh
 		I got one here, yeah.
 		Josh
-		But bro I was pregaming pretty hard before this bro.
+		But bro, I was pregaming pretty hard before this bro.
 		Blake
-		You weren't supposed to pregame! We have to get through 10 drinks!
+		You weren't supposed to pregame! We have to get through ten drinks!
 		Josh
 		I can handle it bro.
 	ENDSTATEMENTS
@@ -75,7 +75,7 @@ SNIPPET
 		Josh
 		Yeah, I told her there would be less bro time and more ho time.
 		Josh
-		Except, not like that.
+		Except not like that.
 		Josh
 		Thanks for letting me bring her, by the way.
 		Blake
