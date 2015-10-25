@@ -1,0 +1,68 @@
+SNIPPET
+	1
+	STATEMENTS
+		Cassidy
+		Hey Blake!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		Are you ready for this bar crawl?
+		3
+	ENDOPTION
+	OPTION
+		Gotta go.
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	STATEMENTS
+		Cassidy
+		Of course! I've got the whole route planned out.
+		Cassidy
+		And I brought a bunch of snacks so we don't have to buy food.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+
+SNIPPET
+	1
+	ASSIGNMENTS
+		ConditionOne=TRUE
+		ConditionTwo=FALSE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Person One
+		Text
+		Person Two
+		Text
+	ENDSTATEMENTS
+	OPTION
+		CONDITIONS
+			ConditionOne=TRUE
+			ConditionTwo=TRUE
+		ENDCONDITIONS
+		Text
+		2
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			ConditionOne=TRUE
+			ConditionTwo=FALSE
+		ENDCONDITIONS
+		Text
+		3
+	ENDOPTION
+ENDSNIPPET
