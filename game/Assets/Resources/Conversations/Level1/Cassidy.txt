@@ -17,6 +17,17 @@ SNIPPET
 		3
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		Can I borrow some money?
+		4
+	ENDOPTION
+	OPTION
+		Have you been to The Tipsy Leprechaun before?
+		5
+	ENDOPTION
+	OPTION
 		Gotta go.
 		END
 	ENDOPTION
@@ -29,6 +40,30 @@ SNIPPET
 		Of course! I've got the whole route planned out.
 		Cassidy
 		And I brought a bunch of snacks so we don't have to buy food.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Cassidy
+		Sorry, Blake, I only brought exactly enough money for me and Josh.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Cassidy
+		Nope. I only ever go to Apex.
 	ENDSTATEMENTS
 	OPTION
 		JUMP

@@ -46,6 +46,13 @@ SNIPPET
 		6
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		Can I borrow some money?
+		8
+	ENDOPTION
+	OPTION
 		OK, I need to go do some stuff.
 		7
 	ENDOPTION
@@ -57,11 +64,11 @@ SNIPPET
 		Josh
 		I got one here, yeah.
 		Josh
-		But bro, I was pregaming pretty hard before this bro.
+		But bro, I was pregaming pretty hard before this, bro.
 		Blake
 		You weren't supposed to pregame! We have to get through ten drinks!
 		Josh
-		I can handle it bro.
+		I can handle it, bro.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
@@ -108,5 +115,19 @@ SNIPPET
 	OPTION
 		JUMP
 		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Josh
+		Sorry, bro, I don't have any on me. Cassidy's holding it all.
+		Josh
+		She's like my personal banker, bro.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		3
 	ENDOPTION
 ENDSNIPPET

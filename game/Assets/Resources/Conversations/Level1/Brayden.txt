@@ -67,6 +67,13 @@ SNIPPET
 		5
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		Can I borrow some money to buy a drink?
+		16
+	ENDOPTION
+	OPTION
 		Later.
 		END
 	ENDOPTION
@@ -227,6 +234,36 @@ SNIPPET
 	STATEMENTS
 		Brayden
 		Third from the left.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	15
+	STATEMENTS
+		Brayden
+		Cool.
+		Blake
+		...
+		Brayden
+		Thanks?
+		Blake
+		YOU'RE WELCOME.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	16
+	STATEMENTS
+		Brayden
+		Nah.
 	ENDSTATEMENTS
 	OPTION
 		JUMP

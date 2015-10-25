@@ -1,0 +1,65 @@
+SNIPPET
+	1
+	STATEMENTS
+		Blake
+		Hey, dad!
+		Dad
+		How's it going, son?
+		Blake
+		My friends and I are doing a bar crawl.
+		Dad
+		That's my boy!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		What is my bank PIN?
+		3
+	ENDOPTION
+	OPTION
+		How's work?
+		4
+	ENDOPTION
+	OPTION
+		See you later!
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	ASSIGNMENTS
+		KnowsPIN=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Dad
+		7724.
+		Blake
+		Great, thanks!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Dad
+		I'm leveraging subprime capital by diversifying pro rata liability assets. 
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
