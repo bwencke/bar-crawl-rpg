@@ -1,0 +1,126 @@
+SNIPPET
+	1
+	STATEMENTS
+		Norman
+		Young man! Could you spare some change for old Norman?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		What do you need money for?
+		4
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			KnowsAboutUmbrellaMan=TRUE
+		ENDCONDITIONS
+		What's this about the Umbrella Man?
+		5
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			HasMoney=FALSE
+		ENDCONDITIONS
+		Sorry, I don't have any money on me.
+		3
+	ENDOPTION
+	OPTION
+		I really should be going now.
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	STATEMENTS
+		Norman
+		Ah, buggers. It's so hard to get by these days.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	ASSIGNMENTS
+		KnowsAboutUmbrellaMan=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Norman
+		I'm homeless, you asswipe. I need money to buy food and find the Umbrella Man.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Norman
+		You don't know about the Umbrella Man? What are they teaching you at this sheep-shit school?
+		Blake
+		Construction management.
+		Norman
+		Well, sit down and listen the fuck up. You know who assassinated John F. Kennedy, right?
+		Blake
+		John Wilkes Oswald, or something.
+		Norman
+		That's what they want you to think. Watch the footage more closely, and look at the guy standing right next to Kennedy's car.
+		Blake
+		The Umbrella Man?
+		Norman
+		You're damn right, the Umbrella Man!
+		Norman
+		It's a beautiful day in Houston, Texas. Not a cloud in the sky. No reason anyone should be carrying an umbrella.
+		Norman
+		But then you see the Umbrella Man, holding an open umbrella. And right when the motorcade passes, you know what happens?
+		Blake
+		It starts raining?
+		Norman
+		Kennedy is shot, you shit-for-brains.
+		Norman
+		Anyway, scientists looked into it, and an umbrella would be the perfect place to hide a poisonous dart.
+		Norman
+		Was the Umbrella Man at the wrong place at the wrong time?
+		Norman
+		Or did he shoot a poisonous dart at the president and then open his umbrella as a signal to the gunmen?
+		Blake
+		It sounds like he was at the wrong place at the wrong time.
+		Norman
+		Fucking construction management majors. That's what they want you to think.
+		Norman
+		You want to know something real juicy about this Umbrella Man?
+		Blake
+		Not really.
+		Norman
+		That hairy-nippled mother fucker killed my father.
+		Blake
+		Your dad was John F. Kennedy?
+		Norman
+		No, you cum dumpster. My father was Norman Wilbur Hermanson II, and he was the greatest man I ever knew.
+		Norman
+		That is, until the Umbrella Man broke into our house and bludgeoned him to death with his umbrella.
+		Norman
+		The doctors said it was a heart attack. But I know it was the Umbrella Man.
+		Blake
+		And if I give you my spare change, what exactly are you going to do?
+		Norman
+		I will buy my own umbrella, find the Umbrella Man, engage him in an umbrella duel, and avenge my father's death!
+		Norman
+		WHO'S WITH ME?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
