@@ -3,6 +3,8 @@ using System.Collections;
 
 public class IntroSequence : MonoBehaviour {
 
+	public StateController stateController;
+
 	// Use this for initialization
 	void Start () {
 		StartCoroutine(Go ());
@@ -12,5 +14,6 @@ public class IntroSequence : MonoBehaviour {
 		GameObject.FindGameObjectWithTag ("Title").GetComponent<Canvas> ().enabled = true;
 		yield return new WaitForSeconds (1);
 		GameObject.FindGameObjectWithTag ("Title").GetComponent<Canvas> ().enabled = false;
+		stateController.Begin ();
 	}
 }

@@ -11,6 +11,7 @@ public class Controller : MonoBehaviour {
 	public GameObject inventory;
 	public GameObject player;
 	public GameObject conversation;
+	private GameObject cutscene;
 	GameObject controlling;
 
 	// Use this for initialization
@@ -19,6 +20,8 @@ public class Controller : MonoBehaviour {
 		                        .SetEventCategory("Game")
 		                        .SetEventAction("Start"));
 		controlling = player;
+
+		cutscene = null;
 
 		#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_PLAYER
 
@@ -127,11 +130,29 @@ public class Controller : MonoBehaviour {
 		googleAnalytics.LogEvent(new EventHitBuilder()
 		                         .SetEventCategory("Conversation")
 		                         .SetEventAction("Stop"));
-		conversation.GetComponent<ConversationController> ().StopConversation ();	
-		controlling = player;
+		conversation.GetComponent<ConversationController> ().StopConversation ();
+		if (cutscene != null) {
+			controlling = cutscene;
+			IncrCutscene();
+		} else {
+			controlling = player;
+		}
 	}
 
 	public void LoadCutscene(string id) {
-		GameObject.FindGameObjectWithTag (id + "Cutscene").GetComponent<CutsceneScript> ().Begin ();
+		cutscene = GameObject.FindGameObjectWithTag (id + "Cutscene");
+		controlling = cutscene;
+		IncrCutscene ();
 	}
+
+	private void IncrCutscene() {
+		if (cutscene.GetComponent<CutsceneScript> ().HasNext ()) {
+			StartCoroutine (cutscene.GetComponent<CutsceneScript> ().Next(IncrCutscene));
+			//IncrCutscene();
+		} else {
+			cutscene = null;
+			controlling = player;
+		}
+	}
+
 }

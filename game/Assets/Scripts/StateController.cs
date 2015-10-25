@@ -8,7 +8,7 @@ public class StateController : MonoBehaviour {
 	int saveSlot;
 
 	// Use this for initialization
-	void Start () {
+	public void Begin () {
 		// default to save slot 1
 		if (!PlayerPrefs.HasKey ("save_slot")) {
 			PlayerPrefs.SetInt("save_slot", 1);
