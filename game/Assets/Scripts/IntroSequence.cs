@@ -11,7 +11,6 @@ public class IntroSequence : MonoBehaviour {
 	IEnumerator Go() {
 		GameObject.FindGameObjectWithTag ("Title").GetComponent<Canvas> ().enabled = true;
 		yield return new WaitForSeconds (1);
-		GameObject.FindGameObjectWithTag ("BlackScreen").GetComponent<Canvas> ().enabled = false;
 		GameObject.FindGameObjectWithTag ("Title").GetComponent<Canvas> ().enabled = false;
 	}
 	

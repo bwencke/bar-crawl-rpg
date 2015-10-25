@@ -5,6 +5,8 @@ using CnControls;
 
 public class Controller : MonoBehaviour {
 
+	public GoogleAnalyticsV3 googleAnalytics;
+
 	public GameObject menu;
 	public GameObject inventory;
 	public GameObject player;
@@ -13,9 +15,12 @@ public class Controller : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		googleAnalytics.LogEvent(new EventHitBuilder()
+		                        .SetEventCategory("Game")
+		                        .SetEventAction("Start"));
 		controlling = player;
 
-		#if UNITY_STANDALONE || UNITY_PLAYER
+		#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_PLAYER
 
 			GameObject.FindGameObjectWithTag("MobileControls").GetComponent<Canvas>().enabled = false;
 
@@ -54,6 +59,9 @@ public class Controller : MonoBehaviour {
 
 	void DetectPrimaryAction() {
 		if (CnInputManager.GetButtonDown ("Jump") || Input.GetKeyDown(KeyCode.Return)) {
+			googleAnalytics.LogEvent(new EventHitBuilder()
+			                         .SetEventCategory("Primary Action")
+			                         .SetEventAction(Input.GetKeyDown(KeyCode.Return) ? "Enter Key" : "On Screen Button"));
 			TriggerPrimaryAction();
 		}
 	}
@@ -64,9 +72,20 @@ public class Controller : MonoBehaviour {
 	
 	void DetectMenuButton() {
 		if (Input.GetKeyDown (KeyCode.Escape)) {
-			if(controlling == inventory) {
-				ToggleInventory();
+			if (controlling == inventory) {
+				googleAnalytics.LogEvent (new EventHitBuilder ()
+				                         .SetEventCategory ("Esc")
+				                         .SetEventAction ("Close Inventory"));
+				ToggleInventory ();
+			} else if(controlling == conversation) {
+				googleAnalytics.LogEvent (new EventHitBuilder ()
+				                          .SetEventCategory ("Esc")
+				                          .SetEventAction ("Stop Conversation"));
+				StopConversation ();
 			} else {
+				googleAnalytics.LogEvent(new EventHitBuilder()
+				                         .SetEventCategory("Esc")
+				                         .SetEventAction("Close Menu"));
 				ToggleMenu ();
 			}
 		}
@@ -74,6 +93,9 @@ public class Controller : MonoBehaviour {
 
 	void DetectInventoryButton() {
 		if (Input.GetKeyDown (KeyCode.E)) {
+			googleAnalytics.LogEvent(new EventHitBuilder()
+			                         .SetEventCategory("E")
+			                         .SetEventAction(controlling == inventory ? "Close Inventory" : "Open Inventory"));
 			ToggleInventory();
 		}
 	}
@@ -94,11 +116,17 @@ public class Controller : MonoBehaviour {
 	}
 
 	public void StartConversation(string name, string id) {
+		googleAnalytics.LogEvent(new EventHitBuilder()
+		                         .SetEventCategory("Conversation")
+		                         .SetEventAction("Start"));
 		controlling = conversation;
 		conversation.GetComponent<ConversationController> ().StartConversation (name, id);	
 	}
 
 	public void StopConversation() {
+		googleAnalytics.LogEvent(new EventHitBuilder()
+		                         .SetEventCategory("Conversation")
+		                         .SetEventAction("Stop"));
 		conversation.GetComponent<ConversationController> ().StopConversation ();	
 		controlling = player;
 	}
