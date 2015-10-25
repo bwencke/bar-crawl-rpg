@@ -1,0 +1,170 @@
+SNIPPET
+	1
+	STATEMENTS
+		Banker
+		How can I help you?
+	ENDSTATEMENTS
+	OPTION
+		CONDITIONS
+			NeedsMoney=FALSE
+		ENDCONDITIONS
+		JUMP
+		2
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	STATEMENTS
+		Blake
+		Is your refrigerator running?
+		Banker
+		OK, I have real work to do.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	STATEMENTS
+		Blake
+		I'd like to make a withdrawal.
+		Banker
+		What is your name?
+	ENDSTATEMENTS
+	OPTION
+		Blake Bradford.
+		5
+	ENDOPTION
+	OPTION
+		Seymore Butts.
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Banker
+		I'm sorry, I don't have a Seymore Butts in the system.
+		Blake
+		It's not a traditional spelling of Seymore. Also, is your refrigerator running?
+		Banker
+		OK, I have real work to do.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Banker
+		What is your PIN?
+	ENDSTATEMENTS
+	OPTION
+		CONDITIONS
+			KnowsPIN=TRUE
+		ENDCONDITIONS
+		7724
+		10
+	ENDOPTION
+	OPTION
+		0000
+		6
+	ENDOPTION
+	OPTION
+		1234
+		7
+	ENDOPTION
+	OPTION
+		Blake Bradford.
+		8
+	ENDOPTION
+	OPTION
+		I don't know.
+		9
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Banker
+		I'm sorry, that's incorrect.
+		Blake
+		That's because I was completely guessing.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Banker
+		I'm sorry, that's incorrect.
+		Blake
+		Maybe typing it in again.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Banker
+		That's your name, not your PIN.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	9
+	STATEMENTS
+		Banker
+		I'm sorry, I can't do anything for you if you don't know your PIN.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	10
+	ASSIGNMENTS
+		HasMoney=TRUE
+		NeedsMoney=FALSE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Banker
+		Great! Here is all of the money in your account. Now please get away from me.
+		Blake
+		Uh, thanks.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
