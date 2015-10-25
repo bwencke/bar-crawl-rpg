@@ -1,0 +1,1 @@
+{"snippets": [{"assignments": [], "statements": [["Bouncer", "I need to see some ID."]], "id": "1", "options": [{"text": "JUMP", "conditions": [], "id": "END"}]}, {"assignments": [], "statements": [["Bouncer", "You're good, man."]], "id": "2", "options": [{"text": "JUMP", "conditions": [], "id": "END"}]}]}

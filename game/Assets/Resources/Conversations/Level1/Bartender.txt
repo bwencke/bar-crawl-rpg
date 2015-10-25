@@ -1,0 +1,126 @@
+SNIPPET
+	1
+	STATEMENTS
+		Bartender
+		What can I do for you?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		Get me a cold pint of Guinness!
+		3
+	ENDOPTION
+	OPTION
+		I'll have an amaretto sour!
+		3
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		Can I start a tab?
+		4
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		Would you lend me some money? I swear I'll pay you back.
+		5
+	ENDOPTION
+	OPTION
+		The decor in here is very subdued.
+		6
+	ENDOPTION
+	OPTION
+		Bye.
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	ASSIGNMENTS
+		NeedsMoney=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Bartender
+		That'll be four dollars.
+		Blake
+		Uh, I don't have any money on me.
+		Bartender
+		Well, no drink for you, then.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Bartender
+		We don't allow tabs here. We used to, but the clientele abused the system.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Bartender
+		Just go get money from the bank. It's just down the street.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Bartender
+		What is that supposed to mean?
+		Blake
+		Just that it isn't super Irish-y. You only have, like, one clover.
+		Bartender
+		Why should there be more clovers? This is a bar, not a goddamn meadow.
+		Blake
+		I just thought ...
+		Bartender
+		Do you think that's what bars in Ireland look like? Just fucking shamrocks everywhere?
+		Blake
+		OK, never mind.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Bartender
+		Great, here's your drink.
+		Blake
+		What is it?
+		Bartender
+		Does it matter?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
