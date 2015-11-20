@@ -13,12 +13,17 @@ public class Warp : MonoBehaviour {
 
 		ScreenFader sf = GameObject.FindGameObjectWithTag ("Fader").GetComponent<ScreenFader> ();
 
-		yield return StartCoroutine (sf.FadeToBlack());
+		//yield return StartCoroutine (sf.FadeToBlack());
 
 		Renderer[] renderers = theirParent.GetComponentsInChildren<Renderer>();
 		foreach (Renderer r in renderers)
 		{
 			r.enabled = true;
+		}
+		Collider2D[] colliders = theirParent.GetComponentsInChildren<Collider2D>();
+		foreach (Collider2D c in colliders)
+		{
+			c.enabled = true;
 		}
 
 		renderers = myParent.GetComponentsInChildren<Renderer>();
@@ -26,13 +31,19 @@ public class Warp : MonoBehaviour {
 		{
 			r.enabled = false;
 		}
+		colliders = myParent.GetComponentsInChildren<Collider2D>();
+		foreach (Collider2D c in colliders)
+		{
+			c.enabled = false;
+		}
 
-		myAudio.StopAudio ();
-		theirAudio.PlayAudio ();
+		//myAudio.StopAudio ();
+		//theirAudio.PlayAudio ();
 
 		collider.transform.position = warpTarget.position;
 		Camera.main.transform.position = warpTarget.position;
 
-		yield return StartCoroutine(sf.FadeToClear());
+		//yield return StartCoroutine(sf.FadeToClear());
+		return null;
 	}
 }
