@@ -48,11 +48,12 @@ public class PlayerMovement : TopLevelController {
 	}
 	
 	public override void TriggerPrimaryAction() {
-		RaycastHit2D[] hits = Physics2D.RaycastAll (transform.position, direction, .3f);
+		RaycastHit2D[] hits = Physics2D.RaycastAll (transform.position, direction, .2f);
 		foreach (RaycastHit2D hit in hits) {
 			if (hit.collider != null && hit.collider.gameObject.name != "Player") {
 				//Debug.Log("You can't do anything with this object!");
 				hit.collider.gameObject.GetComponent<ColliderController>().TriggerPrimaryAction();
+				break;
 			}
 		}
 	}

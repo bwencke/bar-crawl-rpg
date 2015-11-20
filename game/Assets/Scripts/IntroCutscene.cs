@@ -10,6 +10,8 @@ public class IntroCutscene : CutsceneScript {
 	int position = 0;
 	int numScenes = 2;
 
+	int count;
+
 	public override IEnumerator Next (System.Action callback) {
 		Debug.LogError (position);
 		switch(position++) {
@@ -17,9 +19,13 @@ public class IntroCutscene : CutsceneScript {
 			GameObject.FindGameObjectWithTag ("GameController").GetComponent<Controller> ().StartConversation ("Josh", "1");
 			break;
 		case(1):
+			count = 0;
 			StartCoroutine(BraydenLeave());
 			StartCoroutine(JoshLeave());
-			yield return StartCoroutine(CassidyLeave());
+			StartCoroutine(CassidyLeave());
+			while(count < 3) {
+				yield return null;
+			}
 			Brayden.SetPosition(new Vector2(10.38f, -8.85f));
 			Brayden.SetDirection(new Vector2(0, -1));
 			Destroy(Josh.gameObject);
@@ -37,6 +43,7 @@ public class IntroCutscene : CutsceneScript {
 		yield return StartCoroutine(Brayden.MoveDown(4));
 		yield return StartCoroutine(Brayden.MoveRight(1));
 		yield return StartCoroutine (Brayden.MoveDown (6));
+		count++;
 	}
 
 	IEnumerator JoshLeave() {
@@ -44,6 +51,7 @@ public class IntroCutscene : CutsceneScript {
 		yield return StartCoroutine(Josh.MoveDown(4));
 		yield return StartCoroutine(Josh.MoveRight(1));
 		yield return StartCoroutine (Josh.MoveDown (6));
+		count++;
 	}
 
 	IEnumerator CassidyLeave() {
@@ -51,5 +59,6 @@ public class IntroCutscene : CutsceneScript {
 		yield return StartCoroutine(Cassidy.MoveDown(4));
 		yield return StartCoroutine(Cassidy.MoveRight(1));
 		yield return StartCoroutine(Cassidy.MoveDown(6));
+		count++;
 	}
 }

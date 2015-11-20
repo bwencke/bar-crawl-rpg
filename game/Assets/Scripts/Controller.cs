@@ -7,19 +7,22 @@ public class Controller : MonoBehaviour {
 
 	public GoogleAnalyticsV3 googleAnalytics;
 
+	public GameObject BlackBar1;
+	public GameObject BlackBar2;
+
 	public GameObject menu;
 	public GameObject inventory;
 	public GameObject player;
 	public GameObject conversation;
 	private GameObject cutscene;
-	GameObject controlling;
+	private GameObject controlling;
 
 	// Use this for initialization
 	void Start () {
 		googleAnalytics.LogEvent(new EventHitBuilder()
 		                        .SetEventCategory("Game")
 		                        .SetEventAction("Start"));
-		controlling = player;
+		SetControlling(player);
 
 		cutscene = null;
 
@@ -39,6 +42,17 @@ public class Controller : MonoBehaviour {
 		DetectInventoryButton ();
 	}
 
+	GameObject GetControlling() {
+		return controlling;
+	}
+
+	void SetControlling(GameObject newController) {
+		if (controlling != null) {
+			GetControlling ().GetComponent<TopLevelController> ().TriggerMovement (Vector2.zero);
+		}
+		controlling = newController;
+	}
+
 	void DetectArrowKeys() {
 
 		int horizontal = 0;
@@ -56,7 +70,7 @@ public class Controller : MonoBehaviour {
 		
 		#endif
 
-		controlling.GetComponent<TopLevelController>().TriggerMovement(new Vector2 (horizontal, vertical));
+		GetControlling().GetComponent<TopLevelController>().TriggerMovement(new Vector2 (horizontal, vertical));
 
 	}
 
@@ -70,21 +84,23 @@ public class Controller : MonoBehaviour {
 	}
 
 	public void TriggerPrimaryAction() {
-		controlling.GetComponent<TopLevelController>().TriggerPrimaryAction();
+		GetControlling().GetComponent<TopLevelController>().TriggerPrimaryAction();
 	}
 	
 	void DetectMenuButton() {
 		if (Input.GetKeyDown (KeyCode.Escape)) {
-			if (controlling == inventory) {
+			if (GetControlling() == inventory) {
 				googleAnalytics.LogEvent (new EventHitBuilder ()
 				                         .SetEventCategory ("Esc")
 				                         .SetEventAction ("Close Inventory"));
 				ToggleInventory ();
-			} else if(controlling == conversation) {
-				googleAnalytics.LogEvent (new EventHitBuilder ()
-				                          .SetEventCategory ("Esc")
-				                          .SetEventAction ("Stop Conversation"));
-				StopConversation ();
+//			} else if(GetControlling() == conversation) {
+//				googleAnalytics.LogEvent (new EventHitBuilder ()
+//				                          .SetEventCategory ("Esc")
+//				                          .SetEventAction ("Stop Conversation"));
+//				StopConversation ();
+			} else if(GetControlling() == cutscene || GetControlling() == conversation) {
+				return;
 			} else {
 				googleAnalytics.LogEvent(new EventHitBuilder()
 				                         .SetEventCategory("Esc")
@@ -95,17 +111,19 @@ public class Controller : MonoBehaviour {
 	}
 
 	void DetectInventoryButton() {
-		if (Input.GetKeyDown (KeyCode.E)) {
-			googleAnalytics.LogEvent(new EventHitBuilder()
-			                         .SetEventCategory("E")
-			                         .SetEventAction(controlling == inventory ? "Close Inventory" : "Open Inventory"));
-			ToggleInventory();
+		if (GetControlling () == player || GetControlling () == inventory) {
+			if (Input.GetKeyDown (KeyCode.E)) {
+				googleAnalytics.LogEvent (new EventHitBuilder ()
+				                         .SetEventCategory ("E")
+				                         .SetEventAction (GetControlling () == inventory ? "Close Inventory" : "Open Inventory"));
+				ToggleInventory ();
+			}
 		}
 	}
 
 	public void ToggleMenu() {
 		menu.GetComponent<Canvas>().enabled = !menu.GetComponent<Canvas>().enabled;
-		controlling = menu.GetComponent<Canvas>().enabled ? menu : player;
+		SetControlling(menu.GetComponent<Canvas>().enabled ? menu : player);
 	}
 
 	public void ToggleInventory() {
@@ -115,14 +133,14 @@ public class Controller : MonoBehaviour {
 			inventory.GetComponent<InventoryController> ().LoadInventory ();
 		}
 		inventory.GetComponent<Canvas>().enabled = !inventory.GetComponent<Canvas>().enabled;
-		controlling = inventory.GetComponent<Canvas>().enabled ? inventory : player;
+		SetControlling(inventory.GetComponent<Canvas>().enabled ? inventory : player);
 	}
 
 	public void StartConversation(string name, string id) {
 		googleAnalytics.LogEvent(new EventHitBuilder()
 		                         .SetEventCategory("Conversation")
 		                         .SetEventAction("Start"));
-		controlling = conversation;
+		SetControlling(conversation);
 		conversation.GetComponent<ConversationController> ().StartConversation (name, id);	
 	}
 
@@ -132,16 +150,17 @@ public class Controller : MonoBehaviour {
 		                         .SetEventAction("Stop"));
 		conversation.GetComponent<ConversationController> ().StopConversation ();
 		if (cutscene != null) {
-			controlling = cutscene;
+			SetControlling(cutscene);
 			IncrCutscene();
 		} else {
-			controlling = player;
+			SetControlling(player);
 		}
 	}
 
 	public void LoadCutscene(string id) {
+		ShowBlackBars ();
 		cutscene = GameObject.FindGameObjectWithTag (id + "Cutscene");
-		controlling = cutscene;
+		SetControlling(cutscene);
 		IncrCutscene ();
 	}
 
@@ -150,9 +169,22 @@ public class Controller : MonoBehaviour {
 			StartCoroutine (cutscene.GetComponent<CutsceneScript> ().Next(IncrCutscene));
 			//IncrCutscene();
 		} else {
+			HideBlackBars();
 			cutscene = null;
-			controlling = player;
+			SetControlling(player);
 		}
+	}
+
+	void ShowBlackBars() {
+		StartCoroutine (BlackBar1.GetComponent<BlackBarSlider>().SlideIn());
+		StartCoroutine (BlackBar2.GetComponent<BlackBarSlider>().SlideIn());
+		//BlackBar2.GetComponent<RawImage> ().enabled = true;
+	}
+
+	void HideBlackBars() {
+		StartCoroutine (BlackBar1.GetComponent<BlackBarSlider>().SlideOut());
+		StartCoroutine (BlackBar2.GetComponent<BlackBarSlider>().SlideOut());
+		//BlackBar2.GetComponent<RawImage> ().enabled = false;
 	}
 
 }
