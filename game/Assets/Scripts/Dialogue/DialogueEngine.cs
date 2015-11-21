@@ -16,15 +16,30 @@ public class DialogueEngine : ScriptableObject
 
 	/* Sets a condition variable. */
 	public void setVar(string name, bool value) {
+		printVars ();
 		vars[name] = value;
 	}
 
 	/* Checks a condition variable. */
 	public bool checkVar(string name) {
+		printVars ();
 		if (vars.ContainsKey (name)) {
 			return vars [name];
 		}
 		return false;
+	}
+
+	public Dictionary<string, bool> getVars() {
+		return vars;
+	}
+
+	public void printVars() {
+		string s = "";
+		foreach (KeyValuePair<string, bool> variable in vars)
+		{
+			s += "Key = {" + variable.Key + "}, Value = {" + variable.Value + "}" + "\n";
+		}
+		Debug.Log (s);
 	}
 
 	/*

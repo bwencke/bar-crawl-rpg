@@ -8,7 +8,7 @@ public class ConversationController : TopLevelController {
 
 	public GoogleAnalyticsV3 googleAnalytics;
 
-	DialogueEngine dialogueEngine;
+	public DialogueEngine dialogueEngine;
 
 	string NPCName;
 	Snippet snippet;
