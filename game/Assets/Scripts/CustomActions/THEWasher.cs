@@ -23,7 +23,8 @@ public class THEWasher : ColliderController {
 	public void addItems() {
 		ConversationController conversationController = GameObject.FindGameObjectWithTag ("Conversation").GetComponent<ConversationController> ();
 		AlertController alertController = GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ();
-		alertController.ShowAlert ("Brayden's ID and a washing machine added to inventory!");
+		GameObject.FindGameObjectWithTag ("SuccessChime").GetComponent<AudioObject> ().PlayAudio ();
+		alertController.ShowStaticAlert ("Brayden's ID and a washing machine added to inventory!");
 		conversationController.dialogueEngine.setVar ("FoundID", true);
 		Destroy(GameObject.FindGameObjectWithTag ("THEWasher"));
 		braydensID.Enable();

@@ -39,14 +39,15 @@ public class Warp : MonoBehaviour {
 			c.enabled = false;
 		}
 
-		myAudio.StopAudio ();
-		theirAudio.PlayAudio ();
+		//myAudio.StopAudio ();
+		GameObject.FindGameObjectWithTag ("DoorSound").GetComponent<AudioObject> ().PlayAudio();
+		//theirAudio.PlayAudio ();
 
 		collider.transform.position = warpTarget.position;
 		Camera.main.transform.position = warpTarget.position;
 
 		yield return StartCoroutine(sf.FadeToClear());
 
-		ac.ShowLocation (locationName);
+		ac.ShowStaticAlert (locationName);
 	}
 }

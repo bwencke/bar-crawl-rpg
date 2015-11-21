@@ -5,22 +5,22 @@ using System.Collections;
 public class AlertController : MonoBehaviour {
 
 	bool visible = false;
-	bool location = false;
+	bool staticAlert = false;
 	private IEnumerator coroutine;
 
 	public void ShowAlert(string text) {
 		gameObject.GetComponentInChildren<Text> ().text = text;
 		visible = true;
-		location = false;
+		staticAlert = false;
 		gameObject.GetComponent<Canvas> ().enabled = true;
 		coroutine = Wait(2.0f,HideAlert);
 		StartCoroutine (coroutine);
 	}
 
-	public void ShowLocation(string text) {
+	public void ShowStaticAlert(string text) {
 		gameObject.GetComponentInChildren<Text> ().text = text;
 		visible = true;
-		location = true;
+		staticAlert = true;
 		gameObject.GetComponent<Canvas> ().enabled = true;
 		coroutine = Wait(3.0f,HideAlert);
 		StartCoroutine (coroutine);
@@ -32,7 +32,7 @@ public class AlertController : MonoBehaviour {
 	}
 
 	public void CancelAlert() {
-		if (coroutine != null && visible == true && location == false) {
+		if (coroutine != null && visible == true && staticAlert == false) {
 			StopCoroutine (coroutine);
 			HideAlert ();
 		}
