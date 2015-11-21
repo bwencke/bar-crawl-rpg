@@ -26,6 +26,11 @@
  </tileset>
  <tileset firstgid="197" name="collisions" tilewidth="32" tileheight="32" tilecount="1">
   <image source="../../../tiles/LPC/collisions.png" width="32" height="32"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object id="0" x="0.75" y="0.5" width="30.75" height="31.25"/>
+   </objectgroup>
+  </tile>
  </tileset>
  <tileset firstgid="198" name="country" tilewidth="32" tileheight="32" tilecount="20">
   <image source="../../../tiles/LPC/country.png" width="160" height="128"/>
@@ -358,6 +363,11 @@
  <layer name="Copy Machine" width="12" height="15">
   <data encoding="base64" compression="zlib">
    eJxjYBh6oFiUgaFEdKBdMQoGIwAAQHwBEg==
+  </data>
+ </layer>
+ <layer name="Collisions" width="12" height="15" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYCANHEVjE8IMaGxqAGxmE2M+Nvdgcy829aS4C5eZ+OTQ3YVuLy734jMflxuxsfH5BZ/YYAMA/gIsow==
   </data>
  </layer>
 </map>
