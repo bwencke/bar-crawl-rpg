@@ -286,11 +286,6 @@
    eJzrEGRg6CQDdwHxCiBeSQZeBcSjYHgDAPe5E+0=
   </data>
  </layer>
- <layer name="Stolen Chair from Bank" width="15" height="10">
-  <data encoding="base64" compression="zlib">
-   eJxjYBh6IJBloF0wCggBAI3IAFY=
-  </data>
- </layer>
  <layer name="Side Walls" width="15" height="10">
   <data encoding="base64" compression="zlib">
    eJzjFmIgC3QLMjBwj+od9Ho7gLgTC+4ShKjpgLKx4RVAvBILXgXVuwLKxoYBC4QYaw==
@@ -303,7 +298,12 @@
  </layer>
  <layer name="Washers and Dryers" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYKAMlIhixyBQJoodw0CpKHYMAuWi2PEoGBoAAHGIDP0=
+   eJxjYKAMlIhCMDIbxi8TxY5hoFQUgpHZMH65KHY8CoYGAABavAvq
+  </data>
+ </layer>
+ <layer name="THEWasher" width="15" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAOKBElX28pBXpHweAEABkkARQ=
   </data>
  </layer>
  <layer name="Tables" width="15" height="10">
@@ -318,7 +318,7 @@
  </layer>
  <layer name="Collisions" width="15" height="10">
   <data encoding="base64" compression="zlib">
-   eJxjYCAfHKVQ7igOTIzcQAFcbiJWnt4AVzgSCmdi4w8XAABxAiBT
+   eJxjYCAfHMXBxsbHJncUByYkN5CAkJsGo5sHAgAAs3oUAw==
   </data>
  </layer>
 </map>

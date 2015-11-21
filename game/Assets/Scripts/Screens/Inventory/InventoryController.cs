@@ -36,14 +36,16 @@ public class InventoryController : TopLevelController {
 		googleAnalytics.LogScreen("Inventory");
 		items = GameObject.FindGameObjectsWithTag ("InventoryItem");
 		foreach (GameObject item in items) {
-			GameObject itemImg = Instantiate(prefab) as GameObject;
-			Image img = itemImg.GetComponentInChildren<Image>();
-			Text text = itemImg.GetComponentInChildren<Text>();
-			img.sprite = item.GetComponent<SpriteRenderer>().sprite;
-			text.text = item.name;
-			itemImg.transform.SetParent(inventoryGrid.GetComponent<RectTransform>());
-			itemImg.transform.localScale = Vector3.one;
-			createdItemImages.Add(itemImg);
+			if(item.GetComponent<InventoryItemController>().IsEnabled()) {
+				GameObject itemImg = Instantiate(prefab) as GameObject;
+				Image img = itemImg.GetComponentInChildren<Image>();
+				Text text = itemImg.GetComponentInChildren<Text>();
+				img.sprite = item.GetComponent<SpriteRenderer>().sprite;
+				text.text = item.name;
+				itemImg.transform.SetParent(inventoryGrid.GetComponent<RectTransform>());
+				itemImg.transform.localScale = Vector3.one;
+				createdItemImages.Add(itemImg);
+			}
 		}
 
 		#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER

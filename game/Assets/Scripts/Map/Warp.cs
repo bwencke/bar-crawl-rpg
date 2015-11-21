@@ -13,7 +13,7 @@ public class Warp : MonoBehaviour {
 
 		ScreenFader sf = GameObject.FindGameObjectWithTag ("Fader").GetComponent<ScreenFader> ();
 
-		//yield return StartCoroutine (sf.FadeToBlack());
+		yield return StartCoroutine (sf.FadeToBlack());
 
 		Renderer[] renderers = theirParent.GetComponentsInChildren<Renderer>();
 		foreach (Renderer r in renderers)
@@ -43,7 +43,6 @@ public class Warp : MonoBehaviour {
 		collider.transform.position = warpTarget.position;
 		Camera.main.transform.position = warpTarget.position;
 
-		//yield return StartCoroutine(sf.FadeToClear());
-		return null;
+		yield return StartCoroutine(sf.FadeToClear());
 	}
 }

@@ -12,8 +12,15 @@ public class IntroCutscene : CutsceneScript {
 
 	int count;
 
+	public override void LoadResults () {
+		Debug.Log ("SDfsdfsdfsdsfsdfdsf");
+		Brayden.SetPosition(new Vector2(10.38f, -8.85f));
+		Brayden.SetDirection(new Vector2(0, -1));
+		Destroy(Josh.gameObject);
+		Destroy(Cassidy.gameObject);
+	}
+
 	public override IEnumerator Next (System.Action callback) {
-		Debug.LogError (position);
 		switch(position++) {
 		case(0):
 			GameObject.FindGameObjectWithTag ("GameController").GetComponent<Controller> ().StartConversation ("Josh", "1");
@@ -30,6 +37,7 @@ public class IntroCutscene : CutsceneScript {
 			Brayden.SetDirection(new Vector2(0, -1));
 			Destroy(Josh.gameObject);
 			Destroy(Cassidy.gameObject);
+			GameObject.FindGameObjectWithTag ("Conversation").GetComponent<ConversationController> ().dialogueEngine.setVar ("SawIntroCutscene", true);
 			callback();
 			break;
 		}

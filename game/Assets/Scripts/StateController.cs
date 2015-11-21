@@ -25,7 +25,6 @@ public class StateController : MonoBehaviour {
 	
 	void LoadDataFromSlot() {
 		if (!PlayerPrefs.HasKey ("save_slot" + saveSlot)) {
-			conversationController.dialogueEngine.setVar("FoundID", false);
 			GameObject.FindGameObjectWithTag("GameController").GetComponent<Controller>().LoadCutscene("Intro");
 			return;
 		}
@@ -41,51 +40,58 @@ public class StateController : MonoBehaviour {
 		foreach (JSONNode variable in root["variables"].AsArray) {
 			conversationController.dialogueEngine.setVar(variable["name"], variable["value"].AsBool);
 		}
+		if (conversationController.dialogueEngine.checkVar ("SawIntroCutscene")) {
+			GameObject.FindGameObjectWithTag("GameController").GetComponent<Controller>().LoadCutsceneResults("Intro");
+		}
 		conversationController.dialogueEngine.printVars ();
 	}
 
 	public void SaveState() {
+		try {
+			GameObject player = GameObject.FindGameObjectWithTag ("Player");
+			Animator playerAnimator = player.GetComponent<Animator> ();
 
-		GameObject player = GameObject.FindGameObjectWithTag ("Player");
-		Animator playerAnimator = player.GetComponent<Animator> ();
+			string variables = "";
+			foreach (KeyValuePair<string, bool> variable in conversationController.dialogueEngine.getVars())
+			{
+				variables += "{" + 
+						"\"name\":\"" + variable.Key + "\"," +
+						"\"value\":" + variable.Value.ToString() + 
+					"},";
+			}
+			if (variables.Length > 0) {
+				variables = variables.Remove (variables.Length - 1);
+			}
 
-		string variables = "";
-		foreach (KeyValuePair<string, bool> variable in conversationController.dialogueEngine.getVars())
-		{
-			variables += "{" + 
-					"\"name\":\"" + variable.Key + "\"," +
-					"\"value\":" + variable.Value.ToString() + 
-				"},";
+			string result = "{" +
+					"\"level\":1," +
+					"\"position\":{" +
+						"\"x\":" + player.transform.position.x + ","+
+						"\"y\":" + player.transform.position.y +
+					"}," +
+					"\"direction\":{" +
+						"\"x\":" + playerAnimator.GetFloat ("input_x") + ","+
+						"\"y\":" + playerAnimator.GetFloat ("input_y") +
+					"}," +
+					"\"timestamp\":\"" + System.DateTime.Now + "\"" + "," +
+					"\"variables\":[" +
+						variables + 
+					"]" +
+				"}";
+
+	//		GameObject player = GameObject.FindGameObjectWithTag ("Player");
+	//		root ["position"] ["x"].AsFloat = player.transform.position.x;
+	//		root ["position"] ["y"].AsFloat = player.transform.position.y;
+	//
+	//		Animator playerAnimator = player.GetComponent<Animator> ();
+	//		root ["direction"] ["x"].AsFloat = playerAnimator.GetFloat ("input_x");
+	//		root ["direction"] ["y"].AsFloat = playerAnimator.GetFloat ("input_y");
+
+			PlayerPrefs.SetString ("save_slot" + saveSlot, result);
+
+			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowAlert ("Successfully saved game.");
+		} catch(UnityException e) {
+			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowAlert ("Error saving game!");
 		}
-		if (variables.Length > 0) {
-			variables = variables.Remove (variables.Length - 1);
-		}
-
-		string result = "{" +
-				"\"level\":1," +
-				"\"position\":{" +
-					"\"x\":" + player.transform.position.x + ","+
-					"\"y\":" + player.transform.position.y +
-				"}," +
-				"\"direction\":{" +
-					"\"x\":" + playerAnimator.GetFloat ("input_x") + ","+
-					"\"y\":" + playerAnimator.GetFloat ("input_y") +
-				"}," +
-				"\"timestamp\":\"" + System.DateTime.Now + "\"" + "," +
-				"\"variables\":[" +
-					variables + 
-				"]" +
-			"}";
-
-//		GameObject player = GameObject.FindGameObjectWithTag ("Player");
-//		root ["position"] ["x"].AsFloat = player.transform.position.x;
-//		root ["position"] ["y"].AsFloat = player.transform.position.y;
-//
-//		Animator playerAnimator = player.GetComponent<Animator> ();
-//		root ["direction"] ["x"].AsFloat = playerAnimator.GetFloat ("input_x");
-//		root ["direction"] ["y"].AsFloat = playerAnimator.GetFloat ("input_y");
-
-		PlayerPrefs.SetString ("save_slot" + saveSlot, result);
-		Debug.Log (result);
 	}
 }

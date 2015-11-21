@@ -164,6 +164,11 @@ public class Controller : MonoBehaviour {
 		IncrCutscene ();
 	}
 
+	public void LoadCutsceneResults(string id) {
+		GameObject.FindGameObjectWithTag (id + "Cutscene").GetComponent<CutsceneScript> ().LoadResults ();
+		HideBlackBars();
+	}
+
 	private void IncrCutscene() {
 		if (cutscene.GetComponent<CutsceneScript> ().HasNext ()) {
 			StartCoroutine (cutscene.GetComponent<CutsceneScript> ().Next(IncrCutscene));

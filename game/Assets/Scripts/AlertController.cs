@@ -11,7 +11,7 @@ public class AlertController : MonoBehaviour {
 		gameObject.GetComponentInChildren<Text> ().text = text;
 		visible = true;
 		gameObject.GetComponent<Canvas> ().enabled = true;
-		coroutine = Wait(2.0f,HideAlert);
+		coroutine = Wait(3.0f,HideAlert);
 		StartCoroutine (coroutine);
 	}
 

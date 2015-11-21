@@ -1,0 +1,28 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class THEWasher : ColliderController {
+
+	public InventoryItemController braydensID;
+	public InventoryItemController washingMachine;
+
+	public override void TriggerPrimaryAction () {
+		ConversationController conversationController = GameObject.FindGameObjectWithTag ("Conversation").GetComponent<ConversationController> ();
+		AlertController alertController = GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ();
+		if (!conversationController.dialogueEngine.checkVar ("FoundID")) {
+			if(conversationController.dialogueEngine.checkVar ("BraydenAskedForHelp")) {
+				conversationController.StartConversation("washer", "1");
+				alertController.ShowAlert ("Brayden's ID and a washing machine added to inventory!");
+				conversationController.dialogueEngine.setVar ("FoundID", true);
+				Destroy(GameObject.FindGameObjectWithTag ("THEWasher"));
+				braydensID.Enable();
+				washingMachine.Enable();
+			} else {
+				alertController.ShowAlert ("I probably shouldn't be going through somebody's clothes.");
+			}	
+		} else {
+			alertController.ShowAlert ("It's empty.");
+		}
+	}
+
+}
