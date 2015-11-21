@@ -8,10 +8,12 @@ public class Warp : MonoBehaviour {
 	public AudioObject myAudio;
 	public GameObject theirParent;
 	public AudioObject theirAudio;
+	public string locationName;
 
 	IEnumerator OnTriggerEnter2D(Collider2D collider) {
 
 		ScreenFader sf = GameObject.FindGameObjectWithTag ("Fader").GetComponent<ScreenFader> ();
+		AlertController ac = GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ();
 
 		yield return StartCoroutine (sf.FadeToBlack());
 
@@ -37,12 +39,14 @@ public class Warp : MonoBehaviour {
 			c.enabled = false;
 		}
 
-		//myAudio.StopAudio ();
-		//theirAudio.PlayAudio ();
+		myAudio.StopAudio ();
+		theirAudio.PlayAudio ();
 
 		collider.transform.position = warpTarget.position;
 		Camera.main.transform.position = warpTarget.position;
 
 		yield return StartCoroutine(sf.FadeToClear());
+
+		ac.ShowLocation (locationName);
 	}
 }

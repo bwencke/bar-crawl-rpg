@@ -43,7 +43,7 @@ public class NPCController : ColliderController {
 		                         .SetEventCategory ("Primary Action")
 		                         .SetEventAction ("Talk to NPC")
 		                         .SetEventLabel (npcName));
-		GameObject.FindGameObjectWithTag ("GameController").GetComponent<Controller>().StartConversation (npcName, conversationId);
+		GameObject.FindGameObjectWithTag ("GameController").GetComponent<Controller>().StartConversation (npcName, conversationId, null);
 	}
 
 	public IEnumerator MoveDown(float distance) {

@@ -13,7 +13,6 @@ public class IntroCutscene : CutsceneScript {
 	int count;
 
 	public override void LoadResults () {
-		Debug.Log ("SDfsdfsdfsdsfsdfdsf");
 		Brayden.SetPosition(new Vector2(10.38f, -8.85f));
 		Brayden.SetDirection(new Vector2(0, -1));
 		Destroy(Josh.gameObject);
@@ -23,7 +22,7 @@ public class IntroCutscene : CutsceneScript {
 	public override IEnumerator Next (System.Action callback) {
 		switch(position++) {
 		case(0):
-			GameObject.FindGameObjectWithTag ("GameController").GetComponent<Controller> ().StartConversation ("Josh", "1");
+			GameObject.FindGameObjectWithTag ("GameController").GetComponent<Controller> ().StartConversation ("Josh", "1", null);
 			break;
 		case(1):
 			count = 0;

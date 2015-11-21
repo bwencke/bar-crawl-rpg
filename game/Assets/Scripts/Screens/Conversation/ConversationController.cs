@@ -18,6 +18,8 @@ public class ConversationController : TopLevelController {
 	public GameObject next;
 	public GameObject options;
 
+	private System.Action callback;
+
 	Vector2 prev = Vector2.zero;
 
 	int statement;
@@ -41,7 +43,8 @@ public class ConversationController : TopLevelController {
 		controlling.TriggerPrimaryAction ();
 	}
 
-	public void StartConversation(string name, string id) {
+	public void StartConversation(string name, string id, System.Action callback) {
+		this.callback = callback;
 		this.NPCName = name;
 		LoadSnippet (id);
 		gameObject.GetComponent<Canvas> ().enabled = true;
@@ -56,6 +59,9 @@ public class ConversationController : TopLevelController {
 		next.GetComponent<Image> ().enabled = false;
 		next.GetComponentInChildren<Text> ().enabled = false;
 		options.GetComponent<Canvas> ().enabled = false;
+		if (callback != null) {
+			callback ();
+		}
 	}
 
 	void LoadSnippet(string id) {

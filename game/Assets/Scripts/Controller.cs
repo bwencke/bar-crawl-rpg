@@ -70,7 +70,9 @@ public class Controller : MonoBehaviour {
 		
 		#endif
 
-		GetControlling().GetComponent<TopLevelController>().TriggerMovement(new Vector2 (horizontal, vertical));
+		Vector2 input = new Vector2 (horizontal, vertical);
+
+		GetControlling ().GetComponent<TopLevelController> ().TriggerMovement (input);
 
 	}
 
@@ -136,12 +138,12 @@ public class Controller : MonoBehaviour {
 		SetControlling(inventory.GetComponent<Canvas>().enabled ? inventory : player);
 	}
 
-	public void StartConversation(string name, string id) {
+	public void StartConversation(string name, string id, System.Action callback) {
 		googleAnalytics.LogEvent(new EventHitBuilder()
 		                         .SetEventCategory("Conversation")
 		                         .SetEventAction("Start"));
 		SetControlling(conversation);
-		conversation.GetComponent<ConversationController> ().StartConversation (name, id);	
+		conversation.GetComponent<ConversationController> ().StartConversation (name, id, callback);
 	}
 
 	public void StopConversation() {

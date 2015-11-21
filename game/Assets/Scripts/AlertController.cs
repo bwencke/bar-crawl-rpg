@@ -5,11 +5,22 @@ using System.Collections;
 public class AlertController : MonoBehaviour {
 
 	bool visible = false;
+	bool location = false;
 	private IEnumerator coroutine;
 
 	public void ShowAlert(string text) {
 		gameObject.GetComponentInChildren<Text> ().text = text;
 		visible = true;
+		location = false;
+		gameObject.GetComponent<Canvas> ().enabled = true;
+		coroutine = Wait(2.0f,HideAlert);
+		StartCoroutine (coroutine);
+	}
+
+	public void ShowLocation(string text) {
+		gameObject.GetComponentInChildren<Text> ().text = text;
+		visible = true;
+		location = true;
 		gameObject.GetComponent<Canvas> ().enabled = true;
 		coroutine = Wait(3.0f,HideAlert);
 		StartCoroutine (coroutine);
@@ -21,7 +32,7 @@ public class AlertController : MonoBehaviour {
 	}
 
 	public void CancelAlert() {
-		if (coroutine != null && visible == true) {
+		if (coroutine != null && visible == true && location == false) {
 			StopCoroutine (coroutine);
 			HideAlert ();
 		}
