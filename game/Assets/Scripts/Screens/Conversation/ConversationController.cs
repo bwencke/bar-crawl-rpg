@@ -75,7 +75,6 @@ public class ConversationController : TopLevelController {
 			dialogue.GetComponent<StatementsController> ().SetStatement (snippet.getStatements () [statement]);
 		//}
 		dialogue.GetComponent<Canvas> ().enabled = true;
-		//next.GetComponent<Canvas> ().enabled = true;
 		next.GetComponent<Image> ().enabled = true;
 		next.GetComponentInChildren<Text> ().enabled = true;
 		options.GetComponent<Canvas> ().enabled = false;
@@ -105,7 +104,6 @@ public class ConversationController : TopLevelController {
 		dialogue.GetComponent<Canvas> ().enabled = false;
 		npcImage.GetComponent<Canvas> ().enabled = false;
 		playerImage.GetComponent<Canvas> ().enabled = false;
-		//next.GetComponent<Canvas> ().enabled = false;
 		next.GetComponent<Image> ().enabled = false;
 		next.GetComponentInChildren<Text> ().enabled = false;
 		options.GetComponent<Canvas> ().enabled = true;
@@ -114,8 +112,10 @@ public class ConversationController : TopLevelController {
 
 	public void ChooseOption(string id) {
 		if (id == "END") {
-			controller.StopConversation();
+			controller.StopConversation ();
 			return;
+		} else if (id == "INVENTORY") {
+			controller.ToggleInventory();
 		}
 		LoadSnippet (id);
 		Next();

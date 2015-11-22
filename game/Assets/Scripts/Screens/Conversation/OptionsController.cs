@@ -15,12 +15,16 @@ public class OptionsController : TopLevelController {
 
 	Color selectedColor;
 	Color unSelectedColor;
+	Color useItemSelectedColor;
+	Color useItemUnSelectedColor;
 
 	int selected;
 
 	void Start() {
 		ColorUtility.TryParseHtmlString ("#000000FF", out selectedColor);
 		ColorUtility.TryParseHtmlString ("#000000A9", out unSelectedColor);
+		ColorUtility.TryParseHtmlString ("#2B93D2FF", out useItemSelectedColor);
+		ColorUtility.TryParseHtmlString ("#2B93D2A9", out useItemUnSelectedColor);
 	}
 
 	public void SetOptions(Option[] options) {
@@ -32,9 +36,13 @@ public class OptionsController : TopLevelController {
 		if (options == null) {
 			return;
 		}
+
+		GameObject conversationOption;
+		Text text;
+
 		foreach (Option option in options) {
-			GameObject conversationOption = Instantiate(optionPrefab) as GameObject;
-			Text text = conversationOption.GetComponentInChildren<Text>();
+			conversationOption = Instantiate(optionPrefab) as GameObject;
+			text = conversationOption.GetComponentInChildren<Text>();
 			text.text = option.getText();
 			conversationOption.transform.SetParent(optionsContainer.GetComponent<RectTransform>());
 			conversationOption.transform.localScale = Vector3.one;
@@ -43,6 +51,20 @@ public class OptionsController : TopLevelController {
 			children.Add(conversationOption);
 			values.Add (option.getGUID());
 		}
+
+		// use item
+		Option useItemOption = new Option ();
+		useItemOption.init ("Use Item", "INVENTORY");
+		conversationOption = Instantiate(optionPrefab) as GameObject;
+		conversationOption.GetComponent<Image> ().color = useItemUnSelectedColor;
+		text = conversationOption.GetComponentInChildren<Text>();
+		text.text = useItemOption.getText();
+		conversationOption.transform.SetParent(optionsContainer.GetComponent<RectTransform>());
+		conversationOption.transform.localScale = Vector3.one;
+		conversationOption.GetComponent<OptionController>().SetId(useItemOption.getGUID());
+		conversationOption.GetComponent<Button>().onClick.AddListener(() => conversationController.ChooseOption(conversationOption.GetComponent<OptionController>().GetId()));
+		children.Add(conversationOption);
+		values.Add (useItemOption.getGUID());
 
 		selected = 0;
 
@@ -60,7 +82,7 @@ public class OptionsController : TopLevelController {
 		int y = (int)movement_vector.y;
 		if(y != 0) {
 			// change color of previous item
-			children[selected].GetComponent<Image>().color = unSelectedColor;
+			children[selected].GetComponent<Image>().color = selected == (children.Count-1) ? useItemUnSelectedColor : unSelectedColor;
 			children[selected].transform.localScale = new Vector3(1, 1);
 	
 			// change selected item
@@ -70,7 +92,7 @@ public class OptionsController : TopLevelController {
 			}
 	
 	 		// change color of selected item
-			children[selected].GetComponent<Image>().color = selectedColor;
+			children[selected].GetComponent<Image>().color = selected == (children.Count-1) ? useItemSelectedColor : selectedColor;
 			children[selected].transform.localScale = new Vector3(1.01f, 1.01f);
 		}
 	}
