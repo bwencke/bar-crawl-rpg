@@ -137,7 +137,11 @@ public class Controller : MonoBehaviour {
 			inventory.GetComponent<InventoryController> ().LoadInventory ();
 		}
 		inventory.GetComponent<Canvas>().enabled = !inventory.GetComponent<Canvas>().enabled;
-		SetControlling(inventory.GetComponent<Canvas>().enabled ? inventory : player);
+		if (callback == null) {
+			SetControlling (inventory.GetComponent<Canvas> ().enabled ? inventory : player);
+		} else {
+			SetControlling (inventory.GetComponent<Canvas> ().enabled ? inventory : conversation);
+		}
 	}
 
 	public void AccessInventory(System.Action<string> callback) {
@@ -146,11 +150,11 @@ public class Controller : MonoBehaviour {
 	}
 
 	public void AccessInventoryItem(string itemName) {
+		ToggleInventory();
 		if (callback != null) {
 			callback (itemName);
 		}
 		callback = null;
-		ToggleInventory ();
 	}
 
 	public void StartConversation(string name, string id, System.Action callback) {

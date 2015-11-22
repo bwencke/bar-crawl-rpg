@@ -115,14 +115,11 @@ public class ConversationController : TopLevelController {
 			controller.StopConversation ();
 			return;
 		} else if (id == "INVENTORY") {
-			controller.AccessInventory(PrintID);
+			controller.AccessInventory(ChooseOption);
 			return;
 		}
 		LoadSnippet (id);
 		Next();
 	}
 
-	public void PrintID(string s) {
-		Debug.LogError ("S= " + s);
-	}
 }
