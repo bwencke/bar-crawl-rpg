@@ -170,14 +170,14 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	11
+	Money
 	STATEMENTS
 		Banker
 		Would you like to deposit this?
 		Blake
 		No.
 		Banker
-		Oh... OK.
+		Oh. OK.
 		Blake
 		I just wanted to see what you would do.
 	ENDSTATEMENTS
@@ -188,7 +188,7 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	12
+	Washing Machine
 	STATEMENTS
 		Banker
 		I don't understand.
@@ -202,7 +202,19 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	13
+	My ID
+	STATEMENTS
+		Banker
+		I don't need your ID.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Brayden's ID
 	STATEMENTS
 		Banker
 		I don't need your ID.

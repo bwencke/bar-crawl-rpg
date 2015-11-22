@@ -71,12 +71,12 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	6
+	Washing Machine
 	STATEMENTS
 		O'Brien
 		A washing machine! A rarity back in the home country.
 		O'Flanagan
-		As lads O'Brien and I would wash our clothes in Ireland's burbling streams.
+		As lads, O'Brien and I would wash our clothes in Ireland's burbling streams.
 		O'Brien
 		And ourselves. Oh, how the streams burbled!
 		O'Flanagan
@@ -84,42 +84,42 @@ SNIPPET
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	7
+	Money
 	STATEMENTS
 		O'Brien
 		Those bills are as green as an Irish morning.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	8
+	My ID
 	STATEMENTS
 		O'Flanagan
 		A handsome lad!
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	9
+	Brayden's ID
 	STATEMENTS
 		O'Flanagan
 		From the picture, I'd say that lad may have a bit of Irish in him!
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET
