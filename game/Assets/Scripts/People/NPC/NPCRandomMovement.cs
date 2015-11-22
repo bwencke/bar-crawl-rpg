@@ -21,7 +21,7 @@ public class NPCRandomMovement : MonoBehaviour {
 
 		initial_position = rbody.position;
 
-		Pause ();
+		Resume ();
 		
 	}
 
@@ -38,34 +38,8 @@ public class NPCRandomMovement : MonoBehaviour {
 		paused = false;
 		Invoke("RandomDirection", Random.Range (0, 4));
 	}
-
-	void Update() {
-
-		Vector2 newPosition = rbody.position + movement_vector * Time.deltaTime;
-
-		if (range > 0) {
-			if (Mathf.Abs (newPosition.x - initial_position.x) > range || Mathf.Abs (newPosition.y - initial_position.y) > range) {
-				movement_vector = Vector2.zero;
-			}
-		}
-	
-		if (movement_vector != Vector2.zero) {
-			if(range > 0) {
-				anim.SetBool ("is_walking", true);
-			}
-			anim.SetFloat ("input_x", movement_vector.x);
-			anim.SetFloat ("input_y", movement_vector.y);
-		} else {
-			anim.SetBool("is_walking", false);
-		}
-
-		if (range > 0) {
-			rbody.MovePosition (rbody.position + movement_vector * Time.deltaTime);
-		}
-	}
 	
 	void RandomDirection () {
-
 		if (paused) {
 			return;
 		}
@@ -77,7 +51,12 @@ public class NPCRandomMovement : MonoBehaviour {
 			movement_vector = new Vector2 (0, Random.Range (1, 4) - 2);
 		}
 
-		Invoke ("Idle", Random.Range (.25f, .5f));
+		NPCController npcc = GameObject.FindGameObjectWithTag ("Norman").GetComponent<NPCController> ();
+		if (Mathf.Abs (rbody.position.x + movement_vector.x - initial_position.x) < range + 0.01 && Mathf.Abs (rbody.position.y + movement_vector.y - initial_position.y) < range + 0.01) {
+			StartCoroutine (npcc.Move (movement_vector, 1.0f));
+		}
+
+		Invoke ("Idle", Random.Range (0.5f, 1.0f));
 
 		Invoke ("RandomDirection", Random.Range (2, 4));
 
