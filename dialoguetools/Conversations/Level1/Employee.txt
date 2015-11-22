@@ -55,3 +55,59 @@ SNIPPET
 		2
 	ENDOPTION
 ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Blake
+		Would you like a washing machine?
+		Employee
+		Yes.
+		Blake
+		Well it probably won't advance my quest, so you can't have it.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Employee
+		I don't need your money. I'm making more here in an hour than you'll see in a lifetime, pipsqueak.
+		Blake
+		Pipsqueak!?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Blake
+		How do I look in my ID picture?
+		Employee
+		You look unimportant. Now go away.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Employee
+		I have no desire to interact with you.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET

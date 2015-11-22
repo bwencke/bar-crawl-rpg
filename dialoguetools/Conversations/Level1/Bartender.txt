@@ -131,7 +131,7 @@ SNIPPET
 		Bartender
 		I don't need your ID if you got in the bar.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -147,7 +147,7 @@ SNIPPET
 		Bartender
 		I don't.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION

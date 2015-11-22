@@ -72,7 +72,7 @@ SNIPPET
 		Dad
 		You know, I don't think we do.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -84,7 +84,7 @@ SNIPPET
 		Dad
 		It looks like you remembered the PIN this time.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -104,7 +104,7 @@ SNIPPET
 		Blake
 		OK, never mind.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -116,7 +116,7 @@ SNIPPET
 		Dad
 		Is this your friend Brayden? He always seemed like a nice boy.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION

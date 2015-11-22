@@ -282,7 +282,7 @@ SNIPPET
 		Brayden
 		I just needed my ID. You can keep that.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -298,7 +298,7 @@ SNIPPET
 		Brayden
 		Technically it's my dad's, but it's pretty much mine.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -310,7 +310,7 @@ SNIPPET
 		Brayden
 		I need my ID, not your ID.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION

@@ -138,7 +138,7 @@ SNIPPET
 		Josh
 		My clothes are pretty clean bro.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -154,7 +154,7 @@ SNIPPET
 		Josh
 		Oh, uh, ok.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -168,7 +168,7 @@ SNIPPET
 		Josh
 		Bro I thought it was a picture of your mom.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -180,7 +180,7 @@ SNIPPET
 		Josh
 		You found Brayden's ID! You should probably give it to him so we can get some drinks.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION

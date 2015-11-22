@@ -28,7 +28,7 @@ SNIPPET
 		Bouncer
 		Nice try, buddy. You're not getting in with that.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -42,7 +42,7 @@ SNIPPET
 		Bouncer
 		Do you want me to call the cops?
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -54,7 +54,7 @@ SNIPPET
 		Bouncer
 		You're wasting my time.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION

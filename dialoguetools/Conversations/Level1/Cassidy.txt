@@ -83,7 +83,7 @@ SNIPPET
 		Cassidy
 		Puzzles? I don't get it.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -97,7 +97,7 @@ SNIPPET
 		Cassidy
 		I think you can handle it.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -109,7 +109,7 @@ SNIPPET
 		Cassidy
 		Is this your ID? You have such a cute picture!
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
@@ -121,7 +121,7 @@ SNIPPET
 		Cassidy
 		You should give this to Brayden.
 	ENDSTATEMENTS
-		OPTION
+	OPTION
 		JUMP
 		END
 	ENDOPTION
