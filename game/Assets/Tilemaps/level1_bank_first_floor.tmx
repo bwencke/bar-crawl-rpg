@@ -26,6 +26,11 @@
  </tileset>
  <tileset firstgid="197" name="collisions" tilewidth="32" tileheight="32" tilecount="1">
   <image source="../../../tiles/LPC/collisions.png" width="32" height="32"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object id="0" x="0.112233" y="0.16835" width="31.8743" height="31.7621"/>
+   </objectgroup>
+  </tile>
  </tileset>
  <tileset firstgid="198" name="country" tilewidth="32" tileheight="32" tilecount="20">
   <image source="../../../tiles/LPC/country.png" width="160" height="128"/>
@@ -193,101 +198,93 @@
  <tileset firstgid="2563" name="Cars_final" tilewidth="32" tileheight="32" tilecount="132">
   <image source="../../../tiles/Skorpio's Pack/Cars_final.png" width="384" height="352"/>
  </tileset>
- <tileset firstgid="2695" name="Fire" tilewidth="32" tileheight="32" tilecount="12">
-  <image source="../../../tiles/Skorpio's Pack/Fire/Fire.png" width="192" height="64"/>
- </tileset>
- <tileset firstgid="2707" name="Trashcan" tilewidth="32" tileheight="32" tilecount="4">
+ <tileset firstgid="2695" name="Trashcan" tilewidth="32" tileheight="32" tilecount="4">
   <image source="../../../tiles/Skorpio's Pack/Fire/Trashcan.png" width="64" height="64"/>
  </tileset>
- <tileset firstgid="2711" name="Interior-Furniture" tilewidth="32" tileheight="32" tilecount="256">
+ <tileset firstgid="2699" name="Interior-Furniture" tilewidth="32" tileheight="32" tilecount="256">
   <image source="../../../tiles/Skorpio's Pack/Interior-Furniture.png" width="512" height="512"/>
  </tileset>
- <tileset firstgid="2967" name="Interior-Walls-Beige" tilewidth="32" tileheight="32" tilecount="100">
+ <tileset firstgid="2955" name="Interior-Walls-Beige" tilewidth="32" tileheight="32" tilecount="100">
   <image source="../../../tiles/Skorpio's Pack/Interior-Walls-Beige.png" width="320" height="320"/>
  </tileset>
- <tileset firstgid="3067" name="Interior-Walls-Blue" tilewidth="32" tileheight="32" tilecount="100">
+ <tileset firstgid="3055" name="Interior-Walls-Blue" tilewidth="32" tileheight="32" tilecount="100">
   <image source="../../../tiles/Skorpio's Pack/Interior-Walls-Blue.png" width="320" height="320"/>
  </tileset>
- <tileset firstgid="3167" name="Lamp_alternative" tilewidth="32" tileheight="32" tilecount="3">
+ <tileset firstgid="3155" name="Lamp_alternative" tilewidth="32" tileheight="32" tilecount="3">
   <image source="../../../tiles/Skorpio's Pack/Lamp_alternative.png" width="32" height="96"/>
  </tileset>
- <tileset firstgid="3170" name="Laserfence" tilewidth="32" tileheight="32" tilecount="64">
+ <tileset firstgid="3158" name="Laserfence" tilewidth="32" tileheight="32" tilecount="64">
   <image source="../../../tiles/Skorpio's Pack/Laserfence.png" width="256" height="256"/>
  </tileset>
- <tileset firstgid="3234" name="Lightning1_reduced" tilewidth="32" tileheight="32" tilecount="6">
+ <tileset firstgid="3222" name="Lightning1_reduced" tilewidth="32" tileheight="32" tilecount="6">
   <image source="../../../tiles/Skorpio's Pack/Lightning1_reduced.png" width="60" height="198"/>
  </tileset>
- <tileset firstgid="3240" name="Lightning1" tilewidth="32" tileheight="32" tilecount="6">
+ <tileset firstgid="3228" name="Lightning1" tilewidth="32" tileheight="32" tilecount="6">
   <image source="../../../tiles/Skorpio's Pack/Lightning1.png" width="60" height="198"/>
  </tileset>
- <tileset firstgid="3246" name="Lightning2_reduced" tilewidth="32" tileheight="32" tilecount="6">
+ <tileset firstgid="3234" name="Lightning2_reduced" tilewidth="32" tileheight="32" tilecount="6">
   <image source="../../../tiles/Skorpio's Pack/Lightning2_reduced.png" width="60" height="198"/>
  </tileset>
- <tileset firstgid="3252" name="Lightning2" tilewidth="32" tileheight="32" tilecount="6">
+ <tileset firstgid="3240" name="Lightning2" tilewidth="32" tileheight="32" tilecount="6">
   <image source="../../../tiles/Skorpio's Pack/Lightning2.png" width="60" height="198"/>
  </tileset>
- <tileset firstgid="3258" name="Logos" tilewidth="32" tileheight="32" tilecount="16">
+ <tileset firstgid="3246" name="Logos" tilewidth="32" tileheight="32" tilecount="16">
   <image source="../../../tiles/Skorpio's Pack/Logos.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="3274" name="Objects" tilewidth="32" tileheight="32" tilecount="64">
+ <tileset firstgid="3262" name="Objects" tilewidth="32" tileheight="32" tilecount="64">
   <image source="../../../tiles/Skorpio's Pack/Objects.png" width="256" height="256"/>
  </tileset>
- <tileset firstgid="3338" name="Pipes-RustyWalls" tilewidth="32" tileheight="32" tilecount="88">
+ <tileset firstgid="3326" name="Pipes-RustyWalls" tilewidth="32" tileheight="32" tilecount="88">
   <image source="../../../tiles/Skorpio's Pack/Pipes-RustyWalls.png" width="256" height="352"/>
  </tileset>
- <tileset firstgid="3426" name="Sidewalk_dark" tilewidth="32" tileheight="32" tilecount="16">
+ <tileset firstgid="3414" name="Sidewalk_dark" tilewidth="32" tileheight="32" tilecount="16">
   <image source="../../../tiles/Skorpio's Pack/Sidewalk_dark.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="3442" name="Street" tilewidth="32" tileheight="32" tilecount="475">
+ <tileset firstgid="3430" name="Street" tilewidth="32" tileheight="32" tilecount="475">
   <image source="../../../tiles/Skorpio's Pack/Street.png" width="800" height="608"/>
  </tileset>
- <tileset firstgid="3917" name="StreetCurve" tilewidth="32" tileheight="32" tilecount="256">
+ <tileset firstgid="3905" name="StreetCurve" tilewidth="32" tileheight="32" tilecount="256">
   <image source="../../../tiles/Skorpio's Pack/StreetCurve.png" width="512" height="512"/>
  </tileset>
- <tileset firstgid="4173" name="Tracks" tilewidth="32" tileheight="32" tilecount="16">
+ <tileset firstgid="4161" name="Tracks" tilewidth="32" tileheight="32" tilecount="16">
   <image source="../../../tiles/Skorpio's Pack/Tracks.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="4189" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
+ <tileset firstgid="4177" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
   <image source="../../../tiles/flowers_2.png" width="320" height="192"/>
  </tileset>
- <tileset firstgid="4249" name="AIN_Signs" tilewidth="32" tileheight="32" tilecount="96">
+ <tileset firstgid="4237" name="AIN_Signs" tilewidth="32" tileheight="32" tilecount="96">
   <image source="../../../tiles/AIN_Signs.png" width="384" height="256"/>
  </tileset>
- <tileset firstgid="4345" name="housey" tilewidth="32" tileheight="32" tilecount="72">
+ <tileset firstgid="4333" name="housey" tilewidth="32" tileheight="32" tilecount="72">
   <image source="../../../tiles/housey.png" width="384" height="192"/>
  </tileset>
- <tileset firstgid="4417" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
+ <tileset firstgid="4405" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
   <image source="../../../tiles/flowers_2.png" width="320" height="192"/>
  </tileset>
- <tileset firstgid="4477" name="obj_misk_atlas" tilewidth="32" tileheight="32" tilecount="1024">
+ <tileset firstgid="4465" name="obj_misk_atlas" tilewidth="32" tileheight="32" tilecount="1024">
   <image source="../../../tiles/Atlas_0/obj_misk_atlas.png" width="1024" height="1024"/>
  </tileset>
- <tileset firstgid="5501" name="chain" tilewidth="32" tileheight="32" tilecount="2">
+ <tileset firstgid="5489" name="chain" tilewidth="32" tileheight="32" tilecount="2">
   <image source="../../../tiles/Joe's Custom/chain.png" trans="ffffff" width="64" height="32"/>
  </tileset>
- <layer name="Collisions" width="12" height="15">
-  <data encoding="base64" compression="zlib">
-   eJxjYCANHEVjE+JjE8dmJi55bObh4hMDjjIQ7x58dhNyx2BRT65/hyoAADuoGWY=
-  </data>
- </layer>
  <layer name="Floor" width="12" height="15">
   <data encoding="base64" compression="zlib">
-   eJzj5WZg4B3Fo3iYYADZLRDh
+   eJxj5GZgYBzFo3iYYADqGQhx
   </data>
  </layer>
  <layer name="Carpet" width="12" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFe7kgeFT90AcAU/QJVQ==
+   eJxjYBgFG7kgeFT90AcAlcUIxQ==
   </data>
  </layer>
  <layer name="Back Wall" width="12" height="15">
   <data encoding="base64" compression="zlib">
-   eJz7zc3A8IdI/BeIWXkYGNiIxOxAPApGAT0BAMTpDS0=
+   eJx7z83A8IFI/BGIfwLxLyLxbyAeBaOAngAAKeEYAQ==
   </data>
  </layer>
  <layer name="Side Counters" width="12" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBjaQJIVgolV94MFggkBYtUNdlArysBQJ0o9dYMdAADubwaz
+   eJxjYBjaQJIVgolV94MFggkBYtUNdlAoysBQJEo9dYMdAADFjwaD
   </data>
  </layer>
  <layer name="Waiting Chairs" width="12" height="15">
@@ -297,12 +294,12 @@
  </layer>
  <layer name="Side Walls" width="12" height="15">
   <data encoding="base64" compression="zlib">
-   eJxj5GEgHgDVMo6qH1U/iNUDABUWAXg=
+   eJz7ys1ANPgCVPt1VP2o+kGsHgBcEB3y
   </data>
  </layer>
  <layer name="Front Wall" width="12" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo4B+4A83JsYnx8aDiWEAmxwADJsK+w==
+   eJxjYBgFo4B+4AM3JsYn9wsLhgFscgDgwRQB
   </data>
  </layer>
  <layer name="Stairs" width="12" height="15">
@@ -318,6 +315,11 @@
  <layer name="Plants" width="12" height="15">
   <data encoding="base64" compression="zlib">
    eJxjYKAvyGPBzsYFKlmws0fBKMAGADgoAd8=
+  </data>
+ </layer>
+ <layer name="Collisions" width="12" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYCANHEVjE+KjixOSJ2QfLjliwVEG/PbhUkNIPTFiA6GeXP/SChzFgomRQ1aDjQ0DADv+JCw=
   </data>
  </layer>
  <layer name="Lamps" width="12" height="15">

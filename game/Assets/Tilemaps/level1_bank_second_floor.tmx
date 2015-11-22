@@ -282,7 +282,7 @@
  </layer>
  <layer name="Stair Railing" width="12" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBheII8FOxsXqASqec4MwZVEqB8FgxsAAMpIA7M=
+   eJxjYBjZoJKFgeE5MwSD2KNgaAMAB5kCzw==
   </data>
  </layer>
  <layer name="Back Walls" width="12" height="15">
@@ -347,7 +347,7 @@
  </layer>
  <layer name="Important Doohickey" width="12" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBj6wJ+FgSGAhXj1qUC1aSSoJxVM4KKd2aMAPwAAwqsCFQ==
+   eJxjYBh5IJWFgSGNhXbmT+CindmjAD8AAG4gAW4=
   </data>
  </layer>
  <layer name="Desk Papers and Trashcan" width="12" height="15">
@@ -365,9 +365,19 @@
    eJxjYBh6oFiUgaFEdKBdMQoGIwAAQHwBEg==
   </data>
  </layer>
- <layer name="Collisions" width="12" height="15" visible="0">
+ <layer name="Collisions" width="12" height="15">
   <data encoding="base64" compression="zlib">
    eJxjYCANHEVjE8IMaGxqAGxmE2M+Nvdgcy829aS4C5eZ+OTQ3YVuLy734jMflxuxsfH5BZ/YYAMA/gIsow==
+  </data>
+ </layer>
+ <layer name="Top of plants" width="12" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBheII8FO3sUjAwAAMV/AOU=
+  </data>
+ </layer>
+ <layer name="Top of table" width="12" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBj6wJ+FgSGAZaBdMQoGAwAAV1sAqA==
   </data>
  </layer>
 </map>
