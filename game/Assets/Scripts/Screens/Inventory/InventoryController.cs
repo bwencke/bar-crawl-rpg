@@ -12,7 +12,7 @@ public class InventoryController : TopLevelController {
 	Color selectedTextColor;
 	Color unSelectedTextColor;
 
-	GameObject[] items;
+	InventoryItemController[] items;
 	List<GameObject> createdItemImages = new List<GameObject> ();
 	GameObject inventoryGrid;
 	public GameObject prefab;
@@ -34,14 +34,14 @@ public class InventoryController : TopLevelController {
 
 	public void LoadInventory() {
 		googleAnalytics.LogScreen("Inventory");
-		items = GameObject.FindGameObjectsWithTag ("InventoryItem");
-		foreach (GameObject item in items) {
-			if(item.GetComponent<InventoryItemController>().IsEnabled()) {
+		items = GameObject.FindGameObjectWithTag ("Player").GetComponentsInChildren<InventoryItemController>();
+		foreach (InventoryItemController item in items) {
+			if(item.IsEnabled()) {
 				GameObject itemImg = Instantiate(prefab) as GameObject;
 				Image img = itemImg.GetComponentInChildren<Image>();
 				Text text = itemImg.GetComponentInChildren<Text>();
-				img.sprite = item.GetComponent<SpriteRenderer>().sprite;
-				text.text = item.name;
+				img.sprite = item.gameObject.GetComponent<SpriteRenderer>().sprite;
+				text.text = item.gameObject.name;
 				itemImg.transform.SetParent(inventoryGrid.GetComponent<RectTransform>());
 				itemImg.transform.localScale = Vector3.one;
 				createdItemImages.Add(itemImg);

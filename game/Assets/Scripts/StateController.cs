@@ -43,6 +43,11 @@ public class StateController : MonoBehaviour {
 		if (conversationController.dialogueEngine.checkVar ("SawIntroCutscene")) {
 			GameObject.FindGameObjectWithTag("GameController").GetComponent<Controller>().LoadCutsceneResults("Intro");
 		}
+		if (conversationController.dialogueEngine.checkVar ("FoundID")) {
+			GameObject.FindGameObjectWithTag("BraydensID").GetComponent<InventoryItemController>().Enable();
+			GameObject.FindGameObjectWithTag("WashingMachine").GetComponent<InventoryItemController>().Enable();
+			Destroy(GameObject.FindGameObjectWithTag("THEWasher"));
+		}
 		conversationController.dialogueEngine.printVars ();
 	}
 
