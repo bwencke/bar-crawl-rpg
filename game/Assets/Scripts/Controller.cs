@@ -75,7 +75,9 @@ public class Controller : MonoBehaviour {
 		Vector2 input = new Vector2 (horizontal, vertical);
 
 		GetControlling ().GetComponent<TopLevelController> ().TriggerMovement (input);
-
+		if (GetControlling () != player) {
+			player.GetComponent<TopLevelController> ().TriggerMovement (Vector2.zero);
+		}
 	}
 
 	void DetectPrimaryAction() {
