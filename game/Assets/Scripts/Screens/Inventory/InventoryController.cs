@@ -65,20 +65,28 @@ public class InventoryController : TopLevelController {
 	}
 
 	public override void TriggerMovement(Vector2 movement_vector) {
+		Debug.Log (movement_vector);
 		if (movement_vector != prev) {
-			if(movement_vector.x != 0) {
-
+			if (movement_vector.x != 0 || movement_vector.y != 0) {
 				// change color of previous item
 				createdItemImages[selected].GetComponentInChildren<Text>().color = unSelectedTextColor;
 				createdItemImages[selected].GetComponentInChildren<RawImage>().color = unSelectedColor;
-				
+
 				// change selected item
-				selected += (int) movement_vector.x;
-				if(selected < 0 || selected > (createdItemImages.Count - 1)) {
-					selected -= (int) movement_vector.x;
+				int newx = selected % 4;
+				int newy = selected / 4;
+				if (movement_vector.x != 0) {
+					newx += (int) movement_vector.x;
+				}
+				else {
+					newy -= (int) movement_vector.y;
+				}
+				int newselected = 4 * newy + newx;
+				if (0 <= newselected && newselected < createdItemImages.Count) {
+					selected = newselected;
 				}
 				
-				// change color of previous item
+				// change color of selected item
 				createdItemImages[selected].GetComponentInChildren<Text>().color = selectedTextColor;
 				createdItemImages[selected].GetComponentInChildren<RawImage>().color = selectedColor;
 			}
