@@ -59,7 +59,7 @@ public class MenuController : TopLevelController {
 		}
 	}
 
-	public override void TriggerPrimaryAction() {
+	public override void TriggerPrimaryAction(System.Action<string> callback) {
 		options [selected].GetComponent<MenuItemController> ().PerformAction ();
 	}
 }

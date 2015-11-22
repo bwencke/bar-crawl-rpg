@@ -86,10 +86,14 @@ public class InventoryController : TopLevelController {
 		}
 	}
 
-	public override void TriggerPrimaryAction() {
+	public override void TriggerPrimaryAction(System.Action<string> callback) {
 		googleAnalytics.LogEvent(new EventHitBuilder()
 		                         .SetEventCategory("Inventory")
 		                         .SetEventAction("Item Selected"));
-		GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowAlert ("What are you trying to do with that?");
+		if (callback == null) {
+			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowAlert ("What are you trying to do with that?");
+		} else {
+			callback (createdItemImages [selected].GetComponentInChildren<Text> ().text);
+		}
 	}
 }

@@ -97,7 +97,7 @@ public class OptionsController : TopLevelController {
 		}
 	}
 
-	public override void TriggerPrimaryAction ()
+	public override void TriggerPrimaryAction (System.Action<string> callback)
 	{
 		conversationController.ChooseOption(values[selected]);
 	}

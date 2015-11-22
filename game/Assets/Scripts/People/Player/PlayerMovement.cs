@@ -47,7 +47,7 @@ public class PlayerMovement : TopLevelController {
 
 	}
 	
-	public override void TriggerPrimaryAction() {
+	public override void TriggerPrimaryAction(System.Action<string> callback) {
 		RaycastHit2D[] hits = Physics2D.RaycastAll (transform.position, direction, .2f);
 		foreach (RaycastHit2D hit in hits) {
 			if (hit.collider != null && hit.collider.gameObject.name != "Player") {

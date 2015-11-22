@@ -40,7 +40,7 @@ public class StatementsController : TopLevelController {
 		                         .SetEventAction("KEYS: ( " + movement_vector.x + ", " + movement_vector.y + " )"));
 	}
 
-	public override void TriggerPrimaryAction ()
+	public override void TriggerPrimaryAction (System.Action<string> callback)
 	{
 		conversationController.Next ();
 	}

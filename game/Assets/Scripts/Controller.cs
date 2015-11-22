@@ -16,6 +16,8 @@ public class Controller : MonoBehaviour {
 	public GameObject conversation;
 	private GameObject cutscene;
 	private GameObject controlling;
+	
+	private System.Action<string> callback = null;
 
 	// Use this for initialization
 	void Start () {
@@ -86,7 +88,7 @@ public class Controller : MonoBehaviour {
 	}
 
 	public void TriggerPrimaryAction() {
-		GetControlling().GetComponent<TopLevelController>().TriggerPrimaryAction();
+		GetControlling().GetComponent<TopLevelController>().TriggerPrimaryAction(AccessInventoryItem);
 	}
 	
 	void DetectMenuButton() {
@@ -136,6 +138,19 @@ public class Controller : MonoBehaviour {
 		}
 		inventory.GetComponent<Canvas>().enabled = !inventory.GetComponent<Canvas>().enabled;
 		SetControlling(inventory.GetComponent<Canvas>().enabled ? inventory : player);
+	}
+
+	public void AccessInventory(System.Action<string> callback) {
+		ToggleInventory ();
+		this.callback = callback;
+	}
+
+	public void AccessInventoryItem(string itemName) {
+		if (callback != null) {
+			callback (itemName);
+		}
+		callback = null;
+		ToggleInventory ();
 	}
 
 	public void StartConversation(string name, string id, System.Action callback) {

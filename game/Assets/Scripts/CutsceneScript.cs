@@ -10,7 +10,7 @@ public abstract class CutsceneScript : TopLevelController {
 		// do nothing
 	}
 
-	public override void TriggerPrimaryAction ()
+	public override void TriggerPrimaryAction (System.Action<string> callback)
 	{
 		// do nothing
 	}

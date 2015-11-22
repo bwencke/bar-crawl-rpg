@@ -9,7 +9,7 @@ public class TopLevelController : MonoBehaviour {
 		}
 	}
 
-	public virtual void TriggerPrimaryAction() {
+	public virtual void TriggerPrimaryAction(System.Action<string> callback) {
 		Debug.Log ("Primary Action Triggered");
 	}
 }

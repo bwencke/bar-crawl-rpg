@@ -38,9 +38,9 @@ public class ConversationController : TopLevelController {
 		}
 	}
 
-	public override void TriggerPrimaryAction ()
+	public override void TriggerPrimaryAction (System.Action<string> callback)
 	{
-		controlling.TriggerPrimaryAction ();
+		controlling.TriggerPrimaryAction (callback);
 	}
 
 	public void StartConversation(string name, string id, System.Action callback) {
@@ -115,9 +115,14 @@ public class ConversationController : TopLevelController {
 			controller.StopConversation ();
 			return;
 		} else if (id == "INVENTORY") {
-			controller.ToggleInventory();
+			controller.AccessInventory(PrintID);
+			return;
 		}
 		LoadSnippet (id);
 		Next();
+	}
+
+	public void PrintID(string s) {
+		Debug.LogError ("S= " + s);
 	}
 }
