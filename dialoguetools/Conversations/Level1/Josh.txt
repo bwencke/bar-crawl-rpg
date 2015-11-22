@@ -133,22 +133,22 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	9
+	Washing Machine
 	STATEMENTS
 		Josh
-		My clothes are pretty clean bro.
+		My clothes are pretty clean, bro.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		3
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	10
+	Money
 	STATEMENTS
 		Josh
-		Are you giving me all this money bro?
+		Are you giving me all this money, bro?
 		Blake
 		I just wanted you to see how loaded I am.
 		Josh
@@ -156,32 +156,32 @@ SNIPPET
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		3
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	11
+    My ID
 	STATEMENTS
 		Blake
 		Do you think I look weird in my ID picture?
 		Josh
-		Bro I thought it was a picture of your mom.
+		Bro, I thought it was a picture of your mom.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		3
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	12
+	Brayden's ID
 	STATEMENTS
 		Josh
 		You found Brayden's ID! You should probably give it to him so we can get some drinks.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		3
 	ENDOPTION
 ENDSNIPPET

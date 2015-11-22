@@ -11,7 +11,7 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	2
+	My ID
 	STATEMENTS
 		Bouncer
 		You're good, man.
@@ -23,7 +23,7 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	3
+	Brayden's ID
 	STATEMENTS
 		Bouncer
 		Nice try, buddy. You're not getting in with that.
@@ -35,7 +35,7 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	4
+	Money
 	STATEMENTS
 		Blake
 		How much would it take for you to let me in?
@@ -49,7 +49,7 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	5
+	Washing Machine
 	STATEMENTS
 		Bouncer
 		You're wasting my time.

@@ -245,7 +245,7 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	15
+	Brayden's ID
 	STATEMENTS
 		Brayden
 		Cool.
@@ -258,7 +258,7 @@ SNIPPET
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		3
 	ENDOPTION
 ENDSNIPPET
 
@@ -275,7 +275,7 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	17
+	Washing Machine
 	STATEMENTS
 		Blake
 		I brought you the whole washing machine.
@@ -284,12 +284,12 @@ SNIPPET
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		3
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	18
+	Money
 	STATEMENTS
 		Blake
 		Check out all this money I have.
@@ -300,18 +300,18 @@ SNIPPET
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		3
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	19
+	My ID
 	STATEMENTS
 		Brayden
 		I need my ID, not your ID.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		3
 	ENDOPTION
 ENDSNIPPET

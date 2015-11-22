@@ -57,23 +57,23 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	5
+	Washing Machine
 	STATEMENTS
 		Blake
 		Would you like a washing machine?
 		Employee
 		Yes.
 		Blake
-		Well it probably won't advance my quest, so you can't have it.
+		Well you can't have it.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	6
+	Money
 	STATEMENTS
 		Employee
 		I don't need your money. I'm making more here in an hour than you'll see in a lifetime, pipsqueak.
@@ -82,12 +82,12 @@ SNIPPET
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	7
+	My ID
 	STATEMENTS
 		Blake
 		How do I look in my ID picture?
@@ -96,18 +96,18 @@ SNIPPET
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	8
+	Brayden's ID
 	STATEMENTS
 		Employee
 		I have no desire to interact with you.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET

@@ -136,7 +136,7 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	6
+	Washing Machine
 	STATEMENTS
 		Blake
 		Would you like a washing machine?
@@ -147,42 +147,42 @@ SNIPPET
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	7
+	Money
 	STATEMENTS
 		Norman
 		I only accept change. See that little eye on the dollar? They can watch you through it.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	8
+	My ID
 	STATEMENTS
 		Norman
 		I see you've decided to be a part of the system. Hmmm.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	9
+	Brayden's ID
 	STATEMENTS
 		Norman
 		I could find use for an alias, but I think I just need to lay low for now. They're watching.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET

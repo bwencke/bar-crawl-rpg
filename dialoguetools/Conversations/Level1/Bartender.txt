@@ -110,7 +110,10 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	7
+	Money
+	ASSIGNMENTS
+		HasDrink=TRUE
+	ENDASSIGNMENTS
 	STATEMENTS
 		Bartender
 		Great, here's your drink.
@@ -126,19 +129,31 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	8
+	My ID
 	STATEMENTS
 		Bartender
 		I don't need your ID if you got in the bar.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
-	9
+	Brayden's ID
+	STATEMENTS
+		Bartender
+		I don't need your ID if you got in the bar.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Washing Machine
 	STATEMENTS
 		Bartender
 		Why are you giving me this?
@@ -149,6 +164,6 @@ SNIPPET
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		END
+		2
 	ENDOPTION
 ENDSNIPPET
