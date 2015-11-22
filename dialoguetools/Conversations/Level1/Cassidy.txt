@@ -70,3 +70,59 @@ SNIPPET
 		2
 	ENDOPTION
 ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Blake
+		Do you think this washing machine will be useful later?
+		Cassidy
+		Umm, useful for what? Washing clothes? Probably.
+		Blake
+		No, for solving puzzles! To aid in our quest!
+		Cassidy
+		Puzzles? I don't get it.
+	ENDSTATEMENTS
+		OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Blake
+		Do you want to hold my money for me?
+		Cassidy
+		I think you can handle it.
+	ENDSTATEMENTS
+		OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Cassidy
+		Is this your ID? You have such a cute picture!
+	ENDSTATEMENTS
+		OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	9
+	STATEMENTS
+		Cassidy
+		You should give this to Brayden.
+	ENDSTATEMENTS
+		OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
