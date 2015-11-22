@@ -26,6 +26,10 @@ SNIPPET
 		OK, I won't bother you anymore.
 		END
 	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
 ENDSNIPPET
 
 SNIPPET

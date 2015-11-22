@@ -26,6 +26,10 @@ SNIPPET
 		It was nice to meet you two ... companions!
 		5
 	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
 ENDSNIPPET
 
 SNIPPET

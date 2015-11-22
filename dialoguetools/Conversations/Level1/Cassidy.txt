@@ -31,6 +31,10 @@ SNIPPET
 		Gotta go.
 		END
 	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
 ENDSNIPPET
 
 SNIPPET

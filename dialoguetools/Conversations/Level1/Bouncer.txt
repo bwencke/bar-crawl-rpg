@@ -5,8 +5,8 @@ SNIPPET
 		I need to see some ID.
 	ENDSTATEMENTS
 	OPTION
-		JUMP
-		END
+		Use Item
+		Inventory
 	ENDOPTION
 ENDSNIPPET
 

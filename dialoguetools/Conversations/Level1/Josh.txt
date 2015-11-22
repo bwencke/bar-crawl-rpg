@@ -56,6 +56,10 @@ SNIPPET
 		OK, I need to go do some stuff.
 		7
 	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
 ENDSNIPPET
 
 SNIPPET

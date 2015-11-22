@@ -33,6 +33,10 @@ SNIPPET
 		See you later!
 		END
 	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
 ENDSNIPPET
 
 SNIPPET
