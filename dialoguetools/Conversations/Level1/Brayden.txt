@@ -273,3 +273,45 @@ SNIPPET
 		3
 	ENDOPTION
 ENDSNIPPET
+
+SNIPPET
+	17
+	STATEMENTS
+		Blake
+		I brought you the whole washing machine.
+		Brayden
+		I just needed my ID. You can keep that.
+	ENDSTATEMENTS
+		OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	18
+	STATEMENTS
+		Blake
+		Check out all this money I have.
+		Brayden
+		That's pretty lame. On my yacht I have a hot tub full of cash.
+		Brayden
+		Technically it's my dad's, but it's pretty much mine.
+	ENDSTATEMENTS
+		OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	19
+	STATEMENTS
+		Brayden
+		I need my ID, not your ID.
+	ENDSTATEMENTS
+		OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET

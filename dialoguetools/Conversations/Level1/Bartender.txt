@@ -124,3 +124,31 @@ SNIPPET
 		END
 	ENDOPTION
 ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Bartender
+		I don't need your ID if you got in the bar.
+	ENDSTATEMENTS
+		OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	9
+	STATEMENTS
+		Bartender
+		Why are you giving me this?
+		Blake
+		I just thought you might want it.
+		Bartender
+		I don't.
+	ENDSTATEMENTS
+		OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
