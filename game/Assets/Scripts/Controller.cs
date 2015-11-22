@@ -150,6 +150,7 @@ public class Controller : MonoBehaviour {
 	}
 
 	public void AccessInventoryItem(string itemName) {
+		Debug.LogError ("AJFHKSDHFJKSH!!!!");
 		ToggleInventory();
 		if (callback != null) {
 			callback (itemName);

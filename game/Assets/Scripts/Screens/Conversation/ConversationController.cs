@@ -111,6 +111,7 @@ public class ConversationController : TopLevelController {
 	}
 
 	public void ChooseOption(string id) {
+		Debug.LogError ("OPTION = " + id);
 		if (id == "END") {
 			controller.StopConversation ();
 			return;

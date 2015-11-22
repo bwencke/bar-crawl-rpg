@@ -47,7 +47,8 @@ public class OptionsController : TopLevelController {
 			conversationOption.transform.SetParent(optionsContainer.GetComponent<RectTransform>());
 			conversationOption.transform.localScale = Vector3.one;
 			conversationOption.GetComponent<OptionController>().SetId(option.getGUID());
-			conversationOption.GetComponent<Button>().onClick.AddListener(() => conversationController.ChooseOption(conversationOption.GetComponent<OptionController>().GetId()));
+			string id = conversationOption.GetComponent<OptionController>().GetId();
+			conversationOption.GetComponent<Button>().onClick.AddListener(() => conversationController.ChooseOption(id));
 			children.Add(conversationOption);
 			values.Add (option.getGUID());
 		}
@@ -62,7 +63,7 @@ public class OptionsController : TopLevelController {
 		conversationOption.transform.SetParent(optionsContainer.GetComponent<RectTransform>());
 		conversationOption.transform.localScale = Vector3.one;
 		conversationOption.GetComponent<OptionController>().SetId(useItemOption.getGUID());
-		conversationOption.GetComponent<Button>().onClick.AddListener(() => conversationController.ChooseOption(conversationOption.GetComponent<OptionController>().GetId()));
+		conversationOption.GetComponent<Button>().onClick.AddListener(() => conversationController.ChooseOption(useItemOption.getGUID()));
 		children.Add(conversationOption);
 		values.Add (useItemOption.getGUID());
 

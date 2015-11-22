@@ -44,6 +44,8 @@ public class InventoryController : TopLevelController {
 				text.text = item.gameObject.name;
 				itemImg.transform.SetParent(inventoryGrid.GetComponent<RectTransform>());
 				itemImg.transform.localScale = Vector3.one;
+				string name = item.gameObject.name;
+				itemImg.GetComponent<Button>().onClick.AddListener(() => GameObject.FindGameObjectWithTag("GameController").GetComponent<Controller>().AccessInventoryItem(name));
 				createdItemImages.Add(itemImg);
 			}
 		}
