@@ -76,7 +76,9 @@ public class InventoryController : TopLevelController {
 				int newx = selected % 4;
 				int newy = selected / 4;
 				if (movement_vector.x != 0) {
-					newx += (int) movement_vector.x;
+					if (0 <= newx + movement_vector.x && newx + movement_vector.x < 4) {
+						newx += (int) movement_vector.x;
+					}
 				}
 				else {
 					newy -= (int) movement_vector.y;
