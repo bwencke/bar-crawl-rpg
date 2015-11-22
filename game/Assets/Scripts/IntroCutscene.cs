@@ -47,9 +47,9 @@ public class IntroCutscene : CutsceneScript {
 	}
 
 	IEnumerator BraydenLeave() {
-		yield return StartCoroutine(Brayden.MoveDown(4));
+		yield return StartCoroutine(Brayden.MoveDown(2));
 		yield return StartCoroutine(Brayden.MoveRight(1));
-		yield return StartCoroutine (Brayden.MoveDown (6));
+		yield return StartCoroutine (Brayden.MoveDown (10));
 		count++;
 	}
 
@@ -63,9 +63,9 @@ public class IntroCutscene : CutsceneScript {
 
 	IEnumerator CassidyLeave() {
 		yield return StartCoroutine(Cassidy.MoveLeft(2));
-		yield return StartCoroutine(Cassidy.MoveDown(4));
-		yield return StartCoroutine(Cassidy.MoveRight(1));
-		yield return StartCoroutine(Cassidy.MoveDown(6));
+		yield return StartCoroutine(Cassidy.MoveDown(5));
+		yield return StartCoroutine(Cassidy.MoveRight(0));
+		yield return StartCoroutine(Cassidy.MoveDown(5));
 		count++;
 	}
 }
