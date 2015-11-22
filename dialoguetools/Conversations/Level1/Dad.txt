@@ -63,3 +63,61 @@ SNIPPET
 		2
 	ENDOPTION
 ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Blake
+		Do we need a new washer?
+		Dad
+		You know, I don't think we do.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Dad
+		It looks like you remembered the PIN this time.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Blake
+		What do you think of my ID picture?
+		Dad
+		I'm kind of busy, Blake. Can we talk about this at dinner?
+		Blake
+		I'm not going to be at dinner, I'm doing a bar crawl.
+		Dad
+		Well, it looks like I have an opening next week at three...
+		Blake
+		OK, never mind.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Dad
+		Is this your friend Brayden? He always seemed like a nice boy.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET

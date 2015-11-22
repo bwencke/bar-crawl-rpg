@@ -21,3 +21,41 @@ SNIPPET
 		END
 	ENDOPTION
 ENDSNIPPET
+
+SNIPPET
+	3
+	STATEMENTS
+		Bouncer
+		Nice try, buddy. You're not getting in with that.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Blake
+		How much would it take for you to let me in?
+		Bouncer
+		Do you want me to call the cops?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Bouncer
+		You're wasting my time.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET

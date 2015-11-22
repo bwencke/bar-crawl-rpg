@@ -119,7 +119,7 @@ SNIPPET
 		Banker
 		I'm sorry, that's incorrect.
 		Blake
-		Maybe typing it in again.
+		Maybe try typing it in again.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
@@ -162,6 +162,50 @@ SNIPPET
 		Great! Here is all of the money in your account. Now please get away from me.
 		Blake
 		Uh, thanks.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	11
+	STATEMENTS
+		Banker
+		Would you like to deposit this?
+		Blake
+		No.
+		Banker
+		Oh... OK.
+		Blake
+		I just wanted to see what you would do.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	12
+	STATEMENTS
+		Banker
+		I don't understand.
+		Blake
+		I don't either.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	13
+	STATEMENTS
+		Banker
+		I don't need your ID.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
