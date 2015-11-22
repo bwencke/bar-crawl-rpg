@@ -51,12 +51,12 @@ public class NPCRandomMovement : MonoBehaviour {
 			movement_vector = new Vector2 (0, Random.Range (1, 4) - 2);
 		}
 
-		NPCController npcc = GameObject.FindGameObjectWithTag ("Norman").GetComponent<NPCController> ();
-		if (Mathf.Abs (rbody.position.x + movement_vector.x - initial_position.x) < range + 0.01 && Mathf.Abs (rbody.position.y + movement_vector.y - initial_position.y) < range + 0.01) {
+		NPCController npcc = GetComponent<NPCController> ();
+		if (Mathf.Abs (rbody.position.x + movement_vector.x - initial_position.x) < range + 0.1 && Mathf.Abs (rbody.position.y + movement_vector.y - initial_position.y) < range + 0.1) {
 			StartCoroutine (npcc.Move (movement_vector, 1.0f));
 		}
 
-		Invoke ("Idle", Random.Range (0.5f, 1.0f));
+		Invoke ("Idle", Random.Range (0.25f, 0.5f));
 
 		Invoke ("RandomDirection", Random.Range (2, 4));
 
