@@ -297,7 +297,7 @@
  </layer>
  <layer name="Counter" width="12" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBg5wFmYNPXJJKpvJlH9KKA+AABRnQFj
+   eJxjYBg8wFmYNPUKNFafTKL6ZhLVjwLqAwA8LgHJ
   </data>
  </layer>
  <layer name="Chairs at Table" width="12" height="15">
@@ -360,7 +360,7 @@
    eJxjYCAdHOBhYDjIQ7z6E0C1J0lQPwpGAbkAAC0YA0M=
   </data>
  </layer>
- <layer name="Copy Machine" width="12" height="15">
+ <layer name="Copy Machine" width="12" height="15" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBh6oFiUgaFEdKBdMQoGIwAAQHwBEg==
   </data>
