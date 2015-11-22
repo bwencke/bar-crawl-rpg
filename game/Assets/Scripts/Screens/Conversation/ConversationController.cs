@@ -111,16 +111,27 @@ public class ConversationController : TopLevelController {
 	}
 
 	public void ChooseOption(string id) {
+		ChooseOptionO (id, null);
+	}
+
+	public void ChooseOptionO(string id, Object o) {
 		//Debug.LogError ("OPTION = " + id);
 		if (id == "END") {
 			controller.StopConversation ();
 			return;
-		} else if (id == "INVENTORY") {
-			controller.AccessInventory(ChooseOption);
+		} else if (id == "Inventory") {
+			controller.AccessInventory(ChooseOptionO);
 			return;
 		}
-		LoadSnippet (id);
-		Next();
+		if (dialogueEngine.getSnippet (NPCName, id) == null) {
+			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowAlert("I don't think I can do that!");
+			if(o != null) {
+				o.name = "false";
+			}
+		} else {
+			LoadSnippet (id);
+			Next ();
+		}
 	}
 
 }

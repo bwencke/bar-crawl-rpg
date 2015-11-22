@@ -17,7 +17,7 @@ public class Controller : MonoBehaviour {
 	private GameObject cutscene;
 	private GameObject controlling;
 	
-	private System.Action<string> callback = null;
+	private System.Action<string, Object> callback = null;
 
 	// Use this for initialization
 	void Start () {
@@ -146,18 +146,24 @@ public class Controller : MonoBehaviour {
 		}
 	}
 
-	public void AccessInventory(System.Action<string> callback) {
+	public void AccessInventory(System.Action<string, Object> callback) {
 		ToggleInventory ();
 		this.callback = callback;
 	}
 
 	public void AccessInventoryItem(string itemName) {
 		Debug.LogError ("AJFHKSDHFJKSH!!!!");
-		ToggleInventory();
 		if (callback != null) {
-			callback (itemName);
+			Object o = new Option();
+			o.name = "true";
+			callback (itemName, o);
+			if (o.name == "true") {
+				ToggleInventory ();
+				callback = null;
+			}
+		} else {
+			ToggleInventory ();
 		}
-		callback = null;
 	}
 
 	public void StartConversation(string name, string id, System.Action callback) {

@@ -49,7 +49,7 @@ public class OptionsController : TopLevelController {
 			conversationOption.GetComponent<OptionController>().SetId(option.getGUID());
 			string id = conversationOption.GetComponent<OptionController>().GetId();
 			conversationOption.GetComponent<Button>().onClick.AddListener(() => conversationController.ChooseOption(id));
-			if(id == "INVENTORY") {
+			if(id == "Inventory") {
 				conversationOption.GetComponent<Image> ().color = useItemUnSelectedColor;
 			}
 			children.Add(conversationOption);
@@ -86,7 +86,7 @@ public class OptionsController : TopLevelController {
 		int y = (int)movement_vector.y;
 		if(y != 0) {
 			// change color of previous item
-			children[selected].GetComponent<Image>().color = (values[selected] == "INVENTORY") ? useItemUnSelectedColor : unSelectedColor;
+			children[selected].GetComponent<Image>().color = (values[selected] == "Inventory") ? useItemUnSelectedColor : unSelectedColor;
 			children[selected].transform.localScale = new Vector3(1, 1);
 	
 			// change selected item
@@ -96,7 +96,7 @@ public class OptionsController : TopLevelController {
 			}
 	
 	 		// change color of selected item
-			children[selected].GetComponent<Image>().color = (values[selected] == "INVENTORY") ? useItemSelectedColor : selectedColor;
+			children[selected].GetComponent<Image>().color = (values[selected] == "Inventory") ? useItemSelectedColor : selectedColor;
 			children[selected].transform.localScale = new Vector3(1.01f, 1.01f);
 		}
 	}
