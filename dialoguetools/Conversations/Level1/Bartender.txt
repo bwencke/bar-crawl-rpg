@@ -14,11 +14,11 @@ SNIPPET
 	2
 	OPTION
 		Get me a cold pint of Guinness!
-		3
+		7
 	ENDOPTION
 	OPTION
 		I'll have an amaretto sour!
-		3
+		7
 	ENDOPTION
 	OPTION
 		CONDITIONS
@@ -169,6 +169,36 @@ SNIPPET
 		I just thought you might want it.
 		Bartender
 		I don't.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	OPTION
+		CONDITIONS
+			HasMoney=FALSE
+		ENDCONDITIONS
+		JUMP
+		3
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			HasMoney=TRUE
+		ENDCONDITIONS
+		JUMP
+		8
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Bartender
+		It's still four dollars.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
