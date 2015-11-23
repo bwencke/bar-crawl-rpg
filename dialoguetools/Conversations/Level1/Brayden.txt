@@ -313,6 +313,24 @@ ENDSNIPPET
 
 SNIPPET
 	My ID
+	OPTION
+		CONDITIONS
+			BraydenIDReturned=FALSE
+		ENDCONDITIONS
+		JUMP
+		19
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			BraydenIDReturned=TRUE
+		ENDCONDITIONS
+		JUMP
+		20
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	19
 	STATEMENTS
 		Brayden
 		I need my ID, not your ID.
@@ -344,6 +362,24 @@ SNIPPET
 	STATEMENTS
 		Brayden
 		I just really need you to be a friend right now.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	20
+	STATEMENTS
+		Blake
+		What do you think of my ID picture? I'm not sure I like it.
+		Brayden
+		You look like a tool.
+		Blake
+		OK, thanks.
+		Brayden
+		You asked.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
