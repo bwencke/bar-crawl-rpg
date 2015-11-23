@@ -1,5 +1,23 @@
 SNIPPET
 	1
+	OPTION
+		CONDITIONS
+			BraydenIDReturned=TRUE
+		ENDCONDITIONS
+		JUMP
+		1a
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			BraydenIDReturned=FALSE
+		ENDCONDITIONS
+		JUMP
+		1b
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	1a
 	STATEMENTS
 		Bartender
 		What can I do for you?
@@ -7,6 +25,22 @@ SNIPPET
 	OPTION
 		JUMP
 		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	1b
+	STATEMENTS
+		Josh
+		Hold on, bro!
+		Blake
+		What is it?
+		Cassidy
+		We should wait for Brayden to get here before we order drinks.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
 	ENDOPTION
 ENDSNIPPET
 
