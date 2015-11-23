@@ -17,6 +17,7 @@ public class BraydenController : ColliderController {
 		ConversationController conversationController = GameObject.FindGameObjectWithTag ("Conversation").GetComponent<ConversationController> ();
 		if (conversationController.dialogueEngine.checkVar ("BraydenIDReturned")) {
 			GameObject.FindGameObjectWithTag("BraydensID").GetComponent<InventoryItemController>().Disable();
+			GameObject.FindGameObjectWithTag ("SuccessChime").GetComponent<AudioObject> ().PlayAudio();
 			StartCoroutine(actuallyMove());
 		}
 	}

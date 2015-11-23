@@ -15,6 +15,8 @@ public class BankerDesk : ColliderController {
 		ConversationController conversationController = GameObject.FindGameObjectWithTag ("Conversation").GetComponent<ConversationController> ();
 		if (conversationController.dialogueEngine.checkVar ("HasMoney")) {
 			GameObject.FindGameObjectWithTag("Money").GetComponent<InventoryItemController>().Enable();
+			GameObject.FindGameObjectWithTag ("SuccessChime").GetComponent<AudioObject> ().PlayAudio();
+			GameObject.FindGameObjectWithTag("Alert").GetComponent<AlertController>().ShowStaticAlert("Money added to your inventory!");
 		}
 	}
 }
