@@ -72,6 +72,10 @@ SNIPPET
 	STATEMENTS
 		Bartender
 		We don't allow tabs here. We used to, but the clientele abused the system.
+		Blake
+		Like those guys over there?
+		Bartender
+		Getting those walking stereotypes to pay up is like wrenching teeth, man. 
 	ENDSTATEMENTS
 	OPTION
 		JUMP

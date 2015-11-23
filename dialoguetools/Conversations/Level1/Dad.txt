@@ -30,6 +30,13 @@ SNIPPET
 		4
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		Can I have some money?
+		5
+	ENDOPTION
+	OPTION
 		See you later!
 		END
 	ENDOPTION
@@ -119,6 +126,18 @@ SNIPPET
 	STATEMENTS
 		Dad
 		Is this your friend Brayden? He always seemed like a nice boy.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Dad
+		If you had saved your allowance, you wouldn't need to ask for money.
 	ENDSTATEMENTS
 	OPTION
 		JUMP

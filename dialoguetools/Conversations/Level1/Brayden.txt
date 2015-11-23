@@ -250,6 +250,9 @@ ENDSNIPPET
 
 SNIPPET
 	Brayden's ID
+	ASSIGNMENTS
+		BraydenIDReturned=TRUE
+	ENDASSIGNMENTS
 	STATEMENTS
 		Brayden
 		Cool.
@@ -262,7 +265,7 @@ SNIPPET
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		3
+		END
 	ENDOPTION
 ENDSNIPPET
 
@@ -313,6 +316,34 @@ SNIPPET
 	STATEMENTS
 		Brayden
 		I need my ID, not your ID.
+	ENDSTATEMENTS
+	OPTION
+		We look pretty similar.
+		17
+	ENDOPTION
+	OPTION
+		I really just don't want to go get your ID.
+		18
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	17
+	STATEMENTS
+		Brayden
+		We do not have the same style.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	18
+	STATEMENTS
+		Brayden
+		I just really need you to be a friend right now.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
