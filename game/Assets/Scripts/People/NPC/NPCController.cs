@@ -39,11 +39,18 @@ public class NPCController : ColliderController {
 	}
 
 	public override void TriggerPrimaryAction() {
-		googleAnalytics.LogEvent (new EventHitBuilder ()
-		                         .SetEventCategory ("Primary Action")
-		                         .SetEventAction ("Talk to NPC")
-		                         .SetEventLabel (npcName));
-		GameObject.FindGameObjectWithTag ("GameController").GetComponent<Controller>().StartConversation (npcName, conversationId, null);
+		if (conversationId != "") {
+			googleAnalytics.LogEvent (new EventHitBuilder ()
+		                         	.SetEventCategory ("Primary Action")
+		                         	.SetEventAction ("Talk to NPC")
+		                         	.SetEventLabel (npcName));
+			GameObject.FindGameObjectWithTag ("GameController").GetComponent<Controller> ().StartConversation (npcName, conversationId, null);
+		}
+		foreach (ColliderController cc in gameObject.GetComponents<ColliderController>()) {
+			if (cc != this) {
+				cc.TriggerPrimaryAction();
+			}
+		}
 	}
 
 	public IEnumerator MoveDown(float distance) {

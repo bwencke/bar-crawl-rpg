@@ -19,6 +19,9 @@ SNIPPET
 		3
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
 		Could you tell me what my bank PIN is?
 		4
 	ENDOPTION
