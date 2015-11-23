@@ -75,7 +75,7 @@ public class OptionsController : TopLevelController {
 		#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER
 		
 		// select first item
-		children[selected].GetComponent<Image>().color = selectedColor;
+		children[selected].GetComponent<Image>().color = (values[selected] == "Inventory") ? useItemSelectedColor : selectedColor;
 		children[selected].transform.localScale = new Vector3(1.01f, 1.01f);
 		
 		#endif
