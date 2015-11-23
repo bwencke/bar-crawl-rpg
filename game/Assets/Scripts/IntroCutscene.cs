@@ -13,7 +13,7 @@ public class IntroCutscene : CutsceneScript {
 	int count;
 
 	public override void LoadResults () {
-		Brayden.SetPosition(new Vector2(10.38f, -8.85f));
+		Brayden.SetPosition(new Vector2(11.0f, -9.0f));
 		Brayden.SetDirection(new Vector2(0, -1));
 		Destroy(Josh.gameObject);
 		Destroy(Cassidy.gameObject);
@@ -32,7 +32,7 @@ public class IntroCutscene : CutsceneScript {
 			while(count < 3) {
 				yield return null;
 			}
-			Brayden.SetPosition(new Vector2(10.38f, -8.85f));
+			Brayden.SetPosition(new Vector2(10.5f, -9.0f));
 			Brayden.SetDirection(new Vector2(0, -1));
 			Destroy(Josh.gameObject);
 			Destroy(Cassidy.gameObject);

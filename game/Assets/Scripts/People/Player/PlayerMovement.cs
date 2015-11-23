@@ -51,6 +51,7 @@ public class PlayerMovement : TopLevelController {
 		RaycastHit2D[] hits = Physics2D.RaycastAll (transform.position, direction, .2f);
 		foreach (RaycastHit2D hit in hits) {
 			if (hit.collider != null && hit.collider.gameObject.name != "Player") {
+				Debug.Log (hit.collider.gameObject.name);
 				//Debug.Log("You can't do anything with this object!");
 				hit.collider.gameObject.GetComponent<ColliderController>().TriggerPrimaryAction();
 				break;
