@@ -156,7 +156,7 @@ SNIPPET
 		Blake
 		I just wanted you to see how loaded I am.
 		Josh
-		Oh, uh, ok.
+		Oh, uh, OK.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
