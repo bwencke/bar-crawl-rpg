@@ -42,7 +42,7 @@ public class IntroCutscene : CutsceneScript {
 	}
 
 	public override bool HasNext() {
-		return !(position >= numScenes);
+		return position < numScenes;
 	}
 
 	IEnumerator BraydenLeave() {
