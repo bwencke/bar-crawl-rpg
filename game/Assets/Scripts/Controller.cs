@@ -27,8 +27,9 @@ public class Controller : MonoBehaviour {
 		SetControlling(player);
 
 		cutscene = null;
+		callback = null;
 
-		#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_PLAYER
+		#if UNITY_STANDALONE || UNITY_PLAYER
 
 			GameObject.FindGameObjectWithTag("MobileControls").GetComponent<Canvas>().enabled = false;
 
@@ -76,7 +77,10 @@ public class Controller : MonoBehaviour {
 
 		GetControlling ().GetComponent<TopLevelController> ().TriggerMovement (input);
 		if (GetControlling () != player) {
+			GameObject.FindGameObjectWithTag("MobileControls").GetComponent<Canvas>().enabled = false;
 			player.GetComponent<TopLevelController> ().TriggerMovement (Vector2.zero);
+		} else if (GameObject.FindGameObjectWithTag("MobileControls").GetComponent<Canvas>().enabled == false) {
+			GameObject.FindGameObjectWithTag("MobileControls").GetComponent<Canvas>().enabled = true;
 		}
 	}
 
@@ -136,6 +140,7 @@ public class Controller : MonoBehaviour {
 		if (inventory.GetComponent<Canvas> ().enabled) {
 			inventory.GetComponent<InventoryController> ().ClearInventory ();
 		} else {
+			conversation.GetComponent<ConversationController>().Hide();
 			inventory.GetComponent<InventoryController> ().LoadInventory ();
 		}
 		inventory.GetComponent<Canvas>().enabled = !inventory.GetComponent<Canvas>().enabled;
@@ -152,7 +157,6 @@ public class Controller : MonoBehaviour {
 	}
 
 	public void AccessInventoryItem(string itemName) {
-		Debug.LogError ("AJFHKSDHFJKSH!!!!");
 		if (callback != null) {
 			Object o = new Option();
 			o.name = "true";

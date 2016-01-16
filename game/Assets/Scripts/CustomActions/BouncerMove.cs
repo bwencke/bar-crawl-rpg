@@ -16,6 +16,7 @@ public class BouncerMove : ColliderController {
 	public void move() {
 		ConversationController conversationController = GameObject.FindGameObjectWithTag ("Conversation").GetComponent<ConversationController> ();
 		if (conversationController.dialogueEngine.checkVar ("ShowedID")) {
+			GameObject.FindGameObjectWithTag ("SuccessChime").GetComponent<AudioObject> ().PlayAudio();
 			StartCoroutine(actuallyMove());
 		}
 	}
@@ -23,6 +24,6 @@ public class BouncerMove : ColliderController {
 	public IEnumerator actuallyMove() {
 		yield return StartCoroutine(Bouncer.MoveDown(0.1f));
 		yield return StartCoroutine(Bouncer.MoveLeft(1.5f));
-		yield return StartCoroutine(Bouncer.MoveDown(0.01f));
+		Bouncer.SetDirection(new Vector2(0, -1));
 	}
 }

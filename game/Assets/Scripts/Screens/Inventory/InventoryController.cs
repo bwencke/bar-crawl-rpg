@@ -67,7 +67,7 @@ public class InventoryController : TopLevelController {
 	}
 
 	public override void TriggerMovement(Vector2 movement_vector) {
-		Debug.Log (movement_vector);
+		//Debug.Log (movement_vector);
 		if (movement_vector != prev) {
 			if (movement_vector.x != 0 || movement_vector.y != 0) {
 				// change color of previous item

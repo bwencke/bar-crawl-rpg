@@ -40,6 +40,9 @@ public class StateController : MonoBehaviour {
 		foreach (JSONNode variable in root["variables"].AsArray) {
 			conversationController.dialogueEngine.setVar(variable["name"], variable["value"].AsBool);
 		}
+		GameObject.FindGameObjectWithTag ("Banker").GetComponent<NPCController> ().SetDirection (new Vector2 (1, 0));
+
+		// load variables
 		if (conversationController.dialogueEngine.checkVar ("SawIntroCutscene")) {
 			GameObject.FindGameObjectWithTag("GameController").GetComponent<Controller>().LoadCutsceneResults("Intro");
 		}
@@ -47,6 +50,20 @@ public class StateController : MonoBehaviour {
 			GameObject.FindGameObjectWithTag("BraydensID").GetComponent<InventoryItemController>().Enable();
 			GameObject.FindGameObjectWithTag("WashingMachine").GetComponent<InventoryItemController>().Enable();
 			Destroy(GameObject.FindGameObjectWithTag("THEWasher"));
+		}
+		if (conversationController.dialogueEngine.checkVar ("BraydenIDReturned")) {
+			GameObject.FindGameObjectWithTag ("BraydensID").GetComponent<InventoryItemController> ().Disable ();
+			NPCController brayden = GameObject.FindGameObjectWithTag("Brayden").GetComponent<NPCController>();
+			brayden.SetPosition (new Vector2 (-6f, -8f));
+			brayden.SetDirection(new Vector2(0, -1));
+		}
+		if (conversationController.dialogueEngine.checkVar ("ShowedID")) {
+			NPCController bouncer = GameObject.FindGameObjectWithTag("Bouncer").GetComponent<NPCController>();
+			bouncer.SetPosition (new Vector2 (9.5f, -8.98f));
+			bouncer.SetDirection(new Vector2(0, -1));
+		}
+		if (conversationController.dialogueEngine.checkVar ("HasMoney")) {
+			GameObject.FindGameObjectWithTag ("Money").GetComponent<InventoryItemController> ().Enable ();
 		}
 		conversationController.dialogueEngine.printVars ();
 	}

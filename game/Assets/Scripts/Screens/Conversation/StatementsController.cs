@@ -9,12 +9,28 @@ public class StatementsController : TopLevelController {
 
 	public ConversationController conversationController;
 
+	private string text;
+	private int position;
+	private Text statementBox;
+	private bool update;
+
+	public void Update() {
+		if (update) {
+			if (text != null && position <= text.Length) {
+				statementBox.text = text.Substring (0, position++);
+			}
+		}
+		update = !update;
+	}
+
 	public void SetStatement(Statement statement) {
 		if (statement == null) {
 			return;
 		}
 		GameObject.FindGameObjectWithTag ("PersonName").GetComponent<Text> ().text = statement.getName () + ":";
-		GameObject.FindGameObjectWithTag ("Statement").GetComponent<Text> ().text = statement.getText ();
+		statementBox = GameObject.FindGameObjectWithTag ("Statement").GetComponent<Text> ();
+		text = statement.getText ();
+		position = 1;
 		if (statement.getName () == "Blake") {
 			npcImage.GetComponent<Canvas> ().enabled = false;
 			playerImage.GetComponent<Canvas> ().enabled = true;

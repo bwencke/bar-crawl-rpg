@@ -23,15 +23,15 @@ SNIPPET
 		4
 	ENDOPTION
 	OPTION
-		It was nice to meet you two ... companions!
-		5
-	ENDOPTION
-	OPTION
 		CONDITIONS
 			NeedsMoney=TRUE
 		ENDCONDITIONS
 		Can I borrow some cash?
 		6
+	ENDOPTION
+	OPTION
+		It was nice to meet you two ... companions!
+		5
 	ENDOPTION
 	OPTION
 		Use Item

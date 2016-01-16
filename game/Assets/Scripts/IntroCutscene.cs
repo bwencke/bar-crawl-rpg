@@ -15,8 +15,10 @@ public class IntroCutscene : CutsceneScript {
 	public override void LoadResults () {
 		Brayden.SetPosition(new Vector2(11.0f, -9.0f));
 		Brayden.SetDirection(new Vector2(0, -1));
-		Destroy(Josh.gameObject);
-		Destroy(Cassidy.gameObject);
+		Josh.SetPosition(new Vector2 (-6.5f, -8.1f));
+		Josh.SetDirection(new Vector2(0, -1));
+		Cassidy.SetPosition(new Vector2 (-6.3f, -8.5f));
+		Cassidy.SetDirection(new Vector2(0, 1));
 	}
 
 	public override IEnumerator Next (System.Action callback) {
@@ -32,10 +34,7 @@ public class IntroCutscene : CutsceneScript {
 			while(count < 3) {
 				yield return null;
 			}
-			Brayden.SetPosition(new Vector2(10.5f, -9.0f));
-			Brayden.SetDirection(new Vector2(0, -1));
-			Destroy(Josh.gameObject);
-			Destroy(Cassidy.gameObject);
+			LoadResults();
 			GameObject.FindGameObjectWithTag ("Conversation").GetComponent<ConversationController> ().dialogueEngine.setVar ("SawIntroCutscene", true);
 			callback();
 			break;
@@ -43,7 +42,7 @@ public class IntroCutscene : CutsceneScript {
 	}
 
 	public override bool HasNext() {
-		return !(position >= numScenes);
+		return position < numScenes;
 	}
 
 	IEnumerator BraydenLeave() {
