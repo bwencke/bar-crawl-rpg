@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="32" height="30" tilewidth="32" tileheight="32" nextobjectid="1">
  <tileset firstgid="1" name="barrel" tilewidth="32" tileheight="32" tilecount="8">
   <image source="../../../../tiles/LPC/barrel.png" width="128" height="64"/>
  </tileset>
@@ -279,84 +279,152 @@
  <tileset firstgid="5619" name="build_atlas" tilewidth="32" tileheight="32" tilecount="1024">
   <image source="../../../../tiles/Atlas_0/build_atlas.png" width="1024" height="1024"/>
  </tileset>
- <layer name="Grass" width="30" height="30">
+ <tileset firstgid="6643" name="bench_v2" tilewidth="32" tileheight="32" tilecount="2">
+  <image source="../../../../tiles/bench_v2.png" trans="ffffff" width="64" height="32"/>
+ </tileset>
+ <layer name="Grass" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJyNlUEOg0AMA+HV2f6+XCqlo3HCYUVZluA4tnvu66pnfZ51cC08S7/7ta++V9g/Uquwb+9Xe9b3KnyncLV91i5898hvrsKy83X/4+99cn+rTe7IOXma6iYMvZbVrNt5tb6M2wm/4TBdmc6I7aBef2a66ffs1XimVvjMeDR/2fdME+YL85H51HBYL0lD5lHqa/LthJlzsfmbh/tKs02cpj27t2y0LLIsMdw8t+E1v00+ZT1iTZm78fEmE0xPtji/pCnrzThOc7K8mrxOLOm8zcI4ThhSNhsW08pU32ok35mGt5mmb7E/4uWyOU64rH/jMuWfzZLepC+MB8NM7RHP9H/EM6YJ83t6J/nJfG68JayJK7smj1rOWI6nXLXcTbOnHi2bLFun/LdstIzdfJ7OTZlo/kpzNn1RA+bplLXkmB6m503nSaeslbSQeiM/SVdT7qQcSjlmdU0XfH/DZL0l7iwTTcdTtvze/wLG5amB
+   eJyNlEGOwzAMA7uvVvL79tAFjMGM0oMQ17UlmSJ5/b1e1yfmE/d3fX4H/9X6/J5x7o3sX1jPcdbO3HKG9ybqjXz5Hu4P8rO3c80YhJ0nzsTjkv2nGsTSalWNyl+9nDltJiP1BrWZ2zDf3mP9GP/qNzFkX8TB+HX+Zk7Dn30TV2qLNcldq2ucoY5K06at0qD1yRo2X5th6cM4ZphTE1XvRl16AHlpsy+sa8/ma72Z5uxOzZ816T+FD9/K3FsP1fPmN/QAw+kXbzHeWdhcN+7ZWw37mp/5n/k2tWs9msdsGrI6NdvyfuvJOLXVsRzmfU8e+zTzqkk9WN/GlfLG6q/ymp/Ze6sH3jM/M1zK1zf/MY0QO9MsOWN17E7lLL+wHOXZxp3ir+2XRxWPN35umjYOkCM2M/OS0lZ5+abv4ozNvM5ZEFvzzeKBcYYcMWzLw4nVjXV5h+mCuBjXjSvmHfZW8rf4t/lXzdTC3mK8M+6XbgpXe2thuuFVuBhf/+MNTgTF3Q==
   </data>
  </layer>
- <layer name="Road" width="30" height="30">
+ <layer name="Road" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztwzERACAMALEaQGxt4KAzNmoDG2jAQ5dfPneJkCRJkuZyMTf0QBt6oQ9aUMoHja2X/w==
+   eJztw0ERACAIAEEKEJYaNuBtDWpYwwzGuIe3MxshSZIk/aOSveAbPvADv/CG0x4D+aIh
   </data>
  </layer>
- <layer name="Dirt Path" width="30" height="30">
+ <layer name="Dirt Path" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztlGEKgCAMRnf/OxaWldkpUnC0zAJtFsU+eL+me7FqAPkZHZPDFNy9k1re3qEDwwNe9HWhr0clnoHT20e+FCq4Ob3Yy9M4LKElNVPRG/ejNQXbXLi9vrcmnM2fwzvDfp4pcP54jut7nuH4PqlvCedq/b/oR5ao/rd9JV7xftWrC8C9qQrva7jeizWxLyGRSCS5WQFPK8fy
+   eJztlNEKgCAMRff//1hYVmZfkYKjZdaDNoXahfOk7QxnAuRldiwOk/l9abj9o0MHpop+9A6hvkcleuHwj5E3hQo9cPixpqdzWEJP1kwFf1yXrik4zonL7x2acDeXN/0rnM85Bc4F9719/1e4zpt6t7CP+//HPpAtWv/6+yd+8f/BrzPB91gV1NDw/NbWwDZGIpFIWmUHtM3NVg==
   </data>
  </layer>
- <layer name="Sports Bar Front" width="30" height="30">
+ <layer name="Tree Stumps" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzbENACAMA0EvkVGBDtIBW5MJ0kWi+JO+tSUAANBM6knDan5n7K4kL/rdsXuSbtEvAOAvD76FD50=
+   eJzt00EOgCAQA8A98C9BRdD/P8heeIAUyWo6SY+FZJOa+bAGsw3Zw/Pugk5EUke3qeieyNXxRkbnQArx/wwj7sT4yp3+iNnXCMy+3sbugr0tuwvPtxURERHx5gaNGAoz
   </data>
  </layer>
- <layer name="Sports Bar Roof" width="30" height="30">
+ <layer name="Tree Middles" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzTEKwCAQRNG9hPcWu6BJYRK9pnOAJd2CkP/gtzNmAICd5WTW1Ol0qZJifg/tvmo4TVWDfrt274+eoF8AAP5oAXPjEx4=
+   eJzt0DERAAAIBKAfTGX/YI4m8FwgAsnqCsccAwAA/Bj3SgB9
   </data>
  </layer>
- <layer name="Sports Bar Door" width="30" height="30">
+ <layer name="Tree Tops" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzTEBAAAIAyBL2NXX5saYBxSgCgD4YjrzbugFIOsAImcBJA==
+   eJztk8sOgjAQRWfBXlARH/hYCAt0IS6U//8yTuK+YCs2JPckZ9PJ7XSajNmHU2J2xktiX/Mg0+JzILukvsK1Rw8XL+57Yzdw75b6Dvc/7j+WkD+eO1dmrrCONHtD3xveI/UfuyNT4dqRBWcpZp5vC83n5DZYRMofyJV4jJQXQgghhBD/owfC3wbr
   </data>
  </layer>
- <layer name="Sports Bar Stoop" width="30" height="30">
+ <layer name="Sports Bar Front" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzTEBAAAEADAlhPVK7hDCYSuwCADgu8qbt49eANYApXgBJg==
+   eJztzbENACAMA0EvkVGBDuiArckE6SIK/qRvbQkAALxUTKpBzXL/u++PoJn8v3x/B53kfwDAPy5Qng+d
   </data>
  </layer>
- <layer name="Sports Bar Windows and Sign" width="30" height="30">
+ <layer name="Sports Bar Roof" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzaEBADAIwDBOmOFbTuLIeQRuU4mragQAMPX5+6vcGwBeuHq6Ad8=
+   eJztzTEOgCAQRNG9BPcmdAa0QIVrMgfY2C2N/yW/nTEDAPxdTmZNnU6XKin2/9D+q4bTVDX4v2v//ugJ/gcAAHssTe0THg==
   </data>
  </layer>
- <layer name="Sports Bar Chimney" width="30" height="30">
+ <layer name="Sports Bar Door" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzTEJAAAIADBLmNbX4JYQRNgKLAKAjypv3j56AYB9A2uFASo=
+   eJztzTENAAAIACBL2NXX5p5GcHNQgAgAgFV5+/fxD8BfA5lrASQ=
   </data>
  </layer>
- <layer name="Butcher Shop Front" width="30" height="30">
+ <layer name="Sports Bar Stoop" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzbENACAMA0Evkf2XADqgA8YiG6QJDfqTvrUlAAD+UUyqQc3yf7tvjqD50e/yzR10HvwCAHJdFoQg+Q==
+   eJztzUERAAAEADAlhPWVXArHYyuwCACAPypv/z7+AdgzFDMBJg==
   </data>
  </layer>
- <layer name="Butcher Shop Roof" width="30" height="30">
+ <layer name="Sports Bar Windows and Sign" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzbENgDAQBMFvwv2XZJEhDAHYkBla4Bp4QcBH7Eib3pkBwL/kZFbU7LSoIX3/O2qzq9PpUlPQb1O70xH0u2pze6gG/AIAgPduDzMmmQ==
+   eJztzTERADAIADEkdMEtkhBZB6y0d8n200cAAC/ps/OtnBsAfncBS0EB3w==
   </data>
  </layer>
- <layer name="Butcher Shop Door" width="30" height="30">
+ <layer name="Sports Bar Chimney" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzTENAAAIACBL2D+Hr8nM4OXmoAARAMBHlTdvH70A7A3QAQGm
+   eJztzTENAAAIACBLmNbX4Bbwd3NQgAgA2FXe/n38AwC/DAooASo=
   </data>
  </layer>
- <layer name="Butcher Shop Stoop" width="30" height="30">
+ <layer name="Butcher Shop Front" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzTEJAAAIADBL2L+Gr80sIYiwFVgEAMCeypu3j16Azwb/qgGk
+   eJztzbERABAQRNFt4vpvAhkylEUHF5gLmP9mfrorAQCAG8mk7FQs7r+e7ebUP/4fZ3s6rcB/AMA7NnxWIPk=
   </data>
  </layer>
- <layer name="Butcher Shop Windows and Sign" width="30" height="30">
+ <layer name="Butcher Shop Roof" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzCERAEAIAEEiYD42iShHgZ9B4XbNuYsAAC5V3v77/QsAmwFTsgMO
+   eJztzbsNgDAQBNFrwv2XhMgsPgG2IQNaYBs4ObAuQJonTbprBgAYNSWzVW1Ou5pT3H/W9q0ep1ctwf9NnU5X8P+h7dKpBv4DAIB/+ADEDiaZ
   </data>
  </layer>
- <layer name="MEAT" width="30" height="30">
+ <layer name="Butcher Shop Door" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzjERAAAIBKAPYf+QJrCAq+cCCUgAgEtd3wMA2A3aLgEH
+   eJztzUERAAAEADAl9M/hK5kUjsdWYBEAADsqb/8+/gH4ZQB75AGm
   </data>
  </layer>
- <layer name="Tent" width="30" height="30">
+ <layer name="Butcher Shop Stoop" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzbcRgEAQwMADmvgQ0wimEUwjmMZRFRf8aGcUK6IiJaKhlrqSt+15DTTSlPideS200pb43XkddNKV+L15PfTSl/iVJEmSavUDwg0G/w==
+   eJztzTENAAAIACBL2L+Gr828TeDmoAARAAA/Vd7+ffwDsA2dpQGk
+  </data>
+ </layer>
+ <layer name="Butcher Shop Windows and Sign" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzTENADAIAEEkdEE2ijBXA8ykae6WHz8CAPhVnZ1P51wAeMkFoxUDDg==
+  </data>
+ </layer>
+ <layer name="MEAT" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzgENAAAIA6CHsH9IExhD5yABCQDwVdf2AADuGFHlAQc=
+  </data>
+ </layer>
+ <layer name="Tent" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzVcNgAAQwNADTPDJMMIwwjDCME5VcIT0Jf1uxE/VEQWVVNXv7xueLXXUJ/wHniNNNCf8F54rbbQn/A+eJ110J/wlSZIkfc8DZa8G/w==
+  </data>
+ </layer>
+ <layer name="Benches" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt00ERADAIBLGzgX+JrYDKYAqJgv1swg9OJbe6K2APzwEAzPMAxeAEMw==
+  </data>
+ </layer>
+ <layer name="Bush Bottoms" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt07ERACAMAzGPkBWB/XeAGdKQQrr73o0TAKZblezXqd9LYAafAKDjAtTEAq0=
+  </data>
+ </layer>
+ <layer name="Bush Tops" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0zENAAAIwDAkIA//SrDAByStgj2LAGCicrsAbvEEAN80yBoA0Q==
+  </data>
+ </layer>
+ <layer name="Rocks" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFlIIogYF2wSgYBaNgFIwCeoCU0fJ+FIwCqoPRfDUKRsEooBYgpl8GAFslAb0=
+  </data>
+ </layer>
+ <layer name="Mafia Car Bottom" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzTEOgCAUwNA//8sqyCYgR7eHMMShL+ncCEmSJElfODLipEKVLmq573/z6jRo0kNr41/6uxdVfAYT
+  </data>
+ </layer>
+ <layer name="Mafia Car Top" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzskNACAMwLC+uybn/hPQLUDIlvJPBAAA/KFlRK9GNatV7bx9BbziAMcGAp4=
+  </data>
+ </layer>
+ <layer name="Flagpole Bottom" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAIA7CpwL8UpKGAj4SnVdAE2HR9DwAAgCsD/LEA1w==
+  </data>
+ </layer>
+ <layer name="Flagpole Top" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzQENACAMA7CrQC44AaRexghpDbTqbXNk/x3+V/g/4f+GfwAA4B8N0ZcDSQ==
+  </data>
+ </layer>
+ <layer name="Barrels Back" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzSEKADAMBMFUNP9/cm10zRGYgdVb9adHAACbnPD7Bv/JN0DaA1jvAB8=
+  </data>
+ </layer>
+ <layer name="Barrels Front" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzTEBAAAIA6B52L+yLdwDBUgAAPg05XuLf/MGOEkYAA0=
   </data>
  </layer>
 </map>
