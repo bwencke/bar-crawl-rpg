@@ -27,6 +27,7 @@ public class Controller : MonoBehaviour {
 		SetControlling(player);
 
 		cutscene = null;
+		callback = null;
 
 		#if UNITY_STANDALONE || UNITY_PLAYER
 
@@ -139,6 +140,7 @@ public class Controller : MonoBehaviour {
 		if (inventory.GetComponent<Canvas> ().enabled) {
 			inventory.GetComponent<InventoryController> ().ClearInventory ();
 		} else {
+			conversation.GetComponent<ConversationController>().Hide();
 			inventory.GetComponent<InventoryController> ().LoadInventory ();
 		}
 		inventory.GetComponent<Canvas>().enabled = !inventory.GetComponent<Canvas>().enabled;
@@ -155,7 +157,6 @@ public class Controller : MonoBehaviour {
 	}
 
 	public void AccessInventoryItem(string itemName) {
-		Debug.LogError ("AJFHKSDHFJKSH!!!!");
 		if (callback != null) {
 			Object o = new Option();
 			o.name = "true";

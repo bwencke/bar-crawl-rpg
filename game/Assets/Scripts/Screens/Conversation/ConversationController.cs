@@ -58,10 +58,14 @@ public class ConversationController : TopLevelController {
 		dialogue.GetComponent<Canvas> ().enabled = false;
 		next.GetComponent<Image> ().enabled = false;
 		next.GetComponentInChildren<Text> ().enabled = false;
-		options.GetComponent<Canvas> ().enabled = false;
+		Hide ();
 		if (callback != null) {
 			callback ();
 		}
+	}
+
+	public void Hide() {
+		options.GetComponent<Canvas> ().enabled = false;
 	}
 
 	void LoadSnippet(string id) {
