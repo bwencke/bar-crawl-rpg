@@ -319,7 +319,12 @@
  </layer>
  <layer name="Sports Bar Roof" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzTEOgCAQRNG9BPcmdAa0QIVrMgfY2C2N/yW/nTEDAPxdTmZNnU6XKin2/9D+q4bTVDX4v2v//ugJ/gcAAHssTe0THg==
+   eJztzsEJACAMBMFrIv2DsVA78CX4yAzsfxMAmG1V0pd2/T4EAF44HAAGeQ==
+  </data>
+ </layer>
+ <layer name="Sports Bar Roof Top" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzbsNACAMA9Eskb0RHeLTAWviAWhT5Z50rW0GAMiuuNlQ89NS1WP/m/a3Op+u6sH/AAAghwdA7Qym
   </data>
  </layer>
  <layer name="Sports Bar Door" width="32" height="30">
@@ -349,7 +354,12 @@
  </layer>
  <layer name="Butcher Shop Roof" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzbsNgDAQBNFrwv2XhMgsPgG2IQNaYBs4ObAuQJonTbprBgAYNSWzVW1Ou5pT3H/W9q0ep1ctwf9NnU5X8P+h7dKpBv4DAIB/+ADEDiaZ
+   eJztzbEJACAMRNFbIvuvJXZqdA6zgFhICuE/+O2dBADAm2KSR/PQiqrl/bfY7pdG4j8AAPjDBg1aE1M=
+  </data>
+ </layer>
+ <layer name="Butcher Shop Roof Top" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzbsJACAQBNFr4vovSczETwlqC24DF4mBMA8m3TUDANxKbtZUDxoq+7v/ou2pVtBW9eE/AADADw7FtBNH
   </data>
  </layer>
  <layer name="Butcher Shop Door" width="32" height="30">
@@ -425,6 +435,11 @@
  <layer name="Barrels Front" width="32" height="30">
   <data encoding="base64" compression="zlib">
    eJztzTEBAAAIA6B52L+yLdwDBUgAAPg05XuLf/MGOEkYAA0=
+  </data>
+ </layer>
+ <layer name="Collisions" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlFsOQBEMRLv/fdnX/RVpq67pgziJDwmdMRTRP1o3UOzUQvqoqL2adSP+jqJyytD00M98V2huOgsaLpuVnsvoq2qMf440PPV31li9SzUQ+pwXa33NlyV/Tgul3/vQ9nNZz7xLa6VaFs8RePfDCfra/HSi/79q+o9HJpa3/gFWa1AJ
   </data>
  </layer>
 </map>
