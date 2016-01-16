@@ -1,0 +1,30 @@
+Map:
+Sports Bar
+Butcher Shop
+Tent
+
+Sports Bar:
+One Room
+	Bartender
+	Gambler
+	Cassidy
+	Josh
+	Brayden
+
+Butcher Shop:
+Front Room
+	Butcher
+Back Room
+	Mafia Boss
+	Mafia Goon
+
+Tent:
+One Room
+	Reclusive Bartending Genius / Cocktail God
+
+Outside:
+	Bouncer
+	Fake ID Salesman
+	Little Kid
+	Davy Crockett
+	Norman
