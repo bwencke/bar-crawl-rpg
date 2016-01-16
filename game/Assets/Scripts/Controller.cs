@@ -41,6 +41,7 @@ public class Controller : MonoBehaviour {
 	void Update () {
 		DetectArrowKeys ();
 		DetectPrimaryAction ();
+		DetectMouseClick ();
 		DetectMenuButton ();
 		DetectInventoryButton ();
 	}
@@ -81,6 +82,12 @@ public class Controller : MonoBehaviour {
 			player.GetComponent<TopLevelController> ().TriggerMovement (Vector2.zero);
 		} else if (GameObject.FindGameObjectWithTag("MobileControls").GetComponent<Canvas>().enabled == false) {
 			GameObject.FindGameObjectWithTag("MobileControls").GetComponent<Canvas>().enabled = true;
+		}
+	}
+
+	void DetectMouseClick() {
+		if (Input.GetMouseButtonUp (0)) {
+			Debug.LogError ("MOUSE CLICKED");
 		}
 	}
 
