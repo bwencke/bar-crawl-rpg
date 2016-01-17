@@ -1,0 +1,134 @@
+SNIPPET
+	1
+	STATEMENTS
+		Bartender
+		How can I help you?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		I'll have a Long Island Iced Tea!
+		4
+	ENDOPTION
+	OPTION
+		One beer, please!
+		4
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		Can I start a tab?
+		6
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		Could you lend me a few dollars?
+		7
+	ENDOPTION
+	OPTION
+		Wow, these countertops are ugly.
+		8
+	ENDOPTION
+	OPTION
+		Goodbye.
+		END
+	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	ASSIGNMENTS
+		NeedsMoney=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Bartender
+		Four dollars, please.
+		Blake
+		Drat, I spent all of my money on a fake -- uh -- tattoo.
+		Bartender
+		Well, no drink for you, then.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Bartender
+		We don't allow tabs here.
+		Blake
+		Why not? I'm very trustworthy.
+		Josh
+		Yeah, bro, Blake is cool.
+		Bartender
+		Sorry, it's company policy.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Bartender
+		Do I look like a bank to you?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Bartender
+		What's wrong with the countertops?
+		Blake
+		They're the same color as my ex-girlfriend's vomit.
+		Bartender
+		Well, feel free to fill out the survey on our website.
+		Blake
+		Will I get money if do the survey?
+		Bartender
+		No.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Washing Machine
+	STATEMENTS
+		Bartender
+		Why are you giving me this?
+		Blake
+		I just thought you might want it.
+		Bartender
+		I don't.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
