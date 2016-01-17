@@ -307,11 +307,6 @@
    eJzt0DERAAAIBKAfTGX/YI4m8FwgAsnqCsccAwAA/Bj3SgB9
   </data>
  </layer>
- <layer name="Tree Tops" width="32" height="30">
-  <data encoding="base64" compression="zlib">
-   eJztk8sOgjAQRWfBXlARH/hYCAt0IS6U//8yTuK+YCs2JPckZ9PJ7XSajNmHU2J2xktiX/Mg0+JzILukvsK1Rw8XL+57Yzdw75b6Dvc/7j+WkD+eO1dmrrCONHtD3xveI/UfuyNT4dqRBWcpZp5vC83n5DZYRMofyJV4jJQXQgghhBD/owfC3wbr
-  </data>
- </layer>
  <layer name="Sports Bar Front" width="32" height="30">
   <data encoding="base64" compression="zlib">
    eJztzbENACAMA0EvkVGBDuiArckE6SIK/qRvbQkAALxUTKpBzXL/u++PoJn8v3x/B53kfwDAPy5Qng+d
@@ -320,11 +315,6 @@
  <layer name="Sports Bar Roof" width="32" height="30">
   <data encoding="base64" compression="zlib">
    eJztzsEJACAMBMFrIv2DsVA78CX4yAzsfxMAmG1V0pd2/T4EAF44HAAGeQ==
-  </data>
- </layer>
- <layer name="Sports Bar Roof Top" width="32" height="30">
-  <data encoding="base64" compression="zlib">
-   eJztzbsNACAMA9Eskb0RHeLTAWviAWhT5Z50rW0GAMiuuNlQ89NS1WP/m/a3Op+u6sH/AAAghwdA7Qym
   </data>
  </layer>
  <layer name="Sports Bar Door" width="32" height="30">
@@ -357,11 +347,6 @@
    eJztzbEJACAMRNFbIvuvJXZqdA6zgFhICuE/+O2dBADAm2KSR/PQiqrl/bfY7pdG4j8AAPjDBg1aE1M=
   </data>
  </layer>
- <layer name="Butcher Shop Roof Top" width="32" height="30">
-  <data encoding="base64" compression="zlib">
-   eJztzbsJACAQBNFr4vovSczETwlqC24DF4mBMA8m3TUDANxKbtZUDxoq+7v/ou2pVtBW9eE/AADADw7FtBNH
-  </data>
- </layer>
  <layer name="Butcher Shop Door" width="32" height="30">
   <data encoding="base64" compression="zlib">
    eJztzUERAAAEADAl9M/hK5kUjsdWYBEAADsqb/8+/gH4ZQB75AGm
@@ -382,9 +367,9 @@
    eJztzgENAAAIA6CHsH9IExhD5yABCQDwVdf2AADuGFHlAQc=
   </data>
  </layer>
- <layer name="Tent" width="32" height="30">
+ <layer name="TentBottom" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzVcNgAAQwNADTPDJMMIwwjDCME5VcIT0Jf1uxE/VEQWVVNXv7xueLXXUJ/wHniNNNCf8F54rbbQn/A+eJ110J/wlSZIkfc8DZa8G/w==
+   eJxjYBimQALBZJbArWy4Agegnx2B2AmInQfA/wlAOxOBOAmIkwfA/gagnY1A3ATEzSMw/kfBKBgFo2AUjIJRMApGwSgYBZgAAFUiBeY=
   </data>
  </layer>
  <layer name="Benches" width="32" height="30">
@@ -412,14 +397,89 @@
    eJztzTEOgCAUwNA//8sqyCYgR7eHMMShL+ncCEmSJElfODLipEKVLmq573/z6jRo0kNr41/6uxdVfAYT
   </data>
  </layer>
+ <layer name="Flagpole Bottom" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAIA7CpwL8UpKGAj4SnVdAE2HR9DwAAgCsD/LEA1w==
+  </data>
+ </layer>
+ <layer name="Barrels Front" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzTEBAAAIA6B52L+yLdwDBUgAAPg05XuLf/MGOEkYAA0=
+  </data>
+ </layer>
+ <layer name="Collisions" width="32" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztlFsOQBEMRLv/fdnX/RVpq67pgziJDwmdMRTRP1o3UOzUQvqoqL2adSP+jqJyytD00M98V2huOgsaLpuVnsvoq2qMf440PPV31li9SzUQ+pwXa33NlyV/Tgul3/vQ9nNZz7xLa6VaFs8RePfDCfra/HSi/79q+o9HJpa3/gFWa1AJ
+  </data>
+ </layer>
+ <layer name="Collisions_Bench" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt00EJAAAIBMHr38tefswgKDOwETbhgpqAHZ4DAPinAc09AxU=
+  </data>
+ </layer>
+ <layer name="Collisions_Flag" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAIA7D594UvFOwj4WkVNAGa+Q4AAABnFjLnAMY=
+  </data>
+ </layer>
+ <layer name="Collisions_Tree" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0bERADAIAzH234u9MgEVBeGQejfviH/k0PYSne7yfa3bRlsAgB0e3LkEnw==
+  </data>
+ </layer>
+ <layer name="Collisions_Bush" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0zENAAAIBLH37wtfaGACklbBLZcA8EFtB8AxngBgqgEGcAGL
+  </data>
+ </layer>
+ <layer name="Collisions_Barrel" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1jENAAAIwDD8+8IXLyfh4aBN5mERO9kCAGDu8p+8G/BZAT+GA9o=
+  </data>
+ </layer>
+ <layer name="Collisions_Rock" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1zENAAAIBLH37wtfWCBhYKBVcOslbNV1AAAAwHOTL2u89gGL
+  </data>
+ </layer>
+ <layer name="Collisions_Tent" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzbEJAEAIBEH778u+zJ/PFZ2Bg8s2go3yWUf/96/0AQCAeQqd4gYp
+  </data>
+ </layer>
+ <layer name="Collisions_Bar" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApGNjhKBKa1/djcgk2eHvbjEqOl/ej+pmf4j4JRMApGwSgYOQAAuqkUAw==
+  </data>
+ </layer>
+ <layer name="Collisions_Butcher" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAooA0eJxLS0nxpqhpv9Ax3+R5FoWtuPL83R2v5RMApGwSgYBUMHAAADExih
+  </data>
+ </layer>
+ <layer name="Collisions_Car" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzbEJAAAIBLHffy/3cgI7C8EErr4EAADYUENf/nBdAwPpCT0=
+  </data>
+ </layer>
  <layer name="Mafia Car Top" width="32" height="30">
   <data encoding="base64" compression="zlib">
    eJztzskNACAMwLC+uybn/hPQLUDIlvJPBAAA/KFlRK9GNatV7bx9BbziAMcGAp4=
   </data>
  </layer>
- <layer name="Flagpole Bottom" width="32" height="30">
+ <layer name="Tree Tops" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzjENAAAIA7CpwL8UpKGAj4SnVdAE2HR9DwAAgCsD/LEA1w==
+   eJztk8sOgjAQRWfBXlARH/hYCAt0IS6U//8yTuK+YCs2JPckZ9PJ7XSajNmHU2J2xktiX/Mg0+JzILukvsK1Rw8XL+57Yzdw75b6Dvc/7j+WkD+eO1dmrrCONHtD3xveI/UfuyNT4dqRBWcpZp5vC83n5DZYRMofyJV4jJQXQgghhBD/owfC3wbr
+  </data>
+ </layer>
+ <layer name="Sports Bar Roof Top" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzbsNACAMA9Eskb0RHeLTAWviAWhT5Z50rW0GAMiuuNlQ89NS1WP/m/a3Op+u6sH/AAAghwdA7Qym
+  </data>
+ </layer>
+ <layer name="Butcher Shop Roof Top" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzbsJACAQBNFr4vovSczETwlqC24DF4mBMA8m3TUDANxKbtZUDxoq+7v/ou2pVtBW9eE/AADADw7FtBNH
   </data>
  </layer>
  <layer name="Flagpole Top" width="32" height="30">
@@ -432,14 +492,9 @@
    eJztzSEKADAMBMFUNP9/cm10zRGYgdVb9adHAACbnPD7Bv/JN0DaA1jvAB8=
   </data>
  </layer>
- <layer name="Barrels Front" width="32" height="30">
+ <layer name="TentTop" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJztzTEBAAAIA6B52L+yLdwDBUgAAPg05XuLf/MGOEkYAA0=
-  </data>
- </layer>
- <layer name="Collisions" width="32" height="30">
-  <data encoding="base64" compression="zlib">
-   eJztlFsOQBEMRLv/fdnX/RVpq67pgziJDwmdMRTRP1o3UOzUQvqoqL2adSP+jqJyytD00M98V2huOgsaLpuVnsvoq2qMf440PPV31li9SzUQ+pwXa33NlyV/Tgul3/vQ9nNZz7xLa6VaFs8RePfDCfra/HSi/79q+o9HJpa3/gFWa1AJ
+   eJztzbsNACAMxNCDLJGSz/475loWAAn5Sa4tfSql5rqLvL8ffk633H7wBwAAAACcCvAvAU0=
   </data>
  </layer>
 </map>
