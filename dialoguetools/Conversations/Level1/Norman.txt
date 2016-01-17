@@ -81,17 +81,7 @@ SNIPPET
 		Norman
 		That's what they want you to think.
 		Norman
-		Watch the footage more closely, and look at the guy standing right next to Kennedy's car.
-		Blake
-		The Umbrella Man?
-		Norman
-		You're damn right, the Umbrella Man!
-		Norman
-		It's a beautiful day in Houston, Texas. Not a cloud in the sky.
-		Norman
-		No reason anyone should be carrying an umbrella.
-		Norman
-		But then you see the Umbrella Man, holding an open umbrella.
+		Watch the footage more closely, and you'll see the Umbrella Man, holding an open umbrella.
 		Norman
 		And right when the motorcade passes, you know what happens?
 		Blake
@@ -123,9 +113,7 @@ SNIPPET
 		Norman
 		That is, until the Umbrella Man broke into our house and bludgeoned him to death with his umbrella.
 		Norman
-		The doctors said it was a heart attack.
-		Norman
-		But I know it was the Umbrella Man.
+		The doctors said it was a heart attack. But I know it was the Umbrella Man.
 		Blake
 		And if I give you my spare change, what exactly are you going to do?
 		Norman
