@@ -1,0 +1,194 @@
+SNIPPET
+	1
+	STATEMENTS
+		Butcher
+		What can I do for you?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		I don't know, what can you do for me?
+		3
+	ENDOPTION
+	OPTION
+		What made you decide to become a butcher?
+		4
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsSunglasses=TRUE
+		ENDCONDITIONS
+		Can I buy sunglasses here?
+		5
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoustache=TRUE
+		ENDCONDITIONS
+		Where might I find a moustache?
+		6
+	ENDOPTION
+	OPTION
+		Bye
+		END
+	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	STATEMENTS
+		Butcher
+		I'm very skilled with a knife! I can chop, slice, mince, dice, slaughter, disembowel --
+		Blake
+		OK, I get the idea.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Butcher
+		Ever since I was a young boy, I've had an affinity for working with animal carcasses.
+		Butcher
+		Slicing off the limbs. Pulling the muscles apart. Reaching into the innards.
+		Butcher
+		Slowly stretching out the intestines and feeling the squish as I press them against my flesh.
+		Blake
+		All right, that's enough.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Butcher
+		This is a butcher shop, not Sunglass Hut!
+		Butcher
+		(Sunglass Hut: The ultimate destination for sunglasses. Free shipping on all orders!)
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Butcher
+		Clearly not on either of our faces.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Hat
+	ASSIGNMENTS
+		HasTail=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Butcher
+		Ah, something to chop! I'll give you the tail if I can keep the rest of the hat.
+		Blake
+		It's a deal.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTIONS
+ENDSNIPPET
+
+SNIPPET
+	Bear
+	STATEMENTS
+		Butcher
+		Teddy bears do not yield meat.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Tail
+	STATEMENTS
+		Butcher
+		You can keep the tail.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Fake ID
+	STATEMENTS
+		Butcher
+		I don't think you want me to chop this in half.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Sunglasses
+	STATEMENTS
+		Butcher
+		I don't think you want me to chop those in half.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Money
+	STATEMENTS
+		Butcher
+		Would you like to buy some meat?
+		Blake
+		Actually, not really.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Washing Machine
+	STATEMENTS
+		Butcher
+		I don't think my knife is sharp enough to chop this in half.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET

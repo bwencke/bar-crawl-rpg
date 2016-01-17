@@ -38,6 +38,21 @@ SNIPPET
 		5
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsPassword=TRUE
+		ENDCONDITIONS
+		Have you ever talked to that salesman over there?
+		11
+	ENDOPTION
+	OPTION
+		Enjoying the fresh air?
+		12
+	ENDOPTION
+	OPTION
+		Goodbye, tiny child.
+		END
+	ENDOPTION
+	OPTION
 		Use Item
 		Inventory
 	ENDOPTION
@@ -158,7 +173,7 @@ SNIPPET
 		Blake
 		Wait, seriously?
 		Child
-		He likes martinis and bourbon. Goodbye, Cuddles!
+		He likes bourbon with a little umbrella. Goodbye, Cuddles!
 	ENDSTATEMENTS
 	OPTION
 		JUMP
@@ -175,6 +190,48 @@ SNIPPET
 	OPTION
 		JUMP
 		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	11
+	ASSIGNMENTS
+		NeedsPassword=FALSE
+		KnowsPassword=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Child
+		Who, Monty? Yeah, he hooked me up with my fake ID!
+		Blake
+		Great! Do you know what the password is?
+		Child
+		Hypothetically, the password is "penny loafers."
+		Blake
+		Wow, that guy got into your head. Thanks!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	12
+	STATEMENTS
+		Child
+		Not really. I'd rather be playing video games.
+		Blake
+		Why don't you go do that instead?
+		Child
+		My mom won't let me play video games for a week.
+		Blake
+		Why not?
+		Child
+		I got detention for bringing bourbon to school.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
 	ENDOPTION
 ENDSNIPPET
 
