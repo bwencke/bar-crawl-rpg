@@ -4,7 +4,7 @@ using System.Collections;
 public class WinCutscene : CutsceneScript {
 
 	int position = 0;
-	int numScenes = 1;
+	int numScenes = 2;
 
 	public GameObject canvas;
 	public GameObject thankYou;
@@ -23,6 +23,10 @@ public class WinCutscene : CutsceneScript {
 			thankYou.GetComponent<Canvas> ().enabled = true;
 			yield return new WaitForSeconds(3);
 			Application.LoadLevel ("MainMenu");
+			break;
+		case(1):
+			Debug.LogError("POO");
+			yield return new WaitForSeconds(10);
 			break;
 		}
 		yield return null;

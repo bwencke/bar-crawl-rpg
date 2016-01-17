@@ -221,6 +221,8 @@ public class Controller : MonoBehaviour {
 		} else {
 			HideBlackBars();
 			cutscene = null;
+			Debug.LogError ("AHFK");
+			Debug.LogError (controlling.name);
 			SetControlling(player);
 		}
 	}
