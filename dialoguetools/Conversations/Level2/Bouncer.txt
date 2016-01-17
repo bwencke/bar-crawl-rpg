@@ -21,6 +21,7 @@ SNIPPET
 	STATEMENTS
 		Bouncer
 		I need to see some ID.
+	ENDSTATEMENTS
 	OPTION
 		CONDITIONS
 			FirstMeetingWithBouncer=TRUE
@@ -50,7 +51,7 @@ SNIPPET
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		3
+		5
 	ENDOPTION
 ENDSNIPPET
 
