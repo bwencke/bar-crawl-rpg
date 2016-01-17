@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="barrel" tilewidth="32" tileheight="32" tilecount="8">
+  <image source="../../../../tiles/LPC/barrel.png" width="128" height="64"/>
+ </tileset>
+ <tileset firstgid="9" name="brackish" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/brackish.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="27" name="bridges" tilewidth="32" tileheight="32" tilecount="42">
+  <image source="../../../../tiles/LPC/bridges.png" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="69" name="buckets" tilewidth="32" tileheight="32" tilecount="6">
+  <image source="../../../../tiles/LPC/buckets.png" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="75" name="cabinets" tilewidth="32" tileheight="32" tilecount="78">
+  <image source="../../../../tiles/LPC/cabinets.png" width="192" height="416"/>
+ </tileset>
+ <tileset firstgid="153" name="cement" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/cement.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="171" name="cementstair" tilewidth="32" tileheight="32" tilecount="20">
+  <image source="../../../../tiles/LPC/cementstair.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="191" name="chests" tilewidth="32" tileheight="32" tilecount="6">
+  <image source="../../../../tiles/LPC/chests.png" width="64" height="96"/>
+ </tileset>
+ <tileset firstgid="197" name="collisions" tilewidth="32" tileheight="32" tilecount="1">
+  <image source="../../../../tiles/LPC/collisions.png" width="32" height="32"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object id="0" x="0.75" y="0.5" width="30.75" height="31.25"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="198" name="country" tilewidth="32" tileheight="32" tilecount="20">
+  <image source="../../../../tiles/LPC/country.png" width="160" height="128"/>
+ </tileset>
+ <tileset firstgid="218" name="cup" tilewidth="32" tileheight="32" tilecount="2">
+  <image source="../../../../tiles/LPC/cup.png" width="32" height="64"/>
+ </tileset>
+ <tileset firstgid="220" name="dirt" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/dirt.png" width="96" height="192"/>
+  <terraintypes>
+   <terrain name="DirtPath" tile="-1"/>
+  </terraintypes>
+  <tile id="1" terrain="0,0,0,"/>
+  <tile id="2" terrain="0,0,,0"/>
+  <tile id="4" terrain="0,,0,0"/>
+  <tile id="5" terrain=",0,0,0"/>
+  <tile id="6" terrain=",,,0"/>
+  <tile id="7" terrain=",,0,0"/>
+  <tile id="8" terrain=",,0,"/>
+  <tile id="9" terrain=",0,,0"/>
+  <tile id="10" terrain="0,0,0,0"/>
+  <tile id="11" terrain="0,,0,"/>
+  <tile id="12" terrain=",0,,"/>
+  <tile id="13" terrain="0,0,,"/>
+  <tile id="14" terrain="0,,,"/>
+ </tileset>
+ <tileset firstgid="238" name="dirt2" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/dirt2.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="256" name="dungeon" tilewidth="32" tileheight="32" tilecount="104">
+  <image source="../../../../tiles/LPC/dungeon.png" width="416" height="256"/>
+ </tileset>
+ <tileset firstgid="360" name="grass" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/grass.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="378" name="grassalt" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/grassalt.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="396" name="hole" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/hole.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="414" name="holek" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/holek.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="432" name="holemid" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/holemid.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="450" name="house" tilewidth="32" tileheight="32" tilecount="63">
+  <image source="../../../../tiles/LPC/house.png" width="288" height="224"/>
+ </tileset>
+ <tileset firstgid="513" name="inside" tilewidth="32" tileheight="32" tilecount="100">
+  <image source="../../../../tiles/LPC/inside.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="613" name="kitchen" tilewidth="32" tileheight="32" tilecount="8">
+  <image source="../../../../tiles/LPC/kitchen.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="621" name="lava" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/lava.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="639" name="lavarock" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/lavarock.png" width="96" height="192"/>
+  <terraintypes>
+   <terrain name="Path" tile="-1"/>
+  </terraintypes>
+  <tile id="1" terrain="0,0,0,"/>
+  <tile id="2" terrain="0,0,,0"/>
+  <tile id="4" terrain="0,,0,0"/>
+  <tile id="5" terrain=",0,0,0"/>
+  <tile id="6" terrain=",,,0"/>
+  <tile id="7" terrain=",,0,0"/>
+  <tile id="8" terrain=",,0,"/>
+  <tile id="9" terrain=",0,,0"/>
+  <tile id="10" terrain="0,0,0,0"/>
+  <tile id="11" terrain="0,,0,"/>
+  <tile id="12" terrain=",0,,"/>
+  <tile id="13" terrain="0,0,,"/>
+  <tile id="14" terrain="0,,,"/>
+ </tileset>
+ <tileset firstgid="657" name="mountains" tilewidth="32" tileheight="32" tilecount="108">
+  <image source="../../../../tiles/LPC/mountains.png" width="384" height="288"/>
+ </tileset>
+ <tileset firstgid="765" name="rock" tilewidth="32" tileheight="32" tilecount="2">
+  <image source="../../../../tiles/LPC/rock.png" width="64" height="32"/>
+ </tileset>
+ <tileset firstgid="767" name="shadow" tilewidth="32" tileheight="32" tilecount="10">
+  <image source="../../../../tiles/LPC/shadow.png" width="160" height="64"/>
+ </tileset>
+ <tileset firstgid="777" name="signs" tilewidth="32" tileheight="32" tilecount="6">
+  <image source="../../../../tiles/LPC/signs.png" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="783" name="stairs" tilewidth="32" tileheight="32" tilecount="112">
+  <image source="../../../../tiles/LPC/stairs.png" width="256" height="448"/>
+ </tileset>
+ <tileset firstgid="895" name="treetop" tilewidth="32" tileheight="32" tilecount="42">
+  <image source="../../../../tiles/LPC/treetop.png" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="937" name="trunk" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/trunk.png" width="192" height="96"/>
+ </tileset>
+ <tileset firstgid="955" name="victoria" tilewidth="32" tileheight="32" tilecount="55">
+  <image source="../../../../tiles/LPC/victoria.png" width="352" height="160"/>
+ </tileset>
+ <tileset firstgid="1010" name="water" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/water.png" width="96" height="192"/>
+  <terraintypes>
+   <terrain name="River" tile="-1"/>
+  </terraintypes>
+  <tile id="1" terrain="0,0,0,"/>
+  <tile id="2" terrain="0,0,,0"/>
+  <tile id="4" terrain="0,,0,0"/>
+  <tile id="5" terrain=",0,0,0"/>
+  <tile id="6" terrain=",,,0"/>
+  <tile id="7" terrain=",,0,0"/>
+  <tile id="8" terrain=",,0,"/>
+  <tile id="9" terrain=",0,,0"/>
+  <tile id="10" terrain="0,0,0,0"/>
+  <tile id="11" terrain="0,,0,"/>
+  <tile id="12" terrain=",0,,"/>
+  <tile id="13" terrain="0,0,,"/>
+  <tile id="14" terrain="0,,,"/>
+  <tile id="15" terrain="0,0,0,0"/>
+  <tile id="16" terrain="0,0,0,0"/>
+  <tile id="17" terrain="0,0,0,0"/>
+ </tileset>
+ <tileset firstgid="1028" name="waterfall" tilewidth="32" tileheight="32" tilecount="15">
+  <image source="../../../../tiles/LPC/waterfall.png" width="96" height="160"/>
+ </tileset>
+ <tileset firstgid="1043" name="watergrass" tilewidth="32" tileheight="32" tilecount="18">
+  <image source="../../../../tiles/LPC/watergrass.png" width="96" height="192"/>
+  <terraintypes>
+   <terrain name="Pond" tile="-1"/>
+  </terraintypes>
+  <tile id="1" terrain="0,0,0,"/>
+  <tile id="2" terrain="0,0,,0"/>
+  <tile id="4" terrain="0,,0,0"/>
+  <tile id="5" terrain=",0,0,0"/>
+  <tile id="6" terrain=",,,0"/>
+  <tile id="7" terrain=",,0,0"/>
+  <tile id="8" terrain=",,0,"/>
+  <tile id="9" terrain=",0,,0"/>
+  <tile id="10" terrain="0,0,0,0"/>
+  <tile id="11" terrain="0,,0,"/>
+  <tile id="12" terrain=",0,,"/>
+  <tile id="13" terrain="0,0,,"/>
+  <tile id="14" terrain="0,,,"/>
+  <tile id="15" terrain="0,0,0,0"/>
+  <tile id="16" terrain="0,0,0,0"/>
+  <tile id="17" terrain="0,0,0,0"/>
+ </tileset>
+ <tileset firstgid="1061" name="interior" tilewidth="32" tileheight="32" tilecount="256">
+  <image source="../../../../tiles/LPC_house_interior/interior.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="1317" name="terrain" tilewidth="32" tileheight="32" tilecount="1024">
+  <image source="../../../../tiles/LPC_Terrain_0/terrain.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="2341" name="miscellaneous" tilewidth="32" tileheight="32" tilecount="14">
+  <image source="../../../../tiles/miscellaneous.png" width="224" height="64"/>
+ </tileset>
+ <tileset firstgid="2355" name="Building" tilewidth="32" tileheight="32" tilecount="64">
+  <image source="../../../../tiles/Skorpio's Pack/Building.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2419" name="Cars_final" tilewidth="32" tileheight="32" tilecount="132">
+  <image source="../../../../tiles/Skorpio's Pack/Cars_final.png" width="384" height="352"/>
+ </tileset>
+ <tileset firstgid="2551" name="Trashcan" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../../../tiles/Skorpio's Pack/Fire/Trashcan.png" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="2555" name="Interior-Furniture" tilewidth="32" tileheight="32" tilecount="256">
+  <image source="../../../../tiles/Skorpio's Pack/Interior-Furniture.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="2811" name="Interior-Walls-Beige" tilewidth="32" tileheight="32" tilecount="100">
+  <image source="../../../../tiles/Skorpio's Pack/Interior-Walls-Beige.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="2911" name="Interior-Walls-Blue" tilewidth="32" tileheight="32" tilecount="100">
+  <image source="../../../../tiles/Skorpio's Pack/Interior-Walls-Blue.png" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="3011" name="Lamp_alternative" tilewidth="32" tileheight="32" tilecount="3">
+  <image source="../../../../tiles/Skorpio's Pack/Lamp_alternative.png" width="32" height="96"/>
+ </tileset>
+ <tileset firstgid="3014" name="Laserfence" tilewidth="32" tileheight="32" tilecount="64">
+  <image source="../../../../tiles/Skorpio's Pack/Laserfence.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="3078" name="Logos" tilewidth="32" tileheight="32" tilecount="16">
+  <image source="../../../../tiles/Skorpio's Pack/Logos.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="3094" name="Objects" tilewidth="32" tileheight="32" tilecount="64">
+  <image source="../../../../tiles/Skorpio's Pack/Objects.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="3158" name="Pipes-RustyWalls" tilewidth="32" tileheight="32" tilecount="88">
+  <image source="../../../../tiles/Skorpio's Pack/Pipes-RustyWalls.png" width="256" height="352"/>
+ </tileset>
+ <tileset firstgid="3246" name="Sidewalk_dark" tilewidth="32" tileheight="32" tilecount="16">
+  <image source="../../../../tiles/Skorpio's Pack/Sidewalk_dark.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="3262" name="Street" tilewidth="32" tileheight="32" tilecount="475">
+  <image source="../../../../tiles/Skorpio's Pack/Street.png" width="800" height="608"/>
+ </tileset>
+ <tileset firstgid="3737" name="StreetCurve" tilewidth="32" tileheight="32" tilecount="256">
+  <image source="../../../../tiles/Skorpio's Pack/StreetCurve.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="3993" name="Tracks" tilewidth="32" tileheight="32" tilecount="16">
+  <image source="../../../../tiles/Skorpio's Pack/Tracks.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="4009" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
+  <image source="../../../../tiles/flowers_2.png" width="320" height="192"/>
+ </tileset>
+ <tileset firstgid="4069" name="AIN_Signs" tilewidth="32" tileheight="32" tilecount="96">
+  <image source="../../../../tiles/AIN_Signs.png" width="384" height="256"/>
+ </tileset>
+ <tileset firstgid="4165" name="housey" tilewidth="32" tileheight="32" tilecount="72">
+  <image source="../../../../tiles/housey.png" width="384" height="192"/>
+ </tileset>
+ <tileset firstgid="4237" name="obj_misk_atlas" tilewidth="32" tileheight="32" tilecount="1024">
+  <image source="../../../../tiles/Atlas_0/obj_misk_atlas.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="5261" name="build_atlas" tilewidth="32" tileheight="32" tilecount="1024">
+  <image source="../../../../tiles/Atlas_0/build_atlas.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="6285" name="Interior-Walls-Purple" tilewidth="32" tileheight="32" tilecount="100">
+  <image source="../../../../tiles/Joe's Custom/Interior-Walls-Purple.png" trans="ffffff" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="6385" name="rpg_maker_vx___carpets_autotiles_by_ayene_chan-d5og8bo" tilewidth="32" tileheight="32" tilecount="72">
+  <image source="../../../../tiles/Added 1-16-16/rpg_maker_vx___carpets_autotiles_by_ayene_chan-d5og8bo.png" width="384" height="192"/>
+ </tileset>
+ <tileset firstgid="6457" name="rpg_maker_tiles_by_ayene_chan-d48exyx" tilewidth="32" tileheight="32" tilecount="48">
+  <image source="../../../../tiles/Added 1-16-16/rpg_maker_tiles_by_ayene_chan-d48exyx.png" width="256" height="192"/>
+ </tileset>
+ <tileset firstgid="6505" name="gold" tilewidth="32" tileheight="32" tilecount="16">
+  <image source="../../../../tiles/Added 1-16-16/gold.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="6521" name="rpg_maker_paintings_by_ayene_chan-d5i9mig" tilewidth="32" tileheight="32" tilecount="24">
+  <image source="../../../../tiles/Added 1-16-16/rpg_maker_paintings_by_ayene_chan-d5i9mig.png" width="192" height="128"/>
+ </tileset>
+ <tileset firstgid="6545" name="rpg_maker_vx_ace___sofas_and_armchairs_by_ayene_chan-d7pwdx4" tilewidth="32" tileheight="32" tilecount="88">
+  <image source="../../../../tiles/Added 1-16-16/rpg_maker_vx_ace___sofas_and_armchairs_by_ayene_chan-d7pwdx4.png" width="256" height="352"/>
+ </tileset>
+ <tileset firstgid="6633" name="rpg_maker_tile___furniture_by_ayene_chan-d4gok12" tilewidth="32" tileheight="32" tilecount="192">
+  <image source="../../../../tiles/Added 1-16-16/rpg_maker_tile___furniture_by_ayene_chan-d4gok12.png" width="384" height="512"/>
+ </tileset>
+ <tileset firstgid="6825" name="Interior-Walls-White" tilewidth="32" tileheight="32" tilecount="100">
+  <image source="../../../../tiles/Joe's Custom/Interior-Walls-White.png" trans="ffffff" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="6925" name="rpg_maker_vx__modernrtp_tilec_by_painhurt-d3f7sm6" tilewidth="32" tileheight="32" tilecount="256">
+  <image source="../../../../tiles/Added 1-16-16/rpg_maker_vx__modernrtp_tilec_by_painhurt-d3f7sm6.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="7181" name="rpg_maker_vx___door_by_ayene_chan-d4grqwd" tilewidth="32" tileheight="32" tilecount="192">
+  <image source="../../../../tiles/Added 1-16-16/rpg_maker_vx___door_by_ayene_chan-d4grqwd.png" width="384" height="512"/>
+ </tileset>
+ <layer name="Floor" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxT4mJgUBrFgwYDAI5LETE=
+  </data>
+ </layer>
+ <layer name="Back Wall" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxbKcXAsIoAXg3Em4F4CwG8FYhHAWUAAC1CD7U=
+  </data>
+ </layer>
+ <layer name="Some Sacks to Add Character" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhZYIMQA8NGIcLqLgDVXATiPiLUUhMAAAg0A+s=
+  </data>
+ </layer>
+ <layer name="Side Walls" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxbL8VAEKwDqlk/qo4u6gBdFA+r
+  </data>
+ </layer>
+ <layer name="Front Wall" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFlIBVUrgxsvwWPBgEYGwAWhoOIw==
+  </data>
+ </layer>
+ <layer name="Counter (Front)" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBga4K80A8M/NPxfeqBdRX0AALc5Bpc=
+  </data>
+ </layer>
+ <layer name="Counter (Middle)" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhY8FaageEdGn4vPcCOGkAAAFx4Bjc=
+  </data>
+ </layer>
+ <layer name="Counter (Back)" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYKANuCvNwHAPDd+XppFlwwgAAOOoBdc=
+  </data>
+ </layer>
+ <layer name="MEAT (Bottom Layer)" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAN+CDEwPARiNcKQ/i6QPqtEKY6AaC4IBCfBeJzQOwLxLzCNHLUEAAAWfcGjQ==
+  </data>
+ </layer>
+ <layer name="MEAT (Top Layer)" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhYoCfMwKAPxH3CEP4HIP1RmLA+AREGBkER2rptIAAAcVoDdQ==
+  </data>
+ </layer>
+ <layer name="Drain (for Blood)" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFMKAqONAuYGAAAB1XADc=
+  </data>
+ </layer>
+ <layer name="Doors" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBg6JJhwAkKkOSm4VFXg0duFBAPAIWdAn0=
+  </data>
+ </layer>
+ <layer name="Collisions" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJw7ygABRxnwg6NIND5MKiDWHGraR6q7qAEIhRmMDQB73hu1
+  </data>
+ </layer>
+</map>
