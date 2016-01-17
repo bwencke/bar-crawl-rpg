@@ -10,6 +10,8 @@ public class PlayerMovement : TopLevelController {
 	Rigidbody2D rbody;
 	Animator anim;
 
+	public string currentMap = "map_outside";
+
 	bool isRunning;
 	float lastTime;
 	KeyCode lastKeyCode;
