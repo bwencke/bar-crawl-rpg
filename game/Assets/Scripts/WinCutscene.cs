@@ -22,7 +22,7 @@ public class WinCutscene : CutsceneScript {
 			canvas.GetComponent<Canvas> ().enabled = false;
 			thankYou.GetComponent<Canvas> ().enabled = true;
 			yield return new WaitForSeconds(3);
-			Application.LoadLevel ("MainMenu");
+			Application.LoadLevel ("Bar2");
 			break;
 		case(1):
 			Debug.LogError("POO");
