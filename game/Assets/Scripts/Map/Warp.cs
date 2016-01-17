@@ -54,6 +54,9 @@ public class Warp : MonoBehaviour {
 
 		yield return StartCoroutine(sf.FadeToClear());
 
+		collider.gameObject.GetComponent<PlayerMovement> ().currentMap = theirParent.tag;
+		Debug.Log (collider.gameObject.GetComponent<PlayerMovement> ().currentMap);
+
 		if (locationName != "") {
 			ac.ShowStaticAlert (locationName);
 		}

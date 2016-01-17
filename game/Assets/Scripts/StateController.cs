@@ -25,6 +25,7 @@ public class StateController : MonoBehaviour {
 	
 	void LoadDataFromSlot() {
 		if (!PlayerPrefs.HasKey ("save_slot" + saveSlot)) {
+			GameObject.FindGameObjectWithTag (GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerMovement> ().currentMap).GetComponentsInChildren<AudioObject> () [0].PlayAudio ();
 			GameObject.FindGameObjectWithTag("GameController").GetComponent<Controller>().LoadCutscene("Intro");
 			return;
 		}
@@ -33,6 +34,9 @@ public class StateController : MonoBehaviour {
 
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
 		player.transform.position = new Vector2(root ["position"]["x"].AsFloat, root ["position"]["y"].AsFloat);
+		player.GetComponent<PlayerMovement> ().currentMap = root ["map"];
+		GameObject.FindGameObjectWithTag (player.GetComponent<PlayerMovement> ().currentMap).GetComponentsInChildren<AudioObject> () [0].PlayAudio ();
+		Debug.Log ("map: " + root ["map"]);
 
 		Animator playerAnimator = player.GetComponent<Animator> ();
 		playerAnimator.SetFloat ("input_x", root ["direction"] ["x"].AsFloat);
@@ -95,6 +99,7 @@ public class StateController : MonoBehaviour {
 						"\"x\":" + playerAnimator.GetFloat ("input_x") + ","+
 						"\"y\":" + playerAnimator.GetFloat ("input_y") +
 					"}," +
+					"\"map\":\"" + player.GetComponent<PlayerMovement>().currentMap + "\"," +
 					"\"timestamp\":\"" + System.DateTime.Now + "\"" + "," +
 					"\"variables\":[" +
 						variables + 
