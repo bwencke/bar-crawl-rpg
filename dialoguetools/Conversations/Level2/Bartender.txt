@@ -14,11 +14,11 @@ SNIPPET
 	2
 	OPTION
 		I'll have a Long Island Iced Tea!
-		3
+		4
 	ENDOPTION
 	OPTION
 		One beer, please!
-		3
+		4
 	ENDOPTION
 	OPTION
 		CONDITIONS
@@ -49,24 +49,6 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	3
-	OPTION
-		CONDITIONS
-			HasMoney=FALSE
-		ENDCONDITIONS
-		JUMP
-		4
-	ENDOPTION
-	OPTION
-		CONDITIONS
-			HasMoney=TRUE
-		ENDCONDITIONS
-		JUMP
-		5
-	ENDOPTION
-ENDSNIPPET
-
-SNIPPET
 	4
 	ASSIGNMENTS
 		NeedsMoney=TRUE
@@ -86,22 +68,16 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
-	5
-	STATEMENTS
-		Bartender
-		Four dollars, please.
-	ENDSTATEMENTS
-	OPTION
-		JUMP
-		2
-	ENDOPTION
-ENDSNIPPET
-
-SNIPPET
 	6
 	STATEMENTS
 		Bartender
 		We don't allow tabs here.
+		Blake
+		Why not? I'm very trustworthy.
+		Josh
+		Yeah, bro, Blake is cool.
+		Bartender
+		Sorry, it's company policy.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
@@ -138,21 +114,6 @@ SNIPPET
 	OPTION
 		JUMP
 		2
-	ENDOPTION
-ENDSNIPPET
-
-SNIPPET
-	Money
-	ASSIGNMENTS
-		HasDrink=TRUE
-	ENDASSIGNMENTS
-	STATEMENTS
-		Bartender
-		Here you go.
-	ENDSTATEMENTS
-	OPTION
-		JUMP
-		END
 	ENDOPTION
 ENDSNIPPET
 
