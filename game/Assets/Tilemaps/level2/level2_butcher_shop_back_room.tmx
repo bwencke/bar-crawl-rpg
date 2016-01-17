@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="12" height="30" tilewidth="32" tileheight="32" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="8" tilewidth="32" tileheight="32" nextobjectid="1">
  <tileset firstgid="1" name="barrel" tilewidth="32" tileheight="32" tilecount="8">
   <image source="../../../../tiles/LPC/barrel.png" width="128" height="64"/>
  </tileset>
@@ -243,112 +243,109 @@
  <tileset firstgid="4165" name="housey" tilewidth="32" tileheight="32" tilecount="72">
   <image source="../../../../tiles/housey.png" width="384" height="192"/>
  </tileset>
- <tileset firstgid="4237" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
-  <image source="../../../../tiles/flowers_2.png" width="320" height="192"/>
- </tileset>
- <tileset firstgid="4297" name="obj_misk_atlas" tilewidth="32" tileheight="32" tilecount="1024">
+ <tileset firstgid="4237" name="obj_misk_atlas" tilewidth="32" tileheight="32" tilecount="1024">
   <image source="../../../../tiles/Atlas_0/obj_misk_atlas.png" width="1024" height="1024"/>
  </tileset>
- <tileset firstgid="5321" name="build_atlas" tilewidth="32" tileheight="32" tilecount="1024">
+ <tileset firstgid="5261" name="build_atlas" tilewidth="32" tileheight="32" tilecount="1024">
   <image source="../../../../tiles/Atlas_0/build_atlas.png" width="1024" height="1024"/>
  </tileset>
- <tileset firstgid="6345" name="Interior-Walls-Purple" tilewidth="32" tileheight="32" tilecount="100">
-  <image source="../../../../tiles/Joe's Custom/Interior-Walls-Purple.png" trans="ffffff" width="320" height="320"/>
- </tileset>
- <tileset firstgid="6445" name="rpg_maker_vx___carpets_autotiles_by_ayene_chan-d5og8bo" tilewidth="32" tileheight="32" tilecount="72">
+ <tileset firstgid="6285" name="rpg_maker_vx___carpets_autotiles_by_ayene_chan-d5og8bo" tilewidth="32" tileheight="32" tilecount="72">
   <image source="../../../../tiles/Added 1-16-16/rpg_maker_vx___carpets_autotiles_by_ayene_chan-d5og8bo.png" width="384" height="192"/>
  </tileset>
- <tileset firstgid="6517" name="rpg_maker_tiles_by_ayene_chan-d48exyx" tilewidth="32" tileheight="32" tilecount="48">
-  <image source="../../../../tiles/Added 1-16-16/rpg_maker_tiles_by_ayene_chan-d48exyx.png" width="256" height="192"/>
- </tileset>
- <tileset firstgid="6565" name="gold" tilewidth="32" tileheight="32" tilecount="16">
-  <image source="../../../../tiles/Added 1-16-16/gold.png" width="128" height="128"/>
- </tileset>
- <tileset firstgid="6581" name="rpg_maker_paintings_by_ayene_chan-d5i9mig" tilewidth="32" tileheight="32" tilecount="24">
+ <tileset firstgid="6357" name="rpg_maker_paintings_by_ayene_chan-d5i9mig" tilewidth="32" tileheight="32" tilecount="24">
   <image source="../../../../tiles/Added 1-16-16/rpg_maker_paintings_by_ayene_chan-d5i9mig.png" width="192" height="128"/>
  </tileset>
- <tileset firstgid="6605" name="rpg_maker_vx_ace___sofas_and_armchairs_by_ayene_chan-d7pwdx4" tilewidth="32" tileheight="32" tilecount="88">
+ <tileset firstgid="6381" name="rpg_maker_vx_ace___sofas_and_armchairs_by_ayene_chan-d7pwdx4" tilewidth="32" tileheight="32" tilecount="88">
   <image source="../../../../tiles/Added 1-16-16/rpg_maker_vx_ace___sofas_and_armchairs_by_ayene_chan-d7pwdx4.png" width="256" height="352"/>
  </tileset>
- <tileset firstgid="6693" name="rpg_maker_tile___furniture_by_ayene_chan-d4gok12" tilewidth="32" tileheight="32" tilecount="192">
+ <tileset firstgid="6469" name="rpg_maker_tile___furniture_by_ayene_chan-d4gok12" tilewidth="32" tileheight="32" tilecount="192">
   <image source="../../../../tiles/Added 1-16-16/rpg_maker_tile___furniture_by_ayene_chan-d4gok12.png" width="384" height="512"/>
  </tileset>
- <tileset firstgid="6885" name="rpg_maker_vx__modernrtp_tilec_by_painhurt-d3f7sm6" tilewidth="32" tileheight="32" tilecount="256">
+ <tileset firstgid="6661" name="rpg_maker_vx__modernrtp_tilec_by_painhurt-d3f7sm6" tilewidth="32" tileheight="32" tilecount="256">
   <image source="../../../../tiles/Added 1-16-16/rpg_maker_vx__modernrtp_tilec_by_painhurt-d3f7sm6.png" width="512" height="512"/>
  </tileset>
- <layer name="Floor" width="12" height="30">
+ <tileset firstgid="6917" name="rpg_maker_vx___door_by_ayene_chan-d4grqwd" tilewidth="32" tileheight="32" tilecount="192">
+  <image source="../../../../tiles/Added 1-16-16/rpg_maker_vx___door_by_ayene_chan-d4grqwd.png" width="384" height="512"/>
+ </tileset>
+ <tileset firstgid="7109" name="Interior-Walls-Red" tilewidth="32" tileheight="32" tilecount="100">
+  <image source="../../../../tiles/Joe's Custom/Interior-Walls-Red.png" trans="ffffff" width="320" height="320"/>
+ </tileset>
+ <tileset firstgid="7209" name="rpg_maker_vx___window_i_by_ayene_chan-d4h8ll2" tilewidth="32" tileheight="32" tilecount="24">
+  <image source="../../../../tiles/Added 1-16-16/rpg_maker_vx___window_i_by_ayene_chan-d4h8ll2.png" width="96" height="256"/>
+ </tileset>
+ <layer name="Floor" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxrl2RgaB/Fo3gUj+JRPOgwAJme4QE=
+   eJzrk2Bg6BvFZGMAz2Az4Q==
   </data>
  </layer>
- <layer name="Carpet" width="12" height="30">
+ <layer name="Back Wall" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFtAaxkgwMcZLEq88Eqs0iQf2o+aPmj2TzhzMAAAiuEYM=
+   eJw7Ks3AcIwAPg7EN4H4FgF8G4hHGgAAKcASXQ==
   </data>
  </layer>
- <layer name="Back Wall" width="12" height="30">
+ <layer name="Radiator" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJz7zcXA8IdI/BeIWbkZGNiIxOwkqIXhUTAKRsEoGAUQAABwPA3h
+   eJxjYCAOrJdiYNggRaTiEQQAtrsBlA==
   </data>
  </layer>
- <layer name="Side Walls" width="12" height="30">
+ <layer name="Plant" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxj5GYgHgDVMo6qH1U/qn5U/ah6uqgHAKANArM=
+   eJxjYKAeeCFFnLofRKobCgAA0VsCFQ==
   </data>
  </layer>
- <layer name="Front Walls" width="12" height="30">
+ <layer name="Side Walls" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRAAJ/uDAxPjk2bkwMA9jkSFUPACerC5E=
+   eJw7Lc1AEJwCqjk9qg6rOgAUVw5Z
   </data>
  </layer>
- <layer name="Gold Piles" width="12" height="30">
+ <layer name="Front Walls" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFowAVrJMkTf16SQimlfqBBquBbl1Lons3DWL/keoXEFhDgh5i/L6BxPRCiv3DCQAAdFoK6Q==
+   eJxjYBhZ4Jg0AqPzkfFNIL4FxSBwSxoT3wZiAJw8EIc=
   </data>
  </layer>
- <layer name="Paintings" width="12" height="30">
+ <layer name="&quot;Desk&quot; Bottom" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYCAPHJZkYDgiCWGfBtJnoOy9QHqfJJmGjoJRMApGwSiAAwDErwUw
+   eJxjYBhcYKsUA8N2KeqpOwpUc5wIdeQCAJm2BQE=
   </data>
  </layer>
- <layer name="Sofas" width="12" height="30">
+ <layer name="&quot;Desk&quot; Top" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFwwlclGRguCRJur4rJOq5Q6J6WptPKSAl3C6T6LbbZPjlJlDPLTz6aBmev+gc9qMANwAAd6QOKQ==
+   eJxjYKAPWCrFwLBcik6W0REAAEIXAYE=
   </data>
  </layer>
- <layer name="Bar Base" width="12" height="30">
+ <layer name="&quot;Desk&quot; Chair" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYBgeYDoeuWlUML8FiHtw4FYqmD8KRsEoGAXoAAC2FAV/
+   eJxjYBjaIF5qYO0HAD2mAHo=
   </data>
  </layer>
- <layer name="Bar Top" width="12" height="30">
+ <layer name="Important Mafia Documents" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYBicoAqPXAMVzF8iBcELpRDsxUjsUTAKRsEoGGgAACJsBuc=
+   eJxjYBh8QJCLOHUCRKqjJQAAILgANg==
   </data>
  </layer>
- <layer name="Barstools" width="12" height="30">
+ <layer name="Client Chair Bottom" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYBh84AEzddQMJIC5D9md2MRGwSgYBaMAFwAA1/sFUw==
+   eJxjYBhagI9roF2ACgAOtgAZ
   </data>
  </layer>
- <layer name="Back Cabinets" width="12" height="30">
+ <layer name="Client Chair Top" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYKAvSERixxOhPheJnU1lt4yCUTAKRsFgBgAYoAGZ
+   eJxjYBgc4B/nQLuAPAAAvj8BCA==
   </data>
  </layer>
- <layer name="Bucket" width="12" height="30">
+ <layer name="Windows" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2DogxViA+2CUTAKqA8AIfgAvw==
+   eJxjYEAAbRnsNDrQk8FOj0QAANu7AbQ=
   </data>
  </layer>
- <layer name="Throne" width="12" height="30">
+ <layer name="Couch" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYBj8oFKagaFaeqBdMQpGwSgYBfQFANC1ASs=
+   eJxjYBg4oC9JnDpzItUNBAAAaO4AmQ==
   </data>
  </layer>
- <layer name="Collisions" width="12" height="30">
+ <layer name="Collisions" width="10" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYCANHKUxZkBjE8OnByDG3ejqGRgw3Y0uRm1Abthgcycp6gnpoUQ9MYDSMMXnJmzpjxT3kBsf+PRREj7khD0p9pEaPsSopXd+pxXAV3ZgkwMAJlo/Gw==
+   eJxjYCAOHCUSkwKwqcdmzlEsbGLtJMdd2MzH5V8AwMQWUg==
   </data>
  </layer>
 </map>
