@@ -95,12 +95,12 @@ SNIPPET
 		10
 	ENDOPTION
 	OPTION
-		Use Item
-		Inventory
-	ENDOPTION
-	OPTION
 		See ya.
 		END
+	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
 	ENDOPTION
 ENDSNIPPET
 
@@ -229,6 +229,9 @@ ENDSNIPPET
 
 SNIPPET
 	12
+	ASSIGNMENTS
+		HasFakeID=TRUE
+	ENDASSIGNMENTS
 	STATEMENTS
 		Blake
 		Here, I want the ID.
