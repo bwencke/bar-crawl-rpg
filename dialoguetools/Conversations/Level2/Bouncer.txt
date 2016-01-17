@@ -1,0 +1,216 @@
+SNIPPET
+	1
+	OPTION
+		CONDITIONS
+			FakeIDSuccess=TRUE
+		ENDCONDITIONS
+		JUMP
+		4
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			FakeIDSuccess=FALSE
+		ENDCONDITIONS
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	STATEMENTS
+		Bouncer
+		I need to see some ID.
+	OPTION
+		CONDITIONS
+			FirstMeetingWithBouncer=TRUE
+		ENDCONDITIONS
+		JUMP
+		3
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			FirstMeetingWithBouncer=FALSE
+		ENDCONDITIONS
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	ASSIGNMENTS
+		FirstMeetingWithBouncer=FALSE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Blake
+		Oh, crap, it looks like I dropped it somewhere on the way here.
+		Bouncer
+		Well, you're not getting in without it.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Bouncer
+		You're good.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	OPTION
+		Will you please let me in?
+		6
+	ENDOPTION
+	OPTION
+		You can clearly see I'm over 21.
+		7
+	ENDOPTION
+	OPTION
+		I'll be back.
+		END
+	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Bouncer
+		No.
+		Blake
+		Pretty please?
+		Bouncer
+		No.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Bouncer
+		You honestly look 13, tops.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET	
+
+SNIPPET
+	Fake ID
+	OPTION
+		CONDITIONS
+			WearingMoustache=TRUE
+			WearingSunglesses=TRUE
+		ENDCONDITIONS
+		JUMP
+		8
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			WearingMoustache=FALSE
+			WearingSunglesses=TRUE
+		ENDCONDITIONS
+		JUMP
+		9
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			WearingMoustache=TRUE
+			WearingSunglesses=FALSE
+		ENDCONDITIONS
+		JUMP
+		10
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			WearingMoustache=FALSE
+			WearingSunglesses=FALSE
+		ENDCONDITIONS
+		JUMP
+		11
+	ENDOPTION			
+ENDSNIPPET
+
+SNIPPET
+	8
+	ASSIGNMENTS
+		FakeIDSuccess=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Bouncer
+		Looks good, Mr... Kevork?
+		Blake
+		That's me.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	9
+	STATEMENTS
+		Bouncer
+		This is supposed to be you? You don't have a moustache.
+		Blake
+		I shaved it!
+		Bouncer
+		Yeah, right.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	10
+	STATEMENTS
+		Bouncer
+		This is supposed to be you? You're not wearing sunglasses.
+		Blake
+		They're at home!
+		Bouncer
+		Yeah, right.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	11
+	STATEMENTS
+		Bouncer
+		This is supposed to be you? You don't have a moustache or sunglasses.
+		Blake
+		Those aren't permanent fixtures.
+		Bouncer
+		They are with a face as ugly as yours. You're not getting in with this.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
