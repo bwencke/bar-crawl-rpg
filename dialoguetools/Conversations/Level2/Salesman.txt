@@ -1,0 +1,270 @@
+SNIPPET
+	1
+	STATEMENTS
+		Salesman
+		Hello there, my good man. How can I be of service?
+	ENDSTATEMENTS
+	OPTION
+		CONDITIONS
+			MetSalesman=FALSE
+		ENDCONDITIONS
+		JUMP
+		2
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			MetSalesman=TRUE
+		ENDCONDITIONS
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	ASSIGNMENTS
+		MetSalesman=TRUE
+	ENDASSIGNMENTS
+	OPTION
+		You could find my missing ID.
+		3
+	ENDOPTION
+	OPTION
+		What are you, a flasher?
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	STATEMENTS
+		Salesman
+		My friend! You have come to the right place!
+		Blake
+		You found it?
+		Salesman
+		No, but I can solve your woes!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Salesman
+		Oh, you're a funny one, aren't you!
+		Blake
+		No, I'm actually concerned. There's a kid over there.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Salesman
+		As it happens, I am a salesman!
+		Blake
+		What do you sell?
+		Salesman
+		I might sell fake IDs. Maybe.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	OPTION
+		Can I buy a fake ID?
+		7
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsPassword=TRUE
+		ENDCONDITIONS
+		How do I get the password?
+		10
+	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
+	OPTION
+		See ya.
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	ASSIGNMENTS
+		NeedsPassword=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Salesman
+		Hypothetically, I might sell you a fake ID, if you knew the password.
+	ENDSTATEMENTS
+	OPTION
+		CONDITIONS
+			KnowsPassword=TRUE
+		ENDCONDITIONS
+		The password is "penny loafers."
+		11
+	ENDOPTION
+	OPTION
+		The password is "password."
+		8
+	ENDOPTION
+	OPTION
+		Why do I need a password?
+		9
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Salesman
+		Sorry, that's not right. Feel free to try again!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	9
+	STATEMENTS
+		Salesman
+		Hypothetically, I wouldn't know if I could trust you.
+		Salesman
+		Hypothetically, you could be a police informant.
+		Salesman
+		Hypothetically, only trustworthy people can get the password.
+		Blake
+		I'm trustworthy.
+		Saleman
+		Hmm, I don't know. You've got a "police" look about you.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	10
+	STATEMENTS
+		Salesman
+		I don't know.
+		Blake
+		What kind of business is this!
+		Salesman
+		The hypothetical kind. The not-in-prison kind.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	11
+	ASSIGNMENTS
+		MoneyWillBuyID=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Salesman
+		That's right! Now, let me find the ID that most closely matches you.
+		Salesman
+		Here we are! You and "Harvey Kevork" could be twins!
+		Blake
+		This guy has sunglasses and a moustache.
+		Salesman
+		Trust me, this is the ID for you. You must have it!
+		Blake
+		OK, how much?
+		Salesman
+		How much do you have?
+		Blake
+		Uh, looks like $76.
+		Salesman
+		For you, my friend, I could bring the price all the way down to $76.
+		Salesman
+		Only for you! Because we are such good friends!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Money
+	OPTION
+		CONDITIONS
+			MoneyWillBuyID=TRUE
+		ENDCONDITIONS
+		JUMP
+		12
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			MoneyWillBuyID=FALSE
+		ENDCONDITIONS
+		JUMP
+		13
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	12
+	STATEMENTS
+		Blake
+		Here, I want the ID.
+		Salesman
+		Excellent! A pleasure doing business with you.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	13
+	STATEMENTS
+		Blake
+		I am offering you money for an ID.
+		Salesman
+		I wouldn't know what to do with that.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+
+
+
+
+
+
+
+
+
+
+
+
+
