@@ -283,14 +283,14 @@
    eJw7Ks3AcIwAPg7EN4H4FgF8G4hHGgAAKcASXQ==
   </data>
  </layer>
- <layer name="Radiator" width="10" height="8">
-  <data encoding="base64" compression="zlib">
-   eJxjYCAOrJdiYNggRaTiEQQAtrsBlA==
-  </data>
- </layer>
  <layer name="Plant" width="10" height="8">
   <data encoding="base64" compression="zlib">
    eJxjYKAeeCFFnLofRKobCgAA0VsCFQ==
+  </data>
+ </layer>
+ <layer name="Radiator" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAOrJdiYNggRaTiEQQAtrsBlA==
   </data>
  </layer>
  <layer name="Side Walls" width="10" height="8">

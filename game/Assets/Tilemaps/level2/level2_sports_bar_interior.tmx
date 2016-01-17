@@ -255,23 +255,38 @@
  <tileset firstgid="4189" name="housey" tilewidth="32" tileheight="32" tilecount="72">
   <image source="../../../../tiles/housey.png" width="384" height="192"/>
  </tileset>
- <tileset firstgid="4261" name="flowers_2" tilewidth="32" tileheight="32" tilecount="60">
-  <image source="../../../../tiles/flowers_2.png" width="320" height="192"/>
- </tileset>
- <tileset firstgid="4321" name="obj_misk_atlas" tilewidth="32" tileheight="32" tilecount="1024">
+ <tileset firstgid="4261" name="obj_misk_atlas" tilewidth="32" tileheight="32" tilecount="1024">
   <image source="../../../../tiles/Atlas_0/obj_misk_atlas.png" width="1024" height="1024"/>
  </tileset>
- <tileset firstgid="5345" name="build_atlas" tilewidth="32" tileheight="32" tilecount="1024">
+ <tileset firstgid="5285" name="build_atlas" tilewidth="32" tileheight="32" tilecount="1024">
   <image source="../../../../tiles/Atlas_0/build_atlas.png" width="1024" height="1024"/>
  </tileset>
- <tileset firstgid="6369" name="Interior-Walls-Purple" tilewidth="32" tileheight="32" tilecount="100">
+ <tileset firstgid="6309" name="Interior-Walls-Purple" tilewidth="32" tileheight="32" tilecount="100">
   <image source="../../../../tiles/Joe's Custom/Interior-Walls-Purple.png" trans="ffffff" width="320" height="320"/>
  </tileset>
- <tileset firstgid="6469" name="rpg_maker_vx__modernrtp_tilec_by_painhurt-d3f7sm6" tilewidth="32" tileheight="32" tilecount="256">
+ <tileset firstgid="6409" name="rpg_maker_vx__modernrtp_tilec_by_painhurt-d3f7sm6" tilewidth="32" tileheight="32" tilecount="256">
   <image source="../../../../tiles/Added 1-16-16/rpg_maker_vx__modernrtp_tilec_by_painhurt-d3f7sm6.png" width="512" height="512"/>
  </tileset>
- <tileset firstgid="6725" name="sports-bar-bar-surface" tilewidth="32" tileheight="32" tilecount="78">
+ <tileset firstgid="6665" name="sports-bar-bar-surface" tilewidth="32" tileheight="32" tilecount="78">
   <image source="../../../../tiles/Joe's Custom/sports-bar-bar-surface.png" trans="ffffff" width="192" height="416"/>
+ </tileset>
+ <tileset firstgid="6743" name="rpg_maker_vx___princess_room_by_ayene_chan-d5ygs7b" tilewidth="32" tileheight="32" tilecount="112">
+  <image source="../../../../tiles/Added 1-16-16/rpg_maker_vx___princess_room_by_ayene_chan-d5ygs7b.png" width="256" height="448"/>
+ </tileset>
+ <tileset firstgid="6855" name="yellow_barstool" tilewidth="32" tileheight="32" tilecount="55">
+  <image source="../../../../tiles/Joe's Custom/yellow_barstool.png" trans="ffffff" width="352" height="160"/>
+ </tileset>
+ <tileset firstgid="6910" name="tv_animal_planet" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../../../tiles/Joe's Custom/TVs/tv_animal_planet.png" trans="ffffff" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="6914" name="tv_basketball" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../../../tiles/Joe's Custom/TVs/tv_basketball.png" trans="ffffff" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="6918" name="tv_player" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../../../tiles/Joe's Custom/TVs/tv_player.png" trans="ffffff" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="6922" name="tv_football" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../../../tiles/Joe's Custom/TVs/tv_football.png" trans="ffffff" width="64" height="64"/>
  </tileset>
  <layer name="Floor" width="20" height="15">
   <data encoding="base64" compression="zlib">
@@ -280,17 +295,22 @@
  </layer>
  <layer name="Back Wall" width="20" height="15">
   <data encoding="base64" compression="zlib">
-   eJx7KMHA8IhK+DEQvwbiN1TCb4F4FIyCUTAKYAAAi/on2Q==
+   eJxbKsHAsIxKeDkQrwfiDVTCG4F4FIyCUTAKYAAActMeeQ==
   </data>
  </layer>
  <layer name="Side Walls" width="20" height="15">
   <data encoding="base64" compression="zlib">
-   eJx7LsFANfAMaNbzUfNGzRs1b9Q8GpkHACpiHdQ=
+   eJxbLcFANbAKaNbqUfNGzRs1b9Q8GpkHAKCTFsw=
   </data>
  </layer>
  <layer name="Front Wall" width="20" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjAIIeCRBGJOi9jUQvyGAYYCQurdADABiASPd
+   eJxjYBgFo2AUjAIIWCZBGJOidj0QbyCAYYCQuo1ADACt9Btt
+  </data>
+ </layer>
+ <layer name="Back Barstools" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFgx28kSKOHgWjYLgDAEqXBR8=
   </data>
  </layer>
  <layer name="Central Bar Base" width="20" height="15">
@@ -301,6 +321,41 @@
  <layer name="Central Bar Surface" width="20" height="15">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIKhAQAEsAAB
+  </data>
+ </layer>
+ <layer name="Bar Base" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFIw14SRGHqQlCSDDPiQi3OVPZfaNgaAAAPxMIMA==
+  </data>
+ </layer>
+ <layer name="Bar Counter" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFgx04SDEwuBDAPlLEm+dIhFo/EswLJsJ9tiSYNwpGAS4AALofCCg=
+  </data>
+ </layer>
+ <layer name="Tables" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFi6VQ+auB/DVS+NUMJUANtw9l/1MKaB1+wz39URMAAD2sCP8=
+  </data>
+ </layer>
+ <layer name="Chairs" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjZoFsKQk+WQuVjE5uMJEdLUE0Fe6hhBi7QTAWzqWEGLjCUwo/c9EfL8BvMAABaNAy1
+  </data>
+ </layer>
+ <layer name="Front and Side Barstools" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFowA7eCNFHTUDDWBuJESPgsEPAAbsBys=
+  </data>
+ </layer>
+ <layer name="TVs" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJztigsKwCAMQ7O/U3cBe/9rOlOoMJjeoA9KXkIBIAqQeMrK3My/u3LSL+u1AG8Z/2X6Y31nHvLflUC/e2cukz/HcRylARF3BTs=
+  </data>
+ </layer>
+ <layer name="Collisions" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAuOEplTGuAbhc2++npHph96HxSw+ooDjY2Pi434DIDnU2p+6gNcNlFiMZlBjXcSkz4ofPxpT96pUVKASnpghi1AAmGTDA=
   </data>
  </layer>
 </map>
