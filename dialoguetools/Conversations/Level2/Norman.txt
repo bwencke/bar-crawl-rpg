@@ -1,0 +1,55 @@
+SNIPPET
+	1
+	STATEMENTS
+		Norman
+		Good morning, young man.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		Good morning! But it's technically 9:30 p.m.
+		3
+	ENDOPTION
+	OPTION
+		I've got to go.
+		END
+	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	STATEMENTS
+		Norman
+		Do I look like I can afford a watch?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Washing Machine
+	STATEMENTS
+		Blake
+		Would you like a washing machine?
+		Norman
+		AUUUUAGHHHH AAAAUUUUUUGGHHH get it away get it the fuck away!!
+		Blake
+		OK, never mind.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
