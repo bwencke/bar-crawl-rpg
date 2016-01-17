@@ -2,7 +2,7 @@ SNIPPET
 	1
 	STATEMENTS
 		Norman
-		Good morning, young man.
+		Hmm? Huh? Bah! I dozed off again.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
@@ -13,8 +13,19 @@ ENDSNIPPET
 SNIPPET
 	2
 	OPTION
-		Good morning! But it's technically 9:30 p.m.
+		Sorry, I didn't mean to wake you up.
 		3
+	ENDOPTION
+	OPTION
+		It's kind of early to be sleeping.
+		4
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			RockCollection=TRUE
+		ENDCONDITIONS
+		Can I see your rock collection?
+		5
 	ENDOPTION
 	OPTION
 		I've got to go.
@@ -28,9 +39,43 @@ ENDSNIPPET
 
 SNIPPET
 	3
+	ASSIGNMENTS
+		RockCollection=TRUE
+	ENDASSIGNMENTS
 	STATEMENTS
 		Norman
-		Do I look like I can afford a watch?
+		Actually, I'm glad you woke me up. I should really be working on my rock collection.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	ASSIGNMENTS
+		RockCollection=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Norman
+		Rock collecting is tiring work, cock snot.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Norman
+		No way, asswipe. It's for my eyes only.
+		Blake
+		Do you even have a rock collection?
+		Norman
+		What kind of shit-for-brains lies about having a rock collection?
 	ENDSTATEMENTS
 	OPTION
 		JUMP
