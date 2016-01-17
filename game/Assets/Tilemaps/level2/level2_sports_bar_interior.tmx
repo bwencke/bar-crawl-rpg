@@ -276,17 +276,23 @@
  <tileset firstgid="6855" name="yellow_barstool" tilewidth="32" tileheight="32" tilecount="55">
   <image source="../../../../tiles/Joe's Custom/yellow_barstool.png" trans="ffffff" width="352" height="160"/>
  </tileset>
- <tileset firstgid="6910" name="tv_animal_planet" tilewidth="32" tileheight="32" tilecount="4">
-  <image source="../../../../tiles/Joe's Custom/TVs/tv_animal_planet.png" trans="ffffff" width="64" height="64"/>
+ <tileset firstgid="6910" name="Walter-Payton_screen" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../../../tiles/Joe's Custom/TVs/Walter-Payton_screen.png" trans="ffffff" width="64" height="64"/>
  </tileset>
- <tileset firstgid="6914" name="tv_basketball" tilewidth="32" tileheight="32" tilecount="4">
-  <image source="../../../../tiles/Joe's Custom/TVs/tv_basketball.png" trans="ffffff" width="64" height="64"/>
+ <tileset firstgid="6914" name="tv_static" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../../../tiles/Joe's Custom/TVs/tv_static.png" trans="ffffff" width="64" height="64"/>
  </tileset>
- <tileset firstgid="6918" name="tv_player" tilewidth="32" tileheight="32" tilecount="4">
-  <image source="../../../../tiles/Joe's Custom/TVs/tv_player.png" trans="ffffff" width="64" height="64"/>
+ <tileset firstgid="6918" name="charlotte-hornets_screen" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../../../tiles/Joe's Custom/TVs/charlotte-hornets_screen.png" trans="ffffff" width="64" height="64"/>
  </tileset>
- <tileset firstgid="6922" name="tv_football" tilewidth="32" tileheight="32" tilecount="4">
-  <image source="../../../../tiles/Joe's Custom/TVs/tv_football.png" trans="ffffff" width="64" height="64"/>
+ <tileset firstgid="6922" name="kentucky-derby_screen" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../../../tiles/Joe's Custom/TVs/kentucky-derby_screen.png" trans="ffffff" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="6926" name="serena-williams_screen" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../../../tiles/Joe's Custom/TVs/serena-williams_screen.png" trans="ffffff" width="64" height="64"/>
+ </tileset>
+ <tileset firstgid="6930" name="curling_screen" tilewidth="32" tileheight="32" tilecount="4">
+  <image source="../../../../tiles/Joe's Custom/TVs/curling_screen.png" trans="ffffff" width="64" height="64"/>
  </tileset>
  <layer name="Floor" width="20" height="15">
   <data encoding="base64" compression="zlib">
@@ -350,10 +356,15 @@
  </layer>
  <layer name="TVs" width="20" height="15">
   <data encoding="base64" compression="zlib">
-   eJztigsKwCAMQ7O/U3cBe/9rOlOoMJjeoA9KXkIBIAqQeMrK3My/u3LSL+u1AG8Z/2X6Y31nHvLflUC/e2cukz/HcRylARF3BTs=
+   eJxjYGBgYJJmYGAGYgY8bHxy6OpYgGxWafxsUtSNglEwCkYBCAAAhzwC3Q==
   </data>
  </layer>
- <layer name="Collisions" width="20" height="15">
+ <layer name="TV Screens" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJzti0kOgCAQBJuLoCLuF/z/N5UmaY0HnjCVTKpnA4DuAjyrMtCj8p2BJ+MjcT5rt9F746cSmHv1kZ7eHe1+dwvzqv6gz9aPYRiGKJ+uBYs=
+  </data>
+ </layer>
+ <layer name="Collisions" width="20" height="15" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYKAuOEplTGuAbhc2++npHph96HxSw+ooDjY2Pi434DIDnU2p+6gNcNlFiMZlBjXcSkz4ofPxpT96pUVKASnpghi1AAmGTDA=
   </data>
