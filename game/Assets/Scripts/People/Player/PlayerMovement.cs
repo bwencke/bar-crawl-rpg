@@ -9,6 +9,10 @@ public class PlayerMovement : TopLevelController {
 
 	Rigidbody2D rbody;
 	Animator anim;
+
+	bool isRunning;
+	float lastTime;
+	KeyCode lastKeyCode;
 	
 	Vector2 direction = new Vector2(0, 1);
 
@@ -18,9 +22,13 @@ public class PlayerMovement : TopLevelController {
 		rbody = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 
+		isRunning = false;
+		lastTime = -1.0f;
+
 	}
 
 	public override void TriggerMovement(Vector2 movement_vector) {
+		Vector2 prevDirection = new Vector2 (direction.x, direction.y);
 		if (movement_vector != Vector2.zero) {
 			anim.SetBool ("is_walking", true);
 			anim.SetFloat ("input_x", movement_vector.x);
@@ -39,7 +47,7 @@ public class PlayerMovement : TopLevelController {
 			anim.SetBool ("is_walking", false);
 		}
 		
-		rbody.MovePosition (rbody.position + movement_vector * Time.deltaTime);
+		rbody.MovePosition (rbody.position + movement_vector * Time.deltaTime * (isRunning ? 2 : 1));
 
 		if (movement_vector != Vector2.zero) {
 			GameObject.FindGameObjectWithTag("Alert").GetComponent<AlertController>().CancelAlert();
@@ -57,6 +65,28 @@ public class PlayerMovement : TopLevelController {
 				break;
 			}
 		}
+	}
+
+	public override void KeyDown() {
+		if (Input.GetKey (lastKeyCode)) {
+			if (Time.time - lastTime < 0.2f) {
+				lastTime = Time.time;
+				isRunning = true;
+				return;
+			}
+		}
+
+		if (Input.GetKeyDown (KeyCode.LeftArrow)) {
+			lastKeyCode = KeyCode.LeftArrow;
+		} else if (Input.GetKeyDown (KeyCode.RightArrow)) {
+			lastKeyCode = KeyCode.RightArrow;
+		} else if (Input.GetKeyDown (KeyCode.UpArrow)) {
+			lastKeyCode = KeyCode.UpArrow;
+		} else if (Input.GetKeyDown (KeyCode.DownArrow)) {
+			lastKeyCode = KeyCode.DownArrow;
+		}
+		lastTime = Time.time;
+		isRunning = false;
 	}
 
 }

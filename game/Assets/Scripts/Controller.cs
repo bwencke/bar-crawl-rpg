@@ -41,7 +41,7 @@ public class Controller : MonoBehaviour {
 	void Update () {
 		DetectArrowKeys ();
 		DetectPrimaryAction ();
-		DetectMouseClick ();
+		DetectEvent ();
 		DetectMenuButton ();
 		DetectInventoryButton ();
 	}
@@ -85,9 +85,9 @@ public class Controller : MonoBehaviour {
 		}
 	}
 
-	void DetectMouseClick() {
-		if (Input.GetMouseButtonUp (0)) {
-			Debug.LogError ("MOUSE CLICKED");
+	void DetectEvent() {
+		if (Input.anyKeyDown) {
+			GetControlling().GetComponent<TopLevelController>().KeyDown();
 		}
 	}
 
@@ -133,9 +133,13 @@ public class Controller : MonoBehaviour {
 				googleAnalytics.LogEvent (new EventHitBuilder ()
 				                         .SetEventCategory ("E")
 				                         .SetEventAction (GetControlling () == inventory ? "Close Inventory" : "Open Inventory"));
-				ToggleInventory ();
+				AccessInventory(UseItemOnSelf);
 			}
 		}
+	}
+
+	public void UseItemOnSelf(string id, object o) {
+		GameObject.Find (id).GetComponent<InventoryItemController> ().UseItemOnSelf ();
 	}
 
 	public void ToggleMenu() {
@@ -151,7 +155,7 @@ public class Controller : MonoBehaviour {
 			inventory.GetComponent<InventoryController> ().LoadInventory ();
 		}
 		inventory.GetComponent<Canvas>().enabled = !inventory.GetComponent<Canvas>().enabled;
-		if (callback == null) {
+		if (callback == null || callback == UseItemOnSelf) {
 			SetControlling (inventory.GetComponent<Canvas> ().enabled ? inventory : player);
 		} else {
 			SetControlling (inventory.GetComponent<Canvas> ().enabled ? inventory : conversation);
