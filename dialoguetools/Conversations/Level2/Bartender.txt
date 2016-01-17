@@ -118,6 +118,18 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
+	Fake ID
+	STATEMENTS
+		Bartender
+		You don't need to show me your ID once you're in the bar.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
 	Washing Machine
 	STATEMENTS
 		Bartender
