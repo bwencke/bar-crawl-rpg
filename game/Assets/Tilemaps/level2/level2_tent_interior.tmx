@@ -28,7 +28,7 @@
   <image source="../../../../tiles/LPC/collisions.png" width="32" height="32"/>
   <tile id="0">
    <objectgroup draworder="index">
-    <object id="0" x="0.75" y="0.5" width="30.75" height="31.25"/>
+    <object id="0" x="-0.201072" y="-0.201072" width="32.2386" height="32.1716"/>
    </objectgroup>
   </tile>
  </tileset>
@@ -321,11 +321,6 @@
    eJxjYBgeYDoeuWlUML8FiHtw4FYqmD8KRsEoGAXoAAC2FAV/
   </data>
  </layer>
- <layer name="Bar Top" width="12" height="30">
-  <data encoding="base64" compression="zlib">
-   eJxjYBicoAqPXAMVzF8iBcELpRDsxUjsUTAKRsEoGGgAACJsBuc=
-  </data>
- </layer>
  <layer name="Barstools" width="12" height="30">
   <data encoding="base64" compression="zlib">
    eJxjYBh84AEzddQMJIC5D9md2MRGwSgYBaMAFwAA1/sFUw==
@@ -346,9 +341,69 @@
    eJxjYBj8oFKagaFaeqBdMQpGwSgYBfQFANC1ASs=
   </data>
  </layer>
- <layer name="Collisions" width="12" height="30">
+ <layer name="Collisions" width="12" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYCANHKUxZkBjE8OnByDG3ejqGRgw3Y0uRm1Abthgcycp6gnpoUQ9MYDSMMXnJmzpjxT3kBsf+PRREj7khD0p9pEaPsSopXd+pxXAV3ZgkwMAJlo/Gw==
+  </data>
+ </layer>
+ <layer name="Collisions Counter" width="12" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBiZ4CgU42OPglEwCkbBQAIARecEnw==
+  </data>
+ </layer>
+ <layer name="Collisions Red Bottle" width="12" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjZ4OhAO2AUjIJRMApwAACU7QDG
+  </data>
+ </layer>
+ <layer name="Collisions Blue Bottle" width="12" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFMHB0oB0wCkbBKBgFSAAAi7EAxg==
+  </data>
+ </layer>
+ <layer name="Collisions Stool" width="12" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh84CiV1AwkOIpG4xIbBaNgFIwCXAAAshgEnw==
+  </data>
+ </layer>
+ <layer name="Collisions Table" width="12" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBic4CiZcqNgFIyCUTBcAACuzQGL
+  </data>
+ </layer>
+ <layer name="Collisions Cabinet" width="12" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAvOIqDPQpGwSgYBaMAFQAA+K0Biw==
+  </data>
+ </layer>
+ <layer name="Collisions Wall" width="12" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAtOIqEKVEzCkbBKBgFtAZHsWBi5JDVYGPjsw+fegAj7A9l
+  </data>
+ </layer>
+ <layer name="Bar Top" width="12" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBicoAqPXAMVzF8iBcELpRDsxUjsUTAKRsEoGGgAACJsBuc=
+  </data>
+ </layer>
+ <layer name="Collisions Couch" width="12" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFwwkchWJy9A1l9ZQCUsKNHn4h5B5auoHeYT8KcAMAvOoLjA==
+  </data>
+ </layer>
+ <layer name="Collisions Gold" width="12" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFowAVHCVDPSl6SFU/0IAc9w5m/5HjNlLjl9rmDebwpCUAACjUCsc=
+  </data>
+ </layer>
+ <layer name="Collisions Bucket" width="12" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2Dog6MD7YBRMApoAAA19gDG
+  </data>
+ </layer>
+ <layer name="Collisions Picture" width="12" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAfOIpEH0UTGwWjYBSMglGACgDryQMV
   </data>
  </layer>
 </map>

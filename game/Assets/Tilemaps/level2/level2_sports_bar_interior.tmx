@@ -28,7 +28,7 @@
   <image source="../../../../tiles/LPC/collisions.png" width="32" height="32"/>
   <tile id="0">
    <objectgroup draworder="index">
-    <object id="0" x="0.75" y="0.5" width="30.75" height="31.25"/>
+    <object id="0" x="0.0670241" y="0.0670241" width="31.9705" height="31.9035"/>
    </objectgroup>
   </tile>
  </tileset>
@@ -367,6 +367,36 @@
  <layer name="Collisions" width="20" height="15" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYKAuOEplTGuAbhc2++npHph96HxSw+ooDjY2Pi434DIDnU2p+6gNcNlFiMZlBjXcSkz4ofPxpT96pUVKASnpghi1AAmGTDA=
+  </data>
+ </layer>
+ <layer name="Collisions Stool" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFgx0cJZKmlb2UqhloMFDhNwqoDwAKBgk9
+  </data>
+ </layer>
+ <layer name="Collisions Chair" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjZ4CgOmpAcLQE17KGlW0fdRz2zyU1/9EqLgw0AAEtWD2U=
+  </data>
+ </layer>
+ <layer name="Collisions Table" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFR7HwsYkNVUANtw9l/1MKaB1+wz39URMAAMa0CT0=
+  </data>
+ </layer>
+ <layer name="Collisions Wall" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAuOEokm1h1o2AUjAL6gaNEYHLU4rMPGxsXAADmKBWN
+  </data>
+ </layer>
+ <layer name="Collisions Counter" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFQwEcJZImxSxK1SCrJQaPglFAKQAApQ8NFg==
+  </data>
+ </layer>
+ <layer name="Collisions TV" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA+OArF+NikqBsFo2AUjAIQAAAOkQk9
   </data>
  </layer>
 </map>
