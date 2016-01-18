@@ -28,7 +28,7 @@
   <image source="../../../../tiles/LPC/collisions.png" width="32" height="32"/>
   <tile id="0">
    <objectgroup draworder="index">
-    <object id="0" x="0.75" y="0.5" width="30.75" height="31.25"/>
+    <object id="0" x="-0.133976" y="-0.0669882" width="32.0204" height="32.0204"/>
    </objectgroup>
   </tile>
  </tileset>
@@ -282,6 +282,9 @@
  <tileset firstgid="6643" name="bench_v2" tilewidth="32" tileheight="32" tilecount="2">
   <image source="../../../../tiles/bench_v2.png" trans="ffffff" width="64" height="32"/>
  </tileset>
+ <tileset firstgid="6645" name="rpg_maker_vx___benches_by_ayene_chan-d6jxhsk" tilewidth="32" tileheight="32" tilecount="30">
+  <image source="../../../../tiles/Added 1-16-16/rpg_maker_vx___benches_by_ayene_chan-d6jxhsk.png" width="192" height="160"/>
+ </tileset>
  <layer name="Grass" width="32" height="30">
   <data encoding="base64" compression="zlib">
    eJyNlEGOwzAMA7uvVvL79tAFjMGM0oMQ17UlmSJ5/b1e1yfmE/d3fX4H/9X6/J5x7o3sX1jPcdbO3HKG9ybqjXz5Hu4P8rO3c80YhJ0nzsTjkv2nGsTSalWNyl+9nDltJiP1BrWZ2zDf3mP9GP/qNzFkX8TB+HX+Zk7Dn30TV2qLNcldq2ucoY5K06at0qD1yRo2X5th6cM4ZphTE1XvRl16AHlpsy+sa8/ma72Z5uxOzZ816T+FD9/K3FsP1fPmN/QAw+kXbzHeWdhcN+7ZWw37mp/5n/k2tWs9msdsGrI6NdvyfuvJOLXVsRzmfU8e+zTzqkk9WN/GlfLG6q/ymp/Ze6sH3jM/M1zK1zf/MY0QO9MsOWN17E7lLL+wHOXZxp3ir+2XRxWPN35umjYOkCM2M/OS0lZ5+abv4ozNvM5ZEFvzzeKBcYYcMWzLw4nVjXV5h+mCuBjXjSvmHfZW8rf4t/lXzdTC3mK8M+6XbgpXe2thuuFVuBhf/+MNTgTF3Q==
@@ -374,7 +377,7 @@
  </layer>
  <layer name="Benches" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJzt00ERADAIBLGzgX+JrYDKYAqJgv1swg9OJbe6K2APzwEAzPMAxeAEMw==
+   eJxjYBgFxICvkgwM3yUH2hXDG/we4PBllxpY+0fB4AK8wPTAP5omRsEoGAWjYBSMglEwCoYVAABqWAOk
   </data>
  </layer>
  <layer name="Bush Bottoms" width="32" height="30">
@@ -402,6 +405,11 @@
    eJztzjENAAAIA7CpwL8UpKGAj4SnVdAE2HR9DwAAgCsD/LEA1w==
   </data>
  </layer>
+ <layer name="Barrels Back" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzSEKADAMBMFUNP9/cm10zRGYgdVb9adHAACbnPD7Bv/JN0DaA1jvAB8=
+  </data>
+ </layer>
  <layer name="Barrels Front" width="32" height="30">
   <data encoding="base64" compression="zlib">
    eJztzTEBAAAIA6B52L+yLdwDBUgAAPg05XuLf/MGOEkYAA0=
@@ -414,7 +422,7 @@
  </layer>
  <layer name="Collisions_Bench" width="32" height="30">
   <data encoding="base64" compression="zlib">
-   eJzt00EJAAAIBMHr38tefswgKDOwETbhgpqAHZ4DAPinAc09AxU=
+   eJxjYBgFxICjUDwKaAcGOnwH2v5RMLjAaJ4fBaNgFIyCUTAKRsEoGH4AAFtxBJ8=
   </data>
  </layer>
  <layer name="Collisions_Flag" width="32" height="30">
@@ -487,14 +495,14 @@
    eJztzQENACAMA7CrQC44AaRexghpDbTqbXNk/x3+V/g/4f+GfwAA4B8N0ZcDSQ==
   </data>
  </layer>
- <layer name="Barrels Back" width="32" height="30">
-  <data encoding="base64" compression="zlib">
-   eJztzSEKADAMBMFUNP9/cm10zRGYgdVb9adHAACbnPD7Bv/JN0DaA1jvAB8=
-  </data>
- </layer>
  <layer name="TentTop" width="32" height="30">
   <data encoding="base64" compression="zlib">
    eJztzbsNACAMxNCDLJGSz/475loWAAn5Sa4tfSql5rqLvL8ffk633H7wBwAAAACcCvAvAU0=
+  </data>
+ </layer>
+ <layer name="Barrels" width="32" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzQEBAAAIw6Dbv7RBBgXYAABaLnoD1D0ahAAD
   </data>
  </layer>
 </map>

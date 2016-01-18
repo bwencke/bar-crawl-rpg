@@ -28,7 +28,7 @@
   <image source="../../../../tiles/LPC/collisions.png" width="32" height="32"/>
   <tile id="0">
    <objectgroup draworder="index">
-    <object id="0" x="0.75" y="0.5" width="30.75" height="31.25"/>
+    <object id="0" x="-0.201072" y="-0.268097" width="32.2386" height="32.3727"/>
    </objectgroup>
   </tile>
  </tileset>
@@ -308,11 +308,6 @@
    eJxjYBhcYKsUA8N2KeqpOwpUc5wIdeQCAJm2BQE=
   </data>
  </layer>
- <layer name="&quot;Desk&quot; Top" width="10" height="8">
-  <data encoding="base64" compression="zlib">
-   eJxjYKAPWCrFwLBcik6W0REAAEIXAYE=
-  </data>
- </layer>
  <layer name="&quot;Desk&quot; Chair" width="10" height="8">
   <data encoding="base64" compression="zlib">
    eJxjYBjaIF5qYO0HAD2mAHo=
@@ -328,11 +323,6 @@
    eJxjYBhagI9roF2ACgAOtgAZ
   </data>
  </layer>
- <layer name="Client Chair Top" width="10" height="8">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgc4B/nQLuAPAAAvj8BCA==
-  </data>
- </layer>
  <layer name="Windows" width="10" height="8">
   <data encoding="base64" compression="zlib">
    eJxjYEAAbRnsNDrQk8FOj0QAANu7AbQ=
@@ -343,9 +333,69 @@
    eJxjYBg4oC9JnDpzItUNBAAAaO4AmQ==
   </data>
  </layer>
- <layer name="Collisions" width="10" height="8">
+ <layer name="Collisions" width="10" height="8" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYCAOHCUSkwKwqcdmzlEsbGLtJMdd2MzH5V8AwMQWUg==
+  </data>
+ </layer>
+ <layer name="Collisions Couch" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg4cJTK6gYCAAAQLwGL
+  </data>
+ </layer>
+ <layer name="Collisions Desk" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhc4CiV1dEaAADxWAGL
+  </data>
+ </layer>
+ <layer name="Collisions Tree" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAeOEpFs4YKAAC9BADG
+  </data>
+ </layer>
+ <layer name="Collisions Radiator" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAOHIXiUYAKAK0rAYs=
+  </data>
+ </layer>
+ <layer name="Collisions Window" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAdHMVBj0QAAFmaAlA=
+  </data>
+ </layer>
+ <layer name="Collisions Boss Chair" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBja4OgA2w8AY8AAxg==
+  </data>
+ </layer>
+ <layer name="Collisions Chair" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBha4OhAOwANAABwEADG
+  </data>
+ </layer>
+ <layer name="Collisions Wall" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYCANHCVAD3ZwFAmj89HlGBgI+w8A9awLjA==
+  </data>
+ </layer>
+ <layer name="Collisions Note" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBi64OhAOwAIAGbUAMY=
+  </data>
+ </layer>
+ <layer name="Collisions Note" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh84OhAO4AEAACFnADG
+  </data>
+ </layer>
+ <layer name="&quot;Desk&quot; Top" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAPWCrFwLBcik6W0REAAEIXAYE=
+  </data>
+ </layer>
+ <layer name="Client Chair Top" width="10" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgc4B/nQLuAPAAAvj8BCA==
   </data>
  </layer>
 </map>

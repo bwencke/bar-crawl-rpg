@@ -46,9 +46,9 @@ public class IntroCutscene : CutsceneScript {
 	}
 
 	IEnumerator BraydenLeave() {
-		yield return StartCoroutine(Brayden.MoveDown(2));
+		yield return StartCoroutine(Brayden.MoveDown(3));
 		yield return StartCoroutine(Brayden.MoveRight(1));
-		yield return StartCoroutine (Brayden.MoveDown (10));
+		yield return StartCoroutine (Brayden.MoveDown (9));
 		count++;
 	}
 

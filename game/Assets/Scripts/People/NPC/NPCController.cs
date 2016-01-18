@@ -80,7 +80,7 @@ public class NPCController : ColliderController {
 	}
 
 	public void SetPosition(Vector2 position) {
-		rbody.position = position;
+		transform.localPosition = position;
 	}
 
 	public void SetDirection(Vector2 direction) {
