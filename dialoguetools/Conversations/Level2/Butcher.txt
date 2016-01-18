@@ -35,6 +35,13 @@ SNIPPET
 		6
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			HelpingGambler=TRUE
+		ENDCONDITIONS
+		Do you know who will win the big horse race?
+		7
+	ENDOPTION
+	OPTION
 		Bye.
 		END
 	ENDOPTION
@@ -95,6 +102,20 @@ SNIPPET
 	STATEMENTS
 		Butcher
 		Clearly not on either of our faces.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Butcher
+		I'm not sure. Would it help if I told you about all of the horses I've slaughtered?
+		Blake
+		That would not help.
 	ENDSTATEMENTS
 	OPTION
 		JUMP

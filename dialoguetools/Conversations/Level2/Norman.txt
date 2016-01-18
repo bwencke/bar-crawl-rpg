@@ -42,6 +42,20 @@ SNIPPET
 		7
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			HelpingGambler=TRUE
+		ENDCONDITIONS
+		Do you watch horse races much?
+		8
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsPassword=TRUE
+		ENDCONDITIONS
+		Have you heard about any secret passwords around here?
+		9
+	ENDOPTION
+	OPTION
 		I've got to go.
 		END
 	ENDOPTION
@@ -114,6 +128,34 @@ SNIPPET
 	STATEMENTS
 		Norman
 		I think you're out of luck, kid.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Norman
+		Why bother? They're all fixed, anyways.
+		Blake
+		Really? Who fixes them?
+		Norman
+		Who fixes the races? The motherfucking man.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	9
+	STATEMENTS
+		Norman
+		I've heard murmurings. I hear murmurings all the time, but they're usually not coherent.
 	ENDSTATEMENTS
 	OPTION
 		JUMP

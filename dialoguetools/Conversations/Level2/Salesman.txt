@@ -95,6 +95,13 @@ SNIPPET
 		10
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsSunglasses=TRUE
+		ENDCONDITIONS
+		Can I have your sunglasses?
+		14
+	ENDOPTION
+	OPTION
 		See ya.
 		END
 	ENDOPTION
@@ -260,16 +267,99 @@ SNIPPET
 	ENDOPTION
 ENDSNIPPET
 
+SNIPPET
+	14
+	STATEMENTS
+		Salesman
+		I'll give them to you for $90.
+		Blake
+		I don't have that kind of money. Or any money.
+		Salesman
+		Then no sunglasses, sorry.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Washing Machine
+	STATEMENTS
+		Salesman
+		I wash my trench coat by hand.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Bear
+	STATEMENTS
+		Salesman
+		That bear looks familiar. Is it popular? Should I start selling them?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Hat
+	STATEMENTS
+		Blake
+		I think this hat will match your trench coat. Want to buy it?
+		Salesman
+		Sorry, I don't pay for clothing.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Sunglasses
+	STATEMENTS
+		Blake
+		How about a backup pair of sunglasses?
+		Salesman
+		One is enough.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Tail
+	STATEMENTS
+		Blake
+		How much do you think I could sell this for?
+		Salesman
+		I can sell almost anything, and I can't sell that.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
 
 
-
-
-
-
-
-
-
-
-
-
-
+SNIPPET
+	Fake ID
+	STATEMENTS
+		Blake
+		I want to return this.
+		Salesman
+		Sorry, no refunds.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET

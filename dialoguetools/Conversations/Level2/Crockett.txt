@@ -35,6 +35,13 @@ SNIPPET
 		6
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsPassword=TRUE
+		ENDCONDITIONS
+		Do you know what the fake ID salesman's password is?
+		8
+	ENDOPTION
+	OPTION
 		Any great stories from the frontier?
 		7
 	ENDOPTION
@@ -129,6 +136,18 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
+	8
+	STATEMENTS
+		Crockett
+		No idea. All my passwords are "Remember the Alamo."
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
 	Bear
 	ASSIGNMENTS
 		HasHat=TRUE
@@ -144,5 +163,57 @@ SNIPPET
 	OPTION
 		JUMP
 		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Washing Machine
+	STATEMENTS
+		Crockett
+		Call me old fashioned, but I just wash my clothes with a bucket and water.
+		Blake
+		This could save you a lot of time.
+		Crockett
+		Save an hour or two once a year? Unnecessary.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Money
+	STATEMENTS
+		Crockett
+		I don't need money. I live off the bounty of the land.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Sunglasses
+	STATEMENTS
+		Crockett
+		I had a pair once, but then a rascally coyote stole it.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Fake ID
+	STATEMENTS
+		Crockett
+		There's no need for IDs in the widerness.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
 	ENDOPTION
 ENDSNIPPET
