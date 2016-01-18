@@ -30,6 +30,7 @@ public class PlayerMovement : TopLevelController {
 	}
 
 	public override void TriggerMovement(Vector2 movement_vector) {
+
 		Vector2 prevDirection = new Vector2 (direction.x, direction.y);
 		if (movement_vector != Vector2.zero) {
 			anim.SetBool ("is_walking", true);
@@ -48,7 +49,7 @@ public class PlayerMovement : TopLevelController {
 		} else {
 			anim.SetBool ("is_walking", false);
 		}
-		
+
 		rbody.MovePosition (rbody.position + movement_vector * Time.deltaTime * (isRunning ? 2 : 1));
 
 		if (movement_vector != Vector2.zero) {

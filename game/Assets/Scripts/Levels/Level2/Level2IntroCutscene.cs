@@ -39,6 +39,7 @@ public class Level2IntroCutscene : CutsceneScript {
 			break;
 		case(1):
 			callback();
+			Destroy(Blake);
 			GameObject.FindGameObjectWithTag ("GameController").GetComponent<Controller> ().StartConversation("Bouncer", "1", null);
 			break;
 
