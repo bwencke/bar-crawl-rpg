@@ -68,7 +68,7 @@ SNIPPET
 		Gambler
 		Hmm. Then I get the washing machine.
 		Blake
-		OK, I'll think about it.
+		OK, I'll ask around for some opinions and get back to you.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
@@ -91,7 +91,7 @@ SNIPPET
 		Gambler
 		Hmm. Then I get the washing machine.
 		Blake
-		OK, I'll think about it.
+		OK, I'll ask around for some opinions and get back to you.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
