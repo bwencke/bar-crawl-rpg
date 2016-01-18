@@ -78,6 +78,13 @@ SNIPPET
 		7
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsSunglasses=TRUE
+		ENDCONDITIONS
+		Can I borrow your sunglasses?
+		12
+	ENDOPTION
+	OPTION
 		I'll be back.
 		END
 	ENDOPTION
@@ -209,6 +216,108 @@ SNIPPET
 		Those aren't permanent fixtures.
 		Bouncer
 		They are with a face as ugly as yours. You're not getting in with this.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	12
+	STATEMENTS
+		Bouncer
+		I need them. It's bright out here.
+		Blake
+		It'll be dark soon!
+		Bouncer
+		Not soon enough.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Washing Machine
+	STATEMENTS
+		Bouncer
+		That's not an ID.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Bear
+	STATEMENTS
+		Blake
+		Does this cute bear warm your heart enough to let me in?
+		Bouncer
+		No.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Hat
+	STATEMENTS
+		Blake
+		This hat would cover your bald head.
+		Bouncer
+		Do you have a problem with my bald head?
+		Blake
+		No sir.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Money
+	STATEMENTS
+		Blake
+		I'll give you some money if you let me in.
+		Bouncer
+		I'm calling the police.
+		Blake
+		Just kidding!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Sunglasses
+	STATEMENTS
+		Blake
+		How about we trade sunglasses?
+		Bouncer
+		Nope. Mine are specially built for my eyes.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		5
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Tail
+	STATEMENTS
+		Blake
+		Check this out!
+		Bouncer
+		No.
 	ENDSTATEMENTS
 	OPTION
 		JUMP

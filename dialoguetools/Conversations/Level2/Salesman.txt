@@ -95,6 +95,13 @@ SNIPPET
 		10
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsSunglasses=TRUE
+		ENDCONDITIONS
+		Can I have your sunglasses?
+		14
+	ENDOPTION
+	OPTION
 		See ya.
 		END
 	ENDOPTION
@@ -253,6 +260,22 @@ SNIPPET
 		I am offering you money for an ID.
 		Salesman
 		I wouldn't know what to do with that.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	14
+	STATEMENTS
+		Salesman
+		I'll give them to you for $90.
+		Blake
+		I don't have that kind of money. Or any money.
+		Salesman
+		Then no sunglasses, sorry.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
