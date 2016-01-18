@@ -1,0 +1,359 @@
+SNIPPET
+	1
+	OPTION
+		CONDITIONS
+			HasMetMafiaBoss=FALSE
+		ENDCONDITIONS
+		JUMP
+		2
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			HasMetMafiaBoss=TRUE
+		ENDCONDITIONS
+		JUMP
+		3
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	ASSIGNMENTS
+		HasMetMafiaBoss=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Mafia Boss
+		Who are yous? Why did yous come in my office without an invitation?
+		Blake
+		I'm Blake Bradford, who are you?
+		Mafia Boss
+		That ain't none of your business.
+		Blake
+		So it is my business.
+		Mafia Boss
+		What?
+		Blake
+		You used a double negative.
+		Mafia Boss
+		State your business now or Shorty here'll fit yous for a new pair of shoes.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	STATEMENTS
+		Mafia Boss
+		You again!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	OPTION
+		Seriously, though, what's your deal?
+		5
+	ENDOPTION
+	OPTION
+		You said something about new shoes?
+		6
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsSunglasses=TRUE
+		ENDCONDITIONS
+		Do you have sunglasses I could borrow?
+		8
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoustache=TRUE
+		ENDCONDITIONS
+		Can I have your moustache?
+		9
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			HelpingGambler=TRUE
+		ENDCONDITIONS
+		Do you know who'll win the next horse race?
+		10
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsPassword=TRUE
+		ENDCONDITIONS
+		Do you know the password for the fake ID salesman?
+		13
+	ENDOPTION
+	OPTION
+		Arrivederci!
+		7
+	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Mafia Boss
+		I'm running this here town. From behind the scenes, so to speak.
+		Blake
+		You mean from behind the butcher shop?
+		Mafia Boss
+		My steak dinner is always fresh. Ain't that right, Shorty?
+		Blake
+		Do you do crime? What kind of crime?
+		Mafia Boss
+		Yous know, moving drugs, fixing races and fights, the usual.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Mafia Boss
+		Gee kid, yous sure are dense.
+		Blake
+		I'm not fat!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Mafia Boss
+		Don't yous mock my people!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Mafia Boss
+		Nope, don't need 'em. I keep this here room nice and dark.
+		Blake
+		How come?
+		Mafia Boss
+		It's harder to see the bloodstains.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	9
+	ASSIGNMENTS
+		SpokeToMafiaAboutStache=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Mafia Boss
+		What, yous want me to shave it and give you the hair?
+		Blake
+		That would work.
+		Mafia Boss
+		Tell yous what - I'll give you a job, you do it, I give you hair. Deal?
+		Blake
+		Deal!
+		Mafia Boss
+		Great. I need you to do a hit for me. Jimmy the Rat.
+		Blake
+		Uhh...
+		Mafia Boss
+		He lives down on Miller Street. Bring me his head and you can have the hair off it.
+		Blake
+		I just want your moustache hair.
+		Mafia Boss
+		Then no deal.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	10
+	ASSIGNMENTS
+		KnowsWinner=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Mafia Boss
+		A smart man, and I'm a smart man, would put his money on Fancy Pants to win.
+		Mafia Boss
+		I'd bet the other ponies had some hay that didn't agree with 'em.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Washing Machine
+	STATEMENTS
+		Mafia Boss
+		My immaculately tailored suit would be ruined by that.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Bear
+	STATEMENTS
+		Blake
+		This bear is named Cuddles.
+		Mafia Boss
+		What do I look like to yous? Who do yous think you're dealing with?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Hat
+	STATEMENTS
+		Blake
+		Would you like this hat?
+		Mafia Boss
+		That would not fit my impeccable style.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Money
+	STATEMENTS
+		Blake
+		I'd like to invest in crime.
+		Mafia Boss
+		Yous out of your league, kid.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Sunglasses
+	STATEMENTS
+		Blake
+		I think you would look more intimidating with these.
+		Mafia Boss
+		Are yous saying I ain't intimidating?
+		Mafia Boss
+		I'll have Shorty correct that misconception.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Tail
+	OPTION
+		CONDITIONS
+			SpokeToMafiaAboutStache=TRUE
+		ENDCONDITIONS
+		JUMP
+		11
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			SpokeToMafiaAboutStache=FALSE
+		ENDCONDITIONS
+		JUMP
+		12
+	ENDOPTION
+ENDSNIPPET
+
+
+SNIPPET
+	11
+	STATEMENTS
+		Mafia Boss
+		That what you're using as a moustache instead?
+		Mafia Boss
+		Too bad. Jimmy the Rat had beautiful hair.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	12
+	STATEMENTS
+		Mafia Boss
+		I seen plenty of dead animals, thanks.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Fake ID
+	STATEMENTS
+		Blake
+		What do you think of this?
+		Mafia Boss
+		Harvey Kevork? I put out a hit on him years ago.
+		Mafia Boss
+		Never found the body, though. Say, hang on...
+		Blake
+		Uh, gotta go.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	13
+	STATEMENTS
+		Mafia Boss
+		That ain't my business. Too small-time.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		4
+	ENDOPTION
+ENDSNIPPET
