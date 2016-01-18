@@ -28,8 +28,15 @@ SNIPPET
 		5
 	ENDOPTION
 	OPTION
-		Later.
+		CONDITIONS
+			HelpingGambler=TRUE
+		ENDCONDITIONS
+		What do you know about horse racing?
 		6
+	ENDOPTION
+	OPTION
+		Later.
+		END
 	ENDOPTION
 	OPTION
 		Use Item
@@ -68,6 +75,22 @@ SNIPPET
 	STATEMENTS
 		Josh
 		Cassidy's holding all of my money, bro.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Josh
+		I don't know, something about a Triple Crown.
+		Blake
+		Would I be able to predict the winner of a horse race with such a crown?
+		Josh
+		I don't think so, bro.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
