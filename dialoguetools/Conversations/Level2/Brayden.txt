@@ -24,6 +24,13 @@ SNIPPET
 		4
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			HelpingGambler=TRUE
+		ENDCONDITIONS
+		Do you know anything about horse racing?
+		5
+	ENDOPTION
+	OPTION
 		Talk to you later.
 		END
 	ENDOPTION
@@ -58,6 +65,20 @@ SNIPPET
 		Even after everything that I did for you at the last bar?
 		Brayden
 		I don't know what to tell you, man.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Brayden
+		Nah, man.
+		Blake
+		You seem to have a lot of negative energy today.
 	ENDSTATEMENTS
 	OPTION
 		JUMP

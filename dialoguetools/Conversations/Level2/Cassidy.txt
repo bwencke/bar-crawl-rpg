@@ -28,6 +28,13 @@ SNIPPET
 		5
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			HelpingGambler=TRUE
+		ENDCONDITIONS
+		Who do you think will win the big horse race?
+		6
+	ENDOPTION
+	OPTION
 		I have to go do some stuff.
 		END
 	ENDOPTION
@@ -70,6 +77,18 @@ SNIPPET
 	STATEMENTS
 		Cassidy
 		Sorry, Blake, I only brought exactly enough money for me and Josh.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Cassidy
+		I don't watch horse races -- just dressage.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
