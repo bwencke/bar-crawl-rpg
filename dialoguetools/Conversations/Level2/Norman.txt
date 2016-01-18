@@ -1,0 +1,210 @@
+SNIPPET
+	1
+	STATEMENTS
+		Norman
+		Hmm? Huh? Bah! I dozed off again.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		Sorry, I didn't mean to wake you up.
+		3
+	ENDOPTION
+	OPTION
+		It's kind of early to be sleeping.
+		4
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			RockCollection=TRUE
+		ENDCONDITIONS
+		Can I see your rock collection?
+		5
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsSunglasses=TRUE
+		ENDCONDITIONS
+		Do you know where I could find some sunglasses?
+		6
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoustache=TRUE
+		ENDCONDITIONS
+		Do you think I could grow a moustache in the next few minutes?
+		7
+	ENDOPTION
+	OPTION
+		I've got to go.
+		END
+	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	ASSIGNMENTS
+		RockCollection=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Norman
+		Actually, I'm glad you woke me up. I should really be working on my rock collection.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	ASSIGNMENTS
+		RockCollection=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Norman
+		Rock collecting is tiring work, cock snot.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Norman
+		No way, asswipe. It's for my eyes only.
+		Blake
+		Do you even have a rock collection?
+		Norman
+		What kind of shit-for-brains lies about having a rock collection?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Norman
+		You should probaby ask someone who wears sunglasses.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Norman
+		I think you're out of luck, kid.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Washing Machine
+	STATEMENTS
+		Blake
+		Would you like a washing machine?
+		Norman
+		AUUUUAGHHHH AAAAUUUUUUGGHHH get it away get it the fuck away!!
+		Blake
+		OK, never mind.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Money
+	STATEMENTS
+		Norman
+		I only accept change. See that little eye on the dollar? They can watch you through it.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Fake ID
+	STATEMENTS
+		Norman
+		I could find use for an alias, but I think I just need to lay low for now. They're watching.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Bear
+	STATEMENTS
+		Norman
+		Ah, reminds me of my childhood.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Hat
+	STATEMENTS
+		Norman
+		What kind of fucktoy would wear a hat like that?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Sunglasses
+	STATEMENTS
+		Norman
+		What, do you think sunglasses make you look cool?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Tail
+	STATEMENTS
+		Norman
+		It's been a while since I've used one of these.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET

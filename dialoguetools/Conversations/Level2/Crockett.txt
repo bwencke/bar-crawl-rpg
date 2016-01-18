@@ -1,0 +1,148 @@
+SNIPPET
+	1
+	STATEMENTS
+		Crockett
+		Hello! It is I, famed American frontiersman Davy Crockett.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		I thought you died at the Alamo.
+		3
+	ENDOPTION
+	OPTION
+		What are you doing here?
+		4
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsSunglasses=TRUE
+		ENDCONDITIONS
+		Do you have sunglasses I could borrow?
+		5
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoustache=TRUE
+		ENDCONDITIONS
+		Any tips on growing a moustache?
+		6
+	ENDOPTION
+	OPTION
+		Any great stories from the frontier?
+		7
+	ENDOPTION
+	OPTION
+		Catch ya on the flip side, brah.
+		END
+	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	STATEMENTS
+		Crockett
+		A common misconception. In fact, I cannot be killed.
+		Blake
+		How come?
+		Crockett
+		The spirit of the wilderness constantly replenishes my life force.
+		Blake
+		Cool.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Crockett
+		I'm here tracking a legendary beast.
+		Blake
+		What kind of beast?
+		Crockett
+		A bear, big as they come, thirsty for blood.
+		Blake
+		Sounds intense. Are you afraid?
+		Crockett
+		Of course not. Bears are no match for Davy Crockett.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Crockett
+		I have only my cap to keep the sun from my eyes.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	STATEMENTS
+		Crockett
+		I usually keep my face clean. Moustaches get caught on brambles.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Crockett
+		On one occasion, I wrassled four wolves and three bears to the ground.
+		Crockett
+		I had nothing but my hands and my wits, but I sure wrassled them.
+		Blake
+		Do you think I could wrassle a wolf, Davy Crockett?
+		Crockett
+		If you dream hard enough, you can achieve anything!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Bear
+	ASSIGNMENTS
+		HasHat=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Blake
+		Here's a bear.
+		Crockett
+		AUGGHHH!!!
+		Blake
+		Wow. Hey, you dropped your hat!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET

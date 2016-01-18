@@ -1,0 +1,108 @@
+SNIPPET
+	1
+	STATEMENTS
+		Cassidy
+		You look different, Blake!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		I'm not Blake -- I'm Harvey Kevork!
+		3
+	ENDOPTION
+	OPTION
+		What sports do you like to watch?
+		4
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		Can I borrow some money for a drink?
+		5
+	ENDOPTION
+	OPTION
+		I have to go do some stuff.
+		END
+	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	STATEMENTS
+		Cassidy
+		Whatever you say, Blake.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Cassidy
+		Rugby and dressage.
+		Blake
+		Do they even show dressage on TV?
+		Cassidy
+		Yeah, but the bartender says he doesn't know what channel it's on.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Cassidy
+		Sorry, Blake, I only brought exactly enough money for me and Josh.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Washing Machine
+	STATEMENTS
+		Blake
+		Do you think this washing machine will be useful later?
+		Cassidy
+		Um, useful for what? Washing clothes? Probably.
+		Blake
+		No, for solving puzzles! To aid in our quest!
+		Cassidy
+		Puzzles? I don't get it.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Fake ID
+	STATEMENTS
+		Cassidy
+		I see the resemblance.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET

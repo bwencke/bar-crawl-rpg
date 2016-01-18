@@ -1,0 +1,366 @@
+SNIPPET
+	1
+	STATEMENTS
+		Blake
+		Hello, tiny child!
+		Child
+		I'm fifteen years old!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		CONDITIONS
+			NoticedBear=FALSE
+		ENDCONDITIONS
+		Is that a teddy bear you're holding?
+		3
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NoticedBear=TRUE
+			SuggestedDitchingBear=FALSE
+		ENDCONDITIONS
+		If you ditch Cuddles, you might actually look fifteen.
+		4
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			SuggestedDitchingBear=TRUE
+			HasBear=FALSE
+		ENDCONDITIONS
+		I would be happy to take the bear off your hands.
+		5
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsPassword=TRUE
+		ENDCONDITIONS
+		Have you ever talked to that salesman over there?
+		11
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsSunglasses=TRUE
+		ENDCONDITIONS
+		I really need some sunglasses.
+		13
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoustache=TRUE
+		ENDCONDITIONS
+		I'm in the market for a moustache.
+		14
+	ENDOPTION
+	OPTION
+		Enjoying the fresh air?
+		12
+	ENDOPTION
+	OPTION
+		Goodbye, tiny child.
+		END
+	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	ASSIGNMENTS
+		NoticedBear=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Child
+		So what if it is?
+		Blake
+		Most fifteen-year-olds don't carry teddy bears around.
+		Child
+		Cuddles and I think you should mind your own business.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	ASSIGNMENTS
+		SuggestedDitchingBear=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Child
+		Why should I believe you? You look like you're thirteen.
+		Blake
+		Look, get rid of the teddy bear, and I swear you'll start making friends with other fifteen-year-olds.
+		Child
+		Who says that I don't have any friends?
+		Blake
+		Do you have any friends?
+		Child
+		No.
+		Child
+		But I can't get rid of Cuddles until I find a good home for him!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Child
+		I don't know. Why should I trust you to take care of Cuddles?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	6
+	OPTION
+		I have lots of experience taking care of teddy bears.
+		7
+	ENDOPTION
+	OPTION
+		I'm sure Cuddles would like my warm and nurturing personality.
+		8
+	ENDOPTION
+	OPTION
+		Cuddles would love to join me on my bar crawl.
+		9
+	ENDOPTION
+	OPTION
+		Just hand over the damn bear.
+		10
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Child
+		Maybe so, but Cuddles isn't like other teddy bears. Cuddles is special. Isn't that right, Cuddles?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Child
+		Warm and nurturing? You made fun of me for holding a teddy bear!
+		Blake
+		Sometimes you need to hear the truth, even when it hurts.
+		Child
+		Cuddles doesn't respond well to that kind of aggression.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	9
+	ASSIGNMENTS
+		HasBear=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Child
+		You know what? I think Cuddles would like that!
+		Blake
+		Wait, seriously?
+		Child
+		He likes bourbon with a little umbrella. Goodbye, Cuddles!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		END
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	10
+	STATEMENTS
+		Child
+		NO! Tell me why I should trust you!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	11
+	ASSIGNMENTS
+		NeedsPassword=FALSE
+		KnowsPassword=TRUE
+	ENDASSIGNMENTS
+	STATEMENTS
+		Child
+		Who, Monty? Yeah, he hooked me up with my fake ID!
+		Blake
+		Great! Do you know what the password is?
+		Child
+		Hypothetically, the password is "penny loafers."
+		Blake
+		Wow, that guy got into your head. Thanks!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	12
+	STATEMENTS
+		Child
+		Not really. I'd rather be playing video games.
+		Blake
+		Why don't you go do that instead?
+		Child
+		My mom won't let me play video games for a week.
+		Blake
+		Why not?
+		Child
+		I got detention for bringing bourbon to school.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	13
+	STATEMENTS
+		Child
+		I suggest you go look for some sunglasses, then.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	14
+	STATEMENTS
+		Child
+		I'm not sure what you want me to do about that.
+		Blake
+		Silly me -- children don't know anything about moustaches.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Washing Machine
+	STATEMENTS
+		Child
+		My mom does my laundry for me.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Bear
+	STATEMENTS
+		Child
+		How is Cuddles doing?
+		Blake
+		Shh, Cuddles is sleeping.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Hat
+	STATEMENTS
+		Child
+		That's an awesome hat! Wait, where did Cuddles go?
+		Blake
+		Uhh, he's in the bar drinking a martini.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Money
+	STATEMENTS
+		Child
+		Wow, that's way more than my allowance.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Sunglasses
+	STATEMENTS
+		Child
+		Maybe I would look older if I wore these.
+		Blake
+		Hands off.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Tail
+	STATEMENTS
+		Child
+		That looks bushy.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Fake ID
+	STATEMENTS
+		Child
+		I already have a fake ID.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET

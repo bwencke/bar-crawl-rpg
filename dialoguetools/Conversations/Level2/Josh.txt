@@ -1,0 +1,102 @@
+SNIPPET
+	1
+	STATEMENTS
+		Josh
+		Where've you been, bro?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		Do you like my new guise?
+		3
+	ENDOPTION
+	OPTION
+		Who's winning the game?
+		4
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		Can I borrow some money?
+		5
+	ENDOPTION
+	OPTION
+		Later.
+		6
+	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	STATEMENTS
+		Josh
+		The sunglasses are cool. I'm not sure about the moustache, though.
+		Blake
+		It's a racoon tail.
+		Josh
+		That's pretty weird, bro.
+	ENDSTATEMENTS
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Josh
+		I don't know, bro. The score looks kind of blurry.
+		Blake
+		Dude, this is only the second bar we've been to!
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	5
+	STATEMENTS
+		Josh
+		Cassidy's holding all of my money, bro.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Washing Machine
+	STATEMENTS
+		Josh
+		My clothes are pretty clean, bro.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+    Fake ID
+	STATEMENTS
+		Blake
+		Do you think this looks like me?
+		Josh
+		Bro, that looks like your uncle.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
