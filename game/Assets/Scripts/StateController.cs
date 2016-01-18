@@ -7,6 +7,7 @@ using SimpleJSON;
 public class StateController : MonoBehaviour {
 
 	int saveSlot;
+	int level;
 
 	public ConversationController conversationController;
 
@@ -32,43 +33,30 @@ public class StateController : MonoBehaviour {
 		string json = PlayerPrefs.GetString ("save_slot" + saveSlot);
 		JSONNode root = JSON.Parse(json);
 
+		LevelController levelController = GameObject.FindGameObjectWithTag ("level_controller").GetComponent<LevelController> ();
+		level = root ["level"].AsInt;
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
-		player.transform.position = new Vector2(root ["position"]["x"].AsFloat, root ["position"]["y"].AsFloat);
-		player.GetComponent<PlayerMovement> ().currentMap = root ["map"];
+		if(levelController.GetLevel() == level) {
+			player.transform.position = new Vector2(root ["position"]["x"].AsFloat, root ["position"]["y"].AsFloat);
+			player.GetComponent<PlayerMovement> ().currentMap = root ["map"];
+			Debug.Log ("map: " + root ["map"]);
+
+			Animator playerAnimator = player.GetComponent<Animator> ();
+			playerAnimator.SetFloat ("input_x", root ["direction"] ["x"].AsFloat);
+			playerAnimator.SetFloat ("input_y", root ["direction"] ["y"].AsFloat);
+			foreach (JSONNode variable in root["variables"].AsArray) {
+				conversationController.dialogueEngine.setVar(variable["name"], variable["value"].AsBool);
+			}
+
+			levelController.SetState (conversationController);
+		} else {
+			level = levelController.GetLevel();
+			levelController.SetDefaultState();
+			player.GetComponent<PlayerMovement> ().currentMap = "map_outside";
+			GameObject.FindGameObjectWithTag("GameController").GetComponent<Controller>().LoadCutscene("Level2Intro");
+		}
+		conversationController.Init (level);
 		GameObject.FindGameObjectWithTag (player.GetComponent<PlayerMovement> ().currentMap).GetComponentsInChildren<AudioObject> () [0].PlayAudio ();
-		Debug.Log ("map: " + root ["map"]);
-
-		Animator playerAnimator = player.GetComponent<Animator> ();
-		playerAnimator.SetFloat ("input_x", root ["direction"] ["x"].AsFloat);
-		playerAnimator.SetFloat ("input_y", root ["direction"] ["y"].AsFloat);
-		foreach (JSONNode variable in root["variables"].AsArray) {
-			conversationController.dialogueEngine.setVar(variable["name"], variable["value"].AsBool);
-		}
-		GameObject.FindGameObjectWithTag ("Banker").GetComponent<NPCController> ().SetDirection (new Vector2 (1, 0));
-
-		// load variables
-		if (conversationController.dialogueEngine.checkVar ("SawIntroCutscene")) {
-			GameObject.FindGameObjectWithTag("GameController").GetComponent<Controller>().LoadCutsceneResults("Intro");
-		}
-		if (conversationController.dialogueEngine.checkVar ("FoundID")) {
-			GameObject.FindGameObjectWithTag("BraydensID").GetComponent<InventoryItemController>().Enable();
-			GameObject.FindGameObjectWithTag("WashingMachine").GetComponent<InventoryItemController>().Enable();
-			Destroy(GameObject.FindGameObjectWithTag("THEWasher"));
-		}
-		if (conversationController.dialogueEngine.checkVar ("BraydenIDReturned")) {
-			GameObject.FindGameObjectWithTag ("BraydensID").GetComponent<InventoryItemController> ().Disable ();
-			NPCController brayden = GameObject.FindGameObjectWithTag("Brayden").GetComponent<NPCController>();
-			brayden.SetPosition (new Vector2 (-6f, -8f));
-			brayden.SetDirection(new Vector2(0, -1));
-		}
-		if (conversationController.dialogueEngine.checkVar ("ShowedID")) {
-			NPCController bouncer = GameObject.FindGameObjectWithTag("Bouncer").GetComponent<NPCController>();
-			bouncer.SetPosition (new Vector2 (9.5f, -8.98f));
-			bouncer.SetDirection(new Vector2(0, -1));
-		}
-		if (conversationController.dialogueEngine.checkVar ("HasMoney")) {
-			GameObject.FindGameObjectWithTag ("Money").GetComponent<InventoryItemController> ().Enable ();
-		}
 		conversationController.dialogueEngine.printVars ();
 	}
 
@@ -90,7 +78,7 @@ public class StateController : MonoBehaviour {
 			}
 
 			string result = "{" +
-					"\"level\":1," +
+					"\"level\":" + level + "," +
 					"\"position\":{" +
 						"\"x\":" + player.transform.position.x + ","+
 						"\"y\":" + player.transform.position.y +
@@ -105,14 +93,6 @@ public class StateController : MonoBehaviour {
 						variables + 
 					"]" +
 				"}";
-
-	//		GameObject player = GameObject.FindGameObjectWithTag ("Player");
-	//		root ["position"] ["x"].AsFloat = player.transform.position.x;
-	//		root ["position"] ["y"].AsFloat = player.transform.position.y;
-	//
-	//		Animator playerAnimator = player.GetComponent<Animator> ();
-	//		root ["direction"] ["x"].AsFloat = playerAnimator.GetFloat ("input_x");
-	//		root ["direction"] ["y"].AsFloat = playerAnimator.GetFloat ("input_y");
 
 			PlayerPrefs.SetString ("save_slot" + saveSlot, result);
 

@@ -28,7 +28,7 @@
   <image source="../../../../tiles/LPC/collisions.png" width="32" height="32"/>
   <tile id="0">
    <objectgroup draworder="index">
-    <object id="0" x="0.75" y="0.5" width="30.75" height="31.25"/>
+    <object id="0" x="-0.0670241" y="0.0670241" width="32.0375" height="31.9035"/>
    </objectgroup>
   </tile>
  </tileset>
@@ -314,16 +314,6 @@
    eJxjYBhY8FaageEdGn4vPcCOGkAAAFx4Bjc=
   </data>
  </layer>
- <layer name="Counter (Back)" width="10" height="10">
-  <data encoding="base64" compression="zlib">
-   eJxjYKANuCvNwHAPDd+XppFlwwgAAOOoBdc=
-  </data>
- </layer>
- <layer name="MEAT (Bottom Layer)" width="10" height="10">
-  <data encoding="base64" compression="zlib">
-   eJxjYKAN+CDEwPARiNcKQ/i6QPqtEKY6AaC4IBCfBeJzQOwLxLzCNHLUEAAAWfcGjQ==
-  </data>
- </layer>
  <layer name="MEAT (Top Layer)" width="10" height="10">
   <data encoding="base64" compression="zlib">
    eJxjYBhYoCfMwKAPxH3CEP4HIP1RmLA+AREGBkER2rptIAAAcVoDdQ==
@@ -339,9 +329,39 @@
    eJxjYGBg6JJhwAkKkOSm4VFXg0duFBAPAIWdAn0=
   </data>
  </layer>
- <layer name="Collisions" width="10" height="10">
+ <layer name="Collisions" width="10" height="10" visible="0">
   <data encoding="base64" compression="zlib">
    eJw7ygABRxnwg6NIND5MKiDWHGraR6q7qAEIhRmMDQB73hu1
+  </data>
+ </layer>
+ <layer name="Collisions Meat" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhYcBQHHqkAALuABJ8=
+  </data>
+ </layer>
+ <layer name="Collisions Sacks" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBhZ4CgUE6uOGLXUBAAApgPa
+  </data>
+ </layer>
+ <layer name="Collisions Wall" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAOHEWisWFkNSMJ4AoP9PDCpx+ZBgADJg6g
+  </data>
+ </layer>
+ <layer name="Collisions Door" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAOOEolc0Y6AAD9+ADG
+  </data>
+ </layer>
+ <layer name="Counter (Back)" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYKANuCvNwHAPDd+XppFlwwgAAOOoBdc=
+  </data>
+ </layer>
+ <layer name="MEAT (Bottom Layer)" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAN+CDEwPARiNcKQ/i6QPqtEKY6AaC4IBCfBeJzQOwLxLzCNHLUEAAAWfcGjQ==
   </data>
  </layer>
 </map>
