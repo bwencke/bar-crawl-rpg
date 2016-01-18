@@ -45,6 +45,20 @@ SNIPPET
 		11
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsSunglasses=TRUE
+		ENDCONDITIONS
+		I really need some sunglasses.
+		13
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoustache=TRUE
+		ENDCONDITIONS
+		I'm in the market for a moustache.
+		14
+	ENDOPTION
+	OPTION
 		Enjoying the fresh air?
 		12
 	ENDOPTION
@@ -236,10 +250,114 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
+	13
+	STATEMENTS
+		Child
+		I suggest you go look for some sunglasses, then.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	14
+	STATEMENTS
+		Child
+		I'm not sure what you want me to do about that.
+		Blake
+		Silly me -- children don't know anything about moustaches.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
 	Washing Machine
 	STATEMENTS
 		Child
 		My mom does my laundry for me.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Bear
+	STATEMENTS
+		Child
+		How is Cuddles doing?
+		Blake
+		Shh, Cuddles is sleeping.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Hat
+	STATEMENTS
+		Child
+		That's an awesome hat! Wait, where did Cuddles go?
+		Blake
+		Uhh, he's in the bar drinking a martini.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Money
+	STATEMENTS
+		Child
+		Wow, that's way more than my allowance.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Sunglasses
+	STATEMENTS
+		Child
+		Maybe I would look older if I wore these.
+		Blake
+		Hands off.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Tail
+	STATEMENTS
+		Child
+		That looks bushy.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Fake ID
+	STATEMENTS
+		Child
+		I already have a fake ID.
 	ENDSTATEMENTS
 	OPTION
 		JUMP

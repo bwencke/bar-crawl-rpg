@@ -28,6 +28,20 @@ SNIPPET
 		5
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsSunglasses=TRUE
+		ENDCONDITIONS
+		Do you know where I could find some sunglasses?
+		6
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoustache=TRUE
+		ENDCONDITIONS
+		Do you think I could grow a moustache in the next few minutes?
+		7
+	ENDOPTION
+	OPTION
 		I've got to go.
 		END
 	ENDOPTION
@@ -84,6 +98,30 @@ SNIPPET
 ENDSNIPPET
 
 SNIPPET
+	6
+	STATEMENTS
+		Norman
+		You should probaby ask someone who wears sunglasses.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	7
+	STATEMENTS
+		Norman
+		I think you're out of luck, kid.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
 	Washing Machine
 	STATEMENTS
 		Blake
@@ -92,6 +130,78 @@ SNIPPET
 		AUUUUAGHHHH AAAAUUUUUUGGHHH get it away get it the fuck away!!
 		Blake
 		OK, never mind.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Money
+	STATEMENTS
+		Norman
+		I only accept change. See that little eye on the dollar? They can watch you through it.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Fake ID
+	STATEMENTS
+		Norman
+		I could find use for an alias, but I think I just need to lay low for now. They're watching.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Bear
+	STATEMENTS
+		Norman
+		Ah, reminds me of my childhood.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Hat
+	STATEMENTS
+		Norman
+		What kind of fucktoy would wear a hat like that?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Sunglasses
+	STATEMENTS
+		Norman
+		What, do you think sunglasses make you look cool?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Tail
+	STATEMENTS
+		Norman
+		It's been a while since I've used one of these.
 	ENDSTATEMENTS
 	OPTION
 		JUMP

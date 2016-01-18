@@ -1,0 +1,94 @@
+SNIPPET
+	1
+	STATEMENTS
+		Brayden
+		What's up, man?
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	2
+	OPTION
+		Do you notice anything different about me?
+		3
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		Do you have any money I can borrow?
+		4
+	ENDOPTION
+	OPTION
+		Talk to you later.
+		END
+	ENDOPTION
+	OPTION
+		Use Item
+		Inventory
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	3
+	STATEMENTS
+		Brayden
+		Nah.
+		Blake
+		You don't think I'm wearing anything strange?
+		Brayden
+		You still have a crappy sense of style.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	4
+	STATEMENTS
+		Brayden
+		No.
+		Blake
+		Even after everything that I did for you at the last bar?
+		Brayden
+		I don't know what to tell you, man.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Washing Machine
+	STATEMENTS
+		Blake
+		Have I shown you my new washing machine?
+		Brayden
+		Maybe you'll need it for something later.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	Fake ID
+	STATEMENTS
+		Brayden
+		I already have an ID.
+		Blake
+		Yeah, I know -- I brought it to you.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTION
+ENDSNIPPET
