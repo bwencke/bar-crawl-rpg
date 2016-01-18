@@ -79,7 +79,7 @@ public class Controller : MonoBehaviour {
 		GetControlling ().GetComponent<TopLevelController> ().TriggerMovement (input);
 		if (GetControlling () != player) {
 			GameObject.FindGameObjectWithTag("MobileControls").GetComponent<Canvas>().enabled = false;
-			if(controlling != cutscene) {
+			if(GetControlling() != cutscene) {
 				player.GetComponent<TopLevelController> ().TriggerMovement(Vector2.zero);
 			}
 		} else if (GameObject.FindGameObjectWithTag("MobileControls").GetComponent<Canvas>().enabled == false) {
