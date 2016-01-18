@@ -10,6 +10,7 @@ public class StateController : MonoBehaviour {
 	int level;
 
 	public ConversationController conversationController;
+	LevelController levelController;
 
 	// Use this for initialization
 	public void Begin () {
@@ -26,6 +27,9 @@ public class StateController : MonoBehaviour {
 	
 	void LoadDataFromSlot() {
 		if (!PlayerPrefs.HasKey ("save_slot" + saveSlot)) {
+			levelController = GameObject.FindGameObjectWithTag ("level_controller").GetComponent<LevelController> ();
+			conversationController.Init (levelController.GetLevel());
+			level = levelController.GetLevel();
 			GameObject.FindGameObjectWithTag (GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerMovement> ().currentMap).GetComponentsInChildren<AudioObject> () [0].PlayAudio ();
 			GameObject.FindGameObjectWithTag("GameController").GetComponent<Controller>().LoadCutscene("Intro");
 			return;
@@ -33,13 +37,13 @@ public class StateController : MonoBehaviour {
 		string json = PlayerPrefs.GetString ("save_slot" + saveSlot);
 		JSONNode root = JSON.Parse(json);
 
-		LevelController levelController = GameObject.FindGameObjectWithTag ("level_controller").GetComponent<LevelController> ();
+		levelController = GameObject.FindGameObjectWithTag ("level_controller").GetComponent<LevelController> ();
+		conversationController.Init (levelController.GetLevel());
 		level = root ["level"].AsInt;
 		GameObject player = GameObject.FindGameObjectWithTag ("Player");
 		if(levelController.GetLevel() == level) {
 			player.transform.position = new Vector2(root ["position"]["x"].AsFloat, root ["position"]["y"].AsFloat);
 			player.GetComponent<PlayerMovement> ().currentMap = root ["map"];
-			Debug.Log ("map: " + root ["map"]);
 
 			Animator playerAnimator = player.GetComponent<Animator> ();
 			playerAnimator.SetFloat ("input_x", root ["direction"] ["x"].AsFloat);
@@ -53,9 +57,8 @@ public class StateController : MonoBehaviour {
 			level = levelController.GetLevel();
 			levelController.SetDefaultState();
 			player.GetComponent<PlayerMovement> ().currentMap = "map_outside";
-			GameObject.FindGameObjectWithTag("GameController").GetComponent<Controller>().LoadCutscene("Level2Intro");
 		}
-		conversationController.Init (level);
+
 		GameObject.FindGameObjectWithTag (player.GetComponent<PlayerMovement> ().currentMap).GetComponentsInChildren<AudioObject> () [0].PlayAudio ();
 		conversationController.dialogueEngine.printVars ();
 	}
@@ -73,12 +76,13 @@ public class StateController : MonoBehaviour {
 						"\"value\":" + variable.Value.ToString() + 
 					"},";
 			}
+
 			if (variables.Length > 0) {
 				variables = variables.Remove (variables.Length - 1);
 			}
 
 			string result = "{" +
-					"\"level\":" + level + "," +
+					"\"level\":" + levelController.GetLevel() + "," +
 					"\"position\":{" +
 						"\"x\":" + player.transform.position.x + ","+
 						"\"y\":" + player.transform.position.y +
