@@ -12,9 +12,9 @@ public class PlayerMovement : TopLevelController {
 
 	public string currentMap = "map_outside";
 
-	bool isRunning;
-	float lastTime;
-	KeyCode lastKeyCode;
+//	bool isRunning;
+//	float lastTime;
+//	KeyCode lastKeyCode;
 	
 	Vector2 direction = new Vector2(0, 1);
 
@@ -24,8 +24,8 @@ public class PlayerMovement : TopLevelController {
 		rbody = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 
-		isRunning = false;
-		lastTime = -1.0f;
+//		isRunning = false;
+//		lastTime = -1.0f;
 
 	}
 
@@ -50,6 +50,11 @@ public class PlayerMovement : TopLevelController {
 			anim.SetBool ("is_walking", false);
 		}
 
+		bool isRunning = false;
+		if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift)) {
+			isRunning = true;
+		}
+
 		rbody.MovePosition (rbody.position + movement_vector * Time.deltaTime * (isRunning ? 2 : 1));
 
 		if (movement_vector != Vector2.zero) {
@@ -71,26 +76,26 @@ public class PlayerMovement : TopLevelController {
 		GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowAlert ("It is just empty space.");
 	}
 
-	public override void KeyDown() {
-		if (Input.GetKey (lastKeyCode)) {
-			if (Time.time - lastTime < 0.2f) {
-				lastTime = Time.time;
-				isRunning = true;
-				return;
-			}
-		}
-
-		if (Input.GetKeyDown (KeyCode.LeftArrow)) {
-			lastKeyCode = KeyCode.LeftArrow;
-		} else if (Input.GetKeyDown (KeyCode.RightArrow)) {
-			lastKeyCode = KeyCode.RightArrow;
-		} else if (Input.GetKeyDown (KeyCode.UpArrow)) {
-			lastKeyCode = KeyCode.UpArrow;
-		} else if (Input.GetKeyDown (KeyCode.DownArrow)) {
-			lastKeyCode = KeyCode.DownArrow;
-		}
-		lastTime = Time.time;
-		isRunning = false;
-	}
+//	public override void KeyDown() {
+//		if (Input.GetKey (lastKeyCode)) {
+//			if (Time.time - lastTime < 0.2f) {
+//				lastTime = Time.time;
+//				isRunning = true;
+//				return;
+//			}
+//		}
+//
+//		if (Input.GetKeyDown (KeyCode.LeftArrow)) {
+//			lastKeyCode = KeyCode.LeftArrow;
+//		} else if (Input.GetKeyDown (KeyCode.RightArrow)) {
+//			lastKeyCode = KeyCode.RightArrow;
+//		} else if (Input.GetKeyDown (KeyCode.UpArrow)) {
+//			lastKeyCode = KeyCode.UpArrow;
+//		} else if (Input.GetKeyDown (KeyCode.DownArrow)) {
+//			lastKeyCode = KeyCode.DownArrow;
+//		}
+//		lastTime = Time.time;
+//		isRunning = false;
+//	}
 
 }
