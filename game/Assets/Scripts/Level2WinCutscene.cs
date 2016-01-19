@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WinCutscene : CutsceneScript {
+public class Level2WinCutscene : CutsceneScript {
 
 	int position = 0;
 	int numScenes = 2;
@@ -19,10 +19,13 @@ public class WinCutscene : CutsceneScript {
 			canvas.GetComponentInChildren<AudioObject>().PlayAudio();
 			yield return new WaitForSeconds(6);
 			GameObject.FindGameObjectWithTag("WinParticles").GetComponent<ParticleSystem>().Stop();
-			Application.LoadLevel ("Bar2");
+			canvas.GetComponent<Canvas> ().enabled = false;
+			thankYou.GetComponent<Canvas> ().enabled = true;
+			yield return new WaitForSeconds(3);
+			Application.LoadLevel ("MainMenu");
 			break;
 		case(1):
-			yield return new WaitForSeconds(2);
+			yield return new WaitForSeconds(10);
 			break;
 		}
 		yield return null;
