@@ -1,13 +1,25 @@
 fileFormatVersion: 2
 guid: 054152e54c3af41a9858d541c0ba4948
-timeCreated: 1453052680
+timeCreated: 1453165415
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Butcher_0
+    21300002: Butcher_1
+    21300004: Butcher_2
+    21300006: Butcher_3
+    21300008: Butcher_4
+    21300010: Butcher_5
+    21300012: Butcher_6
+    21300014: Butcher_7
+    21300016: Butcher_8
+    21300018: Butcher_9
+    21300020: Butcher_10
+    21300022: Butcher_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -26,11 +38,11 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +50,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +61,227 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Butcher_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -14, y: -15}
+        - {x: -13, y: -16}
+        - {x: 9, y: -16}
+        - {x: 15, y: -13}
+        - {x: 15, y: 16}
+    - name: Butcher_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 16}
+        - {x: -14, y: 16}
+        - {x: -15, y: 15}
+        - {x: -15, y: -12}
+        - {x: -11, y: -16}
+        - {x: 9, y: -16}
+        - {x: 16, y: -10}
+        - {x: 16, y: 6}
+        - {x: 15, y: 15}
+    - name: Butcher_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -14, y: 13}
+        - {x: -14, y: -14}
+        - {x: -7, y: -16}
+        - {x: 12, y: -16}
+        - {x: 15, y: -14}
+        - {x: 15, y: 13}
+        - {x: 13, y: 16}
+    - name: Butcher_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -14, y: 3}
+        - {x: -9, y: -16}
+        - {x: 14, y: -16}
+        - {x: 14, y: 16}
+    - name: Butcher_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -14, y: -12}
+        - {x: -6, y: -16}
+        - {x: 10, y: -16}
+        - {x: 14, y: -6}
+        - {x: 14, y: 16}
+    - name: Butcher_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 16}
+        - {x: -14, y: 16}
+        - {x: -14, y: 3}
+        - {x: -8, y: -16}
+        - {x: 8, y: -16}
+        - {x: 12, y: -10}
+        - {x: 14, y: -5}
+        - {x: 14, y: 15}
+    - name: Butcher_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -14, y: -3}
+        - {x: -8, y: -16}
+        - {x: 9, y: -16}
+        - {x: 14, y: -6}
+        - {x: 14, y: 16}
+    - name: Butcher_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -14, y: 13}
+        - {x: -14, y: -1}
+        - {x: -7, y: -16}
+        - {x: 9, y: -16}
+        - {x: 14, y: -15}
+        - {x: 14, y: 16}
+    - name: Butcher_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -14, y: -3}
+        - {x: -11, y: -10}
+        - {x: -8, y: -15}
+        - {x: -7, y: -16}
+        - {x: 8, y: -16}
+        - {x: 12, y: -10}
+        - {x: 14, y: -1}
+        - {x: 14, y: 16}
+    - name: Butcher_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 16}
+        - {x: -11, y: 16}
+        - {x: -14, y: 14}
+        - {x: -14, y: -12}
+        - {x: -7, y: -16}
+        - {x: 11, y: -16}
+        - {x: 12, y: -15}
+        - {x: 15, y: -5}
+        - {x: 15, y: 14}
+    - name: Butcher_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -14, y: -12}
+        - {x: -9, y: -16}
+        - {x: 13, y: -16}
+        - {x: 15, y: -12}
+        - {x: 15, y: 16}
+    - name: Butcher_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -14, y: 13}
+        - {x: -14, y: 0}
+        - {x: -13, y: -10}
+        - {x: -8, y: -16}
+        - {x: 7, y: -16}
+        - {x: 15, y: -12}
+        - {x: 15, y: 13}
+        - {x: 13, y: 16}
     outline: []
   spritePackingTag: 
   userData: 
