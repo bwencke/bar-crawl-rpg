@@ -14,11 +14,11 @@ public class Level2IntroCutscene : CutsceneScript {
 	int count;
 
 	public override void LoadResults () {
-		Brayden.SetPosition(new Vector2(-11.41f, -5.28f));
+		Brayden.SetPosition(new Vector2(-11.56f, -5.28f));
 		Brayden.SetDirection(new Vector2(0, 1));
-		Josh.SetPosition(new Vector2 (-11.0f, -4.72f));
+		Josh.SetPosition(new Vector2 (-11.15f, -4.72f));
 		Josh.SetDirection(new Vector2(0, -1));
-		Cassidy.SetPosition(new Vector2 (-11.25f, -4.67f));
+		Cassidy.SetPosition(new Vector2 (-11.40f, -4.67f));
 		Cassidy.SetDirection(new Vector2(0, -1));
 		Destroy(Blake);
 	}

@@ -13,12 +13,15 @@ public class NPCController : ColliderController {
 
 	Vector2 movement_vector;
 
+	float speed;
+
 	void Start() {
 
 		rbody = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 
 		movement_vector = Vector2.zero;
+		speed = 1.0f;
 
 		if (anim != null) {
 			gameObject.GetComponent<Animator> ().SetFloat ("input_x", 0);
@@ -40,7 +43,7 @@ public class NPCController : ColliderController {
 			anim.SetBool("is_walking", false);
 		}
 
-		rbody.MovePosition (rbody.position + movement_vector * Time.deltaTime);
+		rbody.MovePosition (rbody.position + movement_vector * Time.deltaTime * speed);
 	}
 
 	public override void TriggerPrimaryAction() {
@@ -59,24 +62,41 @@ public class NPCController : ColliderController {
 	}
 
 	public IEnumerator MoveDown(float distance) {
-		yield return StartCoroutine (Move (new Vector2 (0, -1), distance));
+		yield return StartCoroutine (Move (new Vector2 (0, -1), distance, 1));
 	}
 
 	public IEnumerator MoveLeft(float distance) {
-		yield return StartCoroutine (Move (new Vector2 (-1, 0), distance));
+		yield return StartCoroutine (Move (new Vector2 (-1, 0), distance, 1));
 	}
 
 	public IEnumerator MoveUp(float distance) {
-		yield return StartCoroutine (Move (new Vector2 (0, 1), distance));
+		yield return StartCoroutine (Move (new Vector2 (0, 1), distance, 1));
 	}
 	
 	public IEnumerator MoveRight(float distance) {
-		yield return StartCoroutine (Move (new Vector2 (1, 0), distance));
+		yield return StartCoroutine (Move (new Vector2 (1, 0), distance, 1));
 	}
 
-	public IEnumerator Move(Vector2 direction, float distance) {
+	public IEnumerator MoveDown(float distance, float speed) {
+		yield return StartCoroutine (Move (new Vector2 (0, -1), distance, speed));
+	}
+
+	public IEnumerator MoveLeft(float distance, float speed) {
+		yield return StartCoroutine (Move (new Vector2 (-1, 0), distance, speed));
+	}
+
+	public IEnumerator MoveUp(float distance, float speed) {
+		yield return StartCoroutine (Move (new Vector2 (0, 1), distance, speed));
+	}
+
+	public IEnumerator MoveRight(float distance, float speed) {
+		yield return StartCoroutine (Move (new Vector2 (1, 0), distance, speed));
+	}
+
+	public IEnumerator Move(Vector2 direction, float distance, float speed) {
 		Vector2 initial_position = rbody.position;
 		movement_vector = direction*1.5f;
+		this.speed = speed;
 		while (Mathf.Abs(initial_position.x - rbody.position.x) < distance*.3f &&
 		       (Mathf.Abs(initial_position.y - rbody.position.y) < distance*.3f)) {
 			yield return null;
