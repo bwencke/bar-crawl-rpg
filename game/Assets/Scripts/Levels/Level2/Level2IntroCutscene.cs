@@ -20,6 +20,7 @@ public class Level2IntroCutscene : CutsceneScript {
 		Josh.SetDirection(new Vector2(0, -1));
 		Cassidy.SetPosition(new Vector2 (-11.25f, -4.67f));
 		Cassidy.SetDirection(new Vector2(0, -1));
+		Destroy(Blake);
 	}
 	
 	public override IEnumerator Next (System.Action callback) {

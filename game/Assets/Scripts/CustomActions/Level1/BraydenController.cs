@@ -24,10 +24,10 @@ public class BraydenController : ColliderController {
 
 	public IEnumerator actuallyMove() {
 		yield return StartCoroutine(Brayden.MoveDown(0.1f));
-		yield return StartCoroutine(Brayden.MoveLeft(3f));
+		yield return StartCoroutine(Brayden.MoveLeft(2f));
 		yield return StartCoroutine(Brayden.MoveUp(1f));
 		GameObject.FindGameObjectWithTag ("DoorSound").GetComponent<AudioObject> ().PlayAudio();
-		Brayden.SetPosition (new Vector2 (-6f, -8f));
-		Brayden.SetDirection(new Vector2(0, -1));
+		Brayden.SetPosition (new Vector2 (-33.117f, 0.657f));
+		Brayden.SetDirection(new Vector2(-1, 0));
 	}
 }

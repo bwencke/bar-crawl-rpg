@@ -30,14 +30,14 @@ public class Level2Controller : LevelController {
 		}
 
 		if (conversationController.dialogueEngine.checkVar ("WearingMoustache") && conversationController.dialogueEngine.checkVar ("WearingSunglasses")) {
-			GameObject.FindGameObjectWithTag("Player").GetComponent<Image>().sprite = (Sprite) Resources.Load ("Images/BlakeDisguise", typeof(Sprite));
+			GameObject.FindGameObjectWithTag("PlayerImage").GetComponent<Image>().sprite = (Sprite) Resources.Load ("Images/BlakeDisguise", typeof(Sprite));
 			GameObject.Find("Tail").GetComponent<InventoryItemController>().Disable();
 			GameObject.Find("Sunglasses").GetComponent<InventoryItemController>().Disable();
 		} else if (conversationController.dialogueEngine.checkVar ("WearingMoustache")) {
-			GameObject.FindGameObjectWithTag("Player").GetComponent<Image>().sprite = (Sprite) Resources.Load ("Images/BlakeMoustache", typeof(Sprite));
+			GameObject.FindGameObjectWithTag("PlayerImage").GetComponent<Image>().sprite = (Sprite) Resources.Load ("Images/BlakeMoustache", typeof(Sprite));
 			GameObject.Find("Tail").GetComponent<InventoryItemController>().Disable();
 		} else if (conversationController.dialogueEngine.checkVar ("WearingSunglasses")) {
-			GameObject.FindGameObjectWithTag("Player").GetComponent<Image>().sprite = (Sprite) Resources.Load ("Images/BlakeSunglasses", typeof(Sprite));
+			GameObject.FindGameObjectWithTag("PlayerImage").GetComponent<Image>().sprite = (Sprite) Resources.Load ("Images/BlakeSunglasses", typeof(Sprite));
 			GameObject.Find("Sunglasses").GetComponent<InventoryItemController>().Disable();
 		}
 
