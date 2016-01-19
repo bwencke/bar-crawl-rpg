@@ -189,6 +189,9 @@ SNIPPET
 	11
 	ASSIGNMENTS
 		MoneyWillBuyID=TRUE
+		NeedsPassword=FALSE
+		NeedsSunglasses=TRUE
+		NeedsMoustache=TRUE
 	ENDASSIGNMENTS
 	STATEMENTS
 		Salesman
