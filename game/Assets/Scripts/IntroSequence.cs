@@ -12,7 +12,7 @@ public class IntroSequence : MonoBehaviour {
 
 	IEnumerator Go() {
 		GameObject.FindGameObjectWithTag ("Title").GetComponent<Canvas> ().enabled = true;
-		yield return new WaitForSeconds (1);
+		yield return new WaitForSeconds (2.5f);
 		GameObject.FindGameObjectWithTag ("Title").GetComponent<Canvas> ().enabled = false;
 		stateController.Begin ();
 	}

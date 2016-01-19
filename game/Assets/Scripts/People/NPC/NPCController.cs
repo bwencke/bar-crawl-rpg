@@ -20,12 +20,17 @@ public class NPCController : ColliderController {
 
 		movement_vector = Vector2.zero;
 
-		gameObject.GetComponent<Animator>().SetFloat("input_x", 0);
-		gameObject.GetComponent<Animator>().SetFloat("input_y", -1);
-		gameObject.GetComponent<Animator>().SetBool("is_walking", false);
+		if (anim != null) {
+			gameObject.GetComponent<Animator> ().SetFloat ("input_x", 0);
+			gameObject.GetComponent<Animator> ().SetFloat ("input_y", -1);
+			gameObject.GetComponent<Animator> ().SetBool ("is_walking", false);
+		}
 	}
 
 	void Update() {
+		if (anim == null) {
+			return;
+		}
 
 		if (movement_vector != Vector2.zero) {
 			anim.SetBool ("is_walking", true);
@@ -84,6 +89,9 @@ public class NPCController : ColliderController {
 	}
 
 	public void SetDirection(Vector2 direction) {
+		if (anim == null) {
+			return;
+		}
 		anim.SetFloat ("input_x", direction.x);
 		anim.SetFloat ("input_y", direction.y);
 	}

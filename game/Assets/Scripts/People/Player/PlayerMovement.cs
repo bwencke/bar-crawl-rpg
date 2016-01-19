@@ -65,9 +65,10 @@ public class PlayerMovement : TopLevelController {
 				Debug.Log (hit.collider.gameObject.name);
 				//Debug.Log("You can't do anything with this object!");
 				hit.collider.gameObject.GetComponent<ColliderController>().TriggerPrimaryAction();
-				break;
+				return;
 			}
 		}
+		GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowAlert ("It is just empty space.");
 	}
 
 	public override void KeyDown() {
