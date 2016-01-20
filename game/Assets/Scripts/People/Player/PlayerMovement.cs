@@ -12,9 +12,9 @@ public class PlayerMovement : TopLevelController {
 
 	public string currentMap = "map_outside";
 
-	bool isRunning;
-	float lastTime;
-	KeyCode lastKeyCode;
+//	bool isRunning;
+//	float lastTime;
+//	KeyCode lastKeyCode;
 	
 	Vector2 direction = new Vector2(0, 1);
 
@@ -24,12 +24,13 @@ public class PlayerMovement : TopLevelController {
 		rbody = GetComponent<Rigidbody2D> ();
 		anim = GetComponent<Animator> ();
 
-		isRunning = false;
-		lastTime = -1.0f;
+//		isRunning = false;
+//		lastTime = -1.0f;
 
 	}
 
 	public override void TriggerMovement(Vector2 movement_vector) {
+
 		Vector2 prevDirection = new Vector2 (direction.x, direction.y);
 		if (movement_vector != Vector2.zero) {
 			anim.SetBool ("is_walking", true);
@@ -48,7 +49,12 @@ public class PlayerMovement : TopLevelController {
 		} else {
 			anim.SetBool ("is_walking", false);
 		}
-		
+
+		bool isRunning = false;
+		if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift)) {
+			isRunning = true;
+		}
+
 		rbody.MovePosition (rbody.position + movement_vector * Time.deltaTime * (isRunning ? 2 : 1));
 
 		if (movement_vector != Vector2.zero) {
@@ -64,31 +70,32 @@ public class PlayerMovement : TopLevelController {
 				Debug.Log (hit.collider.gameObject.name);
 				//Debug.Log("You can't do anything with this object!");
 				hit.collider.gameObject.GetComponent<ColliderController>().TriggerPrimaryAction();
-				break;
-			}
-		}
-	}
-
-	public override void KeyDown() {
-		if (Input.GetKey (lastKeyCode)) {
-			if (Time.time - lastTime < 0.2f) {
-				lastTime = Time.time;
-				isRunning = true;
 				return;
 			}
 		}
-
-		if (Input.GetKeyDown (KeyCode.LeftArrow)) {
-			lastKeyCode = KeyCode.LeftArrow;
-		} else if (Input.GetKeyDown (KeyCode.RightArrow)) {
-			lastKeyCode = KeyCode.RightArrow;
-		} else if (Input.GetKeyDown (KeyCode.UpArrow)) {
-			lastKeyCode = KeyCode.UpArrow;
-		} else if (Input.GetKeyDown (KeyCode.DownArrow)) {
-			lastKeyCode = KeyCode.DownArrow;
-		}
-		lastTime = Time.time;
-		isRunning = false;
+		GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowAlert ("It is just empty space.");
 	}
+
+//	public override void KeyDown() {
+//		if (Input.GetKey (lastKeyCode)) {
+//			if (Time.time - lastTime < 0.2f) {
+//				lastTime = Time.time;
+//				isRunning = true;
+//				return;
+//			}
+//		}
+//
+//		if (Input.GetKeyDown (KeyCode.LeftArrow)) {
+//			lastKeyCode = KeyCode.LeftArrow;
+//		} else if (Input.GetKeyDown (KeyCode.RightArrow)) {
+//			lastKeyCode = KeyCode.RightArrow;
+//		} else if (Input.GetKeyDown (KeyCode.UpArrow)) {
+//			lastKeyCode = KeyCode.UpArrow;
+//		} else if (Input.GetKeyDown (KeyCode.DownArrow)) {
+//			lastKeyCode = KeyCode.DownArrow;
+//		}
+//		lastTime = Time.time;
+//		isRunning = false;
+//	}
 
 }

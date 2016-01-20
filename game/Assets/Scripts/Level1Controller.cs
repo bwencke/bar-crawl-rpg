@@ -25,12 +25,12 @@ public class Level1Controller : LevelController {
 		if (conversationController.dialogueEngine.checkVar ("BraydenIDReturned")) {
 			GameObject.FindGameObjectWithTag ("BraydensID").GetComponent<InventoryItemController> ().Disable ();
 			NPCController brayden = GameObject.FindGameObjectWithTag("Brayden").GetComponent<NPCController>();
-			brayden.SetPosition (new Vector2 (-6f, -8f));
-			brayden.SetDirection(new Vector2(0, -1));
+			brayden.SetPosition (new Vector2 (-33.117f, 0.657f));
+			brayden.SetDirection(new Vector2(-1, 0));
 		}
 		if (conversationController.dialogueEngine.checkVar ("ShowedID")) {
 			NPCController bouncer = GameObject.FindGameObjectWithTag("Bouncer").GetComponent<NPCController>();
-			bouncer.SetPosition (new Vector2 (9.5f, -8.98f));
+			bouncer.SetPosition (new Vector2 (-17.62f, -0.05f));
 			bouncer.SetDirection(new Vector2(0, -1));
 		}
 		if (conversationController.dialogueEngine.checkVar ("HasMoney")) {

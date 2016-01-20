@@ -160,7 +160,7 @@ SNIPPET
 		Hypothetically, only trustworthy people can get the password.
 		Blake
 		I'm trustworthy.
-		Saleman
+		Salesman
 		Hmm, I don't know. You've got a "police" look about you.
 	ENDSTATEMENTS
 	OPTION
@@ -189,6 +189,9 @@ SNIPPET
 	11
 	ASSIGNMENTS
 		MoneyWillBuyID=TRUE
+		NeedsPassword=FALSE
+		NeedsSunglasses=TRUE
+		NeedsMoustache=TRUE
 	ENDASSIGNMENTS
 	STATEMENTS
 		Salesman

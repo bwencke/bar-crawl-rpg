@@ -19,14 +19,10 @@ public class WinCutscene : CutsceneScript {
 			canvas.GetComponentInChildren<AudioObject>().PlayAudio();
 			yield return new WaitForSeconds(6);
 			GameObject.FindGameObjectWithTag("WinParticles").GetComponent<ParticleSystem>().Stop();
-			canvas.GetComponent<Canvas> ().enabled = false;
-			thankYou.GetComponent<Canvas> ().enabled = true;
-			yield return new WaitForSeconds(3);
 			Application.LoadLevel ("Bar2");
 			break;
 		case(1):
-			Debug.LogError("POO");
-			yield return new WaitForSeconds(10);
+			yield return new WaitForSeconds(2);
 			break;
 		}
 		yield return null;

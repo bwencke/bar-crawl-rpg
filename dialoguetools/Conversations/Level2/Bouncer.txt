@@ -127,7 +127,7 @@ SNIPPET
 	OPTION
 		CONDITIONS
 			WearingMoustache=TRUE
-			WearingSunglesses=TRUE
+			WearingSunglasses=TRUE
 		ENDCONDITIONS
 		JUMP
 		8
@@ -135,7 +135,7 @@ SNIPPET
 	OPTION
 		CONDITIONS
 			WearingMoustache=FALSE
-			WearingSunglesses=TRUE
+			WearingSunglasses=TRUE
 		ENDCONDITIONS
 		JUMP
 		9
@@ -143,7 +143,7 @@ SNIPPET
 	OPTION
 		CONDITIONS
 			WearingMoustache=TRUE
-			WearingSunglesses=FALSE
+			WearingSunglasses=FALSE
 		ENDCONDITIONS
 		JUMP
 		10
@@ -151,7 +151,7 @@ SNIPPET
 	OPTION
 		CONDITIONS
 			WearingMoustache=FALSE
-			WearingSunglesses=FALSE
+			WearingSunglasses=FALSE
 		ENDCONDITIONS
 		JUMP
 		11

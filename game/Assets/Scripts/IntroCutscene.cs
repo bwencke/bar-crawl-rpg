@@ -13,12 +13,12 @@ public class IntroCutscene : CutsceneScript {
 	int count;
 
 	public override void LoadResults () {
-		Brayden.SetPosition(new Vector2(11.0f, -9.0f));
+		Brayden.SetPosition(new Vector2(-16.47f, -0.29f));
 		Brayden.SetDirection(new Vector2(0, -1));
-		Josh.SetPosition(new Vector2 (-6.5f, -8.1f));
+		Josh.SetPosition(new Vector2 (-33.632f, 0.798f));
 		Josh.SetDirection(new Vector2(0, -1));
-		Cassidy.SetPosition(new Vector2 (-6.3f, -8.5f));
-		Cassidy.SetDirection(new Vector2(0, 1));
+		Cassidy.SetPosition(new Vector2 (-33.389f, 0.794f));
+		Cassidy.SetDirection(new Vector2(0, -1));
 	}
 
 	public override IEnumerator Next (System.Action callback) {

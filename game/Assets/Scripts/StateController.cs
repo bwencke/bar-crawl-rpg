@@ -98,6 +98,7 @@ public class StateController : MonoBehaviour {
 					"]" +
 				"}";
 
+			Debug.Log(result);
 			PlayerPrefs.SetString ("save_slot" + saveSlot, result);
 
 			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowAlert ("Successfully saved game.");

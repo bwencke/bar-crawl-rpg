@@ -1,13 +1,25 @@
 fileFormatVersion: 2
 guid: 01203a517895c4519a9cbd3ead427981
-timeCreated: 1453052680
+timeCreated: 1453126210
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Child_0
+    21300002: Child_1
+    21300004: Child_2
+    21300006: Child_3
+    21300008: Child_4
+    21300010: Child_5
+    21300012: Child_6
+    21300014: Child_7
+    21300016: Child_8
+    21300018: Child_9
+    21300020: Child_10
+    21300022: Child_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -26,11 +38,11 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +50,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +61,231 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Child_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -14, y: 14}
+        - {x: -14, y: -16}
+        - {x: 9, y: -16}
+        - {x: 15, y: -13}
+        - {x: 15, y: 15}
+        - {x: 12, y: 16}
+    - name: Child_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 16}
+        - {x: -15, y: 16}
+        - {x: -15, y: -10}
+        - {x: -11, y: -16}
+        - {x: 10, y: -16}
+        - {x: 16, y: -11}
+        - {x: 16, y: 3}
+        - {x: 14, y: 14}
+    - name: Child_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -14, y: 15}
+        - {x: -14, y: -14}
+        - {x: -12, y: -16}
+        - {x: 14, y: -16}
+        - {x: 15, y: -15}
+        - {x: 15, y: 16}
+    - name: Child_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -14, y: 14}
+        - {x: -14, y: 7}
+        - {x: -12, y: -3}
+        - {x: -7, y: -15}
+        - {x: -6, y: -16}
+        - {x: 9, y: -16}
+        - {x: 12, y: -6}
+        - {x: 12, y: 12}
+        - {x: 10, y: 16}
+    - name: Child_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -14, y: 14}
+        - {x: -14, y: -3}
+        - {x: -7, y: -16}
+        - {x: 7, y: -16}
+        - {x: 12, y: -5}
+        - {x: 12, y: 14}
+        - {x: 11, y: 16}
+    - name: Child_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -14, y: -1}
+        - {x: -10, y: -16}
+        - {x: 8, y: -16}
+        - {x: 12, y: -14}
+        - {x: 12, y: 16}
+    - name: Child_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 16}
+        - {x: -12, y: 13}
+        - {x: -12, y: -2}
+        - {x: -9, y: -16}
+        - {x: 9, y: -16}
+        - {x: 14, y: 3}
+        - {x: 14, y: 16}
+    - name: Child_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 16}
+        - {x: -12, y: -3}
+        - {x: -11, y: -15}
+        - {x: -8, y: -16}
+        - {x: 8, y: -16}
+        - {x: 11, y: -10}
+        - {x: 14, y: 11}
+        - {x: 14, y: 16}
+    - name: Child_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 16}
+        - {x: -9, y: 16}
+        - {x: -12, y: 14}
+        - {x: -12, y: -5}
+        - {x: -10, y: -16}
+        - {x: 8, y: -16}
+        - {x: 11, y: -10}
+        - {x: 14, y: 11}
+        - {x: 14, y: 14}
+    - name: Child_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 16}
+        - {x: -12, y: 16}
+        - {x: -13, y: 15}
+        - {x: -13, y: -12}
+        - {x: -7, y: -16}
+        - {x: 12, y: -16}
+        - {x: 14, y: -9}
+        - {x: 14, y: 13}
+    - name: Child_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -13, y: -8}
+        - {x: -7, y: -16}
+        - {x: 8, y: -16}
+        - {x: 14, y: -9}
+        - {x: 14, y: 14}
+        - {x: 13, y: 16}
+    - name: Child_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -13, y: 13}
+        - {x: -13, y: -11}
+        - {x: -6, y: -16}
+        - {x: 8, y: -16}
+        - {x: 14, y: -11}
+        - {x: 14, y: 16}
     outline: []
   spritePackingTag: 
   userData: 

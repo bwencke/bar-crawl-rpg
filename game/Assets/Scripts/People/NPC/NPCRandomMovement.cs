@@ -53,7 +53,7 @@ public class NPCRandomMovement : MonoBehaviour {
 
 		NPCController npcc = GetComponent<NPCController> ();
 		if (Mathf.Abs (rbody.position.x + movement_vector.x - initial_position.x) < range + 0.1 && Mathf.Abs (rbody.position.y + movement_vector.y - initial_position.y) < range + 0.1) {
-			StartCoroutine (npcc.Move (movement_vector, 1.0f));
+			StartCoroutine (npcc.Move (movement_vector, 1.0f, 1.0f));
 		}
 
 		Invoke ("Idle", Random.Range (0.25f, 0.5f));

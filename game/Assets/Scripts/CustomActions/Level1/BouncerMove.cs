@@ -22,7 +22,6 @@ public class BouncerMove : ColliderController {
 	}
 
 	public IEnumerator actuallyMove() {
-		yield return StartCoroutine(Bouncer.MoveDown(0.1f));
 		yield return StartCoroutine(Bouncer.MoveLeft(1.5f));
 		Bouncer.SetDirection(new Vector2(0, -1));
 	}
