@@ -17,7 +17,8 @@ public class Crockett : ColliderController {
 	public void AddHat() {
 		ConversationController conversationController = GameObject.FindGameObjectWithTag ("Conversation").GetComponent<ConversationController> ();
 		if (conversationController.dialogueEngine.checkVar ("HasHat")) {
-			conversationController.dialogueEngine.setVar ("HasBear", false);
+			// Note: Don't set this variable to false; otherise, you can get the bear from the child again
+			// conversationController.dialogueEngine.setVar ("HasBear", false);
 			GameObject.Find ("Bear").GetComponent<InventoryItemController> ().Disable ();
 			GameObject.Find ("Hat").GetComponent<InventoryItemController> ().Enable ();
 			GameObject.FindGameObjectWithTag ("SuccessChime").GetComponent<AudioObject> ().PlayAudio ();
@@ -29,7 +30,7 @@ public class Crockett : ColliderController {
 	}
 
 	IEnumerator CrockettLeave() {
-		yield return StartCoroutine(GameObject.Find("Crockett").GetComponent<NPCController>().MoveUp(5, 3));
+		yield return StartCoroutine(GameObject.Find("Crockett").GetComponent<NPCController>().MoveUp(10f, 3f));
 		Destroy (GameObject.Find ("Crockett"));
 	}
 }

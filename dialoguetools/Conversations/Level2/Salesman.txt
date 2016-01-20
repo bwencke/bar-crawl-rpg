@@ -84,6 +84,9 @@ ENDSNIPPET
 SNIPPET
 	6
 	OPTION
+		CONDITIONS
+			MoneyWillBuyID=FALSE
+		ENDCONDITIONS
 		Can I buy a fake ID?
 		7
 	ENDOPTION
@@ -212,6 +215,8 @@ SNIPPET
 		For you, my friend, I could bring the price all the way down to $76.
 		Salesman
 		Only for you! Because we are such good friends!
+		Blake
+		OK, I'll think about it. I'll give you the money if I decide to buy the ID.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
@@ -252,7 +257,7 @@ SNIPPET
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		6
+		END
 	ENDOPTION
 ENDSNIPPET
 

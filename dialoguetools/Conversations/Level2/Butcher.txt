@@ -31,7 +31,7 @@ SNIPPET
 		CONDITIONS
 			NeedsMoustache=TRUE
 		ENDCONDITIONS
-		Where might I find a moustache?
+		Do you know where I could find a moustache?
 		6
 	ENDOPTION
 	OPTION
@@ -99,13 +99,21 @@ ENDSNIPPET
 
 SNIPPET
 	6
+	ASSIGNMENTS
+		HasTail=TRUE
+		NeedsMoustache=FALSE
+	ENDASSIGNMENTS
 	STATEMENTS
 		Butcher
-		Clearly not on either of our faces.
+		The tail on the beautiful hat you're carrying might pass as a moustache.
+		Butcher
+		I'll chop the tail off if you let me keep the rest of the hat.
+		Blake
+		It's a deal.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
-		2
+		END
 	ENDOPTION
 ENDSNIPPET
 
@@ -125,6 +133,38 @@ ENDSNIPPET
 
 SNIPPET
 	Hat
+	OPTION
+		CONDITIONS
+			NeedsMoustache=FALSE
+		ENDCONDITIONS
+		JUMP
+		8
+	ENDOPTION
+	OPTION
+		CONDITIONS
+			NeedsMoustache=TRUE
+		ENDCONDITIONS
+		JUMP
+		9
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	8
+	STATEMENTS
+		Butcher
+		Would you like me to chop this in half?
+		Blake
+		I don't have a compelling reason for you to do that, but maybe later.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		2
+	ENDOPTIONS
+ENDSNIPPET
+
+SNIPPET
+	9
 	ASSIGNMENTS
 		HasTail=TRUE
 		NeedsMoustache=FALSE
@@ -133,7 +173,9 @@ SNIPPET
 		Butcher
 		Ah, something to chop! I'll give you the tail if I can keep the rest of the hat.
 		Blake
-		It's a deal.
+		It's a deal. Do you think the tail would make a convincing moustache?
+		Butcher
+		Do you think the rabbit pelt on my head makes a convincing set of hair?
 	ENDSTATEMENTS
 	OPTION
 		JUMP
@@ -181,7 +223,7 @@ SNIPPET
 	Sunglasses
 	STATEMENTS
 		Butcher
-		I don't think you want me to chop those in half.
+		I don't think you want me to chop these in half.
 	ENDSTATEMENTS
 	OPTION
 		JUMP

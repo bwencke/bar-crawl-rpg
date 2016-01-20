@@ -307,7 +307,7 @@ SNIPPET
 		Child
 		That's an awesome hat! Wait, where did Cuddles go?
 		Blake
-		Uhh, he's in the bar drinking a martini.
+		Uhh, he's in the bar drinking bourbon.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
