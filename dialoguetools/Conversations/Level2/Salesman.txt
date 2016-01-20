@@ -105,6 +105,13 @@ SNIPPET
 		14
 	ENDOPTION
 	OPTION
+		CONDITIONS
+			NeedsMoney=TRUE
+		ENDCONDITIONS
+		Can I borrow some money for a beer?
+		15
+	ENDOPTION
+	OPTION
 		See ya.
 		END
 	ENDOPTION
@@ -193,8 +200,6 @@ SNIPPET
 	ASSIGNMENTS
 		MoneyWillBuyID=TRUE
 		NeedsPassword=FALSE
-		NeedsSunglasses=TRUE
-		NeedsMoustache=TRUE
 	ENDASSIGNMENTS
 	STATEMENTS
 		Salesman
@@ -284,6 +289,22 @@ SNIPPET
 		I don't have that kind of money. Or any money.
 		Salesman
 		Then no sunglasses, sorry.
+	ENDSTATEMENTS
+	OPTION
+		JUMP
+		6
+	ENDOPTION
+ENDSNIPPET
+
+SNIPPET
+	15
+	STATEMENTS
+		Salesman
+		That doesn't sound like a sound investment.
+		Blake
+		C'mon, man, you took all my money.
+		Salesman
+		Sorry, a deal's a deal.
 	ENDSTATEMENTS
 	OPTION
 		JUMP
