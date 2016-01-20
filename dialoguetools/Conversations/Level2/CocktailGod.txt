@@ -289,7 +289,7 @@ SNIPPET
 	Washing Machine
 	STATEMENTS
 		Blake
-		Any drink recipies require a washing machine?
+		Any drink recipes require a washing machine?
 		Cocktail God
 		NONE THAT I KNOW, AND I KNOW ALL.
 	ENDSTATEMENTS
