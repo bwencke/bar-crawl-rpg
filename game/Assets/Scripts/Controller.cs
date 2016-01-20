@@ -16,8 +16,10 @@ public class Controller : MonoBehaviour {
 	public GameObject conversation;
 	private GameObject cutscene;
 	private GameObject controlling;
-	
+
 	private System.Action<string, Object> callback = null;
+
+	private bool conversing = false;
 
 	// Use this for initialization
 	void Start () {
@@ -130,12 +132,17 @@ public class Controller : MonoBehaviour {
 	}
 
 	void DetectInventoryButton() {
-		if (GetControlling () == player || GetControlling () == inventory) {
+		if (GetControlling () == player) {
 			if (Input.GetKeyDown (KeyCode.E)) {
 				googleAnalytics.LogEvent (new EventHitBuilder ()
 				                         .SetEventCategory ("E")
 				                         .SetEventAction (GetControlling () == inventory ? "Close Inventory" : "Open Inventory"));
-				AccessInventory(UseItemOnSelf);
+
+				AccessInventory (UseItemOnSelf);
+			}
+		} else if (GetControlling () == inventory) {
+			if (Input.GetKeyDown (KeyCode.E)) {
+				ToggleInventory ();
 			}
 		}
 	}
@@ -150,6 +157,15 @@ public class Controller : MonoBehaviour {
 	}
 
 	public void ToggleInventory() {
+		GameObject xbutton1 = GameObject.FindGameObjectWithTag ("CloseInventoryButton");
+		GameObject xbutton2 = GameObject.FindGameObjectWithTag ("CloseInventoryButtonX");
+		if (conversing) {
+			xbutton1.GetComponent<Image> ().enabled = false;
+			xbutton2.GetComponent<Text> ().enabled = false;
+			if (inventory.GetComponent<Canvas> ().enabled) {
+				return;
+			}
+		}
 		if (inventory.GetComponent<Canvas> ().enabled) {
 			inventory.GetComponent<InventoryController> ().ClearInventory ();
 		} else {
@@ -169,7 +185,18 @@ public class Controller : MonoBehaviour {
 		this.callback = callback;
 	}
 
+	public void AccessInventory(System.Action<string, Object> callback, string id) {
+		conversing = true;
+		AccessInventory (callback);
+	}
+
 	public void AccessInventoryItem(string itemName) {
+		conversing = false;
+		GameObject xbutton1 = GameObject.FindGameObjectWithTag ("CloseInventoryButton");
+		GameObject xbutton2 = GameObject.FindGameObjectWithTag ("CloseInventoryButtonX");
+		xbutton1.GetComponent<Image> ().enabled = true;
+		xbutton2.GetComponent<Text> ().enabled = true;
+
 		if (callback != null) {
 			Object o = new Option();
 			o.name = "true";

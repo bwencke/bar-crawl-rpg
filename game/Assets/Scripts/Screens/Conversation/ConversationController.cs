@@ -124,7 +124,7 @@ public class ConversationController : TopLevelController {
 			controller.StopConversation ();
 			return;
 		} else if (id == "Inventory") {
-			controller.AccessInventory(ChooseOptionO);
+			controller.AccessInventory(ChooseOptionO, id);
 			return;
 		}
 		if (dialogueEngine.getSnippet (NPCName, id) == null) {
