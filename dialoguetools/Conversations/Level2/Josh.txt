@@ -63,6 +63,12 @@ SNIPPET
 		I don't know, bro. The score looks kind of blurry.
 		Blake
 		Dude, this is only the second bar we've been to!
+		Josh
+		Relax, I only had, like, two and half drinks at the last bar. I think.
+		Blake
+		You'll never make it to all the bars! You need to take this seriously!
+		Josh
+		We're here to <burp> have a good time, bro. Chill.
 	ENDSTATEMENTS
 	OPTION
 		JUMP

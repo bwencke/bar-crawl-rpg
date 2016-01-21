@@ -77,6 +77,12 @@ SNIPPET
 	STATEMENTS
 		Cassidy
 		Sorry, Blake, I only brought exactly enough money for me and Josh.
+		Blake
+		C'mon, you don't even have credit cards? I'm good for it.
+		Cassidy
+		I don't. Do you?
+		Blake
+		I've been applying!
 	ENDSTATEMENTS
 	OPTION
 		JUMP
