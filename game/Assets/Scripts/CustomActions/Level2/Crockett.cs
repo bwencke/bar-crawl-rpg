@@ -22,7 +22,7 @@ public class Crockett : ColliderController {
 			GameObject.Find ("Bear").GetComponent<InventoryItemController> ().Disable ();
 			GameObject.Find ("Hat").GetComponent<InventoryItemController> ().Enable ();
 			GameObject.FindGameObjectWithTag ("SuccessChime").GetComponent<AudioObject> ().PlayAudio ();
-			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowStaticAlert ("Hat added to your inventory!");
+			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowStaticAlert ("Hat added to inventory.");
 			StartCoroutine (CrockettLeave ());
 		} else {
 			GameObject.Find ("Crockett").GetComponent<NPCRandomMovement> ().Resume ();

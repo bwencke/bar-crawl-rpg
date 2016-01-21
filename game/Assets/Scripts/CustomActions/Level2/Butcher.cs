@@ -18,7 +18,7 @@ public class Butcher : ColliderController {
 			GameObject.Find("Hat").GetComponent<InventoryItemController>().Disable();
 			GameObject.Find("Tail").GetComponent<InventoryItemController>().Enable();
 			GameObject.FindGameObjectWithTag ("SuccessChime").GetComponent<AudioObject> ().PlayAudio();
-			GameObject.FindGameObjectWithTag("Alert").GetComponent<AlertController>().ShowStaticAlert("Tail added to your inventory!");
+			GameObject.FindGameObjectWithTag("Alert").GetComponent<AlertController>().ShowStaticAlert("Tail added to inventory.");
 		}
 	}
 }

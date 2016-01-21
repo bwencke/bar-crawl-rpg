@@ -18,7 +18,7 @@ public class InventoryItemController : MonoBehaviour {
 	}
 
 	public virtual void UseItemOnSelf() {
-		GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowAlert("I don't think I can do that!");
+		GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowAlert("I don't think I can do that.");
 	}
 
 }

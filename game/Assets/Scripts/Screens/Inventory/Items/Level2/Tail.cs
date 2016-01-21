@@ -12,10 +12,10 @@ public class Tail : InventoryItemController {
 		GameObject.FindGameObjectWithTag ("SuccessChime").GetComponent<AudioObject> ().PlayAudio ();
 
 		if (conversationController.dialogueEngine.checkVar ("WearingSunglasses")) {
-			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowStaticAlert("Congratulations! Your disguise is complete!");
+			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowStaticAlert("Now I look exactly like Harvey Kevork.");
 			playerImage.sprite = (Sprite) Resources.Load ("Images/BlakeDisguise", typeof(Sprite));
 		} else {
-			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowStaticAlert("You adhered the tail to your face like a moustache.");
+			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowStaticAlert("The moustache is on. Itchiness: +200");
 			playerImage.sprite = (Sprite) Resources.Load ("Images/BlakeMoustache", typeof(Sprite));
 		}
 

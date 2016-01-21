@@ -16,7 +16,7 @@ public class Child : ColliderController {
 		if (conversationController.dialogueEngine.checkVar ("HasBear")) {
 			GameObject.Find("Bear").GetComponent<InventoryItemController>().Enable();
 			GameObject.FindGameObjectWithTag ("SuccessChime").GetComponent<AudioObject> ().PlayAudio();
-			GameObject.FindGameObjectWithTag("Alert").GetComponent<AlertController>().ShowStaticAlert("Bear added to your inventory!");
+			GameObject.FindGameObjectWithTag("Alert").GetComponent<AlertController>().ShowStaticAlert("Bear added to inventory.");
 		}
 	}
 }

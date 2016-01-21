@@ -18,7 +18,7 @@ public class Salesman : ColliderController {
 			GameObject.Find("Money").GetComponent<InventoryItemController>().Disable();
 			GameObject.Find("Fake ID").GetComponent<InventoryItemController>().Enable();
 			GameObject.FindGameObjectWithTag ("SuccessChime").GetComponent<AudioObject> ().PlayAudio();
-			GameObject.FindGameObjectWithTag("Alert").GetComponent<AlertController>().ShowStaticAlert("Fake ID added to your inventory!");
+			GameObject.FindGameObjectWithTag("Alert").GetComponent<AlertController>().ShowStaticAlert("Fake ID added to inventory.");
 		}
 	}
 }

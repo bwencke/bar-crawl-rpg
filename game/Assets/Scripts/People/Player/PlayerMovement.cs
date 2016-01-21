@@ -73,7 +73,8 @@ public class PlayerMovement : TopLevelController {
 				return;
 			}
 		}
-		GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowAlert ("It is just empty space.");
+		// Let's try this with no response.
+		// GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowAlert ("It is just empty space.");
 	}
 
 //	public override void KeyDown() {

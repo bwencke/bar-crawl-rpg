@@ -16,7 +16,7 @@ public class CocktailGod : ColliderController {
 		if (conversationController.dialogueEngine.checkVar ("HasSunglasses")) {
 			GameObject.Find("Sunglasses").GetComponent<InventoryItemController>().Enable();
 			GameObject.FindGameObjectWithTag ("SuccessChime").GetComponent<AudioObject> ().PlayAudio();
-			GameObject.FindGameObjectWithTag("Alert").GetComponent<AlertController>().ShowStaticAlert("Sunglasses added to your inventory!");
+			GameObject.FindGameObjectWithTag("Alert").GetComponent<AlertController>().ShowStaticAlert("Sunglasses added to inventory.");
 		}
 	}
 }
