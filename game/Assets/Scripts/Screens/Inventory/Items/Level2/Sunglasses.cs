@@ -15,7 +15,7 @@ public class Sunglasses : InventoryItemController {
 			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowStaticAlert("Now I look exactly like Harvey Kevork.");
 			playerImage.sprite = (Sprite) Resources.Load ("Images/BlakeDisguise", typeof(Sprite));
 		} else {
-			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowStaticAlert("The sunglasses are on. Coolness: +200");
+			GameObject.FindGameObjectWithTag ("Alert").GetComponent<AlertController> ().ShowStaticAlert("These will keep the sun out of my eyes. Coolness: +200");
 			playerImage.sprite = (Sprite) Resources.Load ("Images/BlakeSunglasses", typeof(Sprite));
 		}
 

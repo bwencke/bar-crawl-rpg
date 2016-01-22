@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Crockett : ColliderController {
-	
+
 	public override void TriggerPrimaryAction () {
 		GameObject.Find ("Crockett").GetComponent<NPCRandomMovement> ().Pause ();
 		ConversationController conversationController = GameObject.FindGameObjectWithTag ("Conversation").GetComponent<ConversationController> ();
@@ -30,7 +30,7 @@ public class Crockett : ColliderController {
 	}
 
 	IEnumerator CrockettLeave() {
-		yield return StartCoroutine(GameObject.Find("Crockett").GetComponent<NPCController>().MoveUp(10f, 3f));
+		yield return StartCoroutine (GameObject.Find ("Crockett").GetComponent<NPCController> ().MoveUp (5f, 3f));
 		Destroy (GameObject.Find ("Crockett"));
 	}
 }
