@@ -9,12 +9,15 @@ public class Level2Controller : LevelController {
 	}
 
 	public override void SetDefaultState() {
-
+		
+		GameObject.Find ("StateController").GetComponent<StateController> ().npcImageMap.SetImage ("Cocktail God", "Cocktail God Sunglasses");
 		GameObject.FindGameObjectWithTag("GameController").GetComponent<Controller>().LoadCutscene("Intro");
 
 	}
 
 	public override void SetState(ConversationController conversationController) {
+
+		GameObject.Find ("StateController").GetComponent<StateController> ().npcImageMap.SetImage ("Cocktail God", "Cocktail God Sunglasses");
 
 		// load variables
 		if (conversationController.dialogueEngine.checkVar ("SawIntroCutscene")) {
@@ -43,6 +46,7 @@ public class Level2Controller : LevelController {
 
 		if (conversationController.dialogueEngine.checkVar ("HasSunglasses")) {
 			GameObject.Find("Sunglasses").GetComponent<InventoryItemController>().Enable();
+			GameObject.Find ("StateController").GetComponent<StateController> ().npcImageMap.SetImage ("Cocktail God", "Cocktail God");
 		}
 
 		if (conversationController.dialogueEngine.checkVar ("WearingMoustache") && conversationController.dialogueEngine.checkVar ("WearingSunglasses")) {

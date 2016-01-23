@@ -9,6 +9,7 @@ public class StateController : MonoBehaviour {
 	int saveSlot;
 	int level;
 
+	public NPCImageMap npcImageMap;
 	public ConversationController conversationController;
 	LevelController levelController;
 
@@ -37,6 +38,7 @@ public class StateController : MonoBehaviour {
 		string json = PlayerPrefs.GetString ("save_slot" + saveSlot);
 		JSONNode root = JSON.Parse(json);
 
+		npcImageMap = new NPCImageMap ();
 		levelController = GameObject.FindGameObjectWithTag ("level_controller").GetComponent<LevelController> ();
 		conversationController.Init (levelController.GetLevel());
 		level = root ["level"].AsInt;

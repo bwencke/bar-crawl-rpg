@@ -17,6 +17,7 @@ public class CocktailGod : ColliderController {
 			GameObject.Find("Sunglasses").GetComponent<InventoryItemController>().Enable();
 			GameObject.FindGameObjectWithTag ("SuccessChime").GetComponent<AudioObject> ().PlayAudio();
 			GameObject.FindGameObjectWithTag("Alert").GetComponent<AlertController>().ShowStaticAlert("Sunglasses added to inventory.");
+			GameObject.Find ("StateController").GetComponent<StateController> ().npcImageMap.SetImage ("Cocktail God", "Cocktail God");
 		}
 	}
 }

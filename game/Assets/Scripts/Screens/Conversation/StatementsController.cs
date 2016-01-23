@@ -31,7 +31,8 @@ public class StatementsController : TopLevelController {
 			npcImage.GetComponent<Canvas> ().enabled = false;
 			playerImage.GetComponent<Canvas> ().enabled = true;
 		} else {
-			npcImage.GetComponent<Image>().sprite = (Sprite) Resources.Load ("Images/" + statement.getName (), typeof(Sprite));
+			string img = GameObject.Find ("StateController").GetComponent<StateController> ().npcImageMap.GetImage (statement.getName ());
+			npcImage.GetComponent<Image>().sprite = (Sprite) Resources.Load ("Images/" + img, typeof(Sprite));
 			npcImage.GetComponent<Canvas> ().enabled = true;
 			playerImage.GetComponent<Canvas> ().enabled = false;
 		}
