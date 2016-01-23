@@ -30,7 +30,10 @@ public class Crockett : ColliderController {
 	}
 
 	IEnumerator CrockettLeave() {
-		yield return StartCoroutine (GameObject.Find ("Crockett").GetComponent<NPCController> ().MoveUp (5f, 3f));
-		Destroy (GameObject.Find ("Crockett"));
+		GameObject crockett = GameObject.Find ("Crockett");
+		crockett.GetComponent<CircleCollider2D> ().enabled = false;
+		StartCoroutine (crockett.GetComponent<NPCController> ().MoveUp (7f, 3f));
+		yield return new WaitForSeconds (2);
+		Destroy (crockett);
 	}
 }

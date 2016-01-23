@@ -94,6 +94,10 @@ public class NPCController : ColliderController {
 	}
 
 	public IEnumerator Move(Vector2 direction, float distance, float speed) {
+		// might be necessary later
+//		while (movement_vector.x != 0 && movement_vector.y != 0) {
+//			
+//		}
 		Vector2 initial_position = rbody.position;
 		movement_vector = direction*1.5f;
 		this.speed = speed;

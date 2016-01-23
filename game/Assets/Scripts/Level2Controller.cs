@@ -34,6 +34,7 @@ public class Level2Controller : LevelController {
 
 		if (conversationController.dialogueEngine.checkVar ("HasHat")) {
 			GameObject.Find("Hat").GetComponent<InventoryItemController>().Enable();
+			Destroy(GameObject.Find("Crockett"));
 		}
 
 		if (conversationController.dialogueEngine.checkVar ("HasTail")) {
