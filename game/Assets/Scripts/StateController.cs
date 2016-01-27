@@ -28,6 +28,7 @@ public class StateController : MonoBehaviour {
 	
 	void LoadDataFromSlot() {
 		if (!PlayerPrefs.HasKey ("save_slot" + saveSlot)) {
+			npcImageMap = new NPCImageMap ();
 			levelController = GameObject.FindGameObjectWithTag ("level_controller").GetComponent<LevelController> ();
 			conversationController.Init (levelController.GetLevel());
 			level = levelController.GetLevel();
