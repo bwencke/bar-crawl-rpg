@@ -29,9 +29,10 @@ SNIPPET
 	ENDOPTION
 	OPTION
 		CONDITIONS
+			HasHat=TRUE
 			NeedsMoustache=TRUE
 		ENDCONDITIONS
-		Do you know where I could find a moustache?
+		Do you think the tail on this hat would pass as a moustache?
 		6
 	ENDOPTION
 	OPTION
@@ -104,8 +105,6 @@ SNIPPET
 		NeedsMoustache=FALSE
 	ENDASSIGNMENTS
 	STATEMENTS
-		Butcher
-		The tail on the beautiful hat you're carrying might pass as a moustache.
 		Butcher
 		I'll chop the tail off if you let me keep the rest of the hat.
 		Blake
